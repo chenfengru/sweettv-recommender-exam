@@ -1,0 +1,22 @@
+Working directory: /Users/chenfengru/sweettv-recommender-exam
+Base commit: 491ca05d2a7a257e7cf29b92314930bc2068dc89
+Existing pinned environment: /private/tmp/sweettv-model-venv/bin/python
+All numerical commands used OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1.
+
+Corrected baseline CLI validation (failed historical JSON preserved):
+python -m src.validate_submission --template /Users/chenfengru/LLM4Rec-Course-codex/data/sweettv/raw/submission.csv --predictions submissions/first_personal_original_20261029_v1.csv --schedule results/first_submission_20261029/final_window_candidate_ids.csv --user-column user_id --prediction-column tv_show_id --delimiter ,
+
+Focused suite and bounded grid:
+python -m unittest discover -s tests -v
+python -m src.improve_recommender --data-dir /Users/chenfengru/LLM4Rec-Course-codex/data/sweettv/raw --output-dir results/improvement_20261029_v2 --private-dir artifacts/improvement_20261029_v2
+
+The runner launches isolated worker subprocesses for als_lb50, als_lb80, cbf_pop_tie and loaded als_original factors; the original CBF score is reconciled on the same fitted profiles. It then evaluates exactly the three requested RRF weights on direct top-50 component lists, assesses the best new configuration and refits it over the existing combined-window cache only because its nominal local MAP exceeds the personal baseline. No prior recency experiment or audit was repeated.
+Candidate validation was executed internally and through src.validate_submission using the same explicit-comma CLI pattern and candidate CSV path recorded in candidate_validator_cli.json. The current source also verifies raw input identities before cache reuse. All inputs were rechecked in final_checks.json after this measured run.
+
+python -m src.report_improvement --output-dir results/improvement_20261029_v2
+python -m compileall -q src tests
+git diff --check
+
+fusion_ranking_runtime_replay.json records a separate deterministic replay of only RRF rank construction and completion from cached component direct lists, with no extra model configurations. Predictions exactly match the original experiment.
+For a fresh versioned reproducibility artifact, pass --candidate-path submissions/candidate_repro_v3.csv and fresh output/private directories. Existing versioned CSVs are never overwritten. The runner needs the previously generated private comparison and combined-window caches; reproduce their documented stages first on a clean machine.
+The original native session transcript remains unmodified. No Kaggle browser, upload, submission API, credentials or automated submission workflow was used. Scores of the submitted baseline are user-confirmed screenshot values. Student verification is pending.

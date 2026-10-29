@@ -1,0 +1,23 @@
+{
+  "rrf_als_lb80_w0p05": {
+    "direct_fusion_rank_replay_seconds": 0.045415333996061236,
+    "completion_replay_seconds": 0.0042157500283792615,
+    "predictions_exactly_match_original_experiment": true,
+    "users": 4649,
+    "timing_scope": "Separate deterministic ranking-only replay; cached direct component ranks, no component refitting or inference included."
+  },
+  "rrf_als_lb80_w0p1": {
+    "direct_fusion_rank_replay_seconds": 0.04339708300540224,
+    "completion_replay_seconds": 0.003131541016045958,
+    "predictions_exactly_match_original_experiment": true,
+    "users": 4649,
+    "timing_scope": "Separate deterministic ranking-only replay; cached direct component ranks, no component refitting or inference included."
+  },
+  "rrf_als_lb80_w0p2": {
+    "direct_fusion_rank_replay_seconds": 0.04408108297502622,
+    "completion_replay_seconds": 0.003530624962877482,
+    "predictions_exactly_match_original_experiment": true,
+    "users": 4649,
+    "timing_scope": "Separate deterministic ranking-only replay; cached direct component ranks, no component refitting or inference included."
+  }
+}

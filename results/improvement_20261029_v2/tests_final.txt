@@ -1,0 +1,38 @@
+test_actual_source_wall_clock_formats (test_audit.AuditTests) ... ok
+test_delimiter_encoding_and_bad_schema (test_audit.AuditTests) ... ok
+test_explicit_time_units_and_timezone (test_audit.AuditTests) ... ok
+test_missing_inputs_report_contains_no_measurements (test_audit.AuditTests) ... ok
+test_reservoir_sample_label_and_reproducibility (test_audit.AuditTests) ... ok
+test_synthetic_known_counts_duplicates_units_and_overlap (test_audit.AuditTests) ... ok
+test_units_and_template_roles_are_not_guessed (test_audit.AuditTests) ... ok
+test_filter_uses_longest_block_but_keeps_union_contribution (test_improvement.ImprovementTests) ... ok
+test_fusion_has_no_completion_evidence_or_ranks_beyond_50 (test_improvement.ImprovementTests) ... ok
+test_popularity_breaks_only_exact_cosine_ties (test_improvement.ImprovementTests) ... ok
+test_cutoff_clips_crossing_and_excludes_future_changes (test_intervals.IntervalTests) ... ok
+test_hand_calculated_cross_programme_view (test_intervals.IntervalTests) ... ok
+test_invalid_intervals_and_cutoffs_fail (test_intervals.IntervalTests) ... ok
+test_nested_intervals_and_adjacent_floats_terminate (test_intervals.IntervalTests) ... ok
+test_random_overlap_tree_matches_independent_reference (test_intervals.IntervalTests) ... ok
+test_touching_channels_unlabelled_and_duplicate_rows (test_intervals.IntervalTests) ... ok
+test_union_and_continuity_are_different (test_intervals.IntervalTests) ... ok
+test_documented_ranking_examples (test_metrics.MetricTests) ... ok
+test_duplicate_predictions_never_add_hits (test_metrics.MetricTests) ... ok
+test_empty_truth_short_truth_and_cutoff (test_metrics.MetricTests) ... ok
+test_fixed_cohort_includes_empty_truth (test_metrics.MetricTests) ... ok
+test_invalid_k (test_metrics.MetricTests) ... ok
+test_carryover_full_denominator_and_combined_refit (test_models_pipeline.PipelineTests) ... ok
+test_cbf_score_to_programme_alignment (test_models_pipeline.PipelineTests) ... ok
+test_end_to_end_post_cutoff_invariance_including_cleaning (test_models_pipeline.PipelineTests) ... ok
+test_end_based_half_life_and_crossing_clamp (test_recency.RecencyTests) ... ok
+test_union_qualification_keeps_full_airing_denominator (test_recency.RecencyTests) ... ok
+test_bad_recommendation_lists (test_submission.SubmissionTests) ... ok
+test_candidates_use_only_explicit_schedule_and_exclude_zero (test_submission.SubmissionTests) ... ok
+test_duplicate_template_and_invalid_candidates (test_submission.SubmissionTests) ... ok
+test_missing_extra_reordered_or_coerced_users (test_submission.SubmissionTests) ... ok
+test_valid_actual_template_order_and_text_ids (test_submission.SubmissionTests) ... ok
+test_wrong_header_or_malformed_row (test_submission.SubmissionTests) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.283s
+
+OK

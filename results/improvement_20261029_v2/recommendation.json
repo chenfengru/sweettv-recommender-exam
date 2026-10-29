@@ -1,0 +1,11 @@
+{
+  "recommended_configuration": "submitted original personal repeat-frequency baseline",
+  "best_experimental_configuration": "rrf_als_lb80_w0p1",
+  "recommend_manual_submission": false,
+  "reason": "Nominal local gain is small, the conditional paired-user bootstrap interval includes zero, and this hold-out also selected configurations. Retain the already submitted baseline unless the user explicitly chooses an exploratory manual benchmark.",
+  "csv_generation_reason": "The selected new configuration met the requested positive-local-score criterion and produced nonduplicate final predictions; the artifact is exploratory and not a statistically supported replacement.",
+  "workflow": "Stop for user review. Only the user may upload to Kaggle; approval of results does not authorize automatic upload.",
+  "new_candidate_public_score": null,
+  "new_candidate_private_score": null,
+  "student_verification": "pending"
+}

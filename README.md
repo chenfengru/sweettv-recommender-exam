@@ -2,7 +2,7 @@
 
 Individual TV-programme recommendation project for LLM4Rec (FKN).
 
-**Current status: first benchmark prediction CSV generated and validated on 29 October 2026; user requested manual Kaggle upload.** [Download the exact final-window CSV](submissions/first_personal_original_20261029_v1.csv) and read the [recency experiment, combined refit and handoff record](results/first_submission_20261029/first_submission_report.md). Original personal frequency remains selected (local MAP@5 0.317490); the 28/56-day variants did not improve it. All 30 tests pass. No automated Kaggle submission or returned score has been verified. Student verification remains pending. Historical comparison and audit records are preserved.
+**Current status: bounded improvement experiments completed; stop for user review.** The user confirms the original personal-frequency baseline was manually submitted with private **0.38937** / public **0.39131** scores from a Kaggle screenshot. The best new local fusion scores **0.317687** versus **0.317490**, but its conditional bootstrap interval spans a loss; **retain the submitted baseline** is the recommendation. An exploratory [validated candidate](submissions/candidate_rrf_als_lb80_w0p1_20261029_v2.csv) is available in the [review report](results/improvement_20261029_v2/improvement_report.md). All 33 tests pass. No new Kaggle upload or submission workflow is authorized or performed; only the user may upload. Student verification remains pending.
 
 ## Start here
 

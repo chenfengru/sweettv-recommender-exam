@@ -1,0 +1,42 @@
+{
+  "name": "rrf_als_lb80_w0p05",
+  "map_at_5": 0.3172575975975976,
+  "evaluation_users": 4625,
+  "candidate_count": 6384,
+  "history_slices": {
+    "0": {
+      "users": 108,
+      "map_at_5": 0.16305041152263375
+    },
+    "1\u20135": {
+      "users": 462,
+      "map_at_5": 0.16536014911014912
+    },
+    "21+": {
+      "users": 1968,
+      "map_at_5": 0.39431938798554655
+    },
+    "6\u201320": {
+      "users": 2087,
+      "map_at_5": 0.28619549592716814
+    }
+  },
+  "fallback": {
+    "complete_users": 108,
+    "partial_completion_users": 0,
+    "completion_slots": 540
+  },
+  "direct_ranking_limit": 50,
+  "all_lists_valid": true,
+  "evaluation_and_completion_seconds": 0.00904058403102681,
+  "config": {
+    "personal_weight": 1.0,
+    "alternative": "als_lb80",
+    "alternative_weight": 0.05,
+    "rank_constant": 60,
+    "direct_top_n": 50,
+    "fallback_in_component_ranks": false,
+    "seed": 42
+  },
+  "prediction_sha256": "496d55235f3afe0cb49c7a479d605741cc63f2857e6601b5574ec685e0a6ae62"
+}

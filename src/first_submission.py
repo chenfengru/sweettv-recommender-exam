@@ -1,7 +1,7 @@
 """Bounded recency comparison, combined-window refit and validated first artifact.
 
-This module never sends anything to Kaggle. Submission is a separate, single
-user-authorized browser action after the exact CSV is validated.
+This module never sends anything to Kaggle. All Kaggle uploads are now performed manually by the user. Approval of local
+results never authorizes an automated upload or submission workflow.
 """
 
 import argparse

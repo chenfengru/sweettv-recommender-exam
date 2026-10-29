@@ -28,7 +28,7 @@ Absolute path: `/Users/chenfengru/sweettv-recommender-exam/submissions/first_per
 
 SHA-256: `53cb8ae4b59b26ab6ee00b5e99ad91044876180e662732a755d3e99a297e64bc`
 
-The original template and exact final-window candidate export both pass the existing validator; see `validator_cli.json`. `final_window_candidate_ids.csv` is a derived availability export from the timestamp-filtered schedules, not a replacement raw input. Complete input hashes, source hashes, configuration, combined-fit cache provenance, fit/prediction windows and creation timestamp are in `first_artifact.json`. All original inputs remain unchanged. The complete experiment/refit/artifact generation took 57.19 seconds.
+The internal validator passed against the original template and exact final-window candidates. **Correction:** the original `validator_cli.json` records delimiter-autodetection failure on the one-column export; the earlier report incorrectly called that CLI attempt successful. That failed record is preserved. A later rerun with `--delimiter ,` passes; see [separate successful CLI evidence](../improvement_20261029_v2/baseline_validator_cli_success.json). `final_window_candidate_ids.csv` is a derived availability export from the timestamp-filtered schedules, not a replacement raw input. Complete input hashes, source hashes, configuration, combined-fit cache provenance, fit/prediction windows and creation timestamp are in `first_artifact.json`. All original inputs remain unchanged. The complete experiment/refit/artifact generation took 57.19 seconds.
 
 ## Kaggle handoff
 
@@ -39,3 +39,7 @@ The browser file chooser helper failed because the Chrome extension did not perm
 Manual step: open the competition’s Late Submission form, select the exact CSV linked above, optionally enter the description `First benchmark: original personal qualified-airing frequency; combined weeks 11–30 fit; local MAP@5 0.317490`, and submit it once. Preserve the returned submission reference, status and actual scores; retain a screenshot showing the private score when returned. Do not describe an unsubmitted or pending file as scored. `submission_record.json` records the current handoff state.
 
 Raw inputs, credentials, intermediate histories, caches, fitted weights and native AI-session records remain outside Git. The exact final prediction CSV is included as explicitly requested. The native session transcript remains unmodified. Student verification is pending.
+
+## Later user-confirmed submission result
+
+The user subsequently confirmed manual submission of this exact unchanged CSV and reported Private Score **0.38937**, Public Score **0.39131**, from a Kaggle screenshot. See [the provenance record](../improvement_20261029_v2/baseline_score_evidence.json). These values were not independently fetched by Codex in the improvement stage; the historical pre-upload handoff record remains unchanged. All future uploads are manual-only by the user.

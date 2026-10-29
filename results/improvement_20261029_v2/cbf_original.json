@@ -1,0 +1,34 @@
+{
+  "name": "cbf_original",
+  "map_at_5": 0.02485105105105105,
+  "evaluation_users": 4625,
+  "candidate_count": 6384,
+  "history_slices": {
+    "0": {
+      "users": 108,
+      "map_at_5": 0.08737654320987655
+    },
+    "1\u20135": {
+      "users": 462,
+      "map_at_5": 0.051038961038961043
+    },
+    "21+": {
+      "users": 1968,
+      "map_at_5": 0.005292174796747968
+    },
+    "6\u201320": {
+      "users": 2087,
+      "map_at_5": 0.034261832508119046
+    }
+  },
+  "fallback": {
+    "complete_users": 44,
+    "partial_completion_users": 0,
+    "completion_slots": 220
+  },
+  "direct_ranking_limit": 50,
+  "all_lists_valid": true,
+  "evaluation_and_completion_seconds": 0.00723679200746119,
+  "result_kind": "existing baseline replay; same fitted features/profiles, only ID tie-break",
+  "prediction_sha256": "f042231034935d340b0d37ff71bfec5e608c19ceb8e36d13b1a16c9a5d8a78ab"
+}

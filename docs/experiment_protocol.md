@@ -2,6 +2,15 @@
 
 Status: all four individual methods executed locally on 29 October 2026 under the fixed 4,625-user cohort and 6,384 validation candidates. See the [comparison report](../results/model_comparison_20261029/comparison_report.md), [reproduction guide](running_model_comparison.md), and [established audit](../results/local_audit_20261029/audit_review.md). No hybrid has been performed. A later authorized first-benchmark stage refitted original personal frequency on the combined weeks 11–30 window and generated a validated final-window CSV; the user requested manual Kaggle upload. No submitted Kaggle score is verified. See the [first-artifact record](../results/first_submission_20261029/first_submission_report.md). The original ChatGPT-generated foundation was reused; automated execution was performed by Codex, not independently by the student. Student verification remains pending.
 
+
+## Later bounded improvement stage and manual review
+
+The user confirms manual submission of the original personal-frequency CSV with screenshot Private Score 0.38937 and Public Score 0.39131. See the [user-confirmed provenance](../results/improvement_20261029_v2/baseline_score_evidence.json); the original artifact remains unchanged. The one-column candidate-export CLI failure was corrected with an explicit comma delimiter, preserving the failed record.
+
+The requested ≥50%/≥80% ALS airing filters, exact-only CBF popularity tie-break and three direct-rank RRF weights have now been executed without changing validation truth/cohort/candidates or shared fallback. [The improvement report](../results/improvement_20261029_v2/improvement_report.md) recommends keeping the submitted baseline: the best local fusion gain is only 0.000197, with a conditional bootstrap interval spanning zero. A distinct validated candidate exists for review, not as a recommended replacement yet. All 33 tests pass. No further experiment is scheduled.
+
+**Workflow override:** stop for user review. Kaggle uploads are manual-only by the user. Do not upload a file, click Submit, call a submission API or initiate any automated submission workflow; user approval of results does not authorize those actions. Student verification remains pending.
+
 ## Clock and temporal split
 
 Both sources contain timezone-free civil timestamps. Parse views with `wall-iso` (`YYYY-MM-DD HH:MM:SS`) and schedules with `wall-dmy` (`DD.MM.YYYY HH:MM:SS`). Represent them as seconds since a naive 1970-01-01 reference solely for arithmetic. These numbers are not verified UTC instants; do not apply the Mac's timezone. A common source clock with zero offset between sources is an explicit local assumption supported by matching coverage and checked actual examples. The 117 one-hour duration discrepancies occur across 29 March; a clock change is plausible, but neither the timezone name nor DST handling is proven.
