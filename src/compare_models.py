@@ -394,7 +394,9 @@ def write_examples(args, setup, train, truth, summary, metadata):
     (args.private_dir / "example_histories.json").write_text(
         json.dumps(private, ensure_ascii=False, indent=2)
     )
-    (args.output_dir / "two_user_examples.md").write_text("\n".join(lines).rstrip() + "\n")
+    (args.output_dir / "two_user_examples.md").write_text(
+        "\n".join(lines).rstrip() + "\n"
+    )
 
 
 if __name__ == "__main__":
