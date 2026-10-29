@@ -1,0 +1,22 @@
+{
+  "popularity": {
+    "map_at_5": 0.23440720720720787,
+    "model_fingerprint": "9995e063a91e32cfda1609307696db30e6619490a780aa95197fb375f75c7fbb",
+    "prediction_sha256": "35616f464c34d50d4d4cad971727d7d2591e210cd404958c0d5fc965ec53166d"
+  },
+  "personal": {
+    "map_at_5": 0.31748972972972866,
+    "model_fingerprint": "13395b09086ed6f8da7d56162140a832c46fc881045b464d3937df964c0595df",
+    "prediction_sha256": "20f4b9f6f696a4f8300d2299771725eea5abd69a576dae9adbba6888e7a9947e"
+  },
+  "cbf": {
+    "map_at_5": 0.024851051051051083,
+    "model_fingerprint": "c6d105982c526044a4e0e306e1e47a876f05b6b9de690ebd13a1fde810feae9c",
+    "prediction_sha256": "f042231034935d340b0d37ff71bfec5e608c19ceb8e36d13b1a16c9a5d8a78ab"
+  },
+  "als_f32_r0.1": {
+    "map_at_5": 0.08723681681681694,
+    "model_fingerprint": "61f9c9a05498ccfc7eea0011b2ee1d8e37138c7fa67e26063fbbd7d5fa7d6351",
+    "prediction_sha256": "670489acf7846d57706b4071db769cbf824abac7dba00e1dcd54daa2540fb663"
+  }
+}

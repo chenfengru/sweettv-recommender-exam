@@ -1,0 +1,87 @@
+{
+  "config": {
+    "method": "als",
+    "seed": 42,
+    "factors": 32,
+    "regularization": 0.01,
+    "iterations": 20,
+    "library_alpha": 1.0,
+    "confidence_multiplier": 40,
+    "num_threads": 1,
+    "use_cg": true
+  },
+  "map_at_5": 0.08550216216216239,
+  "evaluation_users": 4625,
+  "prediction_users": 4649,
+  "template_users_predicted": 1260,
+  "candidate_count": 6384,
+  "history_slices": {
+    "0": {
+      "users": 108,
+      "map_at_5": 0.11305812757201646
+    },
+    "1\u20135": {
+      "users": 462,
+      "map_at_5": 0.15542568542568555
+    },
+    "21+": {
+      "users": 1968,
+      "map_at_5": 0.025616107723577256
+    },
+    "6\u201320": {
+      "users": 2087,
+      "map_at_5": 0.12506854602566128
+    }
+  },
+  "fallback": {
+    "complete_users": 44,
+    "partial_completion_users": 0,
+    "completion_slots": 220,
+    "slot_fraction": 0.009513513513513514,
+    "complete_user_fraction": 0.009513513513513514,
+    "partial_user_fraction": 0.0
+  },
+  "zero_qualified_training_history_users": 108,
+  "zero_soft_training_history_users": 44,
+  "distinct_recommended_items": 807,
+  "catalogue_coverage": 0.12640977443609022,
+  "repeated_item_share": 0.6682378378378379,
+  "candidates_without_method_representation": 4178,
+  "fit_seconds": 1.984282749996055,
+  "inference_seconds": 0.46502725000027567,
+  "peak_rss_after_fit_bytes": 549814272,
+  "peak_process_rss_bytes": 549814272,
+  "memory_method": "resource.ru_maxrss isolated worker lifetime high-water; includes loaded records and imports",
+  "all_lists_valid": true,
+  "dependencies": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "implicit": "0.7.3",
+    "threadpoolctl": "3.7.0",
+    "tqdm": "4.70.1"
+  },
+  "environment": {
+    "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "code_base_commit": "b7f254a8878ed8f7b5ab01ac67e1197c0b099854",
+    "working_tree_dirty": true,
+    "source_sha256": {
+      "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+      "src/audit_anomalies.py": "e82a2ac4765b038a3c90a8253bdff47c93a583adb4c936de82140edd8fd4baad",
+      "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+      "src/compare_models.py": "102a17614a26e0e92cea3d8fd9cd9864d4e302b8a22c2948e31afa0ca99c145b",
+      "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+      "src/interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+      "src/intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+      "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+      "src/models.py": "583fee7c7f197646d229fb56214b2676beca78be298ab8a065d3ee868031c0e1",
+      "src/real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d",
+      "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6"
+    },
+    "peak_process_rss_bytes": 549814272,
+    "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+  },
+  "model_fingerprint": "72fba668f2245ed6b8725696f21e93682a54a4292546fc2b32767f7d06899c36",
+  "private_predictions_path": "artifacts/model_comparison_20261029/als_f32_r0.01_predictions.json",
+  "prediction_sha256": "b9518810583fe889999ba3f846b69156a31415ba5330c8962910ecde0cb55b36"
+}

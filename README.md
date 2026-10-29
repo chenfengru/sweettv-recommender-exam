@@ -2,7 +2,7 @@
 
 Individual TV-programme recommendation project for LLM4Rec (FKN).
 
-**Current status: real-data audit and modelling specification completed locally on 29 October 2026.** See [measured audit findings](results/local_audit_20261029/audit_review.md), [run records](results/local_audit_20261029/commands.txt), and the [fixed local protocol](docs/experiment_protocol.md). No recommendation models have been trained or submitted. Student verification is pending. Earlier synthetic and missing-input records remain historical evidence.
+**Current status: local four-method comparison completed on 29 October 2026.** [Actual comparison and recommendation](results/model_comparison_20261029/comparison_report.md): personal frequency MAP@5 **0.317490**, popularity **0.234407**, implicit ALS **0.087237**, CBF **0.024851**, on the same 4,625 users and 6,384 candidates. All 28 tests pass, including full pipeline cutoff checks. No Kaggle submission, hybrid or final model refit has been performed. Student verification remains pending. Historical audit/synthetic records remain unchanged.
 
 ## Start here
 
@@ -11,9 +11,12 @@ Individual TV-programme recommendation project for LLM4Rec (FKN).
 3. [First Codex task](docs/phase_1_codex_task.md): data audit and small-scale verification.
 4. [Data location](data/README.md): obtain and store the five original files locally.
 5. [Run Phase 1](docs/running_phase_1.md): audit, tests, limitations, and the next command.
-6. [Student verification](docs/student_verification.md): small examples to check personally; not yet completed by the student.
+6. [Model comparison](results/model_comparison_20261029/comparison_report.md): executed results and next experiment.
+7. [Student verification](docs/student_verification.md): small examples to check personally; not yet completed by the student.
 
 ## Run the implemented tools
+
+For model comparison and the full test suite, first install the pinned environment using [the model-stage run guide](docs/running_model_comparison.md). The standalone audit CLI remains standard-library-only.
 
 Phase 1 has no third-party Python dependencies; Python 3.10.11 was used successfully for the measured local run. Python 3.11+ remains suitable.
 
@@ -35,7 +38,7 @@ The supplied files remain in the external course data folder, locally excluded f
 - The user reports a limit of five submissions per day.
 - [Kaggle competition](https://www.kaggle.com/competitions/sweettv-tv-program-recommender)
 
-## Planned methods
+## Compared methods
 
 | Method | Role |
 | --- | --- |
@@ -45,7 +48,7 @@ The supplied files remain in the external course data folder, locally excluded f
 | Implicit-feedback matrix factorization | Required method 2 |
 | Rank fusion or temporal reranking | Optional, after separate method evaluation |
 
-Model choice and performance are not established by this plan.
+The four individual methods were executed; optional fusion has not been run. See the comparison report for exact configuration, limitations and selection evidence.
 
 ## Repository conventions
 

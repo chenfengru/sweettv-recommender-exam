@@ -1,0 +1,27 @@
+{
+  "same_inputs_and_configuration": true,
+  "separate_process_replay": true,
+  "checks": {
+    "popularity": {
+      "map_at_5": true,
+      "model_fingerprint": true,
+      "prediction_sha256": true
+    },
+    "personal": {
+      "map_at_5": true,
+      "model_fingerprint": true,
+      "prediction_sha256": true
+    },
+    "cbf": {
+      "map_at_5": true,
+      "model_fingerprint": true,
+      "prediction_sha256": true
+    },
+    "als_f32_r0.1": {
+      "map_at_5": true,
+      "model_fingerprint": true,
+      "prediction_sha256": true
+    }
+  },
+  "interpretation": "All selected model fingerprints, user-level prediction hashes and MAP@5 values exactly match the first corrected run. Runtime and RSS vary between executions."
+}

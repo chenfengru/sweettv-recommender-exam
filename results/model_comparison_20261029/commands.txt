@@ -1,0 +1,28 @@
+Working directory: /Users/chenfengru/sweettv-recommender-exam
+Branch: codex/real-data-audit (continuation of draft PR #1).
+Base implementation commit at stage start: b7f254a8878ed8f7b5ab01ac67e1197c0b099854.
+
+Baseline: python3 -m unittest discover -s tests -v
+Result: existing 25 tests passed in 0.128 seconds (native transcript).
+Isolated environment: python3 -m venv /private/tmp/sweettv-model-venv
+Dependency setup: /private/tmp/sweettv-model-venv/bin/pip install numpy scipy implicit threadpoolctl black
+Actual installed versions are in dependencies_full.txt; runtime requirements are pinned in requirements.txt.
+
+All subsequent commands used OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1.
+Python executable: /private/tmp/sweettv-model-venv/bin/python
+
+python -m unittest discover -s tests -v
+python -m src.compare_models --data-dir /Users/chenfengru/LLM4Rec-Course-codex/data/sweettv/raw --output-dir results/model_comparison_20261029 --private-dir artifacts/model_comparison_20261029
+python -m src.diagnose_models --private-dir artifacts/model_comparison_20261029 --output-dir results/model_comparison_20261029
+python -m src.check_cutoff_invariance --data-dir /Users/chenfengru/LLM4Rec-Course-codex/data/sweettv/raw --private-dir artifacts/model_comparison_20261029 --output-dir results/model_comparison_20261029
+python -m src.report_comparison --data-dir /Users/chenfengru/LLM4Rec-Course-codex/data/sweettv/raw --output-dir results/model_comparison_20261029 --private-dir artifacts/model_comparison_20261029
+python -m compileall -q src tests
+git diff --check
+
+The small integration suite was executed before full fitting. It initially comprised 27 passing tests; the score-to-ID alignment defect led to one further focused test (28 total).
+The first two full attempts were retained as preliminary_native_matmul/ and preliminary_unordered_candidates/; their CBF scores are superseded. Native ALS scoring warnings were investigated using saved finite factors and independent contraction/scalar checks, then replaced by finite-checked float64 direct contraction.
+The corrected full comparison was replayed with the same inputs/configuration; deterministic_replay.json compares fitted fingerprints and prediction hashes. Cached interaction provenance retains cold-extraction timing separately from warm-cache comparison timing.
+Report examples were regenerated to label absent held-out truth as not evaluable and preserve original titles/categories. No students' verification was recorded.
+The final report generator also writes four private validation-window CSVs and runs the existing template validator against the exact permitted candidate set. No Kaggle call was made and no final weeks 31–42 prediction CSV was fabricated.
+
+The native session record remains unmodified. Its actual private path was identified during the audit and is retained in artifacts/session_provenance.txt. No original export, raw data, credentials, detailed histories or model factors are staged for Git.

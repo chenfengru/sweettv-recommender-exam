@@ -1,5 +1,7 @@
 # Reproducing the real-data audit
 
+The standalone audit commands remain standard-library-only. The repository’s full test suite now includes model integration tests; install the pinned dependencies using [the comparison guide](running_model_comparison.md) before running all tests.
+
 The audit was completed locally on 29 October 2026 using Python 3.10.11 and only the standard library. [Results](../results/local_audit_20261029/audit_review.md) and [exact executed commands](../results/local_audit_20261029/commands.txt) are recorded separately from historical missing-input/synthetic runs. No model or Kaggle submission exists yet.
 
 Run from the exam repository root, using a fresh result directory if preserving a previous run:
