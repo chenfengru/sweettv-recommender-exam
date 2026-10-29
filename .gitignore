@@ -1,0 +1,42 @@
+# Local competition data
+/data/*
+!/data/README.md
+*.parquet
+*.arrow
+*.feather
+
+# Intermediate artifacts
+/artifacts/
+/cache/
+/models/
+/checkpoints/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+kaggle.json
+.kaggle/
+*.pem
+*.key
+
+# Original AI-session exports: preserve separately for course submission
+/session_exports/
+/ai_sessions/
+/session.json
+/*_session.json
+
+# Python and editors
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+.idea/
+
+# submissions/ and results/ are intentionally trackable.
