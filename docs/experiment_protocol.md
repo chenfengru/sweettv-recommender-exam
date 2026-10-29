@@ -1,6 +1,17 @@
-# Experiment protocol - draft v0.1
+# Experiment protocol - draft v0.2
 
-**Status:** source-based analysis and proposed design. No original CSV has been inspected or model run. Choices marked unresolved must be settled from data and task evidence before comparative experiments.
+**Status:** source-based analysis with implemented Phase 1 utilities checked on synthetic fixtures. No original CSV has been inspected or model run. Choices marked unresolved must be settled from data and task evidence before comparative experiments.
+
+## Implementation evidence, 29 October 2026
+
+- Implemented: streaming CSV audit, exact disk-backed per-file duplicate/cardinality counts, sampled duration quantiles, explicit timestamp/unit conversion, per-channel interval index with independent brute-force reference, segment-union diagnostics, AP/MAP, and template-based prediction validation.
+- Executed: synthetic unit tests and a real input-availability audit. See [check results](../results/phase1_checks.json) and [audit status](../results/data_audit.md).
+- Missing: all five original CSVs. No actual channel mapping, timestamp/duration unit, cutoff, coverage, label threshold, interaction weight, target, or template schema has been verified.
+- The cutoff invariance check covers the interval matcher only. An end-to-end feature/model leakage check must be added with those components.
+- The matcher preserves duplicate source rows. It exposes a union-duration helper but does not silently select a deduplication or continuity rule.
+- Full-data runtime and memory remain unmeasured. The audit uses disposable on-disk SQLite indexes; the matcher keeps a schedule index in memory and streams view queries.
+
+This implementation does not freeze the proposed target construction or replace any unresolved protocol decision below.
 
 ## 1. Main hypothesis
 

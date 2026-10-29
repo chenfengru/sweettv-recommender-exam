@@ -1,0 +1,60 @@
+{
+  "audit_version": "0.1",
+  "generated_at_utc": "2026-10-29T17:34:25.011138+00:00",
+  "status": "blocked_missing_inputs",
+  "data_source": "original competition files only; no synthetic replacement",
+  "configuration": {
+    "data_dir": "data/raw",
+    "output_dir": "results",
+    "scratch_dir": null,
+    "encoding": null,
+    "delimiter": null,
+    "template_user_column": null,
+    "view_time_format": null,
+    "schedule_time_format": null,
+    "view_duration_unit": null,
+    "schedule_duration_unit": null,
+    "naive_timezone": null,
+    "sample_size": 10000,
+    "seed": 42
+  },
+  "instructor_reported_row_counts_not_measurements": {
+    "dataset11-30.csv": 5821987,
+    "export_arh_11-20-final.csv": 1074235,
+    "export_arh_21-30-final.csv": 1074394,
+    "export_arh_31-42-final.csv": 1295378,
+    "submission.csv": 1260
+  },
+  "missing_inputs": [
+    "dataset11-30.csv",
+    "export_arh_11-20-final.csv",
+    "export_arh_21-30-final.csv",
+    "export_arh_31-42-final.csv",
+    "submission.csv"
+  ],
+  "files": [],
+  "unresolved": [
+    "Match real view and schedule timestamps/channels; prove units from source and diagnostics.",
+    "Confirm template column roles and exact calendar cutoffs.",
+    "Confirm continuous watching and most-frequent-five target semantics; historical code is not the evaluator.",
+    "Measure matched view rows, union viewing seconds, usable template-user history and candidate cold start.",
+    "Choose positive thresholds and interaction weights only after real duration/coverage diagnostics."
+  ],
+  "elapsed_seconds": 0.00014764299999114883,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "code_base_commit": "4e887dbbf53620f134b21feb13ac2e3a35eda8be",
+    "working_tree_dirty": true,
+    "source_sha256": {
+      "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+      "src/audit_data.py": "217f864df686c19719bcfc00f8f89ca2e4ff2fb74922eebab2ef47b1b2cbe808",
+      "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+      "src/intervals.py": "7a93326aea17ec938352c6c16e87d573ea51bedc43ec6532fb7adace3ffe000f",
+      "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+      "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6"
+    },
+    "peak_process_rss_bytes": 12845056,
+    "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+  }
+}

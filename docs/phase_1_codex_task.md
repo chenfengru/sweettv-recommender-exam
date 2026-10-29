@@ -1,6 +1,6 @@
 # First Codex task: audit data and verify the evaluation foundations
 
-This is a ready-to-use implementation brief. The scripts and outputs listed below are **requested deliverables, not files already implemented**.
+This is the original implementation brief. The audit/evaluation tools and synthetic checks are now implemented; the real-data-dependent work is blocked because the five CSVs are absent. See [run instructions](running_phase_1.md), [audit status](../results/data_audit.md), and [executed checks](../results/phase1_checks.json). The list below describes the complete Phase 1 objective, not a claim that every data-dependent item is finished.
 
 ## Objective
 

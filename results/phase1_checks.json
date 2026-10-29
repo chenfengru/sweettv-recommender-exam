@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "scope": "synthetic fixtures only; no competition-data or model verification",
+  "generated_at_utc": "2026-10-29T17:35:38.736200+00:00",
+  "reproduction_command": "python -m unittest discover -s tests -v",
+  "tests_run": 24,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "elapsed_seconds": 0.08976533100008055,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "code_base_commit": "4e887dbbf53620f134b21feb13ac2e3a35eda8be",
+    "working_tree_dirty": true,
+    "source_sha256": {
+      "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+      "src/audit_data.py": "217f864df686c19719bcfc00f8f89ca2e4ff2fb74922eebab2ef47b1b2cbe808",
+      "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+      "src/intervals.py": "7a93326aea17ec938352c6c16e87d573ea51bedc43ec6532fb7adace3ffe000f",
+      "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+      "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6"
+    },
+    "peak_process_rss_bytes": 16515072,
+    "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+  },
+  "test_sha256": {
+    "tests/test_audit.py": "413a31df3ebc1f4ea3e6c94488fed122e670775f4c3ac5444304a5d5d31f1384",
+    "tests/test_intervals.py": "f611db736748789d27d573dea3c8832e46a278efa5a9662ec69a7b0c10059ef6",
+    "tests/test_metrics.py": "bd6356c0e95190d2fb8bd975583ba3113a143263144a81188e03fe6d239040ec",
+    "tests/test_submission.py": "1c8406a1f3094eba4f0c4f2fe21b97aaff94134fad1986064e51793322a35873"
+  },
+  "test_runner_output": "test_delimiter_encoding_and_bad_schema (test_audit.AuditTests.test_delimiter_encoding_and_bad_schema) ... ok\ntest_explicit_time_units_and_timezone (test_audit.AuditTests.test_explicit_time_units_and_timezone) ... ok\ntest_missing_inputs_report_contains_no_measurements (test_audit.AuditTests.test_missing_inputs_report_contains_no_measurements) ... ok\ntest_reservoir_sample_label_and_reproducibility (test_audit.AuditTests.test_reservoir_sample_label_and_reproducibility) ... ok\ntest_synthetic_known_counts_duplicates_units_and_overlap (test_audit.AuditTests.test_synthetic_known_counts_duplicates_units_and_overlap) ... ok\ntest_units_and_template_roles_are_not_guessed (test_audit.AuditTests.test_units_and_template_roles_are_not_guessed) ... ok\ntest_cutoff_clips_crossing_and_excludes_future_changes (test_intervals.IntervalTests.test_cutoff_clips_crossing_and_excludes_future_changes) ... ok\ntest_hand_calculated_cross_programme_view (test_intervals.IntervalTests.test_hand_calculated_cross_programme_view) ... ok\ntest_invalid_intervals_and_cutoffs_fail (test_intervals.IntervalTests.test_invalid_intervals_and_cutoffs_fail) ... ok\ntest_nested_intervals_and_adjacent_floats_terminate (test_intervals.IntervalTests.test_nested_intervals_and_adjacent_floats_terminate) ... ok\ntest_random_overlap_tree_matches_independent_reference (test_intervals.IntervalTests.test_random_overlap_tree_matches_independent_reference) ... ok\ntest_touching_channels_unlabelled_and_duplicate_rows (test_intervals.IntervalTests.test_touching_channels_unlabelled_and_duplicate_rows) ... ok\ntest_union_and_continuity_are_different (test_intervals.IntervalTests.test_union_and_continuity_are_different) ... ok\ntest_documented_ranking_examples (test_metrics.MetricTests.test_documented_ranking_examples) ... ok\ntest_duplicate_predictions_never_add_hits (test_metrics.MetricTests.test_duplicate_predictions_never_add_hits) ... ok\ntest_empty_truth_short_truth_and_cutoff (test_metrics.MetricTests.test_empty_truth_short_truth_and_cutoff) ... ok\ntest_fixed_cohort_includes_empty_truth (test_metrics.MetricTests.test_fixed_cohort_includes_empty_truth) ... ok\ntest_invalid_k (test_metrics.MetricTests.test_invalid_k) ... ok\ntest_bad_recommendation_lists (test_submission.SubmissionTests.test_bad_recommendation_lists) ... ok\ntest_candidates_use_only_explicit_schedule_and_exclude_zero (test_submission.SubmissionTests.test_candidates_use_only_explicit_schedule_and_exclude_zero) ... ok\ntest_duplicate_template_and_invalid_candidates (test_submission.SubmissionTests.test_duplicate_template_and_invalid_candidates) ... ok\ntest_missing_extra_reordered_or_coerced_users (test_submission.SubmissionTests.test_missing_extra_reordered_or_coerced_users) ... ok\ntest_valid_actual_template_order_and_text_ids (test_submission.SubmissionTests.test_valid_actual_template_order_and_text_ids) ... ok\ntest_wrong_header_or_malformed_row (test_submission.SubmissionTests.test_wrong_header_or_malformed_row) ... ok\n\n----------------------------------------------------------------------\nRan 24 tests in 0.084s\n\nOK\n",
+  "student_verification": "not performed by the student; pending"
+}

@@ -2,7 +2,7 @@
 
 Individual TV-programme recommendation project for LLM4Rec (FKN).
 
-**Current status: planning and source review only.** Raw competition data has not been inspected in this project. No models have been trained, no measured results are reported, and no Kaggle prediction has been submitted.
+**Current status: Phase 1 foundations implemented and checked on synthetic fixtures.** The original five CSV files are still missing. No real-data statistics or model scores have been measured, no models have been trained, and no Kaggle prediction has been submitted. See [the data audit status](results/data_audit.md) and [executed checks](results/phase1_checks.json).
 
 本仓库先固定任务与评估口径，再按阶段完成数据审查、推荐模型、比较实验和报告。
 
@@ -12,6 +12,19 @@ Individual TV-programme recommendation project for LLM4Rec (FKN).
 2. [Experiment protocol](docs/experiment_protocol.md): proposed design, assumptions, and unresolved decisions.
 3. [First Codex task](docs/phase_1_codex_task.md): data audit and small-scale verification.
 4. [Data location](data/README.md): obtain and store the five original files locally.
+5. [Run Phase 1](docs/running_phase_1.md): audit, tests, limitations, and the next command.
+6. [Student verification](docs/student_verification.md): small examples to check personally; not yet completed by the student.
+
+## Run the implemented tools
+
+Use Python 3.11 or newer. Phase 1 has no third-party Python dependencies.
+
+```bash
+python -m unittest discover -s tests -v
+python -m src.audit_data --data-dir data/raw --output-dir results
+```
+
+The second command currently writes a missing-input report and exits with code 2. After the five original CSVs are available, the same command profiles their schemas and raw values. Timestamp units, duration units, timezone, and template column roles are deliberately not guessed. Follow [the run guide](docs/running_phase_1.md) before converting intervals or training a model.
 
 ## Task and deadline
 
@@ -37,7 +50,7 @@ Model choice and performance are not established by this plan.
 
 ## Repository conventions
 
-- Code will live in `src/`, experiment configurations in `configs/`, and measured results in `results/`.
+- Implemented audit/evaluation code lives in `src/`, synthetic checks in `tests/`, and status/check records in `results/`. Model configurations will be added when the protocol is ready.
 - Raw data, caches, credentials, and original AI-session exports remain outside version control.
 - The exact final prediction CSV belongs in `submissions/`; this directory is deliberately not ignored.
 - Retain the tool-native, unmodified AI-session export for course submission. Git history does not replace it.
