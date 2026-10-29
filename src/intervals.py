@@ -58,7 +58,7 @@ def _eligible(airing, include_unlabelled):
 
 
 def match_reference(views, airings, *, cutoff=None, include_unlabelled=False):
-    """Independent brute-force oracle ONLY for small synthetic fixtures."""
+    """Independent brute-force oracle for small, bounded synthetic or real examples."""
     if cutoff is not None and not isfinite(cutoff):
         raise ValueError("cutoff must be finite")
     airings = list(airings)

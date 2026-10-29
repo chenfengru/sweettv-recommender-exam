@@ -33,3 +33,9 @@ Student's date, working and conclusion: **pending**.
 - [ ] Record the command, environment, actual output, and any discrepancy you investigated.
 
 Student's observations: **pending**.
+
+## 4. Local real-data example (29 October 2026)
+
+Codex located a real match and checked source record indices. The exact user ID, original viewing row, schedule row and hand-checkable intersections are retained privately in `artifacts/local_audit_20261029/checkable_example.json`. They are intentionally absent from public Git. Open that file locally, find the referenced original CSV records (header is record 1), calculate the overlap and fraction, and record your own working below only after doing so.
+
+Student date, working and conclusion: **pending**.

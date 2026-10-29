@@ -1,161 +1,54 @@
-# Experiment protocol - draft v0.2
+# Modelling specification v1
 
-**Status:** source-based analysis with implemented Phase 1 utilities checked on synthetic fixtures. No original CSV has been inspected or model run. Choices marked unresolved must be settled from data and task evidence before comparative experiments.
+Status: fixed local assumptions after the 29 October 2026 real-data audit; no model trained or Kaggle submission made. [Measured evidence](../results/local_audit_20261029/audit_review.md) and machine-readable run records distinguish observations from choices. Earlier foundation code was generated with ChatGPT; local execution and the added diagnostics were performed by Codex, not independently by the student. The historical implementation's target construction is accepted project context; it was not reviewed again.
 
-## Implementation evidence, 29 October 2026
+## Clock and temporal split
 
-- Implemented: streaming CSV audit, exact disk-backed per-file duplicate/cardinality counts, sampled duration quantiles, explicit timestamp/unit conversion, per-channel interval index with independent brute-force reference, segment-union diagnostics, AP/MAP, and template-based prediction validation.
-- Executed: synthetic unit tests and a real input-availability audit. See [check results](../results/phase1_checks.json) and [audit status](../results/data_audit.md).
-- Missing: all five original CSVs. No actual channel mapping, timestamp/duration unit, cutoff, coverage, label threshold, interaction weight, target, or template schema has been verified.
-- The cutoff invariance check covers the interval matcher only. An end-to-end feature/model leakage check must be added with those components.
-- The matcher preserves duplicate source rows. It exposes a union-duration helper but does not silently select a deduplication or continuity rule.
-- Full-data runtime and memory remain unmeasured. The audit uses disposable on-disk SQLite indexes; the matcher keeps a schedule index in memory and streams view queries.
+Both sources contain timezone-free civil timestamps. Parse views with `wall-iso` (`YYYY-MM-DD HH:MM:SS`) and schedules with `wall-dmy` (`DD.MM.YYYY HH:MM:SS`). Represent them as seconds since a naive 1970-01-01 reference solely for arithmetic. These numbers are not verified UTC instants; do not apply the Mac's timezone. A common source clock with zero offset between sources is an explicit local assumption supported by matching coverage and checked actual examples. The 117 one-hour duration discrepancies occur across 29 March; a clock change is plausible, but neither the timezone name nor DST handling is proven.
 
-This implementation does not freeze the proposed target construction or replace any unresolved protocol decision below.
-
-## 1. Main hypothesis
-
-Repeated viewing is likely useful for this task. Compare it explicitly with global popularity, content similarity, and implicit collaborative preferences. A more complex method is retained only if measured validation benefit justifies its cost.
-
-The public historical implementation is a reference, not a baseline already reproduced here. See [the original utils.py](https://github.com/ndmel/2nd_place_recsys_cinema_challenge_2020/blob/main/utils.py).
-
-## 2. Temporal design
-
-| Phase | Behaviour available for fitting | Prediction/evaluation window |
+| Phase | Fitting behaviour, half-open source wall time | Prediction window |
 | --- | --- | --- |
-| Initial method comparison | Weeks 11-20 | Weeks 21-30 |
-| Final refit after selection | Weeks 11-30 | Weeks 31-42 |
+| Comparison | [2020-03-09 00:00:00, 2020-05-18 00:00:00) | [2020-05-18 00:00:00, 2020-07-27 00:00:00) |
+| Selected-model refit | [2020-03-09 00:00:00, 2020-07-27 00:00:00) | [2020-07-27 00:00:00, 2020-10-19 00:00:00) |
 
-Use actual timestamps to implement these boundaries after inspecting the files. Do not assume the week labels are ISO week numbers or invent calendar dates. Record the source timezone, timestamp unit, and exact boundary instants.
+The 70/70/84-day windows follow the measured calendar ranges and retained week design. Midnight is the chosen reproducible cutoff, not a claim that every channel's schedule file begins then. Schedule files contain channel-specific broadcast-day tails extending to noon on the following Monday. Include all known airings intersecting the relevant window, carrying preceding-file airings across midnight. Clip viewing segments to the window; preserve the airing's original full duration as the watch-fraction denominator. Do not use rows lying wholly beyond the prediction window. For the final refit, partition and deduplicate the combined known schedules by canonical broadcast key.
 
-The 10-week validation horizon is reasonably close to the 12-week target horizon, but shorter training history and possible seasonal change limit comparability. This is a rationale, not evidence that local and Kaggle scores will correlate.
+## Cleaning and matching
 
-Clip crossing view intervals at the information cutoff; a training feature must never contain post-cutoff watch time. Auditing the held-out log is allowed, but its behavioural aggregates must not enter fitted features.
+1. Preserve raw inputs and string identifiers. Map source `duraton` to `declared_view_seconds`; use endpoint differences for interval arithmetic.
+2. Exclude nonpositive intervals. Exclude viewing rows with `abs(declared_view_seconds - wall_elapsed_seconds) > 1` or `wall_elapsed_seconds > 86400` from both fitted interactions and local truth. The observed union of these suspect classes is recorded in the cleaned audit. This is a conservative quality assumption, not proof that long sessions are false.
+3. Merge overlapping or touching intervals per user and channel. This removes duplicate log contributions without discarding legitimate repeated airings. Concurrent different-channel records remain separate exposures; do not interpret their summed time as unique human attention.
+4. Exclude schedules with duration <= 0. Deduplicate broadcasts on `(channel_id, start, end, tv_show_id)` while retaining metadata conflicts for inspection. No source row is rewritten.
+5. Use the existing same-channel half-open interval matcher; allocate actual overlap to every intersecting broadcast. Union segments per user-airing before measuring time. ID `0` supplies coverage diagnostics only.
+6. Where different nonzero IDs overlap on one channel, exclude both entire conflicting broadcasts from training/label attribution as a conservative rule. None occur in the two behavioural periods; four conflicting pairs occur in the future schedule. Their IDs remain permitted candidates because availability is still observed.
 
-Optional reranking must use training examples generated from earlier temporal cutoffs inside the fitting period. The main hold-out remains unused for fitting. Do not train base models on an example's target period before generating its scores.
+## Validation truth, separate from training confidence
 
-## 3. Matching viewing intervals to broadcasts
+For each cleaned user-airing pair, merge touching/overlapping viewing segments on that channel. Let `L_ua` be the longest merged block and `D_a` the original airing duration. A qualified airing satisfies `L_ua / D_a >= 0.8`. Count qualified airings by user/programme. Local truth is the first up to five distinct available programme IDs sorted by descending qualified-airing count, then ascending raw string programme ID. Do not count a source duplicate as another airing.
 
-1. Map vsetv_id to channel_id and verify the mapping in the data.
-2. Parse both sides' timestamps and verify schedule duration units independently.
-3. Use half-open intervals [start, end) on the same channel.
-4. Compute overlap_seconds = max(0, min(view_end, airing_end) - max(view_start, airing_start)).
-5. A view may match multiple consecutive airings. Allocate actual overlap to each; do not assign the whole view using only its start time.
-6. Exclude tv_show_id=0 from recommendable items; retain aggregate diagnostics about this airtime.
-7. Detect duplicate logs, duplicated/overlapping schedule rows, impossible durations, and very long view intervals. Quantify anomalies before deciding how to repair or exclude them.
+The 80% threshold retains thousands of evaluable users; measured 50/80/90% sensitivity is in the audit. Summing disconnected blocks yields more positives, so the longest-block choice deliberately requires stronger session evidence. This remains an observed-session proxy, not confirmed uninterrupted attention. Top-five frequency follows the established historical implementation as a local hypothesis; the hidden evaluator is unknown. Freeze this target before model comparisons and never choose the target definition by whichever gives a better score. An all-qualified-ID target may be reported only as a separately labelled sensitivity analysis.
 
-Use per-channel sorting plus an interval sweep, indexed lookup, or an equivalent bounded interval-join algorithm. Do not materialize all same-channel view/schedule pairs. Allow for genuine schedule overlaps and test multiple-match cases.
+Main cohort: all observed users with at least one qualified held-out target, including users without qualified training history. Report excluded users, template overlap, and cold-start counts. Use the identical user set and truth for all four methods. Empty-truth AP is defined as zero by the metric utility but those users are outside the main local cohort; report an all-observed-user diagnostic separately if used.
 
-For repeated segments within one airing, distinguish:
-- longest continuous viewing overlap; and
-- union of viewing segments, without double counting overlapping intervals.
+## Training interactions and methods
 
-**Unresolved:** which continuity definition best matches the task's positives. Historical documentation mentions continuous watching; summing disconnected sessions may create a different target.
+For every cleaned user-airing pair with positive overlap, define `q_ua = union_overlap_seconds / D_a`, capped at 1. Aggregate `s_ui = sum(q_ua)` across pre-cutoff airings of programme i. Use `w_ui = log(1 + s_ui)` for the initial CBF profile and MF strength. There is no minimum watch-fraction threshold for this softer training signal and no recency term initially. Programme normalization avoids making duration alone dominate; unioning prevents duplicate sessions from increasing confidence. These are initial modelling choices, not measured optimal weights.
 
-## 4. Positive labels and interaction weights
+| Method | Initial specification |
+| --- | --- |
+| Global popularity | Number of distinct qualified training viewers; break ties by qualified training user-airing count, then ascending string ID |
+| Personal repeat-frequency | Qualified training airing counts per user; same deterministic ID tie-break; complete using shared popularity |
+| Content-based filtering | Sparse category/genre multi-hot vectors, L2 normalized; user profile is the normalized weighted sum using `w_ui`; cosine score |
+| Implicit MF | Sparse implicit ALS; preference `p_ui = 1[s_ui > 0]`, confidence `c_ui = 1 + 40*w_ui` for observed interactions and 1 for unobserved pairs; seed 42 |
 
-The log does not contain programme-normalized watch percentages. Derive them only after programme duration has been verified.
+The MF confidence multiplier 40 is an initial assumption. Freeze a small search budget before running: factors {32, 64}, regularization {0.01, 0.1}, 20 iterations; select on the unchanged hold-out. Verify the chosen library's confidence convention before implementation. CBF starts with category/genre only. Build metadata representations from airings starting before the fit cutoff; use the modal tuple per item, breaking tuple ties lexicographically. Do not fit text vocabulary, feature weights, or profiles on held-out behaviour. Future schedule channel/time/availability are allowed; future behaviour is forbidden. Conflicting titles/categories are not a reason to merge programme IDs.
 
-A source-code review found that the historical get_target:
-- keeps rows with user_watch_perc >= 0.8;
-- counts them by user and programme;
-- keeps up to five most frequent programmes for each user.
+## Shared candidates, repeats, and fallback
 
-This is evidence about that author's implementation, **not confirmation of Kaggle's hidden evaluator**. Before freezing local truth, determine whether the competition target is the user's five most-frequent qualified programmes or all qualified programmes. These produce different MAP@5 denominators and targets.
+A candidate is a distinct nonzero ID with a positive-duration airing intersecting the prediction window, including known preceding-file carryovers. Use exactly the same candidates across methods. Previously watched programmes remain eligible. Complete every list using the qualified-viewer popularity order restricted to candidates, excluding IDs already selected. Candidate IDs with no training popularity follow in ascending raw string ID. This guarantees a deterministic five-ID fallback if at least five candidates exist. Users without model representations use this same ordering. Keep final template row order and headers `user_id,tv_show_id`; serialize five distinct IDs with single spaces.
 
-**Provisional candidate:** use an 80% continuous-overlap threshold and at most five most-frequent programmes for local truth if task evidence supports that construction. Freeze a deterministic tie-break and record its limitations. Otherwise document the supported alternative before comparing models.
+## Concrete next task
 
-Keep target construction separate from training confidence weights. Training may use lower-threshold counts, overlap duration, log-scaled frequency, and recency, without redefining validation truth per method.
+Implement a reusable, disk-backed interaction builder following this specification, then run popularity, personal-frequency, CBF, and implicit MF on the fixed hold-out. Check that changing post-cutoff behaviour cannot change fitting features, parameters, or predictions. Confirm candidates and truth are contained in the documented windows and final predictions cover all 1,260 template users. Record MAP@5, cohort counts, history-size slices, fallback share, catalogue/repeat coverage, environment, runtime and peak RSS. Select the same history-rich and history-poor users from pre-cutoff history for all methods; preserve their user-level evidence privately and use IDs/titles/categories in the later report. No training or submission belongs to this audit round.
 
-Threshold choice must be justified with observed duration distributions and coverage. Do not tune the definition of success to make a model's score look better.
-
-## 5. Candidates, repeats, and shared fallback
-
-- For a given prediction window, use one candidate set of distinct nonzero IDs with labelled airings in that window's permitted schedule.
-- Keep previously watched programmes eligible for every method.
-- Use only pre-cutoff behavioural data for popularity, user profiles, and learned models.
-- Initially build CBF attributes from permitted training-period metadata. Record item metadata conflicts and missing attributes; do not silently assume unrestricted use of every test-schedule field.
-- For users with no usable history, return the same global-popularity list restricted to valid candidates.
-- Proposed popularity: distinct qualified training viewers per programme; break ties by qualified airing count, then a deterministic ID order.
-- Where a method has fewer than five supported scores, append unseen-in-the-list valid candidates using that same popularity order.
-- Every output contains exactly five distinct, nonzero, valid IDs. If the candidate set itself has fewer than five IDs, report a data/protocol error instead of inventing IDs.
-
-## 6. Methods to compare
-
-| Method | Proposed definition | Main diagnostic |
-| --- | --- | --- |
-| Popularity | Global training viewer counts | How much is explained by common items? |
-| Personal frequency | User's qualified programme counts, optionally recency-weighted | How much is repeat behaviour? |
-| CBF | Category/genre and other documented attributes; normalized item vectors; user profile from training history | Can content help sparse histories? |
-| Implicit MF | Sparse user-item interactions; confidence-weighted factorization | Does collaborative structure add value? |
-
-Start CBF with structured category/genre features; add richer attributes only after auditing availability and consistency. Do not begin with LLM generation.
-
-For MF, unobserved interactions are not known negative ratings. Use an implicit-feedback objective. Evaluate small configurations and record the actual package/API used rather than copying old code blindly.
-
-A shared candidate pool does not require all models to have a trained representation for every candidate. Missing representations must use the documented shared completion policy and appear in diagnostics.
-
-## 7. Metrics and cohort definition
-
-Let R_u be the distinct held-out relevant IDs for user u. For K=5:
-
-- P_u(r) = number of distinct relevant hits in the first r positions / r.
-- AP_u@5 = sum over ranks 1..5 of P_u(r) times the relevant-hit indicator, divided by min(5, |R_u|).
-- MAP@5 is the unweighted mean across the fixed evaluation cohort.
-- A duplicate prediction earns no additional hit. The submission validator rejects duplicates.
-
-**Proposed main validation cohort:** users with at least one qualifying held-out target, including those with no usable training history. Report the count excluded for having no evaluable target; do not imply unlabelled viewing proves disinterest. Freeze this policy identically across methods and reconcile it with any available official evaluator convention. The metric utility should separately define empty-ground-truth behaviour (return 0) for explicit use cases.
-
-Generate final predictions for every template user, including cold-start users. Report validation overlap with the test-user list; if useful, add a clearly labelled test-user-overlap diagnostic without replacing the main cohort opportunistically.
-
-Report:
-- MAP@5 overall and by training-history size;
-- user count in every slice;
-- fraction of predictions using fallback;
-- catalogue coverage and repeated-item share as descriptive measures;
-- training/inference runtime, environment, and measured peak memory where available.
-
-No fabricated online lift, engagement, satisfaction, or revenue claims.
-
-## 8. Required coverage audit
-
-Measure and name denominators separately:
-1. nonzero-ID schedule-row fraction by period;
-2. view-row fraction with any valid programme match;
-3. fraction of logged viewing seconds matched to valid labelled airings;
-4. template users with at least one usable training interaction;
-5. candidate IDs lacking training interactions or usable content attributes.
-
-For watch-time coverage, avoid double counting overlap across duplicate/overlapping schedule rows; describe whether concurrent viewing logs are counted per session or per user-time.
-
-Do not convert the instructor's 10.8% schedule-row statistic into any of these other quantities.
-
-## 9. Verification examples
-
-Use synthetic examples to check code without claiming student verification:
-
-- View 19:50-20:30; same-channel airings 19:30-20:00 and 20:00-21:00: overlaps 600 and 1800 seconds.
-- Touching endpoints yield zero overlap; a different channel yields no match.
-- Relevant {A,B,C}; prediction [A,B,D,C,E]: AP@5 = 11/12.
-- Relevant {A,B,C}; prediction [D,A,E,B,C]: AP@5 = 8/15.
-- Check duplicate predictions, empty truth, fewer-than-five truth IDs, and unknown IDs.
-- Compare an optimized matcher against a simple brute-force reference on a small controlled sample.
-- Verify that modifying post-cutoff viewer behaviour cannot change training features or predictions.
-
-Provide a short separate checklist of examples the student can personally verify. Only record completion after the student actually performs it.
-
-## 10. Experiment and submission discipline
-
-Every result should record input hashes, code commit, protocol version, exact temporal cutoffs, method/configuration, seed, metric cohort size, scores, timing, and output location.
-
-First implement and evaluate the four baseline/method rows. Try simple rank fusion next; use a learned reranker only if time and temporal training design permit. Freeze a small search budget before tuning.
-
-With the user-reported daily quota of five, reserve an attempt for final correction. Submit meaningful candidates selected with local evidence; do not tune hundreds of decisions directly against the returned private score.
-
-Private MAP@5 around 0.43 is an external historical reference and an aspirational target, not a verified full-mark cutoff. The actual ranking award depends on current-cohort results.
-
-## 11. Two-user analysis
-
-Choose users using pre-cutoff characteristics, such as one history-rich and one history-poor viewer. Use the same users for every method and show ID, title, category, past history, and held-out hits. Selection should not depend solely on obtaining flattering examples.
-
-Explain failure cases supported by the actual outputs: missing item IDs, unavailable programmes, cold-start, concentrated popularity, sparse metadata, or unsuccessful generalization. An unfamiliar recommendation is not automatically valuable discovery.
+After comparison, refit the selected configuration on weeks 11–30 and validate the exact final CSV. A later designated Kaggle submission must be recorded with its returned private score and screenshot; the daily limit is five. The course submission remains exactly the report PDF and the original unmodified AI-session export. Keep raw data, credentials and session exports out of public Git. Student verification remains pending until personally performed.

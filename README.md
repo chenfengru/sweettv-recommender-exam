@@ -2,9 +2,7 @@
 
 Individual TV-programme recommendation project for LLM4Rec (FKN).
 
-**Current status: Phase 1 foundations implemented and checked on synthetic fixtures.** The original five CSV files are still missing. No real-data statistics or model scores have been measured, no models have been trained, and no Kaggle prediction has been submitted. See [the data audit status](results/data_audit.md) and [executed checks](results/phase1_checks.json).
-
-本仓库先固定任务与评估口径，再按阶段完成数据审查、推荐模型、比较实验和报告。
+**Current status: real-data audit and modelling specification completed locally on 29 October 2026.** See [measured audit findings](results/local_audit_20261029/audit_review.md), [run records](results/local_audit_20261029/commands.txt), and the [fixed local protocol](docs/experiment_protocol.md). No recommendation models have been trained or submitted. Student verification is pending. Earlier synthetic and missing-input records remain historical evidence.
 
 ## Start here
 
@@ -17,7 +15,7 @@ Individual TV-programme recommendation project for LLM4Rec (FKN).
 
 ## Run the implemented tools
 
-Use Python 3.11 or newer. Phase 1 has no third-party Python dependencies.
+Phase 1 has no third-party Python dependencies; Python 3.10.11 was used successfully for the measured local run. Python 3.11+ remains suitable.
 
 ```bash
 SWEETTV_DATA_DIR="$HOME/LLM4Rec-Course-codex/data/sweettv/raw"
@@ -25,7 +23,7 @@ python -m unittest discover -s tests -v
 python -m src.audit_data --data-dir "$SWEETTV_DATA_DIR" --output-dir results
 ```
 
-The user-selected data location is inside the existing `LLM4Rec-Course-codex` course folder. Run these commands from the exam repository root. If inputs are missing, the audit writes a missing-input report and exits with code 2; otherwise it profiles their schemas and raw values. The committed audit records an earlier check in the assistant workspace, not an inspection of the user's Mac. Timestamp units, duration units, timezone, and template column roles are deliberately not guessed. Follow [the run guide](docs/running_phase_1.md) before converting intervals or training a model.
+The supplied files remain in the external course data folder, locally excluded from Git. Use a fresh output directory to preserve previous execution records. The source timezone is unknown; follow the explicit wall-clock parsing and carryover-aware matching commands in [the run guide](docs/running_phase_1.md).
 
 ## Task and deadline
 

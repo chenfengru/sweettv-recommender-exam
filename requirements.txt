@@ -1,3 +1,3 @@
-# Phase 1 uses only the Python 3.11+ standard library.
+# Phase 1 uses only the Python 3.10+ standard library.
 # An IANA timezone database is needed only for --naive-timezone.
 # Model dependencies will be pinned after the data/protocol review.

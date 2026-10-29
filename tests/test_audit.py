@@ -82,6 +82,18 @@ class AuditTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 parse_timestamp(value, fmt, zone)
 
+    def test_actual_source_wall_clock_formats(self):
+        # Source formats, not a claim about their unknown timezone.
+        start = parse_timestamp("2020-03-09 00:00:02", "wall-iso")
+        stop = parse_timestamp("2020-03-09 00:01:53", "wall-iso")
+        self.assertEqual(stop - start, 111)
+        self.assertEqual(parse_timestamp("09.03.2020 06:00:00", "wall-dmy"),
+                         parse_timestamp("2020-03-09 06:00:00", "wall-iso"))
+        self.assertEqual(parse_timestamp("18.05.2020 00:00:00", "wall-dmy") -
+                         parse_timestamp("2020-03-09 00:00:00", "wall-iso"), 70 * 86400)
+        with self.assertRaises(ValueError):
+            parse_timestamp("2020-03-09T06:00:00+03:00", "wall-iso")
+
     def test_reservoir_sample_label_and_reproducibility(self):
         first, second = NumericSummary(10, 42), NumericSummary(10, 42)
         for value in range(100):

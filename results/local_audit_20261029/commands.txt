@@ -1,0 +1,24 @@
+Working directory: /Users/chenfengru/sweettv-recommender-exam
+Initial clone: git clone https://github.com/chenfengru/sweettv-recommender-exam.git /Users/chenfengru/sweettv-recommender-exam
+Branch: git switch -c codex/real-data-audit
+Baseline (before parser changes): python3 -m unittest discover -s tests -v
+Result: 24 tests passed in 0.131 seconds (native session output).
+After parser support: same command; 24 passed in 0.120 seconds; tests_baseline_and_parser.txt.
+
+python3 -m src.audit_data --data-dir /Users/chenfengru/LLM4Rec-Course-codex/data/sweettv/raw --output-dir results/local_audit_20261029 --view-time-format wall-iso --schedule-time-format wall-dmy --view-duration-unit seconds --schedule-duration-unit seconds --template-user-column user_id
+
+python3 -m src.real_matching_audit --data-dir /Users/chenfengru/LLM4Rec-Course-codex/data/sweettv/raw --output-dir results/local_audit_20261029 --private-dir artifacts/local_audit_20261029
+
+Final regression command: python3 -m unittest discover -s tests -v
+Environment snapshot commands and return codes: host_measurements.json.
+Original foundation: earlier ChatGPT-generated implementation at the recorded base commit; reused, not student-authored or student-verified. Historical results in results/data_audit.* and results/phase1_checks.json preserved untouched.
+Native current session identified once; actual private path recorded in ignored artifacts/session_provenance.txt. No session text reconstructed or modified. Native file continues accumulating this chat; retain the original export after the session ends.
+
+Anomaly follow-up:
+python3 -m src.audit_anomalies --data-dir /Users/chenfengru/LLM4Rec-Course-codex/data/sweettv/raw --output-dir results/local_audit_20261029 --private-dir artifacts/local_audit_20261029
+Final corrected matching:
+python3 -m src.real_matching_audit --data-dir /Users/chenfengru/LLM4Rec-Course-codex/data/sweettv/raw --output-dir results/local_audit_20261029/cleaned --private-dir artifacts/local_audit_20261029/cleaned --exclude-suspect-views
+The earlier filtered run without carryovers is retained in cleaned_before_carryover/. It used the same command before the carryover correction.
+The unfiltered user-time union follow-up used the SQL and streaming merge procedure in user_time_union.json, against the initial unfiltered matching.sqlite database. Runtime is recorded there.
+One initial anomaly follow-up read all inputs but failed to write results because the checkout lies outside the default writable folder. It was rerun successfully with the required filesystem access. No input was changed.
+The anomaly follow-up was repeated to add cross-file boundary checks; the final measured execution is anomaly_audit.json (26.02 seconds).
