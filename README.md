@@ -2,7 +2,7 @@
 
 Individual TV-programme recommendation project for LLM4Rec (FKN).
 
-**Current status: local four-method comparison completed on 29 October 2026.** [Actual comparison and recommendation](results/model_comparison_20261029/comparison_report.md): personal frequency MAP@5 **0.317490**, popularity **0.234407**, implicit ALS **0.087237**, CBF **0.024851**, on the same 4,625 users and 6,384 candidates. All 28 tests pass, including full pipeline cutoff checks. No Kaggle submission, hybrid or final model refit has been performed. Student verification remains pending. Historical audit/synthetic records remain unchanged.
+**Current status: first benchmark prediction CSV generated and validated on 29 October 2026; user requested manual Kaggle upload.** [Download the exact final-window CSV](submissions/first_personal_original_20261029_v1.csv) and read the [recency experiment, combined refit and handoff record](results/first_submission_20261029/first_submission_report.md). Original personal frequency remains selected (local MAP@5 0.317490); the 28/56-day variants did not improve it. All 30 tests pass. No automated Kaggle submission or returned score has been verified. Student verification remains pending. Historical comparison and audit records are preserved.
 
 ## Start here
 

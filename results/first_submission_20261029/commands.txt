@@ -1,0 +1,12 @@
+Working directory: /Users/chenfengru/sweettv-recommender-exam
+Base commit: 588d9b8ce5c767c5acaa0d14ea1837c531ab3a17
+Clock check at start: 2026-10-29 20:03:59 UTC = 23:03:59 Europe/Moscow; before the requested midnight target.
+Python: /private/tmp/sweettv-model-venv/bin/python
+All Python commands used OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1.
+
+python -m unittest discover -s tests -v
+python -m src.first_submission --data-dir /Users/chenfengru/LLM4Rec-Course-codex/data/sweettv/raw --output-dir results/first_submission_20261029 --private-dir artifacts/first_submission_20261029
+python -m src.validate_submission --template /Users/chenfengru/LLM4Rec-Course-codex/data/sweettv/raw/submission.csv --predictions submissions/first_personal_original_20261029_v1.csv --schedule results/first_submission_20261029/final_window_candidate_ids.csv --user-column user_id --prediction-column tv_show_id
+
+The first-submission module creates artifacts only; it never calls Kaggle. It requires the previous model-comparison private cache; reproduce that stage first on a fresh checkout. It refuses to overwrite the versioned v1 CSV. Native transcript output records the actual original commands.
+The original Kaggle browser was authenticated; its visible form displayed quota 100 before upload. Browser fileChooser.setFiles failed on the extension local-file permission. No Submit action was clicked. The user then requested manual upload; all automated upload work stopped. No API call, credential extraction, account creation, agreement acceptance or second upload was performed.

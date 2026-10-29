@@ -1,6 +1,6 @@
 # Modelling specification v1.1 — causal comparison execution
 
-Status: all four individual methods executed locally on 29 October 2026 under the fixed 4,625-user cohort and 6,384 validation candidates. See the [comparison report](../results/model_comparison_20261029/comparison_report.md), [reproduction guide](running_model_comparison.md), and [established audit](../results/local_audit_20261029/audit_review.md). No hybrid, final model refit or Kaggle submission has been performed. The original ChatGPT-generated foundation was reused; automated execution was performed by Codex, not independently by the student. Student verification remains pending.
+Status: all four individual methods executed locally on 29 October 2026 under the fixed 4,625-user cohort and 6,384 validation candidates. See the [comparison report](../results/model_comparison_20261029/comparison_report.md), [reproduction guide](running_model_comparison.md), and [established audit](../results/local_audit_20261029/audit_review.md). No hybrid has been performed. A later authorized first-benchmark stage refitted original personal frequency on the combined weeks 11–30 window and generated a validated final-window CSV; the user requested manual Kaggle upload. No submitted Kaggle score is verified. See the [first-artifact record](../results/first_submission_20261029/first_submission_report.md). The original ChatGPT-generated foundation was reused; automated execution was performed by Codex, not independently by the student. Student verification remains pending.
 
 ## Clock and temporal split
 
