@@ -19,6 +19,12 @@ Local MAP@5: original 0.317489729730, A 0.316052492492, B 0.326853993994. B is s
 
 The user now confirms that the previously reviewed RRF CSV was manually submitted with private 0.38663/public 0.38852, below the original baseline’s 0.38937/0.39131. [New screenshot-score provenance](../results/personal_ties_20261030_v3/submitted_score_evidence.json) preserves both CSV identities and leaves unknown submission IDs/timestamps null. The original baseline remains the best submitted model. Stop for user review; uploads remain manual-only and student verification remains pending.
 
+## Frozen scheduled-opportunity / qualified-week round
+
+The user confirms v3 was manually submitted with screenshot Private Score 0.39697 / Public Score 0.40288. Its CSV and all previous artifacts are unchanged. The exact C/D definitions, auxiliary window and two-split selection rule were [frozen before execution](opportunity_week_protocol.md), with timestamp and definition hash in [the run record](../results/opportunity_week_20261030_v4/frozen_experiment.json).
+
+The [completed report](../results/opportunity_week_20261030_v4/comparison_report.md) retains v3: C’s delta is +0.001153 on main and −0.001266 on auxiliary; D’s is −0.001136 and −0.000615. Main has the fixed 4,625 users/6,384 candidates; the rebuilt auxiliary has 4,589/5,742. Raw MAP values across these differing overlapping tasks are not direct performance comparisons. Neither variant passes the predeclared strict-improvement-on-both rule. No new final refit or CSV was generated. All 42 tests pass. Stop for user review; no Kaggle workflow was used and any upload remains manual-only.
+
 ## Clock and temporal split
 
 Both sources contain timezone-free civil timestamps. Parse views with `wall-iso` (`YYYY-MM-DD HH:MM:SS`) and schedules with `wall-dmy` (`DD.MM.YYYY HH:MM:SS`). Represent them as seconds since a naive 1970-01-01 reference solely for arithmetic. These numbers are not verified UTC instants; do not apply the Mac's timezone. A common source clock with zero offset between sources is an explicit local assumption supported by matching coverage and checked actual examples. The 117 one-hour duration discrepancies occur across 29 March; a clock change is plausible, but neither the timezone name nor DST handling is proven.

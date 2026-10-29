@@ -1,18 +1,15 @@
-# Versioned prediction artifacts
-
-## Submitted files — preserved unchanged
+# Preserved prediction artifacts
 
 | File | User-confirmed Private / Public Score | SHA-256 |
 | --- | --- | --- |
-| `first_personal_original_20261029_v1.csv` | **0.38937 / 0.39131** | `53cb8ae4b59b26ab6ee00b5e99ad91044876180e662732a755d3e99a297e64bc` |
+| `first_personal_original_20261029_v1.csv` | 0.38937 / 0.39131 | `53cb8ae4b59b26ab6ee00b5e99ad91044876180e662732a755d3e99a297e64bc` |
 | `candidate_rrf_als_lb80_w0p1_20261029_v2.csv` | 0.38663 / 0.38852 | `905971a8a9c47bcf4a88e14cd10d2514feaaea43900d6f513b2eecc4986f19f5` |
+| `candidate_personal_tie_popularity_20261030_v3.csv` | **0.39697 / 0.40288** | `39aac2794395209b2299ccee2e2bb1b4b9afde22f3e06ccb5b04f3d706c9522f` |
 
-The original personal-frequency model remains the best submitted baseline. The user supplied these results from Kaggle screenshots; no submission IDs or timestamps are invented. [Score provenance](../results/personal_ties_20261030_v3/submitted_score_evidence.json) distinguishes these user reports from local validation and direct tool measurements. The v2 filename retains its original candidate name even though the user now confirms it was submitted.
+The user confirms these scores from Kaggle screenshots. They are not independently fetched in this experiment, and no unknown submission identifiers/timestamps are invented. The filenames retain their original candidate names after the user’s manual submissions. Every file remains byte-for-byte unchanged; v3 is the best submitted baseline.
 
-## New review candidate — not submitted
+## Latest C/D round: no new candidate
 
-`candidate_personal_tie_popularity_20261030_v3.csv` keeps personal qualified-airing counts primary, then uses global qualified viewers, total qualified user-airings, and raw programme ID. SHA-256: `39aac2794395209b2299ccee2e2bb1b4b9afde22f3e06ccb5b04f3d706c9522f`.
+[The frozen scheduled-opportunity / qualified-week experiment](../results/opportunity_week_20261030_v4/comparison_report.md) tested exactly C and D against v3 on the main and one overlapping auxiliary split. C has mixed signs; D is negative on both. Neither improves both windows, so v3 is retained and **no additional prediction CSV or final refit was generated**. The main split uses 4,625 users/6,384 candidates; the auxiliary has 4,589 users/5,742 candidates. Their raw MAP values describe different tasks and must not be treated as interchangeable.
 
-Local MAP@5 is **0.326854**, +0.009364 over the original 0.317490. The conditional paired-user bootstrap interval is positive; selection on the reused hold-out and the earlier fusion’s lower returned scores remain limitations. See the [English review report](../results/personal_ties_20261030_v3/tie_break_report.md). Both validators pass for all 1,260 users, K=5 and 6,649 final-window candidates, preserving exact header/order. The file changes 739 users’ ordered lists and 1,620/6,300 rank-position slots versus the exact submitted personal baseline.
-
-Recommendation: worth one manual benchmark after user review; no Kaggle score is assigned to this new file. All uploads are performed manually by the user. Approval of experiment results never authorizes automated upload or submission. Existing files are never overwritten; caches, credentials, raw histories and native session records remain outside Git.
+V3 already preserves the original template header/order, five distinct nonzero available IDs for all 1,260 users, and the exact 6,649-ID final-window pool. Its recorded validation remains associated with the unchanged checksum. Caches, credentials, raw histories and original native session exports remain outside Git. Uploads are manual-only by the user; approval of results never authorizes an automated upload or submission workflow.

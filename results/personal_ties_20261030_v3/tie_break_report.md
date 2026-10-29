@@ -137,3 +137,7 @@ All **37 tests pass**: the existing 33 plus four focused checks for primary-coun
 Private per-user ranks, latest features and AP values are ignored under `artifacts/personal_ties_20261030_v3/`. Raw inputs and credentials remain outside Git. Both submitted CSVs and failed historical validator evidence are preserved. The original native session transcript remains unmodified; student verification is pending.
 
 **Manual submission recommendation: yes, Variant B is worth one reviewed benchmark submission.** The local gain is +0.009364 with a positive conditional interval, while retaining personal-frequency count precedence. The earlier fusion’s worse reported Kaggle result is a concrete limitation on extrapolating validation gains. The original baseline remains the best submitted model until an actual new result is supplied. No Kaggle page, upload workflow, Submit action or API was used. Stop and wait for user review.
+
+## Later user-confirmed v3 outcome
+
+The user subsequently confirms manual submission of this exact unchanged v3 CSV with screenshot Private Score **0.39697**, Public Score **0.40288**. It is now the best submitted baseline. See [the later provenance record](../opportunity_week_20261030_v4/baseline_score_evidence.json). No submission ID or timestamp is invented. The next predeclared C/D robustness round retains v3 and generates no new CSV; its separate report preserves these historical local measurements and the original file.

@@ -1,0 +1,18 @@
+Working directory: /Users/chenfengru/sweettv-recommender-exam
+Base commit: e8bbd605d72feb25994a3fc561aa928f1ab0f239
+Python: /private/tmp/sweettv-model-venv/bin/python
+All numerical commands used OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1.
+
+Before execution, docs/opportunity_week_protocol.md and frozen_experiment.json recorded the exact definitions, two temporal splits, diagnostics and selection rule. The recorded definition SHA-256 is asserted unchanged by the runner.
+
+python -m unittest discover -s tests -v
+python -m src.experiment_opportunity_week --data-dir /Users/chenfengru/LLM4Rec-Course-codex/data/sweettv/raw --output-dir results/opportunity_week_20261030_v4 --private-dir artifacts/opportunity_week_20261030_v4
+python -m src.report_opportunity_week --output-dir results/opportunity_week_20261030_v4
+python -m compileall -q src tests
+git diff --check
+
+The existing main interactions/truth and exact v3 predictions were reused/reconciled. The auxiliary fitting [2020-03-09,2020-06-01) and validation [2020-06-01,2020-07-27) interactions were rebuilt through src.interactions.extract_interactions, in separate private caches. Candidates/opportunity counts, qualified-week features, global statistics and truth were calculated for their own windows; auxiliary counts were not forced to match main.
+Exactly two new variants were evaluated on each prescribed split. No C/D combination, decay, weight, altered qualification or further temporal comparison was tried. Bootstrap uses 2000 paired cohort resamples, seed 42, shared C/D indices within each split.
+Neither variant improves v3 on both splits. Selection retains v3, and no new final-window refit or submission CSV was generated. Existing files, checksums and native session transcript remain unchanged; student verification is pending.
+For a reproducibility replay, create fresh result/private directories and first copy the committed frozen_experiment.json into the new result directory. Keep its linked definition file unchanged. Pass the new directories to the same command; a fresh --candidate-path may be supplied if replaying in a context where a candidate could be selected. Previous interaction-cache stages must exist or be reproduced as documented. Existing artifacts are never overwritten.
+No Kaggle page, upload workflow, Submit action or submission API was used. Only the user may upload; there is no new file to review for upload this round.

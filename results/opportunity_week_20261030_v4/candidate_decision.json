@@ -1,0 +1,4 @@
+{
+  "decision": "Neither variant uniquely satisfies improvement on both splits; retain submitted v3 and generate no new prediction CSV.",
+  "selection": "v3"
+}

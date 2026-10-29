@@ -2,7 +2,7 @@
 
 Individual TV-programme recommendation project for LLM4Rec (FKN).
 
-**Current status: bounded personal-frequency tie-break experiment completed; stop for manual review.** Original personal frequency remains the best submitted baseline (user-confirmed private **0.38937**, public **0.39131**); the submitted RRF candidate scored lower (**0.38663 / 0.38852**). The new global-popularity tie-break scores **0.326854** locally versus **0.317490**, preserving personal counts as the primary key. Its positive conditional bootstrap interval supports one reviewed manual benchmark, with no Kaggle guarantee. [Review results and tie diagnostics](results/personal_ties_20261030_v3/tie_break_report.md) and [validated candidate CSV](submissions/candidate_personal_tie_popularity_20261030_v3.csv). All 37 tests pass. No Kaggle workflow was used; uploads are manual-only. Student verification remains pending.
+**Current status: retain submitted v3; no new CSV from the C/D experiment.** User-confirmed screenshot scores for v3 are private **0.39697**, public **0.40288**. Scheduled-airing tie-break C changes MAP@5 by **+0.001153** on the main split but **−0.001266** on the predeclared overlapping auxiliary split. Distinct-qualified-week tie-break D is negative on both. Neither passes the frozen two-split selection rule. [Full English results, feature diagnostics and uncertainty](results/opportunity_week_20261030_v4/comparison_report.md). All **42 tests pass**. Previous CSVs and native session records are unchanged; no Kaggle workflow was used. Stop for user review; uploads remain manual-only and student verification is pending.
 
 ## Start here
 

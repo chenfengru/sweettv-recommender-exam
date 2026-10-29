@@ -1,0 +1,45 @@
+{
+  "ties": {
+    "cohort_users": 4589,
+    "features": {
+      "C": {
+        "any_equal_count_group_distinguished": 4365,
+        "top5_relevant_tie_group_distinguished": 3710,
+        "within_selected_top5_tie_distinguished": 3179,
+        "fifth_boundary_tie_distinguished": 2404
+      },
+      "D": {
+        "any_equal_count_group_distinguished": 2639,
+        "top5_relevant_tie_group_distinguished": 1957,
+        "within_selected_top5_tie_distinguished": 1476,
+        "fifth_boundary_tie_distinguished": 898
+      }
+    },
+    "definitions": "Potential distinctions within positive-count available items. Relevant groups intersect baseline direct top5; within-selected compares selected members only; boundary uses baseline count at ranks5/6. Fallback excluded. Counts need not equal actual changes."
+  },
+  "schedule": {
+    "intersecting_source_rows": 98071,
+    "duplicate_canonical_rows_beyond_first": 0,
+    "canonical_intersecting_airings": 98071,
+    "distinct_programme_ids": 5742,
+    "minimum_airings_per_item": 1,
+    "maximum_airings_per_item": 4884,
+    "feature_fields": [
+      "tv_show_id",
+      "channel_id",
+      "start_time",
+      "duration"
+    ],
+    "interval_rule": "half-open intersection; canonical full endpoints preserved; distinct channels counted separately"
+  },
+  "weeks": {
+    "qualified_user_airings": 352391,
+    "first_observed_start_min": 1583716560.0,
+    "first_observed_start_max": 1590968480.0,
+    "fit_start": 1583712000.0,
+    "cutoff": 1590969600.0,
+    "maximum_distinct_weeks": 12,
+    "week_rule": "source-wall-calendar Monday; qualified airing assigned once by first observed clipped segment start"
+  },
+  "week_extraction_seconds": 4.2653947500512
+}
