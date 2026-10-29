@@ -11,6 +11,14 @@ The requested ≥50%/≥80% ALS airing filters, exact-only CBF popularity tie-br
 
 **Workflow override:** stop for user review. Kaggle uploads are manual-only by the user. Do not upload a file, click Submit, call a submission API or initiate any automated submission workflow; user approval of results does not authorize those actions. Student verification remains pending.
 
+## Personal-frequency count-tie stage
+
+Exactly two secondary-key variants were evaluated while keeping personal qualified counts primary. Variant A uses the latest observed pre-cutoff segment end belonging to a qualified airing (never a future broadcast end); Variant B uses existing distinct qualified viewers, total qualified user-airings and raw ID. All counts, targets, windows, candidates, repeat and fallback rules remain unchanged.
+
+Local MAP@5: original 0.317489729730, A 0.316052492492, B 0.326853993994. B is selected with a positive conditional paired-bootstrap difference interval [0.007631601, 0.011085536], subject to reused-hold-out selection uncertainty. The [review report](../results/personal_ties_20261030_v3/tie_break_report.md) includes full tie-group size histograms and ordering-versus-membership changes. A full-window, validated B candidate is ready for review; all 37 tests pass. No Kaggle workflow was opened or called.
+
+The user now confirms that the previously reviewed RRF CSV was manually submitted with private 0.38663/public 0.38852, below the original baseline’s 0.38937/0.39131. [New screenshot-score provenance](../results/personal_ties_20261030_v3/submitted_score_evidence.json) preserves both CSV identities and leaves unknown submission IDs/timestamps null. The original baseline remains the best submitted model. Stop for user review; uploads remain manual-only and student verification remains pending.
+
 ## Clock and temporal split
 
 Both sources contain timezone-free civil timestamps. Parse views with `wall-iso` (`YYYY-MM-DD HH:MM:SS`) and schedules with `wall-dmy` (`DD.MM.YYYY HH:MM:SS`). Represent them as seconds since a naive 1970-01-01 reference solely for arithmetic. These numbers are not verified UTC instants; do not apply the Mac's timezone. A common source clock with zero offset between sources is an explicit local assumption supported by matching coverage and checked actual examples. The 117 one-hour duration discrepancies occur across 29 March; a clock change is plausible, but neither the timezone name nor DST handling is proven.

@@ -1,0 +1,4 @@
+method,map_at_5,delta_from_original,improved_users,worsened_users,unchanged_ap_users
+original,0.317489729730,0.000000000000,0,0,4625
+latest,0.316052492492,-0.001437237237,561,592,3472
+popularity,0.326853993994,0.009364264264,904,465,3256

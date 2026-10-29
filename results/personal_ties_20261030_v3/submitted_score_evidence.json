@@ -1,0 +1,24 @@
+{
+  "recorded_at_utc": "2026-10-29T21:03:24.757212+00:00",
+  "source": "User-confirmed values from Kaggle screenshots in this request. No independent Kaggle lookup; original screenshot binaries are not supplied to this tool run.",
+  "submissions": [
+    {
+      "file": "submissions/first_personal_original_20261029_v1.csv",
+      "sha256": "53cb8ae4b59b26ab6ee00b5e99ad91044876180e662732a755d3e99a297e64bc",
+      "private_score": 0.38937,
+      "public_score": 0.39131,
+      "submission_id": null,
+      "submission_timestamp": null
+    },
+    {
+      "file": "submissions/candidate_rrf_als_lb80_w0p1_20261029_v2.csv",
+      "sha256": "905971a8a9c47bcf4a88e14cd10d2514feaaea43900d6f513b2eecc4986f19f5",
+      "private_score": 0.38663,
+      "public_score": 0.38852,
+      "submission_id": null,
+      "submission_timestamp": null
+    }
+  ],
+  "best_submitted_baseline": "original personal frequency",
+  "no_kaggle_access_performed": true
+}

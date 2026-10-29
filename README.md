@@ -2,7 +2,7 @@
 
 Individual TV-programme recommendation project for LLM4Rec (FKN).
 
-**Current status: bounded improvement experiments completed; stop for user review.** The user confirms the original personal-frequency baseline was manually submitted with private **0.38937** / public **0.39131** scores from a Kaggle screenshot. The best new local fusion scores **0.317687** versus **0.317490**, but its conditional bootstrap interval spans a loss; **retain the submitted baseline** is the recommendation. An exploratory [validated candidate](submissions/candidate_rrf_als_lb80_w0p1_20261029_v2.csv) is available in the [review report](results/improvement_20261029_v2/improvement_report.md). All 33 tests pass. No new Kaggle upload or submission workflow is authorized or performed; only the user may upload. Student verification remains pending.
+**Current status: bounded personal-frequency tie-break experiment completed; stop for manual review.** Original personal frequency remains the best submitted baseline (user-confirmed private **0.38937**, public **0.39131**); the submitted RRF candidate scored lower (**0.38663 / 0.38852**). The new global-popularity tie-break scores **0.326854** locally versus **0.317490**, preserving personal counts as the primary key. Its positive conditional bootstrap interval supports one reviewed manual benchmark, with no Kaggle guarantee. [Review results and tie diagnostics](results/personal_ties_20261030_v3/tie_break_report.md) and [validated candidate CSV](submissions/candidate_personal_tie_popularity_20261030_v3.csv). All 37 tests pass. No Kaggle workflow was used; uploads are manual-only. Student verification remains pending.
 
 ## Start here
 

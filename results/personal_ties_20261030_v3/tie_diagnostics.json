@@ -1,0 +1,856 @@
+{
+  "cohort_users": 4625,
+  "users_with_equal_counts_within_selected_direct_top5": 3299,
+  "users_with_count_tie_crossing_fifth_position": 2483,
+  "users_with_both": 1986,
+  "users_with_either_order_or_boundary_tie": 3796,
+  "users_with_at_least_six_available_qualified_items": 4001,
+  "boundary_full_group_size_histogram": {
+    "2": 391,
+    "3": 411,
+    "4": 344,
+    "5": 259,
+    "6": 198,
+    "7": 153,
+    "8": 119,
+    "9": 113,
+    "10": 92,
+    "11": 73,
+    "12": 68,
+    "13": 45,
+    "14": 38,
+    "15": 27,
+    "16": 25,
+    "17": 16,
+    "18": 14,
+    "19": 16,
+    "20": 10,
+    "21": 12,
+    "22": 9,
+    "23": 7,
+    "24": 5,
+    "25": 6,
+    "26": 4,
+    "27": 4,
+    "28": 2,
+    "29": 4,
+    "30": 1,
+    "31": 2,
+    "32": 4,
+    "33": 1,
+    "36": 1,
+    "37": 1,
+    "38": 5,
+    "40": 1,
+    "42": 1,
+    "46": 1
+  },
+  "boundary_inside_top5_size_histogram": {
+    "4": 241,
+    "2": 709,
+    "3": 390,
+    "1": 1065,
+    "5": 78
+  },
+  "boundary_outside_top5_size_histogram": {
+    "8": 88,
+    "1": 765,
+    "2": 468,
+    "3": 266,
+    "13": 26,
+    "6": 106,
+    "22": 6,
+    "4": 181,
+    "9": 80,
+    "7": 95,
+    "15": 21,
+    "5": 132,
+    "11": 45,
+    "23": 7,
+    "25": 8,
+    "19": 11,
+    "12": 39,
+    "14": 26,
+    "16": 8,
+    "20": 10,
+    "17": 12,
+    "10": 43,
+    "36": 2,
+    "18": 11,
+    "26": 2,
+    "21": 6,
+    "37": 3,
+    "27": 3,
+    "39": 1,
+    "28": 1,
+    "31": 2,
+    "34": 1,
+    "42": 1,
+    "35": 2,
+    "30": 3,
+    "24": 2
+  },
+  "boundary_group_joint_histogram": [
+    {
+      "full_group_size": 2,
+      "inside_original_top5": 1,
+      "outside_original_top5": 1,
+      "users": 391
+    },
+    {
+      "full_group_size": 3,
+      "inside_original_top5": 1,
+      "outside_original_top5": 2,
+      "users": 202
+    },
+    {
+      "full_group_size": 3,
+      "inside_original_top5": 2,
+      "outside_original_top5": 1,
+      "users": 209
+    },
+    {
+      "full_group_size": 4,
+      "inside_original_top5": 1,
+      "outside_original_top5": 3,
+      "users": 110
+    },
+    {
+      "full_group_size": 4,
+      "inside_original_top5": 2,
+      "outside_original_top5": 2,
+      "users": 140
+    },
+    {
+      "full_group_size": 4,
+      "inside_original_top5": 3,
+      "outside_original_top5": 1,
+      "users": 94
+    },
+    {
+      "full_group_size": 5,
+      "inside_original_top5": 1,
+      "outside_original_top5": 4,
+      "users": 69
+    },
+    {
+      "full_group_size": 5,
+      "inside_original_top5": 2,
+      "outside_original_top5": 3,
+      "users": 70
+    },
+    {
+      "full_group_size": 5,
+      "inside_original_top5": 3,
+      "outside_original_top5": 2,
+      "users": 70
+    },
+    {
+      "full_group_size": 5,
+      "inside_original_top5": 4,
+      "outside_original_top5": 1,
+      "users": 50
+    },
+    {
+      "full_group_size": 6,
+      "inside_original_top5": 1,
+      "outside_original_top5": 5,
+      "users": 51
+    },
+    {
+      "full_group_size": 6,
+      "inside_original_top5": 2,
+      "outside_original_top5": 4,
+      "users": 38
+    },
+    {
+      "full_group_size": 6,
+      "inside_original_top5": 3,
+      "outside_original_top5": 3,
+      "users": 48
+    },
+    {
+      "full_group_size": 6,
+      "inside_original_top5": 4,
+      "outside_original_top5": 2,
+      "users": 40
+    },
+    {
+      "full_group_size": 6,
+      "inside_original_top5": 5,
+      "outside_original_top5": 1,
+      "users": 21
+    },
+    {
+      "full_group_size": 7,
+      "inside_original_top5": 1,
+      "outside_original_top5": 6,
+      "users": 32
+    },
+    {
+      "full_group_size": 7,
+      "inside_original_top5": 2,
+      "outside_original_top5": 5,
+      "users": 40
+    },
+    {
+      "full_group_size": 7,
+      "inside_original_top5": 3,
+      "outside_original_top5": 4,
+      "users": 37
+    },
+    {
+      "full_group_size": 7,
+      "inside_original_top5": 4,
+      "outside_original_top5": 3,
+      "users": 28
+    },
+    {
+      "full_group_size": 7,
+      "inside_original_top5": 5,
+      "outside_original_top5": 2,
+      "users": 16
+    },
+    {
+      "full_group_size": 8,
+      "inside_original_top5": 1,
+      "outside_original_top5": 7,
+      "users": 32
+    },
+    {
+      "full_group_size": 8,
+      "inside_original_top5": 2,
+      "outside_original_top5": 6,
+      "users": 37
+    },
+    {
+      "full_group_size": 8,
+      "inside_original_top5": 3,
+      "outside_original_top5": 5,
+      "users": 19
+    },
+    {
+      "full_group_size": 8,
+      "inside_original_top5": 4,
+      "outside_original_top5": 4,
+      "users": 21
+    },
+    {
+      "full_group_size": 8,
+      "inside_original_top5": 5,
+      "outside_original_top5": 3,
+      "users": 10
+    },
+    {
+      "full_group_size": 9,
+      "inside_original_top5": 1,
+      "outside_original_top5": 8,
+      "users": 29
+    },
+    {
+      "full_group_size": 9,
+      "inside_original_top5": 2,
+      "outside_original_top5": 7,
+      "users": 33
+    },
+    {
+      "full_group_size": 9,
+      "inside_original_top5": 3,
+      "outside_original_top5": 6,
+      "users": 17
+    },
+    {
+      "full_group_size": 9,
+      "inside_original_top5": 4,
+      "outside_original_top5": 5,
+      "users": 18
+    },
+    {
+      "full_group_size": 9,
+      "inside_original_top5": 5,
+      "outside_original_top5": 4,
+      "users": 16
+    },
+    {
+      "full_group_size": 10,
+      "inside_original_top5": 1,
+      "outside_original_top5": 9,
+      "users": 33
+    },
+    {
+      "full_group_size": 10,
+      "inside_original_top5": 2,
+      "outside_original_top5": 8,
+      "users": 23
+    },
+    {
+      "full_group_size": 10,
+      "inside_original_top5": 3,
+      "outside_original_top5": 7,
+      "users": 14
+    },
+    {
+      "full_group_size": 10,
+      "inside_original_top5": 4,
+      "outside_original_top5": 6,
+      "users": 18
+    },
+    {
+      "full_group_size": 10,
+      "inside_original_top5": 5,
+      "outside_original_top5": 5,
+      "users": 4
+    },
+    {
+      "full_group_size": 11,
+      "inside_original_top5": 1,
+      "outside_original_top5": 10,
+      "users": 16
+    },
+    {
+      "full_group_size": 11,
+      "inside_original_top5": 2,
+      "outside_original_top5": 9,
+      "users": 18
+    },
+    {
+      "full_group_size": 11,
+      "inside_original_top5": 3,
+      "outside_original_top5": 8,
+      "users": 24
+    },
+    {
+      "full_group_size": 11,
+      "inside_original_top5": 4,
+      "outside_original_top5": 7,
+      "users": 13
+    },
+    {
+      "full_group_size": 11,
+      "inside_original_top5": 5,
+      "outside_original_top5": 6,
+      "users": 2
+    },
+    {
+      "full_group_size": 12,
+      "inside_original_top5": 1,
+      "outside_original_top5": 11,
+      "users": 24
+    },
+    {
+      "full_group_size": 12,
+      "inside_original_top5": 2,
+      "outside_original_top5": 10,
+      "users": 13
+    },
+    {
+      "full_group_size": 12,
+      "inside_original_top5": 3,
+      "outside_original_top5": 9,
+      "users": 17
+    },
+    {
+      "full_group_size": 12,
+      "inside_original_top5": 4,
+      "outside_original_top5": 8,
+      "users": 11
+    },
+    {
+      "full_group_size": 12,
+      "inside_original_top5": 5,
+      "outside_original_top5": 7,
+      "users": 3
+    },
+    {
+      "full_group_size": 13,
+      "inside_original_top5": 1,
+      "outside_original_top5": 12,
+      "users": 15
+    },
+    {
+      "full_group_size": 13,
+      "inside_original_top5": 2,
+      "outside_original_top5": 11,
+      "users": 10
+    },
+    {
+      "full_group_size": 13,
+      "inside_original_top5": 3,
+      "outside_original_top5": 10,
+      "users": 8
+    },
+    {
+      "full_group_size": 13,
+      "inside_original_top5": 4,
+      "outside_original_top5": 9,
+      "users": 11
+    },
+    {
+      "full_group_size": 13,
+      "inside_original_top5": 5,
+      "outside_original_top5": 8,
+      "users": 1
+    },
+    {
+      "full_group_size": 14,
+      "inside_original_top5": 1,
+      "outside_original_top5": 13,
+      "users": 12
+    },
+    {
+      "full_group_size": 14,
+      "inside_original_top5": 2,
+      "outside_original_top5": 12,
+      "users": 13
+    },
+    {
+      "full_group_size": 14,
+      "inside_original_top5": 3,
+      "outside_original_top5": 11,
+      "users": 7
+    },
+    {
+      "full_group_size": 14,
+      "inside_original_top5": 4,
+      "outside_original_top5": 10,
+      "users": 5
+    },
+    {
+      "full_group_size": 14,
+      "inside_original_top5": 5,
+      "outside_original_top5": 9,
+      "users": 1
+    },
+    {
+      "full_group_size": 15,
+      "inside_original_top5": 1,
+      "outside_original_top5": 14,
+      "users": 9
+    },
+    {
+      "full_group_size": 15,
+      "inside_original_top5": 2,
+      "outside_original_top5": 13,
+      "users": 4
+    },
+    {
+      "full_group_size": 15,
+      "inside_original_top5": 3,
+      "outside_original_top5": 12,
+      "users": 9
+    },
+    {
+      "full_group_size": 15,
+      "inside_original_top5": 4,
+      "outside_original_top5": 11,
+      "users": 4
+    },
+    {
+      "full_group_size": 15,
+      "inside_original_top5": 5,
+      "outside_original_top5": 10,
+      "users": 1
+    },
+    {
+      "full_group_size": 16,
+      "inside_original_top5": 1,
+      "outside_original_top5": 15,
+      "users": 7
+    },
+    {
+      "full_group_size": 16,
+      "inside_original_top5": 2,
+      "outside_original_top5": 14,
+      "users": 11
+    },
+    {
+      "full_group_size": 16,
+      "inside_original_top5": 3,
+      "outside_original_top5": 13,
+      "users": 5
+    },
+    {
+      "full_group_size": 16,
+      "inside_original_top5": 4,
+      "outside_original_top5": 12,
+      "users": 2
+    },
+    {
+      "full_group_size": 17,
+      "inside_original_top5": 1,
+      "outside_original_top5": 16,
+      "users": 1
+    },
+    {
+      "full_group_size": 17,
+      "inside_original_top5": 2,
+      "outside_original_top5": 15,
+      "users": 8
+    },
+    {
+      "full_group_size": 17,
+      "inside_original_top5": 3,
+      "outside_original_top5": 14,
+      "users": 3
+    },
+    {
+      "full_group_size": 17,
+      "inside_original_top5": 4,
+      "outside_original_top5": 13,
+      "users": 4
+    },
+    {
+      "full_group_size": 18,
+      "inside_original_top5": 1,
+      "outside_original_top5": 17,
+      "users": 3
+    },
+    {
+      "full_group_size": 18,
+      "inside_original_top5": 2,
+      "outside_original_top5": 16,
+      "users": 5
+    },
+    {
+      "full_group_size": 18,
+      "inside_original_top5": 3,
+      "outside_original_top5": 15,
+      "users": 3
+    },
+    {
+      "full_group_size": 18,
+      "inside_original_top5": 4,
+      "outside_original_top5": 14,
+      "users": 2
+    },
+    {
+      "full_group_size": 18,
+      "inside_original_top5": 5,
+      "outside_original_top5": 13,
+      "users": 1
+    },
+    {
+      "full_group_size": 19,
+      "inside_original_top5": 1,
+      "outside_original_top5": 18,
+      "users": 6
+    },
+    {
+      "full_group_size": 19,
+      "inside_original_top5": 2,
+      "outside_original_top5": 17,
+      "users": 5
+    },
+    {
+      "full_group_size": 19,
+      "inside_original_top5": 3,
+      "outside_original_top5": 16,
+      "users": 1
+    },
+    {
+      "full_group_size": 19,
+      "inside_original_top5": 4,
+      "outside_original_top5": 15,
+      "users": 3
+    },
+    {
+      "full_group_size": 19,
+      "inside_original_top5": 5,
+      "outside_original_top5": 14,
+      "users": 1
+    },
+    {
+      "full_group_size": 20,
+      "inside_original_top5": 1,
+      "outside_original_top5": 19,
+      "users": 2
+    },
+    {
+      "full_group_size": 20,
+      "inside_original_top5": 2,
+      "outside_original_top5": 18,
+      "users": 4
+    },
+    {
+      "full_group_size": 20,
+      "inside_original_top5": 3,
+      "outside_original_top5": 17,
+      "users": 3
+    },
+    {
+      "full_group_size": 20,
+      "inside_original_top5": 4,
+      "outside_original_top5": 16,
+      "users": 1
+    },
+    {
+      "full_group_size": 21,
+      "inside_original_top5": 1,
+      "outside_original_top5": 20,
+      "users": 5
+    },
+    {
+      "full_group_size": 21,
+      "inside_original_top5": 2,
+      "outside_original_top5": 19,
+      "users": 5
+    },
+    {
+      "full_group_size": 21,
+      "inside_original_top5": 3,
+      "outside_original_top5": 18,
+      "users": 1
+    },
+    {
+      "full_group_size": 21,
+      "inside_original_top5": 4,
+      "outside_original_top5": 17,
+      "users": 1
+    },
+    {
+      "full_group_size": 22,
+      "inside_original_top5": 1,
+      "outside_original_top5": 21,
+      "users": 3
+    },
+    {
+      "full_group_size": 22,
+      "inside_original_top5": 2,
+      "outside_original_top5": 20,
+      "users": 4
+    },
+    {
+      "full_group_size": 22,
+      "inside_original_top5": 3,
+      "outside_original_top5": 19,
+      "users": 2
+    },
+    {
+      "full_group_size": 23,
+      "inside_original_top5": 1,
+      "outside_original_top5": 22,
+      "users": 1
+    },
+    {
+      "full_group_size": 23,
+      "inside_original_top5": 2,
+      "outside_original_top5": 21,
+      "users": 3
+    },
+    {
+      "full_group_size": 23,
+      "inside_original_top5": 3,
+      "outside_original_top5": 20,
+      "users": 1
+    },
+    {
+      "full_group_size": 23,
+      "inside_original_top5": 4,
+      "outside_original_top5": 19,
+      "users": 2
+    },
+    {
+      "full_group_size": 24,
+      "inside_original_top5": 1,
+      "outside_original_top5": 23,
+      "users": 1
+    },
+    {
+      "full_group_size": 24,
+      "inside_original_top5": 2,
+      "outside_original_top5": 22,
+      "users": 4
+    },
+    {
+      "full_group_size": 25,
+      "inside_original_top5": 1,
+      "outside_original_top5": 24,
+      "users": 2
+    },
+    {
+      "full_group_size": 25,
+      "inside_original_top5": 2,
+      "outside_original_top5": 23,
+      "users": 3
+    },
+    {
+      "full_group_size": 25,
+      "inside_original_top5": 3,
+      "outside_original_top5": 22,
+      "users": 1
+    },
+    {
+      "full_group_size": 26,
+      "inside_original_top5": 1,
+      "outside_original_top5": 25,
+      "users": 3
+    },
+    {
+      "full_group_size": 26,
+      "inside_original_top5": 3,
+      "outside_original_top5": 23,
+      "users": 1
+    },
+    {
+      "full_group_size": 27,
+      "inside_original_top5": 1,
+      "outside_original_top5": 26,
+      "users": 1
+    },
+    {
+      "full_group_size": 27,
+      "inside_original_top5": 2,
+      "outside_original_top5": 25,
+      "users": 1
+    },
+    {
+      "full_group_size": 27,
+      "inside_original_top5": 4,
+      "outside_original_top5": 23,
+      "users": 2
+    },
+    {
+      "full_group_size": 28,
+      "inside_original_top5": 2,
+      "outside_original_top5": 26,
+      "users": 1
+    },
+    {
+      "full_group_size": 28,
+      "inside_original_top5": 3,
+      "outside_original_top5": 25,
+      "users": 1
+    },
+    {
+      "full_group_size": 29,
+      "inside_original_top5": 2,
+      "outside_original_top5": 27,
+      "users": 1
+    },
+    {
+      "full_group_size": 29,
+      "inside_original_top5": 4,
+      "outside_original_top5": 25,
+      "users": 3
+    },
+    {
+      "full_group_size": 30,
+      "inside_original_top5": 3,
+      "outside_original_top5": 27,
+      "users": 1
+    },
+    {
+      "full_group_size": 31,
+      "inside_original_top5": 1,
+      "outside_original_top5": 30,
+      "users": 1
+    },
+    {
+      "full_group_size": 31,
+      "inside_original_top5": 3,
+      "outside_original_top5": 28,
+      "users": 1
+    },
+    {
+      "full_group_size": 32,
+      "inside_original_top5": 1,
+      "outside_original_top5": 31,
+      "users": 1
+    },
+    {
+      "full_group_size": 32,
+      "inside_original_top5": 2,
+      "outside_original_top5": 30,
+      "users": 2
+    },
+    {
+      "full_group_size": 32,
+      "inside_original_top5": 5,
+      "outside_original_top5": 27,
+      "users": 1
+    },
+    {
+      "full_group_size": 33,
+      "inside_original_top5": 2,
+      "outside_original_top5": 31,
+      "users": 1
+    },
+    {
+      "full_group_size": 36,
+      "inside_original_top5": 1,
+      "outside_original_top5": 35,
+      "users": 1
+    },
+    {
+      "full_group_size": 37,
+      "inside_original_top5": 2,
+      "outside_original_top5": 35,
+      "users": 1
+    },
+    {
+      "full_group_size": 38,
+      "inside_original_top5": 1,
+      "outside_original_top5": 37,
+      "users": 2
+    },
+    {
+      "full_group_size": 38,
+      "inside_original_top5": 2,
+      "outside_original_top5": 36,
+      "users": 2
+    },
+    {
+      "full_group_size": 38,
+      "inside_original_top5": 4,
+      "outside_original_top5": 34,
+      "users": 1
+    },
+    {
+      "full_group_size": 40,
+      "inside_original_top5": 3,
+      "outside_original_top5": 37,
+      "users": 1
+    },
+    {
+      "full_group_size": 42,
+      "inside_original_top5": 3,
+      "outside_original_top5": 39,
+      "users": 1
+    },
+    {
+      "full_group_size": 46,
+      "inside_original_top5": 4,
+      "outside_original_top5": 42,
+      "users": 1
+    }
+  ],
+  "boundary_qualified_count_histogram": {
+    "1": 1309,
+    "2": 581,
+    "3": 275,
+    "10": 7,
+    "8": 14,
+    "5": 63,
+    "6": 45,
+    "4": 144,
+    "11": 7,
+    "7": 22,
+    "12": 2,
+    "15": 2,
+    "9": 7,
+    "14": 1,
+    "17": 1,
+    "13": 2,
+    "20": 1
+  },
+  "available_qualified_item_count_0_to_5_or_6plus": {
+    "6": 4001,
+    "0": 112,
+    "5": 136,
+    "2": 97,
+    "1": 71,
+    "3": 103,
+    "4": 105
+  },
+  "definitions": "Within-top5 tie means at least two directly ranked selected items have the same positive qualified count. Boundary tie means direct ranks 5 and 6 have equal counts. Fallback items are excluded; ties can overlap these two categories."
+}

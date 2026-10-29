@@ -1,0 +1,189 @@
+{
+  "created_at_utc": "2026-10-29T21:03:40.095634+00:00",
+  "status": "validated_candidate_awaiting_user_review; never uploaded by agent",
+  "selected_variant": "popularity",
+  "local_map_at_5": 0.32685399399399395,
+  "local_assessment": {
+    "map_at_5": 0.32685399399399395,
+    "evaluation_users": 4625,
+    "candidates": 6384,
+    "inference_users": 4649,
+    "ranking_and_completion_seconds": 0.042356957972515374,
+    "history_slices": {
+      "0": {
+        "users": 108,
+        "map_at_5": 0.16305041152263375
+      },
+      "1\u20135": {
+        "users": 462,
+        "map_at_5": 0.17688071188071186
+      },
+      "21+": {
+        "users": 1968,
+        "map_at_5": 0.40043656842818426
+      },
+      "6\u201320": {
+        "users": 2087,
+        "map_at_5": 0.29914337432784965
+      }
+    },
+    "fallback": {
+      "complete_users": 112,
+      "partial_completion_users": 376,
+      "completion_slots": 1446
+    },
+    "all_qualified_counts_unchanged": true,
+    "all_lists_valid": true,
+    "delta_from_original": 0.009364264264264264,
+    "users_improved": 904,
+    "users_worsened": 465,
+    "users_unchanged_ap": 3256,
+    "prediction_changes": {
+      "users": 4625,
+      "users_changed": 3185,
+      "users_identical": 1440,
+      "recommendation_slots": 23125,
+      "rank_position_slots_changed": 7632,
+      "top5_items_in_common": 20663,
+      "top5_set_overlap_fraction": 0.8935351351351352,
+      "users_with_membership_change": 1948,
+      "users_with_order_change_only": 1237,
+      "new_item_slots_ignoring_order": 2462
+    },
+    "paired_user_bootstrap_95pct_interval": [
+      0.007631600600600599,
+      0.011085536036036037
+    ],
+    "bootstrap_resamples": 2000,
+    "bootstrap_seed": 42,
+    "bootstrap_scope": "Conditional on this reused fixed cohort; no allowance for hold-out selection or Kaggle generalization."
+  },
+  "csv_filename": "candidate_personal_tie_popularity_20261030_v3.csv",
+  "csv_absolute_path": "/Users/chenfengru/sweettv-recommender-exam/submissions/candidate_personal_tie_popularity_20261030_v3.csv",
+  "csv_sha256": "39aac2794395209b2299ccee2e2bb1b4b9afde22f3e06ccb5b04f3d706c9522f",
+  "validation": {
+    "status": "valid",
+    "users": 1260,
+    "k": 5,
+    "candidate_ids": 6649,
+    "distinct_recommended_ids": 248,
+    "template_sha256": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02",
+    "prediction_sha256": "39aac2794395209b2299ccee2e2bb1b4b9afde22f3e06ccb5b04f3d706c9522f"
+  },
+  "differences_from_submitted_personal_baseline": {
+    "users": 1260,
+    "users_changed": 739,
+    "users_identical": 521,
+    "recommendation_slots": 6300,
+    "rank_position_slots_changed": 1620,
+    "top5_items_in_common": 5761,
+    "top5_set_overlap_fraction": 0.9144444444444444,
+    "users_with_membership_change": 445,
+    "users_with_order_change_only": 294,
+    "new_item_slots_ignoring_order": 539
+  },
+  "prior_submitted_csv_checksums_preserved": {
+    "submissions/first_personal_original_20261029_v1.csv": "53cb8ae4b59b26ab6ee00b5e99ad91044876180e662732a755d3e99a297e64bc",
+    "submissions/candidate_rrf_als_lb80_w0p1_20261029_v2.csv": "905971a8a9c47bcf4a88e14cd10d2514feaaea43900d6f513b2eecc4986f19f5"
+  },
+  "combined_fit_manifest": {
+    "config": {
+      "version": "causal-interactions-v1",
+      "start": 1583712000.0,
+      "end": 1595808000.0,
+      "clock": "source-naive-wall-seconds",
+      "qualified_fraction": 0.8,
+      "max_session_seconds": 86400,
+      "inputs": {
+        "dataset11-30.csv": "8c9e5f058157041e5c33f13e64dc1625a5177cc6d5e434ba18cd8a69afafb53b",
+        "export_arh_11-20-final.csv": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c",
+        "export_arh_21-30-final.csv": "bdc9fa9850239aaed608bece9cdb200011e690300470fe85b980457d8c0cb2d4",
+        "export_arh_31-42-final.csv": "5cc01f4619bd94886d83744f00bbc15cc5fa23384d297244a7dc2207450c4088",
+        "submission.csv": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02"
+      },
+      "sources": {
+        "interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+        "intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+        "real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d"
+      }
+    },
+    "config_digest": "82557c2ae60b72ebfd2df5df4a797da4648b3f10d715cea7311aa2b7c82855c4",
+    "output_sha256": "998f843ebc2d04338aa3c183496981984741ad6f31e9f30b7bc543d54b2bc708",
+    "retained_clipped_source_rows": 5821819,
+    "ongoing_sessions_at_cutoff": 0,
+    "user_airings": 3013338,
+    "user_item_pairs": 1371489,
+    "qualified_user_airings": 573003,
+    "qualified_users": 4834,
+    "conflicted_airings_excluded": 0,
+    "elapsed_seconds": 48.15371204097755,
+    "environment": {
+      "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "code_base_commit": "588d9b8ce5c767c5acaa0d14ea1837c531ab3a17",
+      "working_tree_dirty": true,
+      "source_sha256": {
+        "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+        "src/audit_anomalies.py": "e82a2ac4765b038a3c90a8253bdff47c93a583adb4c936de82140edd8fd4baad",
+        "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+        "src/check_cutoff_invariance.py": "d893cafac6130b399e88a56c099a3057f2d15950a9c79e4332ba80efc0a935ef",
+        "src/compare_models.py": "71a6770afa248e1cd4b312d65f4a252612cec38894ff11af78ed449b435b6aba",
+        "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+        "src/diagnose_models.py": "1c5d854b379c4deb4a995b4536683cac2db6b2d140f224c6ec8a43d6ba32430a",
+        "src/first_submission.py": "6423b59f8653784b785e19d06893f4aab5a37d4b9fe6d24cbc7751049d2ecff6",
+        "src/interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+        "src/intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+        "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+        "src/models.py": "2129e6e226a4f006417f9897b3b1c38c11d0656baf92c7cb9ed65ff59990e04b",
+        "src/real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d",
+        "src/report_comparison.py": "924240c485107343486ad15a98888bd24501a2849e905856ec7de5e7f38efbc1",
+        "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6"
+      },
+      "peak_process_rss_bytes": 1482653696,
+      "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+    }
+  },
+  "combined_qualification_recomputed_user_airings": 573003,
+  "fitting_window_wall": [
+    "2020-03-09 00:00:00",
+    "2020-07-27 00:00:00"
+  ],
+  "prediction_window_wall": [
+    "2020-07-27 00:00:00",
+    "2020-10-19 00:00:00"
+  ],
+  "observed_latest_end_max": 1595807969.0,
+  "cutoff": 1595808000.0,
+  "refit_and_artifact_seconds": 10.806756375008263,
+  "environment": {
+    "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "code_base_commit": "37f9a15ec59877abb94e6d881c30ea1af283f20e",
+    "working_tree_dirty": true,
+    "source_sha256": {
+      "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+      "src/audit_anomalies.py": "e82a2ac4765b038a3c90a8253bdff47c93a583adb4c936de82140edd8fd4baad",
+      "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+      "src/check_cutoff_invariance.py": "d893cafac6130b399e88a56c099a3057f2d15950a9c79e4332ba80efc0a935ef",
+      "src/compare_models.py": "71a6770afa248e1cd4b312d65f4a252612cec38894ff11af78ed449b435b6aba",
+      "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+      "src/diagnose_models.py": "1c5d854b379c4deb4a995b4536683cac2db6b2d140f224c6ec8a43d6ba32430a",
+      "src/experiment_personal_ties.py": "a4c8a8e3c15c203a4eafa6f7a6ccb1e11c46cfdbb08e664ca93981e82594a331",
+      "src/first_submission.py": "2e389ad63a3b1a0c10c7449acce105656ee0d93deb98da521068c4d63d5978ed",
+      "src/improve_recommender.py": "59d03e6bd9e40a70a416ead5a5c80e351c5d20d47ab4fe6930c639850ee728e8",
+      "src/improvement_helpers.py": "029bfa5719707abc54f2af250f926109cd5e1f232ca902c0a723ecd79a229bbf",
+      "src/interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+      "src/intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+      "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+      "src/models.py": "2129e6e226a4f006417f9897b3b1c38c11d0656baf92c7cb9ed65ff59990e04b",
+      "src/personal_ties.py": "3c199fda25804d8780e637b14675fa72756fbf6bbd1185604f7491a7b161ab2b",
+      "src/real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d",
+      "src/report_comparison.py": "924240c485107343486ad15a98888bd24501a2849e905856ec7de5e7f38efbc1",
+      "src/report_improvement.py": "a0bfe5816ed0fa091bfb2c44e0b64a573027bbc400d92ba0bdf81c43259d1c17",
+      "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6"
+    },
+    "peak_process_rss_bytes": 1217560576,
+    "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+  },
+  "kaggle_submission_performed": false
+}
