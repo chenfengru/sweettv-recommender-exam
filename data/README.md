@@ -1,6 +1,17 @@
 # Local competition inputs
 
-Download the original archive from [the competition data page](https://www.kaggle.com/competitions/sweettv-tv-program-recommender/data) using your own Kaggle account after accepting the competition rules. Extract locally under data/raw/.
+The user chose to keep the competition data in the existing LLM4Rec course folder. The dedicated location on the user's Mac is:
+
+```text
+$HOME/LLM4Rec-Course-codex/data/sweettv/raw/
+```
+
+This is an external data directory relative to the exam repository. Its actual contents have not been inspected from the assistant workspace. Create it locally, then download the original archive from [the competition data page](https://www.kaggle.com/competitions/sweettv-tv-program-recommender/data) using your own Kaggle account after accepting the competition rules. Extract the five original CSVs directly into this directory, without another nested archive folder.
+
+```bash
+SWEETTV_DATA_DIR="$HOME/LLM4Rec-Course-codex/data/sweettv/raw"
+mkdir -p "$SWEETTV_DATA_DIR"
+```
 
 Expected files, according to the instructor's exam document:
 
@@ -12,4 +23,13 @@ Expected files, according to the instructor's exam document:
 
 These inputs are not bundled with this repository. No input has yet been audited here. Record checksums and verify actual names and headers rather than silently renaming a different dataset.
 
-The .gitignore excludes local data, while preserving this README. Do not put Kaggle credentials in the repository.
+Before adding files in the existing course checkout, exclude `/data/sweettv/` in that checkout's `.gitignore` or local Git exclude file. The exam repository's `.gitignore` cannot protect data inside a different Git checkout. Do not commit raw competition data or Kaggle credentials to either repository.
+
+From the exam repository root, pass the external location explicitly:
+
+```bash
+SWEETTV_DATA_DIR="$HOME/LLM4Rec-Course-codex/data/sweettv/raw"
+python -m src.audit_data --data-dir "$SWEETTV_DATA_DIR" --output-dir results
+```
+
+`SWEETTV_DATA_DIR` is a shell convenience used in the documented commands; the Python script reads the explicit `--data-dir` argument. The historical report under `results/` is not proof that this Mac directory has been checked.

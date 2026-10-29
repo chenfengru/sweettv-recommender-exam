@@ -20,11 +20,12 @@ Individual TV-programme recommendation project for LLM4Rec (FKN).
 Use Python 3.11 or newer. Phase 1 has no third-party Python dependencies.
 
 ```bash
+SWEETTV_DATA_DIR="$HOME/LLM4Rec-Course-codex/data/sweettv/raw"
 python -m unittest discover -s tests -v
-python -m src.audit_data --data-dir data/raw --output-dir results
+python -m src.audit_data --data-dir "$SWEETTV_DATA_DIR" --output-dir results
 ```
 
-The second command currently writes a missing-input report and exits with code 2. After the five original CSVs are available, the same command profiles their schemas and raw values. Timestamp units, duration units, timezone, and template column roles are deliberately not guessed. Follow [the run guide](docs/running_phase_1.md) before converting intervals or training a model.
+The user-selected data location is inside the existing `LLM4Rec-Course-codex` course folder. Run these commands from the exam repository root. If inputs are missing, the audit writes a missing-input report and exits with code 2; otherwise it profiles their schemas and raw values. The committed audit records an earlier check in the assistant workspace, not an inspection of the user's Mac. Timestamp units, duration units, timezone, and template column roles are deliberately not guessed. Follow [the run guide](docs/running_phase_1.md) before converting intervals or training a model.
 
 ## Task and deadline
 

@@ -10,14 +10,24 @@ No model, feature pipeline, target construction, full-data interval join, predic
 
 Python 3.11+; only the standard library is used. On systems without IANA timezone data, named-zone parsing requires installing that database before using `--naive-timezone`. Numeric Unix times and ISO strings with explicit offsets do not require a named zone.
 
-From the repository root:
+Keep the data in the existing local course workspace. On the user's Mac, create the dedicated directory and extract the five CSVs there:
 
 ```bash
-python -m unittest discover -s tests -v
-python -m src.audit_data --data-dir data/raw --output-dir results
+SWEETTV_DATA_DIR="$HOME/LLM4Rec-Course-codex/data/sweettv/raw"
+mkdir -p "$SWEETTV_DATA_DIR"
 ```
 
-Put the five original files from [the competition](https://www.kaggle.com/competitions/sweettv-tv-program-recommender/data) in `data/raw/`; see [the file list](../data/README.md). Keep raw files and credentials out of Git. The audit does not download data or submit anything.
+From the exam repository root, use that external data location:
+
+```bash
+SWEETTV_DATA_DIR="$HOME/LLM4Rec-Course-codex/data/sweettv/raw"
+python -m unittest discover -s tests -v
+python -m src.audit_data --data-dir "$SWEETTV_DATA_DIR" --output-dir results
+```
+
+Put the five original files from [the competition](https://www.kaggle.com/competitions/sweettv-tv-program-recommender/data) directly in that `raw/` directory; see [the file list and local ignore instructions](../data/README.md). Keep raw files and credentials out of Git. The audit does not download data or submit anything. No code change or duplicate copy into this exam repository is needed: `--data-dir` already accepts an external directory.
+
+The committed missing-input report used `data/raw` in the assistant workspace before this location preference was recorded. Preserve it as historical execution evidence. The user's Mac directory has not been inspected or created from this environment; rerun the command locally to obtain an actual data audit.
 
 The audit writes `data_audit.json` and `data_audit.md`. Exit code 2 means missing inputs, parsing failures, or flagged data issues needing review. Exit code 0 means profiling completed without those flags; it does **not** prove the units or modelling protocol are correct. Existing reports in the output directory are replaced; choose another `--output-dir` to preserve a previous run.
 
@@ -62,10 +72,11 @@ Specifying a unit is a hypothesis, not independent verification. Check the resid
 Use the actual template and only the schedule files for the prediction window. Replace the two column-name placeholders after inspecting the template:
 
 ```bash
+SWEETTV_DATA_DIR="$HOME/LLM4Rec-Course-codex/data/sweettv/raw"
 python -m src.validate_submission \
-  --template data/raw/submission.csv \
+  --template "$SWEETTV_DATA_DIR/submission.csv" \
   --predictions submissions/final.csv \
-  --schedule data/raw/export_arh_31-42-final.csv \
+  --schedule "$SWEETTV_DATA_DIR/export_arh_31-42-final.csv" \
   --user-column ACTUAL_USER_COLUMN \
   --prediction-column ACTUAL_PREDICTION_COLUMN
 ```

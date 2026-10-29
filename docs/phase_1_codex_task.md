@@ -8,7 +8,7 @@ Read AGENTS.md and the three planning documents. Implement a bounded, reproducib
 
 ## Inputs
 
-Expect the five original files listed in data/README.md under data/raw/. If they are absent, prepare the audit code and run only synthetic examples; clearly report that real-data analysis is blocked. Never replace missing competition data with invented data.
+Expect the five original files listed in data/README.md in the user's existing course workspace at `$HOME/LLM4Rec-Course-codex/data/sweettv/raw/`. Pass this path explicitly to `--data-dir`. Verify it in the user's local environment; the assistant workspace has no access to that Mac directory. If the inputs are absent, run only synthetic examples and clearly report that real-data analysis is blocked. Never replace missing competition data with invented data.
 
 ## Requested implementation
 

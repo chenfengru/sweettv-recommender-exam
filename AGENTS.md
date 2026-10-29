@@ -16,7 +16,9 @@ This is an individual LLM4Rec exam project. Prioritize understandable, reproduci
 
 ## Data and evaluation
 
+- The user keeps SWEET.TV data in the existing local course workspace: `$HOME/LLM4Rec-Course-codex/data/sweettv/raw/`. Pass this location explicitly to `--data-dir`; see data/README.md. Check the actual filesystem in the user's Codex environment before claiming the files exist or moving anything.
 - Never commit raw competition data, credentials, or original AI-session exports.
+- Because the data directory is inside the separate course checkout, ensure that checkout excludes `/data/sweettv/` locally. This exam repository's ignore rules do not cover another checkout.
 - Use the real submission template for column names, user order, and prediction serialization; do not infer its schema from this plan.
 - Keep K=5. Use identical temporal splits, candidate sets, repeat policies, fallback rules, and evaluation users across methods.
 - Fit behavioural features and models on data before the prediction cutoff. Retain the designated hold-out for evaluation and model selection.
