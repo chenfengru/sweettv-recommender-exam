@@ -1,0 +1,8 @@
+{
+  "tests": 90,
+  "all_passed": true,
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python -m unittest discover -s tests -v",
+  "student_verification": "pending",
+  "native_records": "unmodified",
+  "kaggle_actions": "none"
+}

@@ -63,3 +63,7 @@ Exactly 0.30 and 0.40 were evaluated against 0.50 with E2 disabled throughout. N
 ## Fixed LightFM unseen candidate expansion: retain v14
 
 V15 expands each supported user’s unchanged v14 candidate union with the first 50 available N50-unseen LightFM programmes, deduplicating only after truncation. One new fixed classifier fails the both-split rule: main −0.001858138138, auxiliary +0.000130384252. No new CSV, final refit or submission description was generated. The frozen-classifier diagnostic is separate and ineligible. [English report](../results/lightfm_expansion_20261030_v15/comparison_report.md). All previous CSVs/checksums remain unchanged. Uploads remain manual-only; student verification is pending.
+
+## Longer-horizon historical training: retain v14
+
+V16 trains one fixed 300-tree classifier on [Apr6,May18) and [Apr20,May18) targets, with origin-specific availability/schedule reconstruction and the original v14 candidate rule. Main/auxiliary/final tables remain exactly v14. MAP differences are −0.000036096096 / −0.003204462362; the both-split requirement fails. No new CSV or final prediction run was generated. [English report](../results/long_horizon_20261030_v16/comparison_report.md). All previous CSVs/checksums are unchanged; uploads remain manual-only and student verification is pending.

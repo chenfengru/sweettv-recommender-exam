@@ -2,7 +2,7 @@
 
 Individual TV-programme recommendation project for LLM4Rec (FKN).
 
-**Current status: retain confirmed submitted v14.** The fixed v15 LightFM unseen-top-50 candidate expansion yields main/auxiliary MAP@5 **0.361554414414 / 0.351893174499**, differences **−0.001858138138 / +0.000130384252** against saved v14. It fails the required improvement on both splits, so no final CSV was generated. [English report and diagnostic comparison](results/lightfm_expansion_20261030_v15/comparison_report.md). Candidate coverage rises on both splits, but the retrained model selects no relevant new-only item in its top five. All **87 tests pass**. V14 user-screenshot-reported Private **0.43416** / Public **0.44157** are recorded without inventing a submission ID or timestamp. Previous artifacts/checksums and native session records remain unchanged; student verification is pending. No Kaggle workflow or upload was opened.
+**Current status: retain confirmed submitted v14.** V16’s single longer-horizon historical training experiment yields main/auxiliary MAP@5 **0.363376456456 / 0.348558327886**, changes **−0.000036096096 / −0.003204462362** versus saved v14. Neither split improves, so no new CSV was generated. [English report and reconstruction diagnostics](results/long_horizon_20261030_v16/comparison_report.md). Main/auxiliary/final candidate rows and all 40 feature values are exactly the original v14 inputs; only historical training tables change. All **90 tests pass**. V14 user-screenshot-reported Private **0.43416** / Public **0.44157** remain the best confirmed scores. Prior artifacts/checksums and native session records are unchanged; student verification is pending. No Kaggle workflow or upload was opened.
 
 ## Start here
 
