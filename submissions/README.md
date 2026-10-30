@@ -26,3 +26,7 @@ Exactly lambda 0.5 and 1.0 bonuses were tested against v5, with >=0.80 global an
 ## Fixed item-item retrieval round: no submission artifact
 
 One fixed model per existing temporal split recovers useful unseen targets, but standalone MAP@5 is worse than submitted v5 on both splits. Retain v5; no fusion, combined refit or prediction CSV was generated. [English retrieval and standalone comparison](../results/item_item_20261030_v7/comparison_report.md). All previous CSVs/checksums remain unchanged.
+
+## Controlled v5/v7 RRF round: retain submitted v5
+
+All three predeclared weights (0.05, 0.10, 0.20) reduce MAP@5 on both frozen splits. No configuration satisfies the two-split eligibility rule; no final refit or prediction CSV was generated. [Full English report and paired uncertainty](../results/item_fusion_20261030_v8/comparison_report.md). Every previous artifact remains byte-identical; no Kaggle action was taken.

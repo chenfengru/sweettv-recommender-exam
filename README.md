@@ -2,7 +2,7 @@
 
 Individual TV-programme recommendation project for LLM4Rec (FKN).
 
-**Current status: retain submitted v5; fixed item-item retrieval merits a later controlled fusion/reranking experiment.** Standalone item-item MAP@5 is **0.155453093093 / 0.157389530520**, far below v5’s **0.334711171171 / 0.331395910511**. Top-50 unseen retrieval adds **3,435 / 3,224** relevant items to personal history, raising micro coverage to **74.22% / 73.93%**. This is a retrieval gain, not an improved final ranker. [Full English report, recall definitions, slices and resource evidence](results/item_item_20261030_v7/comparison_report.md). All **53 tests pass**. No fusion, final refit, CSV or Kaggle action was produced. Previous artifacts/checksums and native session records are preserved; student verification is pending.
+**Current status: retain submitted v5; controlled v5/v7 RRF did not improve ranking.** All three fixed weights (0.05, 0.10, 0.20) lower MAP@5 on both splits. The least harmful weight, 0.05, yields **0.331631231231 / 0.327938790828**, versus v5 **0.334711171171 / 0.331395910511**. Unseen hits do not offset lost personal-history hits. [English fusion report, conditional intervals and seen/unseen attribution](results/item_fusion_20261030_v8/comparison_report.md). All **58 tests pass**. No final refit, CSV or Kaggle action was generated; previous artifacts/checksums and native session records are preserved. Student verification remains pending.
 
 ## Start here
 

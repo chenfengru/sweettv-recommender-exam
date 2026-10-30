@@ -1,0 +1,23 @@
+{
+  "no_new_csv": true,
+  "previous_git_bytes_preserved": {
+    "submissions/candidate_personal_threshold_050_20261030_v5.csv": "593b1134b6625771abfe107e17d074499cedf6efb4ef9306e06289e9566876e5",
+    "submissions/candidate_personal_tie_popularity_20261030_v3.csv": "39aac2794395209b2299ccee2e2bb1b4b9afde22f3e06ccb5b04f3d706c9522f",
+    "submissions/candidate_rrf_als_lb80_w0p1_20261029_v2.csv": "905971a8a9c47bcf4a88e14cd10d2514feaaea43900d6f513b2eecc4986f19f5",
+    "submissions/first_personal_original_20261029_v1.csv": "53cb8ae4b59b26ab6ee00b5e99ad91044876180e662732a755d3e99a297e64bc"
+  },
+  "frozen_slices_match_v7": {
+    "main": true,
+    "auxiliary": true
+  },
+  "unseen_rank_barrier_verified": {
+    "main": {
+      "unseen_slot_totals_unchanged": true,
+      "mathematical_bound": "0.20/61 < 1/110; focused regression passes"
+    },
+    "auxiliary": {
+      "unseen_slot_totals_unchanged": true,
+      "mathematical_bound": "0.20/61 < 1/110; focused regression passes"
+    }
+  }
+}
