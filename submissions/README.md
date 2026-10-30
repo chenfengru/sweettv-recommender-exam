@@ -7,6 +7,7 @@
 | `candidate_personal_tie_popularity_20261030_v3.csv` | **0.39697 / 0.40288** | `39aac2794395209b2299ccee2e2bb1b4b9afde22f3e06ccb5b04f3d706c9522f` |
 | `candidate_personal_threshold_050_20261030_v5.csv` | **0.40210 / 0.41789** | `593b1134b6625771abfe107e17d074499cedf6efb4ef9306e06289e9566876e5` |
 | `candidate_personal_fifth_e2_20261030_v9.csv` | **0.40261 / 0.41871** | `f1378b0d6fed62793e14ebb4c1b64cf8b2163485485c15c861aae7e67e556375` |
+| `candidate_adaptive_s40_e2_20261030_v11.csv` | 0.40257 / 0.41846 | `ccac509f8efeeddb9187f1ff2e5300db08f82ae0f9acd1f4ba7d8220f9dd26fb` |
 
 The user confirms these scores from Kaggle screenshots. They are not independently fetched in this experiment, and no unknown submission identifiers/timestamps are invented. The filenames retain their original candidate names after the user’s manual submissions. Every file remains byte-for-byte unchanged; v9 E2 is now the best confirmed submitted model; older scores remain historical evidence.
 
@@ -42,4 +43,8 @@ Exactly 0.30 and 0.40 were evaluated against 0.50 with E2 disabled throughout. N
 
 ## Exploratory adaptive round: S40+E2 candidate
 
-`candidate_adaptive_s40_e2_20261030_v11.csv` has SHA-256 `ccac509f8efeeddb9187f1ff2e5300db08f82ae0f9acd1f4ba7d8220f9dd26fb`. It qualifies under the frozen two-stage point-estimate rules, but gains against v9 are small and both conditional intervals include zero. The grouping was derived from v10 validation slices, so evidence is exploratory. Both validators pass for all 1,260 users; 27 users adapt, and 17 lists / 44 rank slots change versus submitted v9. **Not uploaded; no Kaggle result.** [English report and path](../results/adaptive_threshold_20261030_v11/comparison_report.md); [English submission description](../results/adaptive_threshold_20261030_v11/submission_description.txt). V9 remains the best confirmed submitted model.
+`candidate_adaptive_s40_e2_20261030_v11.csv` has SHA-256 `ccac509f8efeeddb9187f1ff2e5300db08f82ae0f9acd1f4ba7d8220f9dd26fb`. It qualifies under the frozen two-stage point-estimate rules, but gains against v9 are small and both conditional intervals include zero. The grouping was derived from v10 validation slices, so evidence is exploratory. Both validators pass for all 1,260 users; 27 users adapt, and 17 lists / 44 rank slots change versus submitted v9. Initially prepared for manual review; the user now reports screenshot scores **Private 0.40257 / Public 0.41846**. V9 remains stronger; submission ID/time are unknown. [English report and path](../results/adaptive_threshold_20261030_v11/comparison_report.md); [English submission description](../results/adaptive_threshold_20261030_v11/submission_description.txt). V9 remains the best confirmed submitted model.
+
+## Fixed supervised reranker: manual-review candidate
+
+`candidate_lightgbm_historical_fixed_20261030_v12.csv` has SHA-256 `e18c49cb106df5b5e50f3b7123a080443a2ab48c709e68e721ee9965d96b1457`. One fixed LightGBM classifier was trained on the two earlier historical origins only. It exceeds v9 on both local splits and is applied unchanged to final features/retrieval. Both validators pass for all 1,260 users. Compared with submitted v9: 1,184 changed lists, 3,685 changed rank slots. **Not uploaded; no Kaggle result.** [English report, absolute path, conditional intervals and limitations](../results/lightgbm_reranker_20261030_v12/comparison_report.md); [accurate English submission description](../results/lightgbm_reranker_20261030_v12/submission_description.txt). V9 remains the best confirmed submitted model.

@@ -78,7 +78,7 @@ def fit_item_item(n50, *, top_k=50, shrinkage=20, min_coview=3, block_items=128)
     return neighbours, {it: int(support[j]) for j, it in enumerate(items)}, stats
 
 
-def score_user(counts, neighbours, candidates):
+def score_user(counts, neighbours, candidates, *, return_scores=False):
     contributions = defaultdict(float)
     for source in sorted(counts):
         if counts[source] <= 0:
@@ -89,6 +89,8 @@ def score_user(counts, neighbours, candidates):
                 contributions[destination] += weight * similarity
     direct = sorted(contributions, key=lambda it: (-contributions[it], it))
     unseen = [it for it in direct if counts.get(it, 0) == 0]
+    if return_scores:
+        return direct, unseen, dict(contributions)
     return direct, unseen
 
 
