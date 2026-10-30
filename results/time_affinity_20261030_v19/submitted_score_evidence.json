@@ -1,0 +1,10 @@
+{
+  "model": "v18",
+  "csv": "submissions/candidate_lightgbm_channel_affinity_20261030_v18.csv",
+  "csv_sha256": "a62d1afb1a0c015cb70fd60c1e89bb670b731f872b3433dc438526a5ae703c45",
+  "private": 0.43798,
+  "public": 0.44758,
+  "source": "User-screenshot-reported scores supplied in the v19 request; not independently fetched.",
+  "submission_id": null,
+  "submission_timestamp": null
+}

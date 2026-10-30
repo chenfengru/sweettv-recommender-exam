@@ -10,9 +10,10 @@
 | `candidate_adaptive_s40_e2_20261030_v11.csv` | 0.40257 / 0.41846 | `ccac509f8efeeddb9187f1ff2e5300db08f82ae0f9acd1f4ba7d8220f9dd26fb` |
 | `candidate_lightgbm_historical_fixed_20261030_v12.csv` | **0.42660 / 0.43394** | `e18c49cb106df5b5e50f3b7123a080443a2ab48c709e68e721ee9965d96b1457` |
 | `candidate_lightgbm_schedule_exposure_20261030_v13.csv` | **0.43400 / 0.43774** | `1fd147770b6be8ebcd64c89244af60cb8510440607358ec84c9adc6ffe7ec359` |
-| `candidate_lightgbm_lightfm_warp_20261030_v14.csv` | **0.43416** | **0.44157** | `108b159c4e2c687b45f4c4d3e6e9519bace4abc73d5ba888f927a0efbb30ce90` |
+| `candidate_lightgbm_lightfm_warp_20261030_v14.csv` | **0.43416 / 0.44157** | `108b159c4e2c687b45f4c4d3e6e9519bace4abc73d5ba888f927a0efbb30ce90` |
+| `candidate_lightgbm_channel_affinity_20261030_v18.csv` | **0.43798 / 0.44758** | `a62d1afb1a0c015cb70fd60c1e89bb670b731f872b3433dc438526a5ae703c45` |
 
-The user confirms these scores from Kaggle screenshots. They are not independently fetched in this experiment, and no unknown submission identifiers/timestamps are invented. The filenames retain their original candidate names after the user’s manual submissions. Every file remains byte-for-byte unchanged; v14 is now the best confirmed submitted model; older scores remain historical evidence.
+The user confirms these scores from Kaggle screenshots. They are not independently fetched in this experiment, and no unknown submission identifiers/timestamps are invented. The filenames retain their original candidate names after the user’s manual submissions. Every file remains byte-for-byte unchanged; v18 is now the best confirmed submitted model; older scores remain historical evidence.
 
 ## Latest C/D round: no new candidate
 
@@ -74,4 +75,8 @@ V17 fits exactly one LambdaRank model on the unchanged original v14 two-week his
 
 ## User-channel affinity extension: manual-review candidate
 
-`candidate_lightgbm_channel_affinity_20261030_v18.csv` has SHA-256 `a62d1afb1a0c015cb70fd60c1e89bb670b731f872b3433dc438526a5ae703c45`. Twelve fixed affinity features preserve all original v14 rows/labels/40 features and improve MAP@5 on both reused splits. Both validators pass for all 1,260 template users with the original header/order and five distinct nonzero available IDs. Versus submitted v14: 1,053 changed lists, 2,707 changed rank-position slots, 667 membership changes. [English report, exact path and limitations](../results/channel_affinity_20261030_v18/comparison_report.md); [English submission description](../results/channel_affinity_20261030_v18/submission_description.txt). Worth manual submission as a controlled candidate; no Kaggle result exists. V14 remains the confirmed incumbent. All previous files/checksums and native records remain unchanged; student verification is pending. Upload is solely the user’s manual action.
+`candidate_lightgbm_channel_affinity_20261030_v18.csv` has SHA-256 `a62d1afb1a0c015cb70fd60c1e89bb670b731f872b3433dc438526a5ae703c45`. Twelve fixed affinity features preserve all original v14 rows/labels/40 features and improve MAP@5 on both reused splits. Both validators pass for all 1,260 template users with the original header/order and five distinct nonzero available IDs. Versus submitted v14: 1,053 changed lists, 2,707 changed rank-position slots, 667 membership changes. [English report, exact path and limitations](../results/channel_affinity_20261030_v18/comparison_report.md); [English submission description](../results/channel_affinity_20261030_v18/submission_description.txt). The user now reports screenshot scores **Private 0.43798 / Public 0.44758**. Submission ID/time remain unknown; v18 is now the confirmed incumbent. All previous files/checksums and native records remain unchanged; student verification is pending. Upload is solely the user’s manual action.
+
+## Viewing-time affinity extension: retain submitted v18
+
+V19 appends exactly six hour-of-day/hour-of-week profile features to unchanged v18 inputs, using cleaned cross-channel-unioned user intervals and normalized clipped forecast schedules. Main MAP changes by −0.000989309309; auxiliary by +0.002195043704. It fails the both-split rule, so no new final CSV exists. [English report](../results/time_affinity_20261030_v19/comparison_report.md). Independent non-BLAS calculations reproduce all fitted/evaluated feature values bit-for-bit after platform numerical warnings. All 105 tests pass; prior artifacts/checksums/native records remain unchanged. Uploads remain manual-only and student verification is pending.
