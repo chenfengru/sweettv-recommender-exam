@@ -8,8 +8,9 @@
 | `candidate_personal_threshold_050_20261030_v5.csv` | **0.40210 / 0.41789** | `593b1134b6625771abfe107e17d074499cedf6efb4ef9306e06289e9566876e5` |
 | `candidate_personal_fifth_e2_20261030_v9.csv` | **0.40261 / 0.41871** | `f1378b0d6fed62793e14ebb4c1b64cf8b2163485485c15c861aae7e67e556375` |
 | `candidate_adaptive_s40_e2_20261030_v11.csv` | 0.40257 / 0.41846 | `ccac509f8efeeddb9187f1ff2e5300db08f82ae0f9acd1f4ba7d8220f9dd26fb` |
+| `candidate_lightgbm_historical_fixed_20261030_v12.csv` | **0.42660 / 0.43394** | `e18c49cb106df5b5e50f3b7123a080443a2ab48c709e68e721ee9965d96b1457` |
 
-The user confirms these scores from Kaggle screenshots. They are not independently fetched in this experiment, and no unknown submission identifiers/timestamps are invented. The filenames retain their original candidate names after the user’s manual submissions. Every file remains byte-for-byte unchanged; v9 E2 is now the best confirmed submitted model; older scores remain historical evidence.
+The user confirms these scores from Kaggle screenshots. They are not independently fetched in this experiment, and no unknown submission identifiers/timestamps are invented. The filenames retain their original candidate names after the user’s manual submissions. Every file remains byte-for-byte unchanged; v12 is now the best confirmed submitted model; older scores remain historical evidence.
 
 ## Latest C/D round: no new candidate
 
@@ -47,4 +48,8 @@ Exactly 0.30 and 0.40 were evaluated against 0.50 with E2 disabled throughout. N
 
 ## Fixed supervised reranker: manual-review candidate
 
-`candidate_lightgbm_historical_fixed_20261030_v12.csv` has SHA-256 `e18c49cb106df5b5e50f3b7123a080443a2ab48c709e68e721ee9965d96b1457`. One fixed LightGBM classifier was trained on the two earlier historical origins only. It exceeds v9 on both local splits and is applied unchanged to final features/retrieval. Both validators pass for all 1,260 users. Compared with submitted v9: 1,184 changed lists, 3,685 changed rank slots. **Not uploaded; no Kaggle result.** [English report, absolute path, conditional intervals and limitations](../results/lightgbm_reranker_20261030_v12/comparison_report.md); [accurate English submission description](../results/lightgbm_reranker_20261030_v12/submission_description.txt). V9 remains the best confirmed submitted model.
+`candidate_lightgbm_historical_fixed_20261030_v12.csv` has SHA-256 `e18c49cb106df5b5e50f3b7123a080443a2ab48c709e68e721ee9965d96b1457`. One fixed LightGBM classifier was trained on the two earlier historical origins only. It exceeds v9 on both local splits and is applied unchanged to final features/retrieval. Both validators pass for all 1,260 users. Compared with submitted v9: 1,184 changed lists, 3,685 changed rank slots. Initially prepared for manual review; the user now reports screenshot scores **Private 0.42660 / Public 0.43394**. Submission ID/time remain unknown. [English report, absolute path, conditional intervals and limitations](../results/lightgbm_reranker_20261030_v12/comparison_report.md); [accurate English submission description](../results/lightgbm_reranker_20261030_v12/submission_description.txt). V12 is now the best confirmed submitted model.
+
+## Schedule-exposure extension: manual-review candidate
+
+`candidate_lightgbm_schedule_exposure_20261030_v13.csv` has SHA-256 `1fd147770b6be8ebcd64c89244af60cb8510440607358ec84c9adc6ffe7ec359`. One fixed extension adds exactly seven schedule-only exposure features while preserving all original rows/labels/27 features/settings. It improves both local splits, and both validators pass for all 1,260 users. Versus submitted v12: 1,017 changed lists and 2,542 changed rank slots. **Not uploaded; no Kaggle result.** [English report, exact path and limitations](../results/schedule_reranker_20261030_v13/comparison_report.md); [accurate English submission description](../results/schedule_reranker_20261030_v13/submission_description.txt). V12 remains the confirmed incumbent.

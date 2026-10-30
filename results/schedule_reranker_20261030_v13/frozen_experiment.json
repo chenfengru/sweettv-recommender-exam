@@ -1,0 +1,38 @@
+{
+  "frozen_at_utc": "2026-10-30T15:20:07.909549+00:00",
+  "definition_sha256": "d8e8e000acfebec3265e6a18b7d17dbb455c5db283ac48cbaeafed485fcb15c7",
+  "parameters": {
+    "objective": "binary",
+    "learning_rate": 0.05,
+    "num_leaves": 15,
+    "max_depth": -1,
+    "min_child_samples": 100,
+    "reg_lambda": 1.0,
+    "n_estimators": 300,
+    "random_state": 42,
+    "n_jobs": 4,
+    "deterministic": true,
+    "force_col_wise": true,
+    "verbosity": -1
+  },
+  "classifier_fits_allowed": 1,
+  "new_feature_count": 7,
+  "source_artifact_sha256": {
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200406/features.npy": "5d6e32b9c4311abbe36485629843b093a22e601f687cdc5e09b55ed2531dee02",
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200406/row_index.json": "1b688d474ba3842961c26b5521cd54a0d174146edbb442404ec0aa5b591c18b1",
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200406/labels.npy": "b8aa87da7c7dd898c16d41a26d8d2db2f9dc35cb86cbc378acb8e22f500b4a26",
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200420/features.npy": "1bc28ea671d23a6f0d5fd0d67a129ed03354ee9b784e0892fa1daa9ec42fe9a1",
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200420/row_index.json": "8cfd91c441ed4287e7a37836080ecfc5a0c57b00eafa7052b0ff80468ca13cc4",
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200420/labels.npy": "2747e5780119a77aa8947871f155d4876f0420ebfa28317e434f8f1cefa49840",
+    "artifacts/lightgbm_reranker_20261030_v12/main/features.npy": "707574795ad6dfa62a6fda89b49ef736b5e06eb1db820a4211a9786a439e7448",
+    "artifacts/lightgbm_reranker_20261030_v12/main/row_index.json": "3970749dd964154ec269fb8cb6c6bdf202eb87fea42a4a892a55da7e0abb00a8",
+    "artifacts/lightgbm_reranker_20261030_v12/main/predictions.json": "90782f5f0806ffd1a775f577f98bd4a5be80869367d6984dd22ba3089fd7c747",
+    "artifacts/lightgbm_reranker_20261030_v12/auxiliary/features.npy": "e2c5b68d1a9eb67fa4df9cdd6a243f7e90c0223a02397dbea86af2c4b52da675",
+    "artifacts/lightgbm_reranker_20261030_v12/auxiliary/row_index.json": "5c069ab78a324f835d903caad4ee386e7f73d519e78b02f9bbdf6d2dfeb00e2c",
+    "artifacts/lightgbm_reranker_20261030_v12/auxiliary/predictions.json": "9e340dcd9f2b123fcb741ebeaf28c8ecefc067468654a4aca56040a79055bad4",
+    "artifacts/lightgbm_reranker_20261030_v12/final/features.npy": "b558bdde741ce292160a0607e53578adeafc3cb201937fd971fc79d7815a92d1",
+    "artifacts/lightgbm_reranker_20261030_v12/final/row_index.json": "495e698bd6cd282789fa12242a3e109d69aa42853cd04c486067f59428259313",
+    "artifacts/lightgbm_reranker_20261030_v12/final/predictions.json": "bf2a84a748caa1115ce24bf17aa18ba02972b3f05d836b201512d41c5594e386",
+    "artifacts/lightgbm_reranker_20261030_v12/frozen_model.txt": "f9e3774164b611ee806c9c170047f955a0d4e505ddadccffd7e4f85cf6abc30b"
+  }
+}

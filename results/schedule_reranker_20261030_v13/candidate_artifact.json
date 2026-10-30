@@ -1,0 +1,29 @@
+{
+  "filename": "candidate_lightgbm_schedule_exposure_20261030_v13.csv",
+  "absolute_path": "/Users/chenfengru/sweettv-recommender-exam/submissions/candidate_lightgbm_schedule_exposure_20261030_v13.csv",
+  "sha256": "1fd147770b6be8ebcd64c89244af60cb8510440607358ec84c9adc6ffe7ec359",
+  "validation": {
+    "status": "valid",
+    "users": 1260,
+    "k": 5,
+    "candidate_ids": 6649,
+    "distinct_recommended_ids": 120,
+    "template_sha256": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02",
+    "prediction_sha256": "1fd147770b6be8ebcd64c89244af60cb8510440607358ec84c9adc6ffe7ec359"
+  },
+  "differences_from_submitted_v12": {
+    "users": 1260,
+    "users_changed": 1017,
+    "users_identical": 243,
+    "recommendation_slots": 6300,
+    "rank_position_slots_changed": 2542,
+    "top5_items_in_common": 5570,
+    "top5_set_overlap_fraction": 0.8841269841269841,
+    "users_with_membership_change": 654,
+    "users_with_order_change_only": 363,
+    "new_item_slots_ignoring_order": 730
+  },
+  "classifier_sha256": "51078bfa7e49b7137308fc96aa0f0f2942b2575edeb1f714b2499aec16c316a6",
+  "inference_seconds": 0.4729527920135297,
+  "submission_description": "Fixed historical LightGBM reranker with v12 candidate union and 27 unchanged causal features, plus seven canonical schedule-exposure features: past28-day and exact future-window airings/day, clipped broadcastseconds/day, their log1p rate changes and zero-past indicator. Same two early training origins/labels and fixed300-tree settings; no future viewing/content features, E2, blend or cold override. Same frozen classifier applied at weeks11\u201330 cutoff for weeks31\u201342 carryover-aware candidates. Validated for manual review; no Kaggle score."
+}

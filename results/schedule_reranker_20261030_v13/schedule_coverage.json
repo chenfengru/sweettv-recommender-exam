@@ -1,0 +1,290 @@
+{
+  "sources": [
+    {
+      "file": "/Users/chenfengru/LLM4Rec-Course-codex/data/sweettv/raw/export_arh_11-20-final.csv",
+      "rows": 1074235,
+      "valid_rows": 115613,
+      "duplicates_against_previous_rows": 0,
+      "min_start": 1583708400.0,
+      "max_end": 1589796000.0
+    },
+    {
+      "file": "/Users/chenfengru/LLM4Rec-Course-codex/data/sweettv/raw/export_arh_21-30-final.csv",
+      "rows": 1074394,
+      "valid_rows": 121505,
+      "duplicates_against_previous_rows": 0,
+      "min_start": 1589760000.0,
+      "max_end": 1595837700.0
+    },
+    {
+      "file": "/Users/chenfengru/LLM4Rec-Course-codex/data/sweettv/raw/export_arh_31-42-final.csv",
+      "rows": 1295378,
+      "valid_rows": 144774,
+      "duplicates_against_previous_rows": 0,
+      "min_start": 1595808000.0,
+      "max_end": 1603102200.0
+    }
+  ],
+  "origins": {
+    "origin_20200406": {
+      "past": {
+        "window": [
+          1583712000.0,
+          1586131200.0
+        ],
+        "full_window_days": 28.0,
+        "canonical_airings": 45084,
+        "programmes": 3044,
+        "channels": 163,
+        "global_covered_seconds": 2419200.0,
+        "required_seconds": 2419200.0,
+        "global_coverage_fraction": 1.0,
+        "global_gaps": [],
+        "channel_coverage_fraction": {
+          "min": 0.0011160714285714285,
+          "median": 0.32514880952380953,
+          "max": 0.9985119047619048
+        },
+        "coverage_gate_passed": true
+      },
+      "future": {
+        "window": [
+          1586131200.0,
+          1587340800.0
+        ],
+        "full_window_days": 14.0,
+        "canonical_airings": 23362,
+        "programmes": 2143,
+        "channels": 167,
+        "global_covered_seconds": 1209600.0,
+        "required_seconds": 1209600.0,
+        "global_coverage_fraction": 1.0,
+        "global_gaps": [],
+        "channel_coverage_fraction": {
+          "min": 0.003968253968253968,
+          "median": 0.3117559523809524,
+          "max": 1.0
+        },
+        "coverage_gate_passed": true
+      },
+      "new_features": [
+        "past_airings_per_day",
+        "future_airings_per_day",
+        "past_broadcast_seconds_per_day",
+        "future_broadcast_seconds_per_day",
+        "log_airings_rate_change",
+        "log_broadcast_rate_change",
+        "past_airings_zero"
+      ],
+      "missing_schedule_coverage_imputed": false
+    },
+    "origin_20200420": {
+      "past": {
+        "window": [
+          1584921600.0,
+          1587340800.0
+        ],
+        "full_window_days": 28.0,
+        "canonical_airings": 45971,
+        "programmes": 3166,
+        "channels": 170,
+        "global_covered_seconds": 2419200.0,
+        "required_seconds": 2419200.0,
+        "global_coverage_fraction": 1.0,
+        "global_gaps": [],
+        "channel_coverage_fraction": {
+          "min": 0.000496031746031746,
+          "median": 0.30267857142857146,
+          "max": 0.9985119047619048
+        },
+        "coverage_gate_passed": true
+      },
+      "future": {
+        "window": [
+          1587340800.0,
+          1588550400.0
+        ],
+        "full_window_days": 14.0,
+        "canonical_airings": 23350,
+        "programmes": 2515,
+        "channels": 167,
+        "global_covered_seconds": 1209600.0,
+        "required_seconds": 1209600.0,
+        "global_coverage_fraction": 1.0,
+        "global_gaps": [],
+        "channel_coverage_fraction": {
+          "min": 0.001984126984126984,
+          "median": 0.36334325396825395,
+          "max": 1.0
+        },
+        "coverage_gate_passed": true
+      },
+      "new_features": [
+        "past_airings_per_day",
+        "future_airings_per_day",
+        "past_broadcast_seconds_per_day",
+        "future_broadcast_seconds_per_day",
+        "log_airings_rate_change",
+        "log_broadcast_rate_change",
+        "past_airings_zero"
+      ],
+      "missing_schedule_coverage_imputed": false
+    },
+    "main": {
+      "past": {
+        "window": [
+          1587340800.0,
+          1589760000.0
+        ],
+        "full_window_days": 28.0,
+        "canonical_airings": 46989,
+        "programmes": 4035,
+        "channels": 173,
+        "global_covered_seconds": 2419200.0,
+        "required_seconds": 2419200.0,
+        "global_coverage_fraction": 1.0,
+        "global_gaps": [],
+        "channel_coverage_fraction": {
+          "min": 0.001488095238095238,
+          "median": 0.36259920634920634,
+          "max": 1.0
+        },
+        "coverage_gate_passed": true
+      },
+      "future": {
+        "window": [
+          1589760000.0,
+          1595808000.0
+        ],
+        "full_window_days": 70.0,
+        "canonical_airings": 121587,
+        "programmes": 6384,
+        "channels": 188,
+        "global_covered_seconds": 6048000.0,
+        "required_seconds": 6048000.0,
+        "global_coverage_fraction": 1.0,
+        "global_gaps": [],
+        "channel_coverage_fraction": {
+          "min": 0.001736111111111111,
+          "median": 0.30679563492063494,
+          "max": 1.0
+        },
+        "coverage_gate_passed": true
+      },
+      "new_features": [
+        "past_airings_per_day",
+        "future_airings_per_day",
+        "past_broadcast_seconds_per_day",
+        "future_broadcast_seconds_per_day",
+        "log_airings_rate_change",
+        "log_broadcast_rate_change",
+        "past_airings_zero"
+      ],
+      "missing_schedule_coverage_imputed": false
+    },
+    "auxiliary": {
+      "past": {
+        "window": [
+          1588550400.0,
+          1590969600.0
+        ],
+        "full_window_days": 28.0,
+        "canonical_airings": 47216,
+        "programmes": 3964,
+        "channels": 170,
+        "global_covered_seconds": 2419200.0,
+        "required_seconds": 2419200.0,
+        "global_coverage_fraction": 1.0,
+        "global_gaps": [],
+        "channel_coverage_fraction": {
+          "min": 0.004464285714285714,
+          "median": 0.36842757936507936,
+          "max": 1.0
+        },
+        "coverage_gate_passed": true
+      },
+      "future": {
+        "window": [
+          1590969600.0,
+          1595808000.0
+        ],
+        "full_window_days": 56.0,
+        "canonical_airings": 98071,
+        "programmes": 5742,
+        "channels": 188,
+        "global_covered_seconds": 4838400.0,
+        "required_seconds": 4838400.0,
+        "global_coverage_fraction": 1.0,
+        "global_gaps": [],
+        "channel_coverage_fraction": {
+          "min": 0.0016121031746031745,
+          "median": 0.3154141865079365,
+          "max": 1.0
+        },
+        "coverage_gate_passed": true
+      },
+      "new_features": [
+        "past_airings_per_day",
+        "future_airings_per_day",
+        "past_broadcast_seconds_per_day",
+        "future_broadcast_seconds_per_day",
+        "log_airings_rate_change",
+        "log_broadcast_rate_change",
+        "past_airings_zero"
+      ],
+      "missing_schedule_coverage_imputed": false
+    },
+    "final": {
+      "past": {
+        "window": [
+          1593388800.0,
+          1595808000.0
+        ],
+        "full_window_days": 28.0,
+        "canonical_airings": 49390,
+        "programmes": 3975,
+        "channels": 185,
+        "global_covered_seconds": 2419200.0,
+        "required_seconds": 2419200.0,
+        "global_coverage_fraction": 1.0,
+        "global_gaps": [],
+        "channel_coverage_fraction": {
+          "min": 0.001736111111111111,
+          "median": 0.3168402777777778,
+          "max": 1.0
+        },
+        "coverage_gate_passed": true
+      },
+      "future": {
+        "window": [
+          1595808000.0,
+          1603065600.0
+        ],
+        "full_window_days": 84.0,
+        "canonical_airings": 144842,
+        "programmes": 6649,
+        "channels": 191,
+        "global_covered_seconds": 7257600.0,
+        "required_seconds": 7257600.0,
+        "global_coverage_fraction": 1.0,
+        "global_gaps": [],
+        "channel_coverage_fraction": {
+          "min": 0.0005787037037037037,
+          "median": 0.27881117724867727,
+          "max": 1.0
+        },
+        "coverage_gate_passed": true
+      },
+      "new_features": [
+        "past_airings_per_day",
+        "future_airings_per_day",
+        "past_broadcast_seconds_per_day",
+        "future_broadcast_seconds_per_day",
+        "log_airings_rate_change",
+        "log_broadcast_rate_change",
+        "past_airings_zero"
+      ],
+      "missing_schedule_coverage_imputed": false
+    }
+  }
+}
