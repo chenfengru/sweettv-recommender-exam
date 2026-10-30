@@ -1,0 +1,3 @@
+{
+  "decision": "Retain v14. New model fails strict gain on both splits; diagnostic is not selectable. No final expansion/CSV or further variants."
+}

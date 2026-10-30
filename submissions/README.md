@@ -10,8 +10,9 @@
 | `candidate_adaptive_s40_e2_20261030_v11.csv` | 0.40257 / 0.41846 | `ccac509f8efeeddb9187f1ff2e5300db08f82ae0f9acd1f4ba7d8220f9dd26fb` |
 | `candidate_lightgbm_historical_fixed_20261030_v12.csv` | **0.42660 / 0.43394** | `e18c49cb106df5b5e50f3b7123a080443a2ab48c709e68e721ee9965d96b1457` |
 | `candidate_lightgbm_schedule_exposure_20261030_v13.csv` | **0.43400 / 0.43774** | `1fd147770b6be8ebcd64c89244af60cb8510440607358ec84c9adc6ffe7ec359` |
+| `candidate_lightgbm_lightfm_warp_20261030_v14.csv` | **0.43416** | **0.44157** | `108b159c4e2c687b45f4c4d3e6e9519bace4abc73d5ba888f927a0efbb30ce90` |
 
-The user confirms these scores from Kaggle screenshots. They are not independently fetched in this experiment, and no unknown submission identifiers/timestamps are invented. The filenames retain their original candidate names after the user’s manual submissions. Every file remains byte-for-byte unchanged; v13 is now the best confirmed submitted model; older scores remain historical evidence.
+The user confirms these scores from Kaggle screenshots. They are not independently fetched in this experiment, and no unknown submission identifiers/timestamps are invented. The filenames retain their original candidate names after the user’s manual submissions. Every file remains byte-for-byte unchanged; v14 is now the best confirmed submitted model; older scores remain historical evidence.
 
 ## Latest C/D round: no new candidate
 
@@ -57,4 +58,8 @@ Exactly 0.30 and 0.40 were evaluated against 0.50 with E2 disabled throughout. N
 
 ## Identity LightFM WARP extension: manual-review candidate
 
-`candidate_lightgbm_lightfm_warp_20261030_v14.csv` has SHA-256 `108b159c4e2c687b45f4c4d3e6e9519bace4abc73d5ba888f927a0efbb30ce90`. Six support-aware scalar features extend unchanged v13 inputs and candidates. Both point estimates exceed v13, so the fixed rule qualifies it, but the auxiliary interval includes zero. Both validators pass for all 1,260 users; 811 lists and 1,818 rank slots differ from submitted v13. **Not uploaded; no Kaggle result.** [English report, exact path and limitations](../results/lightfm_extension_20261030_v14/comparison_report.md); [accurate English submission description](../results/lightfm_extension_20261030_v14/submission_description.txt). V13 remains the confirmed submitted incumbent.
+`candidate_lightgbm_lightfm_warp_20261030_v14.csv` has SHA-256 `108b159c4e2c687b45f4c4d3e6e9519bace4abc73d5ba888f927a0efbb30ce90`. Six support-aware scalar features extend unchanged v13 inputs and candidates. Both point estimates exceed v13, so the fixed rule qualifies it, but the auxiliary interval includes zero. Both validators pass for all 1,260 users; 811 lists and 1,818 rank slots differ from submitted v13. The user now reports screenshot scores **Private 0.43416 / Public 0.44157**; submission ID and timestamp are unknown. [English report, exact path and limitations](../results/lightfm_extension_20261030_v14/comparison_report.md); [accurate English submission description](../results/lightfm_extension_20261030_v14/submission_description.txt). V14 is the confirmed submitted incumbent.
+
+## Fixed LightFM unseen candidate expansion: retain v14
+
+V15 expands each supported user’s unchanged v14 candidate union with the first 50 available N50-unseen LightFM programmes, deduplicating only after truncation. One new fixed classifier fails the both-split rule: main −0.001858138138, auxiliary +0.000130384252. No new CSV, final refit or submission description was generated. The frozen-classifier diagnostic is separate and ineligible. [English report](../results/lightfm_expansion_20261030_v15/comparison_report.md). All previous CSVs/checksums remain unchanged. Uploads remain manual-only; student verification is pending.

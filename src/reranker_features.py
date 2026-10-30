@@ -115,7 +115,9 @@ def candidate_union(personal, unseen, fallback, pool):
     return sorted(set.union(*sources)), sources
 
 
-def user_features(u, history, neighbours, pool, viewers, total, fallback):
+def user_features(
+    u, history, neighbours, pool, viewers, total, fallback, *, candidate_items=None
+):
     counts = history["counts"]
     n50 = counts[0.5].get(u, {})
     personal = personal_order(
@@ -123,6 +125,9 @@ def user_features(u, history, neighbours, pool, viewers, total, fallback):
     )
     direct, unseen, scores = score_user(n50, neighbours, pool, return_scores=True)
     items, sources = candidate_union(personal, unseen, fallback, pool)
+    if candidate_items is not None:
+        items = list(candidate_items)
+        assert len(items) == len(set(items)) and set(items) <= pool
     p_rank = {it: r for r, it in enumerate(personal, 1)}
     i_rank = {it: r for r, it in enumerate(direct, 1)}
     user_sizes = [len(counts[t].get(u, {})) for t in [0.3, 0.5, 0.8]]

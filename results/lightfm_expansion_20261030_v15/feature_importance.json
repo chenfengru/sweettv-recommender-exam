@@ -1,0 +1,202 @@
+[
+  {
+    "feature": "n30",
+    "gain": 381677.756690979,
+    "split": 282
+  },
+  {
+    "feature": "n50_last28days",
+    "gain": 219135.738822937,
+    "split": 125
+  },
+  {
+    "feature": "n50",
+    "gain": 72855.13395643234,
+    "split": 34
+  },
+  {
+    "feature": "lightfm_rank",
+    "gain": 70556.01072001457,
+    "split": 205
+  },
+  {
+    "feature": "future_airings_per_day",
+    "gain": 32087.836369752884,
+    "split": 354
+  },
+  {
+    "feature": "personal_n50_rank",
+    "gain": 25164.83539748192,
+    "split": 84
+  },
+  {
+    "feature": "global_airings80",
+    "gain": 24077.709937095642,
+    "split": 148
+  },
+  {
+    "feature": "n80",
+    "gain": 23458.597184419632,
+    "split": 114
+  },
+  {
+    "feature": "log_airings_rate_change",
+    "gain": 13474.248784542084,
+    "split": 278
+  },
+  {
+    "feature": "log_broadcast_rate_change",
+    "gain": 11112.734847784042,
+    "split": 258
+  },
+  {
+    "feature": "item_item_score",
+    "gain": 10563.149602890015,
+    "split": 274
+  },
+  {
+    "feature": "days_since_last_n50_view",
+    "gain": 8061.336490154266,
+    "split": 159
+  },
+  {
+    "feature": "global_viewers80",
+    "gain": 7376.580167770386,
+    "split": 161
+  },
+  {
+    "feature": "n50_last7days",
+    "gain": 7262.562748432159,
+    "split": 62
+  },
+  {
+    "feature": "item_item_rank",
+    "gain": 5764.525837659836,
+    "split": 229
+  },
+  {
+    "feature": "user_airings80",
+    "gain": 3856.3403458595276,
+    "split": 175
+  },
+  {
+    "feature": "past_broadcast_seconds_per_day",
+    "gain": 3713.6523213386536,
+    "split": 124
+  },
+  {
+    "feature": "user_airings30",
+    "gain": 3599.601313352585,
+    "split": 126
+  },
+  {
+    "feature": "lightfm_item_bias",
+    "gain": 3376.027315378189,
+    "split": 157
+  },
+  {
+    "feature": "user_airings50",
+    "gain": 2811.448103904724,
+    "split": 114
+  },
+  {
+    "feature": "future_broadcast_seconds_per_day",
+    "gain": 2536.4267632961273,
+    "split": 142
+  },
+  {
+    "feature": "user_history30",
+    "gain": 2503.652233362198,
+    "split": 115
+  },
+  {
+    "feature": "past_airings_per_day",
+    "gain": 2181.420660018921,
+    "split": 115
+  },
+  {
+    "feature": "lightfm_score",
+    "gain": 2033.6571476459503,
+    "split": 131
+  },
+  {
+    "feature": "user_history80",
+    "gain": 1918.3004052639008,
+    "split": 74
+  },
+  {
+    "feature": "lightfm_user_bias",
+    "gain": 1825.7942397594452,
+    "split": 106
+  },
+  {
+    "feature": "user_history50",
+    "gain": 1419.9241256713867,
+    "split": 48
+  },
+  {
+    "feature": "source_global5",
+    "gain": 154.45300197601318,
+    "split": 2
+  },
+  {
+    "feature": "source_unseen50",
+    "gain": 48.40806007385254,
+    "split": 4
+  },
+  {
+    "feature": "log1p_n30",
+    "gain": 0.0,
+    "split": 0
+  },
+  {
+    "feature": "log1p_n50",
+    "gain": 0.0,
+    "split": 0
+  },
+  {
+    "feature": "log1p_n80",
+    "gain": 0.0,
+    "split": 0
+  },
+  {
+    "feature": "personal_rank_missing",
+    "gain": 0.0,
+    "split": 0
+  },
+  {
+    "feature": "item_item_score_missing",
+    "gain": 0.0,
+    "split": 0
+  },
+  {
+    "feature": "item_item_rank_missing",
+    "gain": 0.0,
+    "split": 0
+  },
+  {
+    "feature": "last_n50_view_missing",
+    "gain": 0.0,
+    "split": 0
+  },
+  {
+    "feature": "source_personal200",
+    "gain": 0.0,
+    "split": 0
+  },
+  {
+    "feature": "past_airings_zero",
+    "gain": 0.0,
+    "split": 0
+  },
+  {
+    "feature": "lightfm_unsupported_user",
+    "gain": 0.0,
+    "split": 0
+  },
+  {
+    "feature": "lightfm_unsupported_item",
+    "gain": 0.0,
+    "split": 0
+  }
+]
