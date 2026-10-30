@@ -1,0 +1,11 @@
+{
+  "frozen_at_utc": "2026-10-30T08:37:48.601249+00:00",
+  "definition_file": "docs/viewing_strength_protocol.md",
+  "definition_sha256": "0719affae203031ccfdc939a0a2055b9bef7aed27833a9ba08c53fa96f9b3dfe",
+  "weights": [
+    0.5,
+    1.0
+  ],
+  "baseline_weight": 0,
+  "workflow": "manual review only"
+}

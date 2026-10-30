@@ -1,0 +1,18 @@
+{
+  "evaluation_users": 4589,
+  "macro_personal_history_recall": 0.5684426527202732,
+  "micro_relevant_covered": 12360,
+  "micro_relevant_total": 21080,
+  "micro_relevant_coverage": 0.5863377609108159,
+  "relevant_rank_buckets": {
+    "1\u20135": 8396,
+    "6\u201320": 3468,
+    "21\u201350": 478,
+    "beyond_50": 18,
+    "absent": 8720
+  },
+  "personal_history_only_oracle_map_at_5": 0.5684426527202732,
+  "absent_with_other_users_n50": 7349,
+  "absent_without_any_n50": 1371,
+  "oracle_scope": "Diagnostic upper bound for personal-history-only retrieval; not attainable model performance or a bound for full system with fallback."
+}

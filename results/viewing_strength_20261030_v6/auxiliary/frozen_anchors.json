@@ -1,0 +1,4 @@
+{
+  "sha256": "f33cf5f34f7a8882a131ad72bfa7009d0c438dd520761d0c32d817f960f363dc",
+  "components": "truth, >=80% global viewer/airing counts, fallback, original history slices, candidates"
+}

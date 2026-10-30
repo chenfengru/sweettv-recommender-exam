@@ -2,7 +2,7 @@
 
 Individual TV-programme recommendation project for LLM4Rec (FKN).
 
-**Current status: T50 candidate prepared for manual review; v3 remains the best confirmed submitted baseline.** Lowering only personal training qualification to 0.50 improves main MAP@5 to **0.334711171171** (+0.007857177177) and auxiliary to **0.331395910511** (+0.007286990630), with truth, global tie keys and fallback anchored to 0.80. T65 also improves both, but less. [Full English report and conditional uncertainty](results/personal_threshold_20261030_v5/comparison_report.md). All **45 tests pass**. One new validated CSV is preserved under `submissions/`; prior artifacts are unchanged. No Kaggle action was taken. Manual review/upload and student verification remain pending.
+**Current status: retain submitted v5 (T50).** User-reported screenshot scores are Private **0.40210**, Public **0.41789**. The two viewing-strength bonuses reduce MAP@5 on both reused splits, so no new CSV was generated. Personal history covers 58.22% / 58.63% of relevant items; coverage is the larger source of personal-prefix misses, with substantial ranking headroom too. [English diagnostics, comparison and conditional uncertainty](results/viewing_strength_20261030_v6/comparison_report.md). All **48 tests pass**. Previous CSVs/checksums and native session records are preserved. No Kaggle action was taken; manual review and student verification remain pending.
 
 ## Start here
 

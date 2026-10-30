@@ -5,8 +5,9 @@
 | `first_personal_original_20261029_v1.csv` | 0.38937 / 0.39131 | `53cb8ae4b59b26ab6ee00b5e99ad91044876180e662732a755d3e99a297e64bc` |
 | `candidate_rrf_als_lb80_w0p1_20261029_v2.csv` | 0.38663 / 0.38852 | `905971a8a9c47bcf4a88e14cd10d2514feaaea43900d6f513b2eecc4986f19f5` |
 | `candidate_personal_tie_popularity_20261030_v3.csv` | **0.39697 / 0.40288** | `39aac2794395209b2299ccee2e2bb1b4b9afde22f3e06ccb5b04f3d706c9522f` |
+| `candidate_personal_threshold_050_20261030_v5.csv` | **0.40210 / 0.41789** | `593b1134b6625771abfe107e17d074499cedf6efb4ef9306e06289e9566876e5` |
 
-The user confirms these scores from Kaggle screenshots. They are not independently fetched in this experiment, and no unknown submission identifiers/timestamps are invented. The filenames retain their original candidate names after the user’s manual submissions. Every file remains byte-for-byte unchanged; v3 is the best submitted baseline.
+The user confirms these scores from Kaggle screenshots. They are not independently fetched in this experiment, and no unknown submission identifiers/timestamps are invented. The filenames retain their original candidate names after the user’s manual submissions. Every file remains byte-for-byte unchanged; v5 is now the best submitted baseline; older scores remain historical evidence.
 
 ## Latest C/D round: no new candidate
 
@@ -16,4 +17,8 @@ V3 already preserves the original template header/order, five distinct nonzero a
 
 ## Personal-threshold round: manual-review candidate
 
-Selected T50 improves both frozen splits. `candidate_personal_threshold_050_20261030_v5.csv` has SHA-256 `593b1134b6625771abfe107e17d074499cedf6efb4ef9306e06289e9566876e5`; both validators pass for all 1,260 template users. It has **not been submitted** and has no Kaggle score. [Results, limitations and exact path](../results/personal_threshold_20261030_v5/comparison_report.md). The earlier C/D result above remains historical evidence and was not rerun.
+Selected T50 improves both frozen splits. `candidate_personal_threshold_050_20261030_v5.csv` has SHA-256 `593b1134b6625771abfe107e17d074499cedf6efb4ef9306e06289e9566876e5`; both validators pass for all 1,260 template users. It was initially prepared for manual review; the user now confirms manual-submission screenshot scores Private **0.40210**, Public **0.41789**. Submission ID and timestamp remain unknown. [Results, limitations and exact path](../results/personal_threshold_20261030_v5/comparison_report.md). The earlier C/D result above remains historical evidence and was not rerun.
+
+## Viewing-strength round: retain v5
+
+Exactly lambda 0.5 and 1.0 bonuses were tested against v5, with >=0.80 global anchors and validation truth unchanged. Both reduce MAP on both reused splits. No new CSV or combined-window refit was generated. [English diagnostics and experiment report](../results/viewing_strength_20261030_v6/comparison_report.md). Other-user retrieval is supported as a later investigation by the coverage diagnostics; no collaborative retrieval was implemented. Uploads remain manual-only.
