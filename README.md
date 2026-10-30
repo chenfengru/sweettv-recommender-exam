@@ -2,7 +2,7 @@
 
 Individual TV-programme recommendation project for LLM4Rec (FKN).
 
-**Current status: retain submitted v5; controlled v5/v7 RRF did not improve ranking.** All three fixed weights (0.05, 0.10, 0.20) lower MAP@5 on both splits. The least harmful weight, 0.05, yields **0.331631231231 / 0.327938790828**, versus v5 **0.334711171171 / 0.331395910511**. Unseen hits do not offset lost personal-history hits. [English fusion report, conditional intervals and seen/unseen attribution](results/item_fusion_20261030_v8/comparison_report.md). All **58 tests pass**. No final refit, CSV or Kaggle action was generated; previous artifacts/checksums and native session records are preserved. Student verification remains pending.
+**Current status: E2 fifth-position candidate validated for manual review; v5 remains the best confirmed submitted model.** E2 replaces only the fifth item when original positions4 and5 both have N50=1. Main MAP@5 **0.335652432432** (+0.000941261261); auxiliary **0.332178216024** (+0.000782305513). Both conditional paired-bootstrap intervals are positive, with reused-cohort/selection limitations. E2 wins the frozen max-min rule. [English report and artifact details](results/fifth_replacement_20261030_v9/comparison_report.md). The validated CSV changes **58** of1,260 users, only at position5. All **62 tests pass**. No Kaggle action was taken; previous artifacts/checksums and native session records are unchanged. Student verification remains pending.
 
 ## Start here
 

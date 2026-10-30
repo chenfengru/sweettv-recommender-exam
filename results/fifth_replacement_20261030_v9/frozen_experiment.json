@@ -1,0 +1,13 @@
+{
+  "frozen_at_utc": "2026-10-30T09:47:21.163433+00:00",
+  "definition_sha256": "f3c8de17cfeab44b663c7e4cfdada4240e7e8fe05e44c32f06b989973d189ac9",
+  "rules": [
+    "E1",
+    "E2",
+    "E3"
+  ],
+  "unseen_direct_limit": 50,
+  "bootstrap_resamples": 2000,
+  "seed": 42,
+  "selection": "strictly positive both; max minimum absolute improvement; ties fewer main replacements then E1,E2,E3"
+}

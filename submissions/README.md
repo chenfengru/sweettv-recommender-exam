@@ -30,3 +30,7 @@ One fixed model per existing temporal split recovers useful unseen targets, but 
 ## Controlled v5/v7 RRF round: retain submitted v5
 
 All three predeclared weights (0.05, 0.10, 0.20) reduce MAP@5 on both frozen splits. No configuration satisfies the two-split eligibility rule; no final refit or prediction CSV was generated. [Full English report and paired uncertainty](../results/item_fusion_20261030_v8/comparison_report.md). Every previous artifact remains byte-identical; no Kaggle action was taken.
+
+## Fifth-position round: E2 manual-review candidate
+
+`candidate_personal_fifth_e2_20261030_v9.csv` has SHA-256 `f1378b0d6fed62793e14ebb4c1b64cf8b2163485485c15c861aae7e67e556375`. E2 improves both reused splits and wins the predeclared max-min rule. Both validators pass for all1,260 template users. Exactly58 fifth-position replacements; all first four positions remain identical to submitted v5. **Not uploaded; no Kaggle score.** [English evidence and exact path](../results/fifth_replacement_20261030_v9/comparison_report.md); [manual submission description](../results/fifth_replacement_20261030_v9/submission_description.txt). V5 remains the best confirmed submitted artifact, and all prior CSVs/checksums are preserved.

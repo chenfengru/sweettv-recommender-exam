@@ -1,0 +1,825 @@
+{
+  "split": "main",
+  "evaluation_users": 4625,
+  "candidates": 6384,
+  "results": {
+    "v5": {
+      "map_at_5": 0.33471117117117116
+    },
+    "E1": {
+      "users": 4625,
+      "map_at_5": 0.33520126126126126,
+      "v5_map_at_5": 0.33471117117117116,
+      "delta_from_v5": 0.0004900900900900901,
+      "eligible_users": 962,
+      "available_replacement_users_whole_cohort": 4551,
+      "eligible_with_available_replacement": 962,
+      "actual_replacements": 962,
+      "inserted_relevant": 119,
+      "removed_relevant": 91,
+      "both_relevant": 14,
+      "neither_relevant": 766,
+      "inserted_only_relevant": 105,
+      "removed_only_relevant": 77,
+      "net_relevant_hit_change": 28,
+      "whole_cohort_ap_outcomes": {
+        "users": 4625,
+        "improved": 105,
+        "worsened": 77,
+        "unchanged": 4443
+      },
+      "replaced_users_ap_outcomes": {
+        "users": 962,
+        "improved": 105,
+        "worsened": 77,
+        "unchanged": 780
+      },
+      "prediction_changes": {
+        "users": 4625,
+        "users_changed": 962,
+        "users_identical": 3663,
+        "recommendation_slots": 23125,
+        "rank_position_slots_changed": 962,
+        "top5_items_in_common": 22163,
+        "top5_set_overlap_fraction": 0.9584,
+        "users_with_membership_change": 962,
+        "users_with_order_change_only": 0,
+        "new_item_slots_ignoring_order": 962
+      },
+      "invariants": {
+        "first_four_identical": true,
+        "all_actual_replacements_unseen_available_distinct_and_outside_original_top5": true
+      },
+      "history_slices": {
+        "0": {
+          "users": 108,
+          "map_at_5": 0.16289609053497942,
+          "v5_map_at_5": 0.16289609053497942,
+          "delta_from_v5": 0.0,
+          "eligible_users": 3,
+          "available_replacement_users_whole_cohort": 34,
+          "eligible_with_available_replacement": 3,
+          "actual_replacements": 3,
+          "inserted_relevant": 0,
+          "removed_relevant": 0,
+          "both_relevant": 0,
+          "neither_relevant": 3,
+          "inserted_only_relevant": 0,
+          "removed_only_relevant": 0,
+          "net_relevant_hit_change": 0,
+          "whole_cohort_ap_outcomes": {
+            "users": 108,
+            "improved": 0,
+            "worsened": 0,
+            "unchanged": 108
+          },
+          "replaced_users_ap_outcomes": {
+            "users": 3,
+            "improved": 0,
+            "worsened": 0,
+            "unchanged": 3
+          },
+          "prediction_changes": {
+            "users": 108,
+            "users_changed": 3,
+            "users_identical": 105,
+            "recommendation_slots": 540,
+            "rank_position_slots_changed": 3,
+            "top5_items_in_common": 537,
+            "top5_set_overlap_fraction": 0.9944444444444445,
+            "users_with_membership_change": 3,
+            "users_with_order_change_only": 0,
+            "new_item_slots_ignoring_order": 3
+          },
+          "invariants": {
+            "first_four_identical": true,
+            "all_actual_replacements_unseen_available_distinct_and_outside_original_top5": true
+          }
+        },
+        "1\u20135": {
+          "users": 462,
+          "map_at_5": 0.19734848484848483,
+          "v5_map_at_5": 0.19396464646464645,
+          "delta_from_v5": 0.0033838383838383835,
+          "eligible_users": 323,
+          "available_replacement_users_whole_cohort": 462,
+          "eligible_with_available_replacement": 323,
+          "actual_replacements": 323,
+          "inserted_relevant": 36,
+          "removed_relevant": 14,
+          "both_relevant": 4,
+          "neither_relevant": 277,
+          "inserted_only_relevant": 32,
+          "removed_only_relevant": 10,
+          "net_relevant_hit_change": 22,
+          "whole_cohort_ap_outcomes": {
+            "users": 462,
+            "improved": 32,
+            "worsened": 10,
+            "unchanged": 420
+          },
+          "replaced_users_ap_outcomes": {
+            "users": 323,
+            "improved": 32,
+            "worsened": 10,
+            "unchanged": 281
+          },
+          "prediction_changes": {
+            "users": 462,
+            "users_changed": 323,
+            "users_identical": 139,
+            "recommendation_slots": 2310,
+            "rank_position_slots_changed": 323,
+            "top5_items_in_common": 1987,
+            "top5_set_overlap_fraction": 0.8601731601731601,
+            "users_with_membership_change": 323,
+            "users_with_order_change_only": 0,
+            "new_item_slots_ignoring_order": 323
+          },
+          "invariants": {
+            "first_four_identical": true,
+            "all_actual_replacements_unseen_available_distinct_and_outside_original_top5": true
+          }
+        },
+        "6\u201320": {
+          "users": 2087,
+          "map_at_5": 0.30830578182398977,
+          "v5_map_at_5": 0.3078921098865996,
+          "delta_from_v5": 0.00041367193739019336,
+          "eligible_users": 604,
+          "available_replacement_users_whole_cohort": 2087,
+          "eligible_with_available_replacement": 604,
+          "actual_replacements": 604,
+          "inserted_relevant": 80,
+          "removed_relevant": 72,
+          "both_relevant": 10,
+          "neither_relevant": 462,
+          "inserted_only_relevant": 70,
+          "removed_only_relevant": 62,
+          "net_relevant_hit_change": 8,
+          "whole_cohort_ap_outcomes": {
+            "users": 2087,
+            "improved": 70,
+            "worsened": 62,
+            "unchanged": 1955
+          },
+          "replaced_users_ap_outcomes": {
+            "users": 604,
+            "improved": 70,
+            "worsened": 62,
+            "unchanged": 472
+          },
+          "prediction_changes": {
+            "users": 2087,
+            "users_changed": 604,
+            "users_identical": 1483,
+            "recommendation_slots": 10435,
+            "rank_position_slots_changed": 604,
+            "top5_items_in_common": 9831,
+            "top5_set_overlap_fraction": 0.942117872544322,
+            "users_with_membership_change": 604,
+            "users_with_order_change_only": 0,
+            "new_item_slots_ignoring_order": 604
+          },
+          "invariants": {
+            "first_four_identical": true,
+            "all_actual_replacements_unseen_available_distinct_and_outside_original_top5": true
+          }
+        },
+        "21+": {
+          "users": 1968,
+          "map_at_5": 0.40554059394760616,
+          "v5_map_at_5": 0.4056218947606143,
+          "delta_from_v5": -8.130081300813008e-05,
+          "eligible_users": 32,
+          "available_replacement_users_whole_cohort": 1968,
+          "eligible_with_available_replacement": 32,
+          "actual_replacements": 32,
+          "inserted_relevant": 3,
+          "removed_relevant": 5,
+          "both_relevant": 0,
+          "neither_relevant": 24,
+          "inserted_only_relevant": 3,
+          "removed_only_relevant": 5,
+          "net_relevant_hit_change": -2,
+          "whole_cohort_ap_outcomes": {
+            "users": 1968,
+            "improved": 3,
+            "worsened": 5,
+            "unchanged": 1960
+          },
+          "replaced_users_ap_outcomes": {
+            "users": 32,
+            "improved": 3,
+            "worsened": 5,
+            "unchanged": 24
+          },
+          "prediction_changes": {
+            "users": 1968,
+            "users_changed": 32,
+            "users_identical": 1936,
+            "recommendation_slots": 9840,
+            "rank_position_slots_changed": 32,
+            "top5_items_in_common": 9808,
+            "top5_set_overlap_fraction": 0.9967479674796748,
+            "users_with_membership_change": 32,
+            "users_with_order_change_only": 0,
+            "new_item_slots_ignoring_order": 32
+          },
+          "invariants": {
+            "first_four_identical": true,
+            "all_actual_replacements_unseen_available_distinct_and_outside_original_top5": true
+          }
+        }
+      },
+      "evaluation_seconds": 0.04739254101878032,
+      "paired_bootstrap_95pct": [
+        -3.25225225225224e-05,
+        0.0010119279279279278
+      ]
+    },
+    "E2": {
+      "users": 4625,
+      "map_at_5": 0.3356524324324324,
+      "v5_map_at_5": 0.33471117117117116,
+      "delta_from_v5": 0.0009412612612612611,
+      "eligible_users": 705,
+      "available_replacement_users_whole_cohort": 4551,
+      "eligible_with_available_replacement": 705,
+      "actual_replacements": 705,
+      "inserted_relevant": 92,
+      "removed_relevant": 37,
+      "both_relevant": 8,
+      "neither_relevant": 584,
+      "inserted_only_relevant": 84,
+      "removed_only_relevant": 29,
+      "net_relevant_hit_change": 55,
+      "whole_cohort_ap_outcomes": {
+        "users": 4625,
+        "improved": 84,
+        "worsened": 29,
+        "unchanged": 4512
+      },
+      "replaced_users_ap_outcomes": {
+        "users": 705,
+        "improved": 84,
+        "worsened": 29,
+        "unchanged": 592
+      },
+      "prediction_changes": {
+        "users": 4625,
+        "users_changed": 705,
+        "users_identical": 3920,
+        "recommendation_slots": 23125,
+        "rank_position_slots_changed": 705,
+        "top5_items_in_common": 22420,
+        "top5_set_overlap_fraction": 0.9695135135135136,
+        "users_with_membership_change": 705,
+        "users_with_order_change_only": 0,
+        "new_item_slots_ignoring_order": 705
+      },
+      "invariants": {
+        "first_four_identical": true,
+        "all_actual_replacements_unseen_available_distinct_and_outside_original_top5": true
+      },
+      "history_slices": {
+        "0": {
+          "users": 108,
+          "map_at_5": 0.16289609053497942,
+          "v5_map_at_5": 0.16289609053497942,
+          "delta_from_v5": 0.0,
+          "eligible_users": 3,
+          "available_replacement_users_whole_cohort": 34,
+          "eligible_with_available_replacement": 3,
+          "actual_replacements": 3,
+          "inserted_relevant": 0,
+          "removed_relevant": 0,
+          "both_relevant": 0,
+          "neither_relevant": 3,
+          "inserted_only_relevant": 0,
+          "removed_only_relevant": 0,
+          "net_relevant_hit_change": 0,
+          "whole_cohort_ap_outcomes": {
+            "users": 108,
+            "improved": 0,
+            "worsened": 0,
+            "unchanged": 108
+          },
+          "replaced_users_ap_outcomes": {
+            "users": 3,
+            "improved": 0,
+            "worsened": 0,
+            "unchanged": 3
+          },
+          "prediction_changes": {
+            "users": 108,
+            "users_changed": 3,
+            "users_identical": 105,
+            "recommendation_slots": 540,
+            "rank_position_slots_changed": 3,
+            "top5_items_in_common": 537,
+            "top5_set_overlap_fraction": 0.9944444444444445,
+            "users_with_membership_change": 3,
+            "users_with_order_change_only": 0,
+            "new_item_slots_ignoring_order": 3
+          },
+          "invariants": {
+            "first_four_identical": true,
+            "all_actual_replacements_unseen_available_distinct_and_outside_original_top5": true
+          }
+        },
+        "1\u20135": {
+          "users": 462,
+          "map_at_5": 0.1978679653679654,
+          "v5_map_at_5": 0.19396464646464645,
+          "delta_from_v5": 0.003903318903318903,
+          "eligible_users": 290,
+          "available_replacement_users_whole_cohort": 462,
+          "eligible_with_available_replacement": 290,
+          "actual_replacements": 290,
+          "inserted_relevant": 33,
+          "removed_relevant": 9,
+          "both_relevant": 2,
+          "neither_relevant": 250,
+          "inserted_only_relevant": 31,
+          "removed_only_relevant": 7,
+          "net_relevant_hit_change": 24,
+          "whole_cohort_ap_outcomes": {
+            "users": 462,
+            "improved": 31,
+            "worsened": 7,
+            "unchanged": 424
+          },
+          "replaced_users_ap_outcomes": {
+            "users": 290,
+            "improved": 31,
+            "worsened": 7,
+            "unchanged": 252
+          },
+          "prediction_changes": {
+            "users": 462,
+            "users_changed": 290,
+            "users_identical": 172,
+            "recommendation_slots": 2310,
+            "rank_position_slots_changed": 290,
+            "top5_items_in_common": 2020,
+            "top5_set_overlap_fraction": 0.8744588744588745,
+            "users_with_membership_change": 290,
+            "users_with_order_change_only": 0,
+            "new_item_slots_ignoring_order": 290
+          },
+          "invariants": {
+            "first_four_identical": true,
+            "all_actual_replacements_unseen_available_distinct_and_outside_original_top5": true
+          }
+        },
+        "6\u201320": {
+          "users": 2087,
+          "map_at_5": 0.3090947931640313,
+          "v5_map_at_5": 0.3078921098865996,
+          "delta_from_v5": 0.0012026832774317201,
+          "eligible_users": 397,
+          "available_replacement_users_whole_cohort": 2087,
+          "eligible_with_available_replacement": 397,
+          "actual_replacements": 397,
+          "inserted_relevant": 56,
+          "removed_relevant": 27,
+          "both_relevant": 6,
+          "neither_relevant": 320,
+          "inserted_only_relevant": 50,
+          "removed_only_relevant": 21,
+          "net_relevant_hit_change": 29,
+          "whole_cohort_ap_outcomes": {
+            "users": 2087,
+            "improved": 50,
+            "worsened": 21,
+            "unchanged": 2016
+          },
+          "replaced_users_ap_outcomes": {
+            "users": 397,
+            "improved": 50,
+            "worsened": 21,
+            "unchanged": 326
+          },
+          "prediction_changes": {
+            "users": 2087,
+            "users_changed": 397,
+            "users_identical": 1690,
+            "recommendation_slots": 10435,
+            "rank_position_slots_changed": 397,
+            "top5_items_in_common": 10038,
+            "top5_set_overlap_fraction": 0.9619549592716818,
+            "users_with_membership_change": 397,
+            "users_with_order_change_only": 0,
+            "new_item_slots_ignoring_order": 397
+          },
+          "invariants": {
+            "first_four_identical": true,
+            "all_actual_replacements_unseen_available_distinct_and_outside_original_top5": true
+          }
+        },
+        "21+": {
+          "users": 1968,
+          "map_at_5": 0.4056422199638663,
+          "v5_map_at_5": 0.4056218947606143,
+          "delta_from_v5": 2.0325203252032503e-05,
+          "eligible_users": 15,
+          "available_replacement_users_whole_cohort": 1968,
+          "eligible_with_available_replacement": 15,
+          "actual_replacements": 15,
+          "inserted_relevant": 3,
+          "removed_relevant": 1,
+          "both_relevant": 0,
+          "neither_relevant": 11,
+          "inserted_only_relevant": 3,
+          "removed_only_relevant": 1,
+          "net_relevant_hit_change": 2,
+          "whole_cohort_ap_outcomes": {
+            "users": 1968,
+            "improved": 3,
+            "worsened": 1,
+            "unchanged": 1964
+          },
+          "replaced_users_ap_outcomes": {
+            "users": 15,
+            "improved": 3,
+            "worsened": 1,
+            "unchanged": 11
+          },
+          "prediction_changes": {
+            "users": 1968,
+            "users_changed": 15,
+            "users_identical": 1953,
+            "recommendation_slots": 9840,
+            "rank_position_slots_changed": 15,
+            "top5_items_in_common": 9825,
+            "top5_set_overlap_fraction": 0.9984756097560976,
+            "users_with_membership_change": 15,
+            "users_with_order_change_only": 0,
+            "new_item_slots_ignoring_order": 15
+          },
+          "invariants": {
+            "first_four_identical": true,
+            "all_actual_replacements_unseen_available_distinct_and_outside_original_top5": true
+          }
+        }
+      },
+      "evaluation_seconds": 0.04613304202212021,
+      "paired_bootstrap_95pct": [
+        0.0005411351351351352,
+        0.0013686666666666667
+      ]
+    },
+    "E3": {
+      "users": 4625,
+      "map_at_5": 0.3347558558558559,
+      "v5_map_at_5": 0.33471117117117116,
+      "delta_from_v5": 4.4684684684684635e-05,
+      "eligible_users": 227,
+      "available_replacement_users_whole_cohort": 4551,
+      "eligible_with_available_replacement": 153,
+      "actual_replacements": 153,
+      "inserted_relevant": 20,
+      "removed_relevant": 14,
+      "both_relevant": 4,
+      "neither_relevant": 123,
+      "inserted_only_relevant": 16,
+      "removed_only_relevant": 10,
+      "net_relevant_hit_change": 6,
+      "whole_cohort_ap_outcomes": {
+        "users": 4625,
+        "improved": 16,
+        "worsened": 10,
+        "unchanged": 4599
+      },
+      "replaced_users_ap_outcomes": {
+        "users": 153,
+        "improved": 16,
+        "worsened": 10,
+        "unchanged": 127
+      },
+      "prediction_changes": {
+        "users": 4625,
+        "users_changed": 153,
+        "users_identical": 4472,
+        "recommendation_slots": 23125,
+        "rank_position_slots_changed": 153,
+        "top5_items_in_common": 22972,
+        "top5_set_overlap_fraction": 0.9933837837837838,
+        "users_with_membership_change": 153,
+        "users_with_order_change_only": 0,
+        "new_item_slots_ignoring_order": 153
+      },
+      "invariants": {
+        "first_four_identical": true,
+        "all_actual_replacements_unseen_available_distinct_and_outside_original_top5": true
+      },
+      "history_slices": {
+        "0": {
+          "users": 108,
+          "map_at_5": 0.16508744855967078,
+          "v5_map_at_5": 0.16289609053497942,
+          "delta_from_v5": 0.0021913580246913584,
+          "eligible_users": 105,
+          "available_replacement_users_whole_cohort": 34,
+          "eligible_with_available_replacement": 31,
+          "actual_replacements": 31,
+          "inserted_relevant": 4,
+          "removed_relevant": 2,
+          "both_relevant": 0,
+          "neither_relevant": 25,
+          "inserted_only_relevant": 4,
+          "removed_only_relevant": 2,
+          "net_relevant_hit_change": 2,
+          "whole_cohort_ap_outcomes": {
+            "users": 108,
+            "improved": 4,
+            "worsened": 2,
+            "unchanged": 102
+          },
+          "replaced_users_ap_outcomes": {
+            "users": 31,
+            "improved": 4,
+            "worsened": 2,
+            "unchanged": 25
+          },
+          "prediction_changes": {
+            "users": 108,
+            "users_changed": 31,
+            "users_identical": 77,
+            "recommendation_slots": 540,
+            "rank_position_slots_changed": 31,
+            "top5_items_in_common": 509,
+            "top5_set_overlap_fraction": 0.9425925925925925,
+            "users_with_membership_change": 31,
+            "users_with_order_change_only": 0,
+            "new_item_slots_ignoring_order": 31
+          },
+          "invariants": {
+            "first_four_identical": true,
+            "all_actual_replacements_unseen_available_distinct_and_outside_original_top5": true
+          }
+        },
+        "1\u20135": {
+          "users": 462,
+          "map_at_5": 0.1938997113997114,
+          "v5_map_at_5": 0.19396464646464645,
+          "delta_from_v5": -6.493506493506546e-05,
+          "eligible_users": 122,
+          "available_replacement_users_whole_cohort": 462,
+          "eligible_with_available_replacement": 122,
+          "actual_replacements": 122,
+          "inserted_relevant": 16,
+          "removed_relevant": 12,
+          "both_relevant": 4,
+          "neither_relevant": 98,
+          "inserted_only_relevant": 12,
+          "removed_only_relevant": 8,
+          "net_relevant_hit_change": 4,
+          "whole_cohort_ap_outcomes": {
+            "users": 462,
+            "improved": 12,
+            "worsened": 8,
+            "unchanged": 442
+          },
+          "replaced_users_ap_outcomes": {
+            "users": 122,
+            "improved": 12,
+            "worsened": 8,
+            "unchanged": 102
+          },
+          "prediction_changes": {
+            "users": 462,
+            "users_changed": 122,
+            "users_identical": 340,
+            "recommendation_slots": 2310,
+            "rank_position_slots_changed": 122,
+            "top5_items_in_common": 2188,
+            "top5_set_overlap_fraction": 0.9471861471861471,
+            "users_with_membership_change": 122,
+            "users_with_order_change_only": 0,
+            "new_item_slots_ignoring_order": 122
+          },
+          "invariants": {
+            "first_four_identical": true,
+            "all_actual_replacements_unseen_available_distinct_and_outside_original_top5": true
+          }
+        },
+        "6\u201320": {
+          "users": 2087,
+          "map_at_5": 0.3078921098865996,
+          "v5_map_at_5": 0.3078921098865996,
+          "delta_from_v5": 0.0,
+          "eligible_users": 0,
+          "available_replacement_users_whole_cohort": 2087,
+          "eligible_with_available_replacement": 0,
+          "actual_replacements": 0,
+          "inserted_relevant": 0,
+          "removed_relevant": 0,
+          "both_relevant": 0,
+          "neither_relevant": 0,
+          "inserted_only_relevant": 0,
+          "removed_only_relevant": 0,
+          "net_relevant_hit_change": 0,
+          "whole_cohort_ap_outcomes": {
+            "users": 2087,
+            "improved": 0,
+            "worsened": 0,
+            "unchanged": 2087
+          },
+          "replaced_users_ap_outcomes": {
+            "users": 0,
+            "improved": 0,
+            "worsened": 0,
+            "unchanged": 0
+          },
+          "prediction_changes": {
+            "users": 2087,
+            "users_changed": 0,
+            "users_identical": 2087,
+            "recommendation_slots": 10435,
+            "rank_position_slots_changed": 0,
+            "top5_items_in_common": 10435,
+            "top5_set_overlap_fraction": 1.0,
+            "users_with_membership_change": 0,
+            "users_with_order_change_only": 0,
+            "new_item_slots_ignoring_order": 0
+          },
+          "invariants": {
+            "first_four_identical": true,
+            "all_actual_replacements_unseen_available_distinct_and_outside_original_top5": true
+          }
+        },
+        "21+": {
+          "users": 1968,
+          "map_at_5": 0.4056218947606143,
+          "v5_map_at_5": 0.4056218947606143,
+          "delta_from_v5": 0.0,
+          "eligible_users": 0,
+          "available_replacement_users_whole_cohort": 1968,
+          "eligible_with_available_replacement": 0,
+          "actual_replacements": 0,
+          "inserted_relevant": 0,
+          "removed_relevant": 0,
+          "both_relevant": 0,
+          "neither_relevant": 0,
+          "inserted_only_relevant": 0,
+          "removed_only_relevant": 0,
+          "net_relevant_hit_change": 0,
+          "whole_cohort_ap_outcomes": {
+            "users": 1968,
+            "improved": 0,
+            "worsened": 0,
+            "unchanged": 1968
+          },
+          "replaced_users_ap_outcomes": {
+            "users": 0,
+            "improved": 0,
+            "worsened": 0,
+            "unchanged": 0
+          },
+          "prediction_changes": {
+            "users": 1968,
+            "users_changed": 0,
+            "users_identical": 1968,
+            "recommendation_slots": 9840,
+            "rank_position_slots_changed": 0,
+            "top5_items_in_common": 9840,
+            "top5_set_overlap_fraction": 1.0,
+            "users_with_membership_change": 0,
+            "users_with_order_change_only": 0,
+            "new_item_slots_ignoring_order": 0
+          },
+          "invariants": {
+            "first_four_identical": true,
+            "all_actual_replacements_unseen_available_distinct_and_outside_original_top5": true
+          }
+        }
+      },
+      "evaluation_seconds": 0.043948707985691726,
+      "paired_bootstrap_95pct": [
+        -0.00015135135135135142,
+        0.0002299459459459457
+      ]
+    }
+  },
+  "anchor_sha256": "dd07a77f8885d50484250dee8172c10afcb4dbc52245ef44df943c81d0e05379",
+  "truth_sha256": "831ad286f8e910342549453567cd240bc2375f3bac49c39d31487d5b77a3d2a6",
+  "cached_input_sha256": {
+    "artifacts/item_item_20261030_v7/main/n50.json": "2657a67d2e1e5f98d6af40355f99b191332ce871a156219570b33d88aaddb683",
+    "artifacts/item_item_20261030_v7/main/unseen_rankings.json": "db1fee16ecd04a9173112dfe73cbe18a8eab1e7e5479b3e50b73ddcf65188a93"
+  },
+  "source_cache_manifest": {
+    "config": {
+      "version": "causal-interactions-v1",
+      "start": 1583712000.0,
+      "end": 1589760000.0,
+      "clock": "source-naive-wall-seconds",
+      "qualified_fraction": 0.8,
+      "max_session_seconds": 86400,
+      "inputs": {
+        "dataset11-30.csv": "8c9e5f058157041e5c33f13e64dc1625a5177cc6d5e434ba18cd8a69afafb53b",
+        "export_arh_11-20-final.csv": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c",
+        "export_arh_21-30-final.csv": "bdc9fa9850239aaed608bece9cdb200011e690300470fe85b980457d8c0cb2d4",
+        "export_arh_31-42-final.csv": "5cc01f4619bd94886d83744f00bbc15cc5fa23384d297244a7dc2207450c4088",
+        "submission.csv": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02"
+      },
+      "sources": {
+        "interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+        "intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+        "real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d"
+      }
+    },
+    "config_digest": "2a7aa317ec4c5156fe3282d1a5ea309961fd0b8275ee64dd110ab5d648a2bca9",
+    "output_sha256": "f41e7e28c112e679832a0fafd6de19973580ccc4ae1cc4e79ab9cc5270cbcfff",
+    "retained_clipped_source_rows": 3945050,
+    "ongoing_sessions_at_cutoff": 1007,
+    "user_airings": 1823678,
+    "user_item_pairs": 856858,
+    "qualified_user_airings": 289762,
+    "qualified_users": 4726,
+    "conflicted_airings_excluded": 0,
+    "elapsed_seconds": 33.35586554202018,
+    "environment": {
+      "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "code_base_commit": "b7f254a8878ed8f7b5ab01ac67e1197c0b099854",
+      "working_tree_dirty": true,
+      "source_sha256": {
+        "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+        "src/audit_anomalies.py": "e82a2ac4765b038a3c90a8253bdff47c93a583adb4c936de82140edd8fd4baad",
+        "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+        "src/compare_models.py": "102a17614a26e0e92cea3d8fd9cd9864d4e302b8a22c2948e31afa0ca99c145b",
+        "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+        "src/interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+        "src/intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+        "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+        "src/models.py": "583fee7c7f197646d229fb56214b2676beca78be298ab8a065d3ee868031c0e1",
+        "src/real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d",
+        "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6"
+      },
+      "peak_process_rss_bytes": 831471616,
+      "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+    }
+  },
+  "elapsed_seconds": 1.0046806250466034,
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 42,
+    "scope": "Conditional on reused overlapping cohorts; excludes configuration-selection uncertainty."
+  },
+  "environment": {
+    "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "code_base_commit": "1eca10113a9056ddd3818cab7846fda24eb49899",
+    "working_tree_dirty": true,
+    "source_sha256": {
+      "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+      "src/audit_anomalies.py": "e82a2ac4765b038a3c90a8253bdff47c93a583adb4c936de82140edd8fd4baad",
+      "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+      "src/check_cutoff_invariance.py": "d893cafac6130b399e88a56c099a3057f2d15950a9c79e4332ba80efc0a935ef",
+      "src/compare_models.py": "71a6770afa248e1cd4b312d65f4a252612cec38894ff11af78ed449b435b6aba",
+      "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+      "src/diagnose_models.py": "1c5d854b379c4deb4a995b4536683cac2db6b2d140f224c6ec8a43d6ba32430a",
+      "src/experiment_fifth_replacement.py": "6221e59934120b6bc0ad53b9d123e3766d859a1fc4012200672c13c80fc7127c",
+      "src/experiment_item_fusion.py": "432db6ad96c5c8892848b0c7050037c691228216773010bb65a2461392edeb03",
+      "src/experiment_item_item.py": "b5fb6b3ab7eee17aa2f653930c185da7fcf21e0979856b11e8db12ffc8dc2f79",
+      "src/experiment_opportunity_week.py": "4703fd7657dc729e95851d60e8853e02a329608de027c784724f4a1c560148bd",
+      "src/experiment_personal_threshold.py": "8e922d7cf932304c4a8c4942e00c209e5e5012d2cf01e254486fe44b08e0a6d6",
+      "src/experiment_personal_ties.py": "a4c8a8e3c15c203a4eafa6f7a6ccb1e11c46cfdbb08e664ca93981e82594a331",
+      "src/experiment_viewing_strength.py": "99a9bab63a4ae005a440e7b21d20fb51b9121625c251640c41cca7d7b77e291f",
+      "src/fifth_replacement.py": "d103cc5454a23b6252da9fd05f85cf20e3c96423a8f7a128ca5482074d8956a4",
+      "src/first_submission.py": "2e389ad63a3b1a0c10c7449acce105656ee0d93deb98da521068c4d63d5978ed",
+      "src/improve_recommender.py": "59d03e6bd9e40a70a416ead5a5c80e351c5d20d47ab4fe6930c639850ee728e8",
+      "src/improvement_helpers.py": "029bfa5719707abc54f2af250f926109cd5e1f232ca902c0a723ecd79a229bbf",
+      "src/interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+      "src/intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+      "src/item_fusion.py": "ca6bc71ef6ef028ca05aae4f17b79bfd267a44f6aa0d6babe6535e07fcb66515",
+      "src/item_item.py": "8c53802851647e9f98e2b992055ee6d5a0d89f330fe9cc0770132250a31fa3e1",
+      "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+      "src/models.py": "2129e6e226a4f006417f9897b3b1c38c11d0656baf92c7cb9ed65ff59990e04b",
+      "src/opportunity_week.py": "6604fa2c88c6c447e93905c42341fc880f8e07a73148391420494d1459a60b9f",
+      "src/personal_threshold.py": "de77269ab02e7c69e91e6c0eccbc39524d6805b882c020353af0c210a9bfea8b",
+      "src/personal_ties.py": "3c199fda25804d8780e637b14675fa72756fbf6bbd1185604f7491a7b161ab2b",
+      "src/real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d",
+      "src/report_comparison.py": "924240c485107343486ad15a98888bd24501a2849e905856ec7de5e7f38efbc1",
+      "src/report_improvement.py": "a0bfe5816ed0fa091bfb2c44e0b64a573027bbc400d92ba0bdf81c43259d1c17",
+      "src/report_item_fusion.py": "dec10450a840417b56af5088ddb4c08ae50777f9dc321d04446de24ad544c2ec",
+      "src/report_item_item.py": "77e2d7675532e276123233c846a8867dc8bd50e5454c5f653ad7c4d06a24b68e",
+      "src/report_opportunity_week.py": "482fad8db9a369c72f68ac5d64e962e1ca7ab633b0a8ad8195e89cdbb65eb6b5",
+      "src/report_personal_ties.py": "e49b3ba0bebd1f709ecfecd857636a0e4b6412515f1e1fb17716df02fe1fe963",
+      "src/report_viewing_strength.py": "3c2f8fbaddbaa3c1f172b34b2683ede2c16f56da7fb1d9060c080fb780d21664",
+      "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6",
+      "src/viewing_strength.py": "21adab3a432bcbe353c1ee5d3d77602d603d73e58b62e4d6babc781a454bbcc4"
+    },
+    "peak_process_rss_bytes": 558792704,
+    "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+  },
+  "dependencies": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "implicit": "0.7.3",
+    "threadpoolctl": "3.7.0",
+    "tqdm": "4.70.1"
+  }
+}
