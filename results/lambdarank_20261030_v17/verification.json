@@ -1,0 +1,28 @@
+{
+  "tests": 95,
+  "all_passed": true,
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python -m unittest discover -s tests -v",
+  "post_run_verified_original_label_manifests": {
+    "origin_20200406": {
+      "verified_original_label_window": [
+        1586131200.0,
+        1587340800.0
+      ],
+      "qualified_fraction": 0.8,
+      "manifest_output_sha256": "e3805f3c57799c31bb2835650fab0f80222c6283196ae54077981bc7983dfba1"
+    },
+    "origin_20200420": {
+      "verified_original_label_window": [
+        1587340800.0,
+        1588550400.0
+      ],
+      "qualified_fraction": 0.8,
+      "manifest_output_sha256": "e1600192bec4af6e28a349d74f1837a9608bc9b44fc4561120ba5ba57990b628"
+    }
+  },
+  "all_preserved_hashes_verified": true,
+  "student_verification": "pending",
+  "native_records": "unmodified",
+  "kaggle_actions": "none",
+  "new_csv": false
+}

@@ -2,7 +2,7 @@
 
 Individual TV-programme recommendation project for LLM4Rec (FKN).
 
-**Current status: retain confirmed submitted v14.** V16’s single longer-horizon historical training experiment yields main/auxiliary MAP@5 **0.363376456456 / 0.348558327886**, changes **−0.000036096096 / −0.003204462362** versus saved v14. Neither split improves, so no new CSV was generated. [English report and reconstruction diagnostics](results/long_horizon_20261030_v16/comparison_report.md). Main/auxiliary/final candidate rows and all 40 feature values are exactly the original v14 inputs; only historical training tables change. All **90 tests pass**. V14 user-screenshot-reported Private **0.43416** / Public **0.44157** remain the best confirmed scores. Prior artifacts/checksums and native session records are unchanged; student verification is pending. No Kaggle workflow or upload was opened.
+**Current status: retain confirmed submitted v14.** V17’s one fixed LambdaRank reranker on exact original v14 training tables yields main/auxiliary MAP@5 **0.360976216216 / 0.351570179899**, differences **−0.002436336336 / −0.000192610348**. It fails the both-split rule, so no new CSV was generated. [English report, query diagnostics and NDCG@5](results/lambdarank_20261030_v17/comparison_report.md). All 9,695 origin/user queries are retained, including 2,056 uniform-label queries; main/auxiliary/final candidates and all 40 feature values exactly match v14. All **95 tests pass**. V14 user-screenshot-reported Private **0.43416** / Public **0.44157** remain the best confirmed scores. Previous artifacts/checksums and native records remain unchanged; student verification is pending. No Kaggle workflow or upload was opened.
 
 ## Start here
 

@@ -67,3 +67,7 @@ V15 expands each supported user’s unchanged v14 candidate union with the first
 ## Longer-horizon historical training: retain v14
 
 V16 trains one fixed 300-tree classifier on [Apr6,May18) and [Apr20,May18) targets, with origin-specific availability/schedule reconstruction and the original v14 candidate rule. Main/auxiliary/final tables remain exactly v14. MAP differences are −0.000036096096 / −0.003204462362; the both-split requirement fails. No new CSV or final prediction run was generated. [English report](../results/long_horizon_20261030_v16/comparison_report.md). All previous CSVs/checksums are unchanged; uploads remain manual-only and student verification is pending.
+
+## Fixed LambdaRank round: retain v14
+
+V17 fits exactly one LambdaRank model on the unchanged original v14 two-week historical tables, all40 features and original binary labels, with separate origin/user queries and all negatives/uniform queries retained. Main/auxiliary MAP changes are −0.002436336336 / −0.000192610348; both-split selection fails. No new final CSV exists. [English report](../results/lambdarank_20261030_v17/comparison_report.md). Old artifacts/checksums remain unchanged; all uploads are manual-only and student verification is pending.
