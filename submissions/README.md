@@ -22,3 +22,7 @@ Selected T50 improves both frozen splits. `candidate_personal_threshold_050_2026
 ## Viewing-strength round: retain v5
 
 Exactly lambda 0.5 and 1.0 bonuses were tested against v5, with >=0.80 global anchors and validation truth unchanged. Both reduce MAP on both reused splits. No new CSV or combined-window refit was generated. [English diagnostics and experiment report](../results/viewing_strength_20261030_v6/comparison_report.md). Other-user retrieval is supported as a later investigation by the coverage diagnostics; no collaborative retrieval was implemented. Uploads remain manual-only.
+
+## Fixed item-item retrieval round: no submission artifact
+
+One fixed model per existing temporal split recovers useful unseen targets, but standalone MAP@5 is worse than submitted v5 on both splits. Retain v5; no fusion, combined refit or prediction CSV was generated. [English retrieval and standalone comparison](../results/item_item_20261030_v7/comparison_report.md). All previous CSVs/checksums remain unchanged.

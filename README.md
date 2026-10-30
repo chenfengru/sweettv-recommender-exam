@@ -2,7 +2,7 @@
 
 Individual TV-programme recommendation project for LLM4Rec (FKN).
 
-**Current status: retain submitted v5 (T50).** User-reported screenshot scores are Private **0.40210**, Public **0.41789**. The two viewing-strength bonuses reduce MAP@5 on both reused splits, so no new CSV was generated. Personal history covers 58.22% / 58.63% of relevant items; coverage is the larger source of personal-prefix misses, with substantial ranking headroom too. [English diagnostics, comparison and conditional uncertainty](results/viewing_strength_20261030_v6/comparison_report.md). All **48 tests pass**. Previous CSVs/checksums and native session records are preserved. No Kaggle action was taken; manual review and student verification remain pending.
+**Current status: retain submitted v5; fixed item-item retrieval merits a later controlled fusion/reranking experiment.** Standalone item-item MAP@5 is **0.155453093093 / 0.157389530520**, far below v5’s **0.334711171171 / 0.331395910511**. Top-50 unseen retrieval adds **3,435 / 3,224** relevant items to personal history, raising micro coverage to **74.22% / 73.93%**. This is a retrieval gain, not an improved final ranker. [Full English report, recall definitions, slices and resource evidence](results/item_item_20261030_v7/comparison_report.md). All **53 tests pass**. No fusion, final refit, CSV or Kaggle action was produced. Previous artifacts/checksums and native session records are preserved; student verification is pending.
 
 ## Start here
 
