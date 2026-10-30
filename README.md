@@ -2,7 +2,7 @@
 
 Individual TV-programme recommendation project for LLM4Rec (FKN).
 
-**Current status: E2 fifth-position candidate validated for manual review; v5 remains the best confirmed submitted model.** E2 replaces only the fifth item when original positions4 and5 both have N50=1. Main MAP@5 **0.335652432432** (+0.000941261261); auxiliary **0.332178216024** (+0.000782305513). Both conditional paired-bootstrap intervals are positive, with reused-cohort/selection limitations. E2 wins the frozen max-min rule. [English report and artifact details](results/fifth_replacement_20261030_v9/comparison_report.md). The validated CSV changes **58** of1,260 users, only at position5. All **62 tests pass**. No Kaggle action was taken; previous artifacts/checksums and native session records are unchanged. Student verification remains pending.
+**Current status: retain submitted v9 E2.** Its latest user-screenshot-reported scores are Private **0.40261**, Public **0.41871**. The controlled lower-threshold round kept E2 disabled throughout: threshold 0.30 lowers MAP on both splits; 0.40 has a small main gain but an auxiliary loss versus the 0.50 control. Neither qualifies, both are below the existing v9 local scores, and **no new CSV was generated**. [English comparison, conditional intervals, coverage and duration diagnostics](results/lower_threshold_20261030_v10/comparison_report.md). All **64 tests pass**. Previous CSVs/checksums and native session records are unchanged. No Kaggle action was taken; student verification remains pending.
 
 ## Start here
 

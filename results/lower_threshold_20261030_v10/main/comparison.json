@@ -1,0 +1,705 @@
+{
+  "split": "main",
+  "e2_enabled": false,
+  "results": {
+    "0.5": {
+      "users": 4625,
+      "map_at_5": 0.33471117117117116,
+      "personal_history_coverage": {
+        "users": 4625,
+        "relevant_pairs_covered": 12498,
+        "relevant_pairs_total": 21466,
+        "micro": 0.5822230504052921,
+        "macro": 0.5659783783783784,
+        "available_personal_candidate_pairs": 153024,
+        "users_without_usable_history": 76,
+        "mean_available_history_size": 33.08627027027027,
+        "all_training_user_item_pairs": 179742,
+        "all_training_qualified_user_airings": 475291,
+        "available_training_user_item_pairs": 155482
+      },
+      "fallback": {
+        "complete_users": 76,
+        "partial_users": 151,
+        "completion_slots": 718
+      },
+      "history_slices": {
+        "0": {
+          "users": 108,
+          "map_at_5": 0.16289609053497942,
+          "personal_history_coverage": {
+            "users": 108,
+            "relevant_pairs_covered": 9,
+            "relevant_pairs_total": 382,
+            "micro": 0.02356020942408377,
+            "macro": 0.03287037037037037,
+            "available_personal_candidate_pairs": 73,
+            "users_without_usable_history": 75,
+            "mean_available_history_size": 0.6759259259259259,
+            "all_training_user_item_pairs": 179742,
+            "all_training_qualified_user_airings": 475291,
+            "available_training_user_item_pairs": 155482
+          },
+          "fallback": {
+            "complete_users": 75,
+            "partial_users": 30,
+            "completion_slots": 473
+          }
+        },
+        "1\u20135": {
+          "users": 462,
+          "map_at_5": 0.19396464646464645,
+          "personal_history_coverage": {
+            "users": 462,
+            "relevant_pairs_covered": 402,
+            "relevant_pairs_total": 1749,
+            "micro": 0.22984562607204118,
+            "macro": 0.24112554112554113,
+            "available_personal_candidate_pairs": 3445,
+            "users_without_usable_history": 1,
+            "mean_available_history_size": 7.456709956709957,
+            "all_training_user_item_pairs": 179742,
+            "all_training_qualified_user_airings": 475291,
+            "available_training_user_item_pairs": 155482
+          },
+          "fallback": {
+            "complete_users": 1,
+            "partial_users": 121,
+            "completion_slots": 245
+          }
+        },
+        "6\u201320": {
+          "users": 2087,
+          "map_at_5": 0.3078921098865996,
+          "personal_history_coverage": {
+            "users": 2087,
+            "relevant_pairs_covered": 4983,
+            "relevant_pairs_total": 9586,
+            "micro": 0.5198205716670143,
+            "macro": 0.5132726401533302,
+            "available_personal_candidate_pairs": 46054,
+            "users_without_usable_history": 0,
+            "mean_available_history_size": 22.067081935793006,
+            "all_training_user_item_pairs": 179742,
+            "all_training_qualified_user_airings": 475291,
+            "available_training_user_item_pairs": 155482
+          },
+          "fallback": {
+            "complete_users": 0,
+            "partial_users": 0,
+            "completion_slots": 0
+          }
+        },
+        "21+": {
+          "users": 1968,
+          "map_at_5": 0.4056218947606143,
+          "personal_history_coverage": {
+            "users": 1968,
+            "relevant_pairs_covered": 7104,
+            "relevant_pairs_total": 9749,
+            "micro": 0.7286901220638015,
+            "macro": 0.7273882113821138,
+            "available_personal_candidate_pairs": 103452,
+            "users_without_usable_history": 0,
+            "mean_available_history_size": 52.56707317073171,
+            "all_training_user_item_pairs": 179742,
+            "all_training_qualified_user_airings": 475291,
+            "available_training_user_item_pairs": 155482
+          },
+          "fallback": {
+            "complete_users": 0,
+            "partial_users": 0,
+            "completion_slots": 0
+          }
+        }
+      },
+      "ranking_and_diagnostics_seconds": 0.10861291602486745
+    },
+    "0.3": {
+      "users": 4625,
+      "map_at_5": 0.33337981981981984,
+      "personal_history_coverage": {
+        "users": 4625,
+        "relevant_pairs_covered": 13182,
+        "relevant_pairs_total": 21466,
+        "micro": 0.6140873940184478,
+        "macro": 0.5977333333333333,
+        "available_personal_candidate_pairs": 223358,
+        "users_without_usable_history": 62,
+        "mean_available_history_size": 48.29362162162162,
+        "all_training_user_item_pairs": 267802,
+        "all_training_qualified_user_airings": 676026,
+        "available_training_user_item_pairs": 227114
+      },
+      "fallback": {
+        "complete_users": 62,
+        "partial_users": 79,
+        "completion_slots": 506
+      },
+      "delta_from_050": -0.0013313513513513514,
+      "users_improved": 839,
+      "users_worsened": 992,
+      "users_unchanged": 2794,
+      "prediction_changes": {
+        "users": 4625,
+        "users_changed": 3834,
+        "users_identical": 791,
+        "recommendation_slots": 23125,
+        "rank_position_slots_changed": 10381,
+        "top5_items_in_common": 19537,
+        "top5_set_overlap_fraction": 0.8448432432432432,
+        "users_with_membership_change": 2783,
+        "users_with_order_change_only": 1051,
+        "new_item_slots_ignoring_order": 3588
+      },
+      "newly_covered_relevant_pairs": 684,
+      "users_gaining_usable_history": 14,
+      "top5_relevant_hit_gains": 488,
+      "top5_relevant_hit_losses": 482,
+      "net_top5_relevant_hit_change": 6,
+      "gained_top5_relevant_from_new_personal_history": 83,
+      "history_slices": {
+        "0": {
+          "users": 108,
+          "map_at_5": 0.16291152263374487,
+          "personal_history_coverage": {
+            "users": 108,
+            "relevant_pairs_covered": 13,
+            "relevant_pairs_total": 382,
+            "micro": 0.034031413612565446,
+            "macro": 0.050462962962962966,
+            "available_personal_candidate_pairs": 161,
+            "users_without_usable_history": 61,
+            "mean_available_history_size": 1.4907407407407407,
+            "all_training_user_item_pairs": 267802,
+            "all_training_qualified_user_airings": 676026,
+            "available_training_user_item_pairs": 227114
+          },
+          "fallback": {
+            "complete_users": 61,
+            "partial_users": 36,
+            "completion_slots": 409
+          },
+          "delta_from_050": 1.5432098765431106e-05,
+          "users_improved": 3,
+          "users_worsened": 11,
+          "users_unchanged": 94,
+          "prediction_changes": {
+            "users": 108,
+            "users_changed": 37,
+            "users_identical": 71,
+            "recommendation_slots": 540,
+            "rank_position_slots_changed": 154,
+            "top5_items_in_common": 477,
+            "top5_set_overlap_fraction": 0.8833333333333333,
+            "users_with_membership_change": 32,
+            "users_with_order_change_only": 5,
+            "new_item_slots_ignoring_order": 63
+          },
+          "newly_covered_relevant_pairs": 4,
+          "users_gaining_usable_history": 14,
+          "top5_relevant_hit_gains": 2,
+          "top5_relevant_hit_losses": 4,
+          "net_top5_relevant_hit_change": -2,
+          "gained_top5_relevant_from_new_personal_history": 2
+        },
+        "1\u20135": {
+          "users": 462,
+          "map_at_5": 0.19764670514670515,
+          "personal_history_coverage": {
+            "users": 462,
+            "relevant_pairs_covered": 472,
+            "relevant_pairs_total": 1749,
+            "micro": 0.2698684962835906,
+            "macro": 0.28080808080808084,
+            "available_personal_candidate_pairs": 5927,
+            "users_without_usable_history": 1,
+            "mean_available_history_size": 12.829004329004329,
+            "all_training_user_item_pairs": 267802,
+            "all_training_qualified_user_airings": 676026,
+            "available_training_user_item_pairs": 227114
+          },
+          "fallback": {
+            "complete_users": 1,
+            "partial_users": 43,
+            "completion_slots": 97
+          },
+          "delta_from_050": 0.003682058682058681,
+          "users_improved": 68,
+          "users_worsened": 81,
+          "users_unchanged": 313,
+          "prediction_changes": {
+            "users": 462,
+            "users_changed": 420,
+            "users_identical": 42,
+            "recommendation_slots": 2310,
+            "rank_position_slots_changed": 1423,
+            "top5_items_in_common": 1677,
+            "top5_set_overlap_fraction": 0.7259740259740259,
+            "users_with_membership_change": 379,
+            "users_with_order_change_only": 41,
+            "new_item_slots_ignoring_order": 633
+          },
+          "newly_covered_relevant_pairs": 70,
+          "users_gaining_usable_history": 0,
+          "top5_relevant_hit_gains": 43,
+          "top5_relevant_hit_losses": 38,
+          "net_top5_relevant_hit_change": 5,
+          "gained_top5_relevant_from_new_personal_history": 36
+        },
+        "6\u201320": {
+          "users": 2087,
+          "map_at_5": 0.3081555129638503,
+          "personal_history_coverage": {
+            "users": 2087,
+            "relevant_pairs_covered": 5352,
+            "relevant_pairs_total": 9586,
+            "micro": 0.5583142082203213,
+            "macro": 0.5506788053026673,
+            "available_personal_candidate_pairs": 71857,
+            "users_without_usable_history": 0,
+            "mean_available_history_size": 34.430761859127934,
+            "all_training_user_item_pairs": 267802,
+            "all_training_qualified_user_airings": 676026,
+            "available_training_user_item_pairs": 227114
+          },
+          "fallback": {
+            "complete_users": 0,
+            "partial_users": 0,
+            "completion_slots": 0
+          },
+          "delta_from_050": 0.00026340307725070616,
+          "users_improved": 409,
+          "users_worsened": 441,
+          "users_unchanged": 1237,
+          "prediction_changes": {
+            "users": 2087,
+            "users_changed": 1789,
+            "users_identical": 298,
+            "recommendation_slots": 10435,
+            "rank_position_slots_changed": 4932,
+            "top5_items_in_common": 8741,
+            "top5_set_overlap_fraction": 0.8376617153809296,
+            "users_with_membership_change": 1329,
+            "users_with_order_change_only": 460,
+            "new_item_slots_ignoring_order": 1694
+          },
+          "newly_covered_relevant_pairs": 369,
+          "users_gaining_usable_history": 0,
+          "top5_relevant_hit_gains": 242,
+          "top5_relevant_hit_losses": 219,
+          "net_top5_relevant_hit_change": 23,
+          "gained_top5_relevant_from_new_personal_history": 40
+        },
+        "21+": {
+          "users": 1968,
+          "map_at_5": 0.40134852077687444,
+          "personal_history_coverage": {
+            "users": 1968,
+            "relevant_pairs_covered": 7345,
+            "relevant_pairs_total": 9749,
+            "micro": 0.7534106062160222,
+            "macro": 0.7520663956639566,
+            "available_personal_candidate_pairs": 145413,
+            "users_without_usable_history": 0,
+            "mean_available_history_size": 73.88871951219512,
+            "all_training_user_item_pairs": 267802,
+            "all_training_qualified_user_airings": 676026,
+            "available_training_user_item_pairs": 227114
+          },
+          "fallback": {
+            "complete_users": 0,
+            "partial_users": 0,
+            "completion_slots": 0
+          },
+          "delta_from_050": -0.0042733739837398374,
+          "users_improved": 359,
+          "users_worsened": 459,
+          "users_unchanged": 1150,
+          "prediction_changes": {
+            "users": 1968,
+            "users_changed": 1588,
+            "users_identical": 380,
+            "recommendation_slots": 9840,
+            "rank_position_slots_changed": 3872,
+            "top5_items_in_common": 8642,
+            "top5_set_overlap_fraction": 0.8782520325203252,
+            "users_with_membership_change": 1043,
+            "users_with_order_change_only": 545,
+            "new_item_slots_ignoring_order": 1198
+          },
+          "newly_covered_relevant_pairs": 241,
+          "users_gaining_usable_history": 0,
+          "top5_relevant_hit_gains": 201,
+          "top5_relevant_hit_losses": 221,
+          "net_top5_relevant_hit_change": -20,
+          "gained_top5_relevant_from_new_personal_history": 5
+        }
+      },
+      "ranking_and_diagnostics_seconds": 0.24840516701806337,
+      "paired_bootstrap_95pct": [
+        -0.0033896126126126123,
+        0.0010001396396396385
+      ],
+      "difference_from_v9_context_only": -0.002272612612612579
+    },
+    "0.4": {
+      "users": 4625,
+      "map_at_5": 0.3349914114114114,
+      "personal_history_coverage": {
+        "users": 4625,
+        "relevant_pairs_covered": 12842,
+        "relevant_pairs_total": 21466,
+        "micro": 0.5982483928072301,
+        "macro": 0.5821369369369369,
+        "available_personal_candidate_pairs": 183594,
+        "users_without_usable_history": 65,
+        "mean_available_history_size": 39.696,
+        "all_training_user_item_pairs": 217844,
+        "all_training_qualified_user_airings": 564084,
+        "available_training_user_item_pairs": 186594
+      },
+      "fallback": {
+        "complete_users": 65,
+        "partial_users": 110,
+        "completion_slots": 604
+      },
+      "delta_from_050": 0.00028024024024024004,
+      "users_improved": 612,
+      "users_worsened": 715,
+      "users_unchanged": 3298,
+      "prediction_changes": {
+        "users": 4625,
+        "users_changed": 3000,
+        "users_identical": 1625,
+        "recommendation_slots": 23125,
+        "rank_position_slots_changed": 7357,
+        "top5_items_in_common": 20900,
+        "top5_set_overlap_fraction": 0.9037837837837838,
+        "users_with_membership_change": 1957,
+        "users_with_order_change_only": 1043,
+        "new_item_slots_ignoring_order": 2225
+      },
+      "newly_covered_relevant_pairs": 344,
+      "users_gaining_usable_history": 11,
+      "top5_relevant_hit_gains": 309,
+      "top5_relevant_hit_losses": 301,
+      "net_top5_relevant_hit_change": 8,
+      "gained_top5_relevant_from_new_personal_history": 49,
+      "history_slices": {
+        "0": {
+          "users": 108,
+          "map_at_5": 0.160434670781893,
+          "personal_history_coverage": {
+            "users": 108,
+            "relevant_pairs_covered": 10,
+            "relevant_pairs_total": 382,
+            "micro": 0.02617801047120419,
+            "macro": 0.0375,
+            "available_personal_candidate_pairs": 113,
+            "users_without_usable_history": 64,
+            "mean_available_history_size": 1.0462962962962963,
+            "all_training_user_item_pairs": 217844,
+            "all_training_qualified_user_airings": 564084,
+            "available_training_user_item_pairs": 186594
+          },
+          "fallback": {
+            "complete_users": 64,
+            "partial_users": 37,
+            "completion_slots": 442
+          },
+          "delta_from_050": -0.0024614197530864208,
+          "users_improved": 1,
+          "users_worsened": 7,
+          "users_unchanged": 100,
+          "prediction_changes": {
+            "users": 108,
+            "users_changed": 27,
+            "users_identical": 81,
+            "recommendation_slots": 540,
+            "rank_position_slots_changed": 112,
+            "top5_items_in_common": 510,
+            "top5_set_overlap_fraction": 0.9444444444444444,
+            "users_with_membership_change": 23,
+            "users_with_order_change_only": 4,
+            "new_item_slots_ignoring_order": 30
+          },
+          "newly_covered_relevant_pairs": 1,
+          "users_gaining_usable_history": 11,
+          "top5_relevant_hit_gains": 1,
+          "top5_relevant_hit_losses": 2,
+          "net_top5_relevant_hit_change": -1,
+          "gained_top5_relevant_from_new_personal_history": 1
+        },
+        "1\u20135": {
+          "users": 462,
+          "map_at_5": 0.19768398268398268,
+          "personal_history_coverage": {
+            "users": 462,
+            "relevant_pairs_covered": 439,
+            "relevant_pairs_total": 1749,
+            "micro": 0.2510005717552887,
+            "macro": 0.2636363636363636,
+            "available_personal_candidate_pairs": 4492,
+            "users_without_usable_history": 1,
+            "mean_available_history_size": 9.722943722943723,
+            "all_training_user_item_pairs": 217844,
+            "all_training_qualified_user_airings": 564084,
+            "available_training_user_item_pairs": 186594
+          },
+          "fallback": {
+            "complete_users": 1,
+            "partial_users": 73,
+            "completion_slots": 162
+          },
+          "delta_from_050": 0.0037193362193362186,
+          "users_improved": 41,
+          "users_worsened": 57,
+          "users_unchanged": 364,
+          "prediction_changes": {
+            "users": 462,
+            "users_changed": 317,
+            "users_identical": 145,
+            "recommendation_slots": 2310,
+            "rank_position_slots_changed": 943,
+            "top5_items_in_common": 1944,
+            "top5_set_overlap_fraction": 0.8415584415584415,
+            "users_with_membership_change": 269,
+            "users_with_order_change_only": 48,
+            "new_item_slots_ignoring_order": 366
+          },
+          "newly_covered_relevant_pairs": 37,
+          "users_gaining_usable_history": 0,
+          "top5_relevant_hit_gains": 27,
+          "top5_relevant_hit_losses": 25,
+          "net_top5_relevant_hit_change": 2,
+          "gained_top5_relevant_from_new_personal_history": 23
+        },
+        "6\u201320": {
+          "users": 2087,
+          "map_at_5": 0.30993691103657567,
+          "personal_history_coverage": {
+            "users": 2087,
+            "relevant_pairs_covered": 5165,
+            "relevant_pairs_total": 9586,
+            "micro": 0.5388065929480492,
+            "macro": 0.5319118351701005,
+            "available_personal_candidate_pairs": 57196,
+            "users_without_usable_history": 0,
+            "mean_available_history_size": 27.405845711547677,
+            "all_training_user_item_pairs": 217844,
+            "all_training_qualified_user_airings": 564084,
+            "available_training_user_item_pairs": 186594
+          },
+          "fallback": {
+            "complete_users": 0,
+            "partial_users": 0,
+            "completion_slots": 0
+          },
+          "delta_from_050": 0.0020448011499760426,
+          "users_improved": 311,
+          "users_worsened": 321,
+          "users_unchanged": 1455,
+          "prediction_changes": {
+            "users": 2087,
+            "users_changed": 1417,
+            "users_identical": 670,
+            "recommendation_slots": 10435,
+            "rank_position_slots_changed": 3537,
+            "top5_items_in_common": 9389,
+            "top5_set_overlap_fraction": 0.8997604216578822,
+            "users_with_membership_change": 930,
+            "users_with_order_change_only": 487,
+            "new_item_slots_ignoring_order": 1046
+          },
+          "newly_covered_relevant_pairs": 182,
+          "users_gaining_usable_history": 0,
+          "top5_relevant_hit_gains": 156,
+          "top5_relevant_hit_losses": 138,
+          "net_top5_relevant_hit_change": 18,
+          "gained_top5_relevant_from_new_personal_history": 23
+        },
+        "21+": {
+          "users": 1968,
+          "map_at_5": 0.4033739837398374,
+          "personal_history_coverage": {
+            "users": 1968,
+            "relevant_pairs_covered": 7228,
+            "relevant_pairs_total": 9749,
+            "micro": 0.7414093753205457,
+            "macro": 0.7400575880758807,
+            "available_personal_candidate_pairs": 121793,
+            "users_without_usable_history": 0,
+            "mean_available_history_size": 61.886686991869915,
+            "all_training_user_item_pairs": 217844,
+            "all_training_qualified_user_airings": 564084,
+            "available_training_user_item_pairs": 186594
+          },
+          "fallback": {
+            "complete_users": 0,
+            "partial_users": 0,
+            "completion_slots": 0
+          },
+          "delta_from_050": -0.0022479110207768755,
+          "users_improved": 259,
+          "users_worsened": 330,
+          "users_unchanged": 1379,
+          "prediction_changes": {
+            "users": 1968,
+            "users_changed": 1239,
+            "users_identical": 729,
+            "recommendation_slots": 9840,
+            "rank_position_slots_changed": 2765,
+            "top5_items_in_common": 9057,
+            "top5_set_overlap_fraction": 0.9204268292682927,
+            "users_with_membership_change": 735,
+            "users_with_order_change_only": 504,
+            "new_item_slots_ignoring_order": 783
+          },
+          "newly_covered_relevant_pairs": 124,
+          "users_gaining_usable_history": 0,
+          "top5_relevant_hit_gains": 125,
+          "top5_relevant_hit_losses": 136,
+          "net_top5_relevant_hit_change": -11,
+          "gained_top5_relevant_from_new_personal_history": 2
+        }
+      },
+      "ranking_and_diagnostics_seconds": 0.21381704200757667,
+      "paired_bootstrap_95pct": [
+        -0.0014126186186186193,
+        0.0021525975975975973
+      ],
+      "difference_from_v9_context_only": -0.0006610210210210021
+    }
+  },
+  "v9_e2_existing_local_score_context_only": 0.3356524324324324,
+  "fit_window": [
+    1583712000.0,
+    1589760000.0
+  ],
+  "validation_window": [
+    1589760000.0,
+    1595808000.0
+  ],
+  "candidates": 6384,
+  "anchor_sha256": "dd07a77f8885d50484250dee8172c10afcb4dbc52245ef44df943c81d0e05379",
+  "truth_sha256": "831ad286f8e910342549453567cd240bc2375f3bac49c39d31487d5b77a3d2a6",
+  "n50_reference_sha256": "2657a67d2e1e5f98d6af40355f99b191332ce871a156219570b33d88aaddb683",
+  "cache_manifest": {
+    "config": {
+      "version": "causal-interactions-v1",
+      "start": 1583712000.0,
+      "end": 1589760000.0,
+      "clock": "source-naive-wall-seconds",
+      "qualified_fraction": 0.8,
+      "max_session_seconds": 86400,
+      "inputs": {
+        "dataset11-30.csv": "8c9e5f058157041e5c33f13e64dc1625a5177cc6d5e434ba18cd8a69afafb53b",
+        "export_arh_11-20-final.csv": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c",
+        "export_arh_21-30-final.csv": "bdc9fa9850239aaed608bece9cdb200011e690300470fe85b980457d8c0cb2d4",
+        "export_arh_31-42-final.csv": "5cc01f4619bd94886d83744f00bbc15cc5fa23384d297244a7dc2207450c4088",
+        "submission.csv": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02"
+      },
+      "sources": {
+        "interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+        "intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+        "real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d"
+      }
+    },
+    "config_digest": "2a7aa317ec4c5156fe3282d1a5ea309961fd0b8275ee64dd110ab5d648a2bca9",
+    "output_sha256": "f41e7e28c112e679832a0fafd6de19973580ccc4ae1cc4e79ab9cc5270cbcfff",
+    "retained_clipped_source_rows": 3945050,
+    "ongoing_sessions_at_cutoff": 1007,
+    "user_airings": 1823678,
+    "user_item_pairs": 856858,
+    "qualified_user_airings": 289762,
+    "qualified_users": 4726,
+    "conflicted_airings_excluded": 0,
+    "elapsed_seconds": 33.35586554202018,
+    "environment": {
+      "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "code_base_commit": "b7f254a8878ed8f7b5ab01ac67e1197c0b099854",
+      "working_tree_dirty": true,
+      "source_sha256": {
+        "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+        "src/audit_anomalies.py": "e82a2ac4765b038a3c90a8253bdff47c93a583adb4c936de82140edd8fd4baad",
+        "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+        "src/compare_models.py": "102a17614a26e0e92cea3d8fd9cd9864d4e302b8a22c2948e31afa0ca99c145b",
+        "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+        "src/interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+        "src/intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+        "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+        "src/models.py": "583fee7c7f197646d229fb56214b2676beca78be298ab8a065d3ee868031c0e1",
+        "src/real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d",
+        "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6"
+      },
+      "peak_process_rss_bytes": 831471616,
+      "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+    }
+  },
+  "count_extraction_seconds": 4.099539249960799,
+  "elapsed_seconds": 5.344850375025999,
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 42,
+    "scope": "Conditional on reused overlapping cohorts; excludes selection uncertainty."
+  },
+  "environment": {
+    "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "code_base_commit": "3e34b340c8b474aaaf3017201bba213916446114",
+    "working_tree_dirty": true,
+    "source_sha256": {
+      "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+      "src/audit_anomalies.py": "e82a2ac4765b038a3c90a8253bdff47c93a583adb4c936de82140edd8fd4baad",
+      "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+      "src/check_cutoff_invariance.py": "d893cafac6130b399e88a56c099a3057f2d15950a9c79e4332ba80efc0a935ef",
+      "src/compare_models.py": "71a6770afa248e1cd4b312d65f4a252612cec38894ff11af78ed449b435b6aba",
+      "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+      "src/diagnose_models.py": "1c5d854b379c4deb4a995b4536683cac2db6b2d140f224c6ec8a43d6ba32430a",
+      "src/experiment_fifth_replacement.py": "6221e59934120b6bc0ad53b9d123e3766d859a1fc4012200672c13c80fc7127c",
+      "src/experiment_item_fusion.py": "432db6ad96c5c8892848b0c7050037c691228216773010bb65a2461392edeb03",
+      "src/experiment_item_item.py": "b5fb6b3ab7eee17aa2f653930c185da7fcf21e0979856b11e8db12ffc8dc2f79",
+      "src/experiment_lower_threshold.py": "5db5bfaa9cfec721af7f1dc0fdc2d555d2f57f196e65f7a638b4fb91bf26d478",
+      "src/experiment_opportunity_week.py": "4703fd7657dc729e95851d60e8853e02a329608de027c784724f4a1c560148bd",
+      "src/experiment_personal_threshold.py": "8e922d7cf932304c4a8c4942e00c209e5e5012d2cf01e254486fe44b08e0a6d6",
+      "src/experiment_personal_ties.py": "a4c8a8e3c15c203a4eafa6f7a6ccb1e11c46cfdbb08e664ca93981e82594a331",
+      "src/experiment_viewing_strength.py": "99a9bab63a4ae005a440e7b21d20fb51b9121625c251640c41cca7d7b77e291f",
+      "src/fifth_replacement.py": "d103cc5454a23b6252da9fd05f85cf20e3c96423a8f7a128ca5482074d8956a4",
+      "src/first_submission.py": "2e389ad63a3b1a0c10c7449acce105656ee0d93deb98da521068c4d63d5978ed",
+      "src/improve_recommender.py": "59d03e6bd9e40a70a416ead5a5c80e351c5d20d47ab4fe6930c639850ee728e8",
+      "src/improvement_helpers.py": "029bfa5719707abc54f2af250f926109cd5e1f232ca902c0a723ecd79a229bbf",
+      "src/interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+      "src/intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+      "src/item_fusion.py": "ca6bc71ef6ef028ca05aae4f17b79bfd267a44f6aa0d6babe6535e07fcb66515",
+      "src/item_item.py": "8c53802851647e9f98e2b992055ee6d5a0d89f330fe9cc0770132250a31fa3e1",
+      "src/lower_threshold.py": "98987adadb2982b4ae08cf603c8a35f2b1437c3254b6847ccdd7ee97541f1ea1",
+      "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+      "src/models.py": "2129e6e226a4f006417f9897b3b1c38c11d0656baf92c7cb9ed65ff59990e04b",
+      "src/opportunity_week.py": "6604fa2c88c6c447e93905c42341fc880f8e07a73148391420494d1459a60b9f",
+      "src/personal_threshold.py": "e6c6e89c3dc43c6dffa753fcefe65bbd39c57d2af77b5cc73ffe603f2f8d512d",
+      "src/personal_ties.py": "3c199fda25804d8780e637b14675fa72756fbf6bbd1185604f7491a7b161ab2b",
+      "src/real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d",
+      "src/report_comparison.py": "924240c485107343486ad15a98888bd24501a2849e905856ec7de5e7f38efbc1",
+      "src/report_fifth_replacement.py": "58280c6dd35086e19ead1cdbc60858e3cdfe911f75c2dcda8629a597dca4c09a",
+      "src/report_improvement.py": "a0bfe5816ed0fa091bfb2c44e0b64a573027bbc400d92ba0bdf81c43259d1c17",
+      "src/report_item_fusion.py": "dec10450a840417b56af5088ddb4c08ae50777f9dc321d04446de24ad544c2ec",
+      "src/report_item_item.py": "77e2d7675532e276123233c846a8867dc8bd50e5454c5f653ad7c4d06a24b68e",
+      "src/report_opportunity_week.py": "482fad8db9a369c72f68ac5d64e962e1ca7ab633b0a8ad8195e89cdbb65eb6b5",
+      "src/report_personal_ties.py": "e49b3ba0bebd1f709ecfecd857636a0e4b6412515f1e1fb17716df02fe1fe963",
+      "src/report_viewing_strength.py": "3c2f8fbaddbaa3c1f172b34b2683ede2c16f56da7fb1d9060c080fb780d21664",
+      "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6",
+      "src/viewing_strength.py": "21adab3a432bcbe353c1ee5d3d77602d603d73e58b62e4d6babc781a454bbcc4"
+    },
+    "peak_process_rss_bytes": 603684864,
+    "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+  },
+  "dependencies": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "implicit": "0.7.3",
+    "threadpoolctl": "3.7.0",
+    "tqdm": "4.70.1"
+  }
+}

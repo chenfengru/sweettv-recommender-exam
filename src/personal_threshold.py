@@ -7,7 +7,9 @@ from .personal_ties import personal_order
 from .improvement_helpers import complete
 
 
-def personal_counts(db, start, cutoff, thresholds=(0.5, 0.65, 0.8)):
+def personal_counts(
+    db, start, cutoff, thresholds=(0.5, 0.65, 0.8), *, airing_observer=None
+):
     counts = {t: defaultdict(lambda: defaultdict(int)) for t in thresholds}
     current = None
     segments = []
@@ -16,7 +18,10 @@ def personal_counts(db, start, cutoff, thresholds=(0.5, 0.65, 0.8)):
         if current is None or not segments:
             return
         u, a, item, duration = current
-        fraction = segment_durations(segments)["longest_block_seconds"] / duration
+        durations = segment_durations(segments)
+        fraction = durations["longest_block_seconds"] / duration
+        if airing_observer is not None:
+            airing_observer(u, item, duration, durations)
         for threshold in thresholds:
             if fraction >= threshold:
                 counts[threshold][u][item] += 1
