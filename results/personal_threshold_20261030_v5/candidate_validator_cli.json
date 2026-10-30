@@ -1,0 +1,9 @@
+{
+  "status": "valid",
+  "users": 1260,
+  "k": 5,
+  "candidate_ids": 6649,
+  "distinct_recommended_ids": 229,
+  "template_sha256": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02",
+  "prediction_sha256": "593b1134b6625771abfe107e17d074499cedf6efb4ef9306e06289e9566876e5"
+}

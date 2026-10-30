@@ -1,0 +1,15 @@
+# Frozen personal-count training-threshold experiment
+
+Evaluate exactly two new primary-count definitions: count canonical user-airings whose longest observed merged block / full original airing duration is >=0.50 or >=0.65. Reference v3 counts >=0.80. Each retained airing contributes one integer count, not a soft overlap weight. Preserve causal cleaning, canonical deduplication, interval union, full denominators and candidate filtering.
+
+For every threshold, use the SAME global tie statistics (distinct qualified viewers and total qualified user-airings) and shared popularity fallback, all computed from the original >=0.80 fitting qualifications. Rank by the threshold-specific personal count, then those fixed v3 global keys and raw string ID. Lowering the personal threshold must not recompute global statistics, truth, cohorts, candidates or history-size slices.
+
+Reuse the established main fit [2020-03-09,2020-05-18) / validate [2020-05-18,2020-07-27) and auxiliary fit [2020-03-09,2020-06-01) / validate [2020-06-01,2020-07-27), in source wall time. Keep the stored >=0.80 truth and cohort: main 4625 users/6384 candidates; auxiliary 4589/5742. Slice membership remains based on each split’s original >=0.80 personal history. Auxiliary overlaps main and is not an independent test.
+
+Report within-split MAP deltas, AP wins/losses/ties, paired bootstrap intervals (2000 resamples, seed 42, shared draw indices for both variants within a split), original history slices, prediction order/membership/set-overlap changes and fallback usage. Count additional fitting user-item pairs both before and after availability filtering; separately report fixed-cohort users gaining available personal history. Frozen global fallback order does not imply its usage count stays unchanged when more personal items become usable.
+
+Eligibility requires strict MAP improvement over within-split v3 on BOTH splits. If both are eligible, select by main MAP; an exact tie between qualifying new thresholds chooses 0.65 as the smaller departure from 0.80. An exact tie with v3 is not an improvement. Report reused-hold-out selection uncertainty. If neither qualifies, retain v3 and generate no new submission file.
+
+For a selected threshold, use the existing canonical combined [2020-03-09,2020-07-27) fitting window, recompute personal counts at the selected threshold from full-window per-airing groups, and retain combined-window >=0.80 global statistics/fallback. Never add independently qualified split counts. Predict [2020-07-27,2020-10-19) with schedule carryovers; validate all 1260 template users and exact original header/order, K=5, distinct available nonzero IDs. Preserve every previous artifact and checksum. At most one new versioned CSV is permitted. No opportunity/week, recency, ALS, CBF or fusion experiment is rerun.
+
+Stop for user review. No Kaggle browser, upload workflow, Submit click or submission API is authorized. Student verification remains pending; preserve the native session transcript unmodified.

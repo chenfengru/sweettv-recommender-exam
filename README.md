@@ -2,7 +2,7 @@
 
 Individual TV-programme recommendation project for LLM4Rec (FKN).
 
-**Current status: retain submitted v3; no new CSV from the C/D experiment.** User-confirmed screenshot scores for v3 are private **0.39697**, public **0.40288**. Scheduled-airing tie-break C changes MAP@5 by **+0.001153** on the main split but **−0.001266** on the predeclared overlapping auxiliary split. Distinct-qualified-week tie-break D is negative on both. Neither passes the frozen two-split selection rule. [Full English results, feature diagnostics and uncertainty](results/opportunity_week_20261030_v4/comparison_report.md). All **42 tests pass**. Previous CSVs and native session records are unchanged; no Kaggle workflow was used. Stop for user review; uploads remain manual-only and student verification is pending.
+**Current status: T50 candidate prepared for manual review; v3 remains the best confirmed submitted baseline.** Lowering only personal training qualification to 0.50 improves main MAP@5 to **0.334711171171** (+0.007857177177) and auxiliary to **0.331395910511** (+0.007286990630), with truth, global tie keys and fallback anchored to 0.80. T65 also improves both, but less. [Full English report and conditional uncertainty](results/personal_threshold_20261030_v5/comparison_report.md). All **45 tests pass**. One new validated CSV is preserved under `submissions/`; prior artifacts are unchanged. No Kaggle action was taken. Manual review/upload and student verification remain pending.
 
 ## Start here
 

@@ -1,0 +1,274 @@
+{
+  "split": "main",
+  "fit_window_seconds": [
+    1583712000.0,
+    1589760000.0
+  ],
+  "validation_window_seconds": [
+    1589760000.0,
+    1595808000.0
+  ],
+  "results": {
+    "v3": {
+      "map_at_5": 0.32685399399399395,
+      "evaluation_users": 4625,
+      "candidates": 6384,
+      "inference_users": 4649,
+      "history_slices": {
+        "0": {
+          "users": 108,
+          "map_at_5": 0.16305041152263375
+        },
+        "1\u20135": {
+          "users": 462,
+          "map_at_5": 0.17688071188071186
+        },
+        "21+": {
+          "users": 1968,
+          "map_at_5": 0.40043656842818426
+        },
+        "6\u201320": {
+          "users": 2087,
+          "map_at_5": 0.29914337432784965
+        }
+      },
+      "fallback": {
+        "complete_users": 112,
+        "partial_completion_users": 376,
+        "completion_slots": 1446
+      },
+      "ranking_and_completion_seconds": 0.02281483303522691,
+      "all_predictions_valid": true,
+      "personal_count_precedence_preserved": true
+    },
+    "T50": {
+      "map_at_5": 0.33471117117117116,
+      "evaluation_users": 4625,
+      "candidates": 6384,
+      "inference_users": 4649,
+      "history_slices": {
+        "0": {
+          "users": 108,
+          "map_at_5": 0.16289609053497942
+        },
+        "1\u20135": {
+          "users": 462,
+          "map_at_5": 0.19396464646464645
+        },
+        "21+": {
+          "users": 1968,
+          "map_at_5": 0.4056218947606143
+        },
+        "6\u201320": {
+          "users": 2087,
+          "map_at_5": 0.3078921098865996
+        }
+      },
+      "fallback": {
+        "complete_users": 76,
+        "partial_completion_users": 151,
+        "completion_slots": 718
+      },
+      "ranking_and_completion_seconds": 0.03640012501273304,
+      "all_predictions_valid": true,
+      "personal_count_precedence_preserved": true,
+      "delta_from_v3": 0.007857177177177177,
+      "users_improved": 1204,
+      "users_worsened": 1000,
+      "users_unchanged_ap": 2421,
+      "prediction_changes": {
+        "users": 4625,
+        "users_changed": 4102,
+        "users_identical": 523,
+        "recommendation_slots": 23125,
+        "rank_position_slots_changed": 12142,
+        "top5_items_in_common": 18441,
+        "top5_set_overlap_fraction": 0.7974486486486486,
+        "users_with_membership_change": 3267,
+        "users_with_order_change_only": 835,
+        "new_item_slots_ignoring_order": 4684
+      },
+      "paired_user_bootstrap_95pct_interval": [
+        0.005385303303303303,
+        0.01066255255255255
+      ],
+      "bootstrap_resamples": 2000,
+      "seed": 42,
+      "uncertainty": "Conditional on this split cohort; not adjusted for model selection or repeated overlapping experiments.",
+      "history_expansion": {
+        "additional_training_user_item_pairs": 77053,
+        "additional_available_training_user_item_pairs": 63892,
+        "cohort_additional_available_pairs": 62726,
+        "cohort_users_gaining_usable_history": 36,
+        "all_users_gaining_usable_history": 60,
+        "personal_user_airings": 475291
+      }
+    },
+    "T65": {
+      "map_at_5": 0.3331742942942943,
+      "evaluation_users": 4625,
+      "candidates": 6384,
+      "inference_users": 4649,
+      "history_slices": {
+        "0": {
+          "users": 108,
+          "map_at_5": 0.15775720164609053
+        },
+        "1\u20135": {
+          "users": 462,
+          "map_at_5": 0.17973304473304472
+        },
+        "21+": {
+          "users": 1968,
+          "map_at_5": 0.4084009428635953
+        },
+        "6\u201320": {
+          "users": 2087,
+          "map_at_5": 0.3052820369483043
+        }
+      },
+      "fallback": {
+        "complete_users": 88,
+        "partial_completion_users": 239,
+        "completion_slots": 1005
+      },
+      "ranking_and_completion_seconds": 0.028332583024166524,
+      "all_predictions_valid": true,
+      "personal_count_precedence_preserved": true,
+      "delta_from_v3": 0.0063203003003003,
+      "users_improved": 939,
+      "users_worsened": 744,
+      "users_unchanged_ap": 2942,
+      "prediction_changes": {
+        "users": 4625,
+        "users_changed": 3451,
+        "users_identical": 1174,
+        "recommendation_slots": 23125,
+        "rank_position_slots_changed": 9173,
+        "top5_items_in_common": 20110,
+        "top5_set_overlap_fraction": 0.8696216216216216,
+        "users_with_membership_change": 2413,
+        "users_with_order_change_only": 1038,
+        "new_item_slots_ignoring_order": 3015
+      },
+      "paired_user_bootstrap_95pct_interval": [
+        0.00430871021021021,
+        0.008411286786786784
+      ],
+      "bootstrap_resamples": 2000,
+      "seed": 42,
+      "uncertainty": "Conditional on this split cohort; not adjusted for model selection or repeated overlapping experiments.",
+      "history_expansion": {
+        "additional_training_user_item_pairs": 33153,
+        "additional_available_training_user_item_pairs": 27707,
+        "cohort_additional_available_pairs": 27233,
+        "cohort_users_gaining_usable_history": 24,
+        "all_users_gaining_usable_history": 39,
+        "personal_user_airings": 370959
+      }
+    }
+  },
+  "truth_policy": "unchanged 80% longest-block, top-five frequency, raw string ID target ties; all users with positive targets",
+  "auxiliary_is_independent_test": false,
+  "qualified_user_airings": 289762,
+  "source_cache_manifests": {
+    "fit": {
+      "config": {
+        "version": "causal-interactions-v1",
+        "start": 1583712000.0,
+        "end": 1589760000.0,
+        "clock": "source-naive-wall-seconds",
+        "qualified_fraction": 0.8,
+        "max_session_seconds": 86400,
+        "inputs": {
+          "dataset11-30.csv": "8c9e5f058157041e5c33f13e64dc1625a5177cc6d5e434ba18cd8a69afafb53b",
+          "export_arh_11-20-final.csv": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c",
+          "export_arh_21-30-final.csv": "bdc9fa9850239aaed608bece9cdb200011e690300470fe85b980457d8c0cb2d4",
+          "export_arh_31-42-final.csv": "5cc01f4619bd94886d83744f00bbc15cc5fa23384d297244a7dc2207450c4088",
+          "submission.csv": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02"
+        },
+        "sources": {
+          "interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+          "intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+          "real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d"
+        }
+      },
+      "config_digest": "2a7aa317ec4c5156fe3282d1a5ea309961fd0b8275ee64dd110ab5d648a2bca9",
+      "output_sha256": "f41e7e28c112e679832a0fafd6de19973580ccc4ae1cc4e79ab9cc5270cbcfff",
+      "retained_clipped_source_rows": 3945050,
+      "ongoing_sessions_at_cutoff": 1007,
+      "user_airings": 1823678,
+      "user_item_pairs": 856858,
+      "qualified_user_airings": 289762,
+      "qualified_users": 4726,
+      "conflicted_airings_excluded": 0,
+      "elapsed_seconds": 33.35586554202018,
+      "environment": {
+        "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "code_base_commit": "b7f254a8878ed8f7b5ab01ac67e1197c0b099854",
+        "working_tree_dirty": true,
+        "source_sha256": {
+          "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+          "src/audit_anomalies.py": "e82a2ac4765b038a3c90a8253bdff47c93a583adb4c936de82140edd8fd4baad",
+          "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+          "src/compare_models.py": "102a17614a26e0e92cea3d8fd9cd9864d4e302b8a22c2948e31afa0ca99c145b",
+          "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+          "src/interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+          "src/intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+          "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+          "src/models.py": "583fee7c7f197646d229fb56214b2676beca78be298ab8a065d3ee868031c0e1",
+          "src/real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d",
+          "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6"
+        },
+        "peak_process_rss_bytes": 831471616,
+        "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+      }
+    },
+    "validation_truth": "existing frozen main truth cache"
+  },
+  "elapsed_evaluation_seconds": 4.027205707971007,
+  "dependencies": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "implicit": "0.7.3",
+    "threadpoolctl": "3.7.0",
+    "tqdm": "4.70.1"
+  },
+  "environment": {
+    "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "code_base_commit": "766174ac807e1c9e0bfe39c3e223c93122a9d6c1",
+    "working_tree_dirty": true,
+    "source_sha256": {
+      "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+      "src/audit_anomalies.py": "e82a2ac4765b038a3c90a8253bdff47c93a583adb4c936de82140edd8fd4baad",
+      "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+      "src/check_cutoff_invariance.py": "d893cafac6130b399e88a56c099a3057f2d15950a9c79e4332ba80efc0a935ef",
+      "src/compare_models.py": "71a6770afa248e1cd4b312d65f4a252612cec38894ff11af78ed449b435b6aba",
+      "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+      "src/diagnose_models.py": "1c5d854b379c4deb4a995b4536683cac2db6b2d140f224c6ec8a43d6ba32430a",
+      "src/experiment_opportunity_week.py": "4703fd7657dc729e95851d60e8853e02a329608de027c784724f4a1c560148bd",
+      "src/experiment_personal_threshold.py": "8e922d7cf932304c4a8c4942e00c209e5e5012d2cf01e254486fe44b08e0a6d6",
+      "src/experiment_personal_ties.py": "a4c8a8e3c15c203a4eafa6f7a6ccb1e11c46cfdbb08e664ca93981e82594a331",
+      "src/first_submission.py": "2e389ad63a3b1a0c10c7449acce105656ee0d93deb98da521068c4d63d5978ed",
+      "src/improve_recommender.py": "59d03e6bd9e40a70a416ead5a5c80e351c5d20d47ab4fe6930c639850ee728e8",
+      "src/improvement_helpers.py": "029bfa5719707abc54f2af250f926109cd5e1f232ca902c0a723ecd79a229bbf",
+      "src/interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+      "src/intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+      "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+      "src/models.py": "2129e6e226a4f006417f9897b3b1c38c11d0656baf92c7cb9ed65ff59990e04b",
+      "src/opportunity_week.py": "6604fa2c88c6c447e93905c42341fc880f8e07a73148391420494d1459a60b9f",
+      "src/personal_threshold.py": "de77269ab02e7c69e91e6c0eccbc39524d6805b882c020353af0c210a9bfea8b",
+      "src/personal_ties.py": "3c199fda25804d8780e637b14675fa72756fbf6bbd1185604f7491a7b161ab2b",
+      "src/real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d",
+      "src/report_comparison.py": "924240c485107343486ad15a98888bd24501a2849e905856ec7de5e7f38efbc1",
+      "src/report_improvement.py": "a0bfe5816ed0fa091bfb2c44e0b64a573027bbc400d92ba0bdf81c43259d1c17",
+      "src/report_opportunity_week.py": "482fad8db9a369c72f68ac5d64e962e1ca7ab633b0a8ad8195e89cdbb65eb6b5",
+      "src/report_personal_ties.py": "e49b3ba0bebd1f709ecfecd857636a0e4b6412515f1e1fb17716df02fe1fe963",
+      "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6"
+    },
+    "peak_process_rss_bytes": 625606656,
+    "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+  }
+}

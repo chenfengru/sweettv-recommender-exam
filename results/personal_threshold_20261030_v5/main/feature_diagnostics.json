@@ -1,0 +1,21 @@
+{
+  "expansion": {
+    "T50": {
+      "additional_training_user_item_pairs": 77053,
+      "additional_available_training_user_item_pairs": 63892,
+      "cohort_additional_available_pairs": 62726,
+      "cohort_users_gaining_usable_history": 36,
+      "all_users_gaining_usable_history": 60,
+      "personal_user_airings": 475291
+    },
+    "T65": {
+      "additional_training_user_item_pairs": 33153,
+      "additional_available_training_user_item_pairs": 27707,
+      "cohort_additional_available_pairs": 27233,
+      "cohort_users_gaining_usable_history": 24,
+      "all_users_gaining_usable_history": 39,
+      "personal_user_airings": 370959
+    }
+  },
+  "frozen_anchor_sha256": "dd07a77f8885d50484250dee8172c10afcb4dbc52245ef44df943c81d0e05379"
+}
