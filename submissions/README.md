@@ -39,3 +39,7 @@ All three predeclared weights (0.05, 0.10, 0.20) reduce MAP@5 on both frozen spl
 ## Lower-threshold round: no new artifact
 
 Exactly 0.30 and 0.40 were evaluated against 0.50 with E2 disabled throughout. Neither improves both splits. Retain submitted v9 and preserve its exact checksum; no combined final fit or prediction CSV was generated. [English report, paired intervals and newly included viewing-duration summaries](../results/lower_threshold_20261030_v10/comparison_report.md). No E2 combination or Kaggle action was performed.
+
+## Exploratory adaptive round: S40+E2 candidate
+
+`candidate_adaptive_s40_e2_20261030_v11.csv` has SHA-256 `ccac509f8efeeddb9187f1ff2e5300db08f82ae0f9acd1f4ba7d8220f9dd26fb`. It qualifies under the frozen two-stage point-estimate rules, but gains against v9 are small and both conditional intervals include zero. The grouping was derived from v10 validation slices, so evidence is exploratory. Both validators pass for all 1,260 users; 27 users adapt, and 17 lists / 44 rank slots change versus submitted v9. **Not uploaded; no Kaggle result.** [English report and path](../results/adaptive_threshold_20261030_v11/comparison_report.md); [English submission description](../results/adaptive_threshold_20261030_v11/submission_description.txt). V9 remains the best confirmed submitted model.

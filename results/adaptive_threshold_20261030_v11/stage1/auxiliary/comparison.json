@@ -1,0 +1,784 @@
+{
+  "stage": 1,
+  "split": "auxiliary",
+  "methods": {
+    "S30": {
+      "threshold": 0.3,
+      "adaptation_eligible_users": 401,
+      "changed_adaptive_group_users": 370,
+      "outside_group_exact_v5": true,
+      "e2_enabled": false,
+      "comparisons": {
+        "v5": {
+          "users": 4589,
+          "map_at_5": 0.33223354156073703,
+          "reference_map_at_5": 0.3313959105106414,
+          "delta": 0.0008376310500956394,
+          "users_improved": 60,
+          "users_worsened": 61,
+          "users_unchanged": 4468,
+          "relevant_hit_gains": 35,
+          "relevant_hit_losses": 22,
+          "net_relevant_hits": 13,
+          "prediction_changes": {
+            "users": 4589,
+            "users_changed": 370,
+            "users_identical": 4219,
+            "recommendation_slots": 22945,
+            "rank_position_slots_changed": 1264,
+            "top5_items_in_common": 22378,
+            "top5_set_overlap_fraction": 0.9752887339289605,
+            "users_with_membership_change": 332,
+            "users_with_order_change_only": 38,
+            "new_item_slots_ignoring_order": 567
+          },
+          "fallback": {
+            "complete_users": 63,
+            "partial_users": 59,
+            "completion_slots": 473
+          },
+          "reference_fallback": {
+            "complete_users": 63,
+            "partial_users": 124,
+            "completion_slots": 598
+          },
+          "history_slices": {
+            "0": {
+              "users": 87,
+              "map_at_5": 0.17059386973180077,
+              "reference_map_at_5": 0.17059386973180077,
+              "delta": 0.0,
+              "users_improved": 0,
+              "users_worsened": 0,
+              "users_unchanged": 87,
+              "relevant_hit_gains": 0,
+              "relevant_hit_losses": 0,
+              "net_relevant_hits": 0,
+              "prediction_changes": {
+                "users": 87,
+                "users_changed": 0,
+                "users_identical": 87,
+                "recommendation_slots": 435,
+                "rank_position_slots_changed": 0,
+                "top5_items_in_common": 435,
+                "top5_set_overlap_fraction": 1.0,
+                "users_with_membership_change": 0,
+                "users_with_order_change_only": 0,
+                "new_item_slots_ignoring_order": 0
+              },
+              "fallback": {
+                "complete_users": 62,
+                "partial_users": 23,
+                "completion_slots": 388
+              },
+              "reference_fallback": {
+                "complete_users": 62,
+                "partial_users": 23,
+                "completion_slots": 388
+              }
+            },
+            "1\u20135": {
+              "users": 401,
+              "map_at_5": 0.20733028539761708,
+              "reference_map_at_5": 0.19774452756996397,
+              "delta": 0.009585757827653089,
+              "users_improved": 60,
+              "users_worsened": 61,
+              "users_unchanged": 280,
+              "relevant_hit_gains": 35,
+              "relevant_hit_losses": 22,
+              "net_relevant_hits": 13,
+              "prediction_changes": {
+                "users": 401,
+                "users_changed": 370,
+                "users_identical": 31,
+                "recommendation_slots": 2005,
+                "rank_position_slots_changed": 1264,
+                "top5_items_in_common": 1438,
+                "top5_set_overlap_fraction": 0.7172069825436409,
+                "users_with_membership_change": 332,
+                "users_with_order_change_only": 38,
+                "new_item_slots_ignoring_order": 567
+              },
+              "fallback": {
+                "complete_users": 1,
+                "partial_users": 36,
+                "completion_slots": 85
+              },
+              "reference_fallback": {
+                "complete_users": 1,
+                "partial_users": 101,
+                "completion_slots": 210
+              }
+            },
+            "6\u201320": {
+              "users": 1874,
+              "map_at_5": 0.3008314063796988,
+              "reference_map_at_5": 0.3008314063796988,
+              "delta": 0.0,
+              "users_improved": 0,
+              "users_worsened": 0,
+              "users_unchanged": 1874,
+              "relevant_hit_gains": 0,
+              "relevant_hit_losses": 0,
+              "net_relevant_hits": 0,
+              "prediction_changes": {
+                "users": 1874,
+                "users_changed": 0,
+                "users_identical": 1874,
+                "recommendation_slots": 9370,
+                "rank_position_slots_changed": 0,
+                "top5_items_in_common": 9370,
+                "top5_set_overlap_fraction": 1.0,
+                "users_with_membership_change": 0,
+                "users_with_order_change_only": 0,
+                "new_item_slots_ignoring_order": 0
+              },
+              "fallback": {
+                "complete_users": 0,
+                "partial_users": 0,
+                "completion_slots": 0
+              },
+              "reference_fallback": {
+                "complete_users": 0,
+                "partial_users": 0,
+                "completion_slots": 0
+              }
+            },
+            "21+": {
+              "users": 2227,
+              "map_at_5": 0.38746320411116103,
+              "reference_map_at_5": 0.38746320411116103,
+              "delta": 0.0,
+              "users_improved": 0,
+              "users_worsened": 0,
+              "users_unchanged": 2227,
+              "relevant_hit_gains": 0,
+              "relevant_hit_losses": 0,
+              "net_relevant_hits": 0,
+              "prediction_changes": {
+                "users": 2227,
+                "users_changed": 0,
+                "users_identical": 2227,
+                "recommendation_slots": 11135,
+                "rank_position_slots_changed": 0,
+                "top5_items_in_common": 11135,
+                "top5_set_overlap_fraction": 1.0,
+                "users_with_membership_change": 0,
+                "users_with_order_change_only": 0,
+                "new_item_slots_ignoring_order": 0
+              },
+              "fallback": {
+                "complete_users": 0,
+                "partial_users": 0,
+                "completion_slots": 0
+              },
+              "reference_fallback": {
+                "complete_users": 0,
+                "partial_users": 0,
+                "completion_slots": 0
+              }
+            }
+          },
+          "paired_bootstrap_95pct": [
+            -0.00012347461320549147,
+            0.001965881576717271
+          ]
+        },
+        "v9": {
+          "users": 4589,
+          "map_at_5": 0.33223354156073703,
+          "reference_map_at_5": 0.3321782160238251,
+          "delta": 5.53255369119392e-05,
+          "users_improved": 76,
+          "users_worsened": 113,
+          "users_unchanged": 4400,
+          "relevant_hit_gains": 57,
+          "relevant_hit_losses": 87,
+          "net_relevant_hits": -30,
+          "prediction_changes": {
+            "users": 4589,
+            "users_changed": 752,
+            "users_identical": 3837,
+            "recommendation_slots": 22945,
+            "rank_position_slots_changed": 1650,
+            "top5_items_in_common": 22004,
+            "top5_set_overlap_fraction": 0.95898888646764,
+            "users_with_membership_change": 722,
+            "users_with_order_change_only": 30,
+            "new_item_slots_ignoring_order": 941
+          },
+          "fallback": {
+            "complete_users": 63,
+            "partial_users": 59,
+            "completion_slots": 473
+          },
+          "reference_fallback": {
+            "complete_users": 63,
+            "partial_users": 124,
+            "completion_slots": 598
+          },
+          "history_slices": {
+            "0": {
+              "users": 87,
+              "map_at_5": 0.17059386973180077,
+              "reference_map_at_5": 0.17136015325670498,
+              "delta": -0.0007662835249042146,
+              "users_improved": 0,
+              "users_worsened": 1,
+              "users_unchanged": 86,
+              "relevant_hit_gains": 0,
+              "relevant_hit_losses": 1,
+              "net_relevant_hits": -1,
+              "prediction_changes": {
+                "users": 87,
+                "users_changed": 2,
+                "users_identical": 85,
+                "recommendation_slots": 435,
+                "rank_position_slots_changed": 2,
+                "top5_items_in_common": 433,
+                "top5_set_overlap_fraction": 0.9954022988505747,
+                "users_with_membership_change": 2,
+                "users_with_order_change_only": 0,
+                "new_item_slots_ignoring_order": 2
+              },
+              "fallback": {
+                "complete_users": 62,
+                "partial_users": 23,
+                "completion_slots": 388
+              },
+              "reference_fallback": {
+                "complete_users": 62,
+                "partial_users": 23,
+                "completion_slots": 388
+              }
+            },
+            "1\u20135": {
+              "users": 401,
+              "map_at_5": 0.20733028539761708,
+              "reference_map_at_5": 0.20041285674702133,
+              "delta": 0.006917428650595733,
+              "users_improved": 60,
+              "users_worsened": 69,
+              "users_unchanged": 272,
+              "relevant_hit_gains": 36,
+              "relevant_hit_losses": 38,
+              "net_relevant_hits": -2,
+              "prediction_changes": {
+                "users": 401,
+                "users_changed": 377,
+                "users_identical": 24,
+                "recommendation_slots": 2005,
+                "rank_position_slots_changed": 1275,
+                "top5_items_in_common": 1439,
+                "top5_set_overlap_fraction": 0.7177057356608478,
+                "users_with_membership_change": 347,
+                "users_with_order_change_only": 30,
+                "new_item_slots_ignoring_order": 566
+              },
+              "fallback": {
+                "complete_users": 1,
+                "partial_users": 36,
+                "completion_slots": 85
+              },
+              "reference_fallback": {
+                "complete_users": 1,
+                "partial_users": 101,
+                "completion_slots": 210
+              }
+            },
+            "6\u201320": {
+              "users": 1874,
+              "map_at_5": 0.3008314063796988,
+              "reference_map_at_5": 0.3020551701648287,
+              "delta": -0.0012237637851298469,
+              "users_improved": 16,
+              "users_worsened": 42,
+              "users_unchanged": 1816,
+              "relevant_hit_gains": 21,
+              "relevant_hit_losses": 47,
+              "net_relevant_hits": -26,
+              "prediction_changes": {
+                "users": 1874,
+                "users_changed": 361,
+                "users_identical": 1513,
+                "recommendation_slots": 9370,
+                "rank_position_slots_changed": 361,
+                "top5_items_in_common": 9009,
+                "top5_set_overlap_fraction": 0.9614727854855923,
+                "users_with_membership_change": 361,
+                "users_with_order_change_only": 0,
+                "new_item_slots_ignoring_order": 361
+              },
+              "fallback": {
+                "complete_users": 0,
+                "partial_users": 0,
+                "completion_slots": 0
+              },
+              "reference_fallback": {
+                "complete_users": 0,
+                "partial_users": 0,
+                "completion_slots": 0
+              }
+            },
+            "21+": {
+              "users": 2227,
+              "map_at_5": 0.38746320411116103,
+              "reference_map_at_5": 0.38753504964326696,
+              "delta": -7.184553210597217e-05,
+              "users_improved": 0,
+              "users_worsened": 1,
+              "users_unchanged": 2226,
+              "relevant_hit_gains": 0,
+              "relevant_hit_losses": 1,
+              "net_relevant_hits": -1,
+              "prediction_changes": {
+                "users": 2227,
+                "users_changed": 12,
+                "users_identical": 2215,
+                "recommendation_slots": 11135,
+                "rank_position_slots_changed": 12,
+                "top5_items_in_common": 11123,
+                "top5_set_overlap_fraction": 0.9989223170184104,
+                "users_with_membership_change": 12,
+                "users_with_order_change_only": 0,
+                "new_item_slots_ignoring_order": 12
+              },
+              "fallback": {
+                "complete_users": 0,
+                "partial_users": 0,
+                "completion_slots": 0
+              },
+              "reference_fallback": {
+                "complete_users": 0,
+                "partial_users": 0,
+                "completion_slots": 0
+              }
+            }
+          },
+          "paired_bootstrap_95pct": [
+            -0.0009504809205588241,
+            0.0011239407036149232
+          ]
+        }
+      }
+    },
+    "S40": {
+      "threshold": 0.4,
+      "adaptation_eligible_users": 401,
+      "changed_adaptive_group_users": 288,
+      "outside_group_exact_v5": true,
+      "e2_enabled": false,
+      "comparisons": {
+        "v5": {
+          "users": 4589,
+          "map_at_5": 0.33186272729473865,
+          "reference_map_at_5": 0.3313959105106414,
+          "delta": 0.0004668167840972374,
+          "users_improved": 37,
+          "users_worsened": 49,
+          "users_unchanged": 4503,
+          "relevant_hit_gains": 20,
+          "relevant_hit_losses": 16,
+          "net_relevant_hits": 4,
+          "prediction_changes": {
+            "users": 4589,
+            "users_changed": 288,
+            "users_identical": 4301,
+            "recommendation_slots": 22945,
+            "rank_position_slots_changed": 873,
+            "top5_items_in_common": 22597,
+            "top5_set_overlap_fraction": 0.9848332970146001,
+            "users_with_membership_change": 241,
+            "users_with_order_change_only": 47,
+            "new_item_slots_ignoring_order": 348
+          },
+          "fallback": {
+            "complete_users": 63,
+            "partial_users": 83,
+            "completion_slots": 523
+          },
+          "reference_fallback": {
+            "complete_users": 63,
+            "partial_users": 124,
+            "completion_slots": 598
+          },
+          "history_slices": {
+            "0": {
+              "users": 87,
+              "map_at_5": 0.17059386973180077,
+              "reference_map_at_5": 0.17059386973180077,
+              "delta": 0.0,
+              "users_improved": 0,
+              "users_worsened": 0,
+              "users_unchanged": 87,
+              "relevant_hit_gains": 0,
+              "relevant_hit_losses": 0,
+              "net_relevant_hits": 0,
+              "prediction_changes": {
+                "users": 87,
+                "users_changed": 0,
+                "users_identical": 87,
+                "recommendation_slots": 435,
+                "rank_position_slots_changed": 0,
+                "top5_items_in_common": 435,
+                "top5_set_overlap_fraction": 1.0,
+                "users_with_membership_change": 0,
+                "users_with_order_change_only": 0,
+                "new_item_slots_ignoring_order": 0
+              },
+              "fallback": {
+                "complete_users": 62,
+                "partial_users": 23,
+                "completion_slots": 388
+              },
+              "reference_fallback": {
+                "complete_users": 62,
+                "partial_users": 23,
+                "completion_slots": 388
+              }
+            },
+            "1\u20135": {
+              "users": 401,
+              "map_at_5": 0.203086727625381,
+              "reference_map_at_5": 0.19774452756996397,
+              "delta": 0.005342200055417013,
+              "users_improved": 37,
+              "users_worsened": 49,
+              "users_unchanged": 315,
+              "relevant_hit_gains": 20,
+              "relevant_hit_losses": 16,
+              "net_relevant_hits": 4,
+              "prediction_changes": {
+                "users": 401,
+                "users_changed": 288,
+                "users_identical": 113,
+                "recommendation_slots": 2005,
+                "rank_position_slots_changed": 873,
+                "top5_items_in_common": 1657,
+                "top5_set_overlap_fraction": 0.8264339152119701,
+                "users_with_membership_change": 241,
+                "users_with_order_change_only": 47,
+                "new_item_slots_ignoring_order": 348
+              },
+              "fallback": {
+                "complete_users": 1,
+                "partial_users": 60,
+                "completion_slots": 135
+              },
+              "reference_fallback": {
+                "complete_users": 1,
+                "partial_users": 101,
+                "completion_slots": 210
+              }
+            },
+            "6\u201320": {
+              "users": 1874,
+              "map_at_5": 0.3008314063796988,
+              "reference_map_at_5": 0.3008314063796988,
+              "delta": 0.0,
+              "users_improved": 0,
+              "users_worsened": 0,
+              "users_unchanged": 1874,
+              "relevant_hit_gains": 0,
+              "relevant_hit_losses": 0,
+              "net_relevant_hits": 0,
+              "prediction_changes": {
+                "users": 1874,
+                "users_changed": 0,
+                "users_identical": 1874,
+                "recommendation_slots": 9370,
+                "rank_position_slots_changed": 0,
+                "top5_items_in_common": 9370,
+                "top5_set_overlap_fraction": 1.0,
+                "users_with_membership_change": 0,
+                "users_with_order_change_only": 0,
+                "new_item_slots_ignoring_order": 0
+              },
+              "fallback": {
+                "complete_users": 0,
+                "partial_users": 0,
+                "completion_slots": 0
+              },
+              "reference_fallback": {
+                "complete_users": 0,
+                "partial_users": 0,
+                "completion_slots": 0
+              }
+            },
+            "21+": {
+              "users": 2227,
+              "map_at_5": 0.38746320411116103,
+              "reference_map_at_5": 0.38746320411116103,
+              "delta": 0.0,
+              "users_improved": 0,
+              "users_worsened": 0,
+              "users_unchanged": 2227,
+              "relevant_hit_gains": 0,
+              "relevant_hit_losses": 0,
+              "net_relevant_hits": 0,
+              "prediction_changes": {
+                "users": 2227,
+                "users_changed": 0,
+                "users_identical": 2227,
+                "recommendation_slots": 11135,
+                "rank_position_slots_changed": 0,
+                "top5_items_in_common": 11135,
+                "top5_set_overlap_fraction": 1.0,
+                "users_with_membership_change": 0,
+                "users_with_order_change_only": 0,
+                "new_item_slots_ignoring_order": 0
+              },
+              "fallback": {
+                "complete_users": 0,
+                "partial_users": 0,
+                "completion_slots": 0
+              },
+              "reference_fallback": {
+                "complete_users": 0,
+                "partial_users": 0,
+                "completion_slots": 0
+              }
+            }
+          },
+          "paired_bootstrap_95pct": [
+            -0.00031493032856347314,
+            0.0013197440739933653
+          ]
+        },
+        "v9": {
+          "users": 4589,
+          "map_at_5": 0.33186272729473865,
+          "reference_map_at_5": 0.3321782160238251,
+          "delta": -0.0003154887290864628,
+          "users_improved": 53,
+          "users_worsened": 101,
+          "users_unchanged": 4435,
+          "relevant_hit_gains": 41,
+          "relevant_hit_losses": 80,
+          "net_relevant_hits": -39,
+          "prediction_changes": {
+            "users": 4589,
+            "users_changed": 719,
+            "users_identical": 3870,
+            "recommendation_slots": 22945,
+            "rank_position_slots_changed": 1323,
+            "top5_items_in_common": 22157,
+            "top5_set_overlap_fraction": 0.9656570058836348,
+            "users_with_membership_change": 689,
+            "users_with_order_change_only": 30,
+            "new_item_slots_ignoring_order": 788
+          },
+          "fallback": {
+            "complete_users": 63,
+            "partial_users": 83,
+            "completion_slots": 523
+          },
+          "reference_fallback": {
+            "complete_users": 63,
+            "partial_users": 124,
+            "completion_slots": 598
+          },
+          "history_slices": {
+            "0": {
+              "users": 87,
+              "map_at_5": 0.17059386973180077,
+              "reference_map_at_5": 0.17136015325670498,
+              "delta": -0.0007662835249042146,
+              "users_improved": 0,
+              "users_worsened": 1,
+              "users_unchanged": 86,
+              "relevant_hit_gains": 0,
+              "relevant_hit_losses": 1,
+              "net_relevant_hits": -1,
+              "prediction_changes": {
+                "users": 87,
+                "users_changed": 2,
+                "users_identical": 85,
+                "recommendation_slots": 435,
+                "rank_position_slots_changed": 2,
+                "top5_items_in_common": 433,
+                "top5_set_overlap_fraction": 0.9954022988505747,
+                "users_with_membership_change": 2,
+                "users_with_order_change_only": 0,
+                "new_item_slots_ignoring_order": 2
+              },
+              "fallback": {
+                "complete_users": 62,
+                "partial_users": 23,
+                "completion_slots": 388
+              },
+              "reference_fallback": {
+                "complete_users": 62,
+                "partial_users": 23,
+                "completion_slots": 388
+              }
+            },
+            "1\u20135": {
+              "users": 401,
+              "map_at_5": 0.203086727625381,
+              "reference_map_at_5": 0.20041285674702133,
+              "delta": 0.0026738708783596563,
+              "users_improved": 37,
+              "users_worsened": 57,
+              "users_unchanged": 307,
+              "relevant_hit_gains": 20,
+              "relevant_hit_losses": 31,
+              "net_relevant_hits": -11,
+              "prediction_changes": {
+                "users": 401,
+                "users_changed": 344,
+                "users_identical": 57,
+                "recommendation_slots": 2005,
+                "rank_position_slots_changed": 948,
+                "top5_items_in_common": 1592,
+                "top5_set_overlap_fraction": 0.7940149625935162,
+                "users_with_membership_change": 314,
+                "users_with_order_change_only": 30,
+                "new_item_slots_ignoring_order": 413
+              },
+              "fallback": {
+                "complete_users": 1,
+                "partial_users": 60,
+                "completion_slots": 135
+              },
+              "reference_fallback": {
+                "complete_users": 1,
+                "partial_users": 101,
+                "completion_slots": 210
+              }
+            },
+            "6\u201320": {
+              "users": 1874,
+              "map_at_5": 0.3008314063796988,
+              "reference_map_at_5": 0.3020551701648287,
+              "delta": -0.0012237637851298469,
+              "users_improved": 16,
+              "users_worsened": 42,
+              "users_unchanged": 1816,
+              "relevant_hit_gains": 21,
+              "relevant_hit_losses": 47,
+              "net_relevant_hits": -26,
+              "prediction_changes": {
+                "users": 1874,
+                "users_changed": 361,
+                "users_identical": 1513,
+                "recommendation_slots": 9370,
+                "rank_position_slots_changed": 361,
+                "top5_items_in_common": 9009,
+                "top5_set_overlap_fraction": 0.9614727854855923,
+                "users_with_membership_change": 361,
+                "users_with_order_change_only": 0,
+                "new_item_slots_ignoring_order": 361
+              },
+              "fallback": {
+                "complete_users": 0,
+                "partial_users": 0,
+                "completion_slots": 0
+              },
+              "reference_fallback": {
+                "complete_users": 0,
+                "partial_users": 0,
+                "completion_slots": 0
+              }
+            },
+            "21+": {
+              "users": 2227,
+              "map_at_5": 0.38746320411116103,
+              "reference_map_at_5": 0.38753504964326696,
+              "delta": -7.184553210597217e-05,
+              "users_improved": 0,
+              "users_worsened": 1,
+              "users_unchanged": 2226,
+              "relevant_hit_gains": 0,
+              "relevant_hit_losses": 1,
+              "net_relevant_hits": -1,
+              "prediction_changes": {
+                "users": 2227,
+                "users_changed": 12,
+                "users_identical": 2215,
+                "recommendation_slots": 11135,
+                "rank_position_slots_changed": 12,
+                "top5_items_in_common": 11123,
+                "top5_set_overlap_fraction": 0.9989223170184104,
+                "users_with_membership_change": 12,
+                "users_with_order_change_only": 0,
+                "new_item_slots_ignoring_order": 12
+              },
+              "fallback": {
+                "complete_users": 0,
+                "partial_users": 0,
+                "completion_slots": 0
+              },
+              "reference_fallback": {
+                "complete_users": 0,
+                "partial_users": 0,
+                "completion_slots": 0
+              }
+            }
+          },
+          "paired_bootstrap_95pct": [
+            -0.001139591051064139,
+            0.0005642342195104215
+          ]
+        }
+      }
+    }
+  },
+  "anchor_sha256": "f33cf5f34f7a8882a131ad72bfa7009d0c438dd520761d0c32d817f960f363dc",
+  "truth_sha256": "a0228a12f0e3be26263a27640275bfa8c19c932dbfa9191bb98e38bad7edd436",
+  "fallback_provenance": "Exact composition of frozen v10 slice fallback counts: lower threshold only for original1\u20135 slice, N50 for other slices.",
+  "environment": {
+    "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "code_base_commit": "388aea2021d6064d20ff579603063e046f75a8a6",
+    "working_tree_dirty": true,
+    "source_sha256": {
+      "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+      "src/adaptive_threshold.py": "c3aaa91c14d4266dcd0cdb3b034275ef672468de9dfbc183855fad5cce73e098",
+      "src/audit_anomalies.py": "e82a2ac4765b038a3c90a8253bdff47c93a583adb4c936de82140edd8fd4baad",
+      "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+      "src/check_cutoff_invariance.py": "d893cafac6130b399e88a56c099a3057f2d15950a9c79e4332ba80efc0a935ef",
+      "src/compare_models.py": "71a6770afa248e1cd4b312d65f4a252612cec38894ff11af78ed449b435b6aba",
+      "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+      "src/diagnose_models.py": "1c5d854b379c4deb4a995b4536683cac2db6b2d140f224c6ec8a43d6ba32430a",
+      "src/experiment_adaptive_threshold.py": "c0e50dd0b84d208c3087f92090f128d4ca2b263dd07f861f7c17f446f6de377a",
+      "src/experiment_fifth_replacement.py": "6221e59934120b6bc0ad53b9d123e3766d859a1fc4012200672c13c80fc7127c",
+      "src/experiment_item_fusion.py": "432db6ad96c5c8892848b0c7050037c691228216773010bb65a2461392edeb03",
+      "src/experiment_item_item.py": "b5fb6b3ab7eee17aa2f653930c185da7fcf21e0979856b11e8db12ffc8dc2f79",
+      "src/experiment_lower_threshold.py": "5db5bfaa9cfec721af7f1dc0fdc2d555d2f57f196e65f7a638b4fb91bf26d478",
+      "src/experiment_opportunity_week.py": "4703fd7657dc729e95851d60e8853e02a329608de027c784724f4a1c560148bd",
+      "src/experiment_personal_threshold.py": "8e922d7cf932304c4a8c4942e00c209e5e5012d2cf01e254486fe44b08e0a6d6",
+      "src/experiment_personal_ties.py": "a4c8a8e3c15c203a4eafa6f7a6ccb1e11c46cfdbb08e664ca93981e82594a331",
+      "src/experiment_viewing_strength.py": "99a9bab63a4ae005a440e7b21d20fb51b9121625c251640c41cca7d7b77e291f",
+      "src/fifth_replacement.py": "d103cc5454a23b6252da9fd05f85cf20e3c96423a8f7a128ca5482074d8956a4",
+      "src/first_submission.py": "2e389ad63a3b1a0c10c7449acce105656ee0d93deb98da521068c4d63d5978ed",
+      "src/improve_recommender.py": "59d03e6bd9e40a70a416ead5a5c80e351c5d20d47ab4fe6930c639850ee728e8",
+      "src/improvement_helpers.py": "029bfa5719707abc54f2af250f926109cd5e1f232ca902c0a723ecd79a229bbf",
+      "src/interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+      "src/intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+      "src/item_fusion.py": "ca6bc71ef6ef028ca05aae4f17b79bfd267a44f6aa0d6babe6535e07fcb66515",
+      "src/item_item.py": "8c53802851647e9f98e2b992055ee6d5a0d89f330fe9cc0770132250a31fa3e1",
+      "src/lower_threshold.py": "98987adadb2982b4ae08cf603c8a35f2b1437c3254b6847ccdd7ee97541f1ea1",
+      "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+      "src/models.py": "2129e6e226a4f006417f9897b3b1c38c11d0656baf92c7cb9ed65ff59990e04b",
+      "src/opportunity_week.py": "6604fa2c88c6c447e93905c42341fc880f8e07a73148391420494d1459a60b9f",
+      "src/personal_threshold.py": "e6c6e89c3dc43c6dffa753fcefe65bbd39c57d2af77b5cc73ffe603f2f8d512d",
+      "src/personal_ties.py": "3c199fda25804d8780e637b14675fa72756fbf6bbd1185604f7491a7b161ab2b",
+      "src/real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d",
+      "src/report_comparison.py": "924240c485107343486ad15a98888bd24501a2849e905856ec7de5e7f38efbc1",
+      "src/report_fifth_replacement.py": "58280c6dd35086e19ead1cdbc60858e3cdfe911f75c2dcda8629a597dca4c09a",
+      "src/report_improvement.py": "a0bfe5816ed0fa091bfb2c44e0b64a573027bbc400d92ba0bdf81c43259d1c17",
+      "src/report_item_fusion.py": "dec10450a840417b56af5088ddb4c08ae50777f9dc321d04446de24ad544c2ec",
+      "src/report_item_item.py": "77e2d7675532e276123233c846a8867dc8bd50e5454c5f653ad7c4d06a24b68e",
+      "src/report_lower_threshold.py": "3abe635f906245d0470f6be7f33b05f9a93dae3ee028e1d749102a6f7f98c600",
+      "src/report_opportunity_week.py": "482fad8db9a369c72f68ac5d64e962e1ca7ab633b0a8ad8195e89cdbb65eb6b5",
+      "src/report_personal_ties.py": "e49b3ba0bebd1f709ecfecd857636a0e4b6412515f1e1fb17716df02fe1fe963",
+      "src/report_viewing_strength.py": "3c2f8fbaddbaa3c1f172b34b2683ede2c16f56da7fb1d9060c080fb780d21664",
+      "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6",
+      "src/viewing_strength.py": "21adab3a432bcbe353c1ee5d3d77602d603d73e58b62e4d6babc781a454bbcc4"
+    },
+    "peak_process_rss_bytes": 838942720,
+    "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+  }
+}

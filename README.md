@@ -2,7 +2,7 @@
 
 Individual TV-programme recommendation project for LLM4Rec (FKN).
 
-**Current status: retain submitted v9 E2.** Its latest user-screenshot-reported scores are Private **0.40261**, Public **0.41871**. The controlled lower-threshold round kept E2 disabled throughout: threshold 0.30 lowers MAP on both splits; 0.40 has a small main gain but an auxiliary loss versus the 0.50 control. Neither qualifies, both are below the existing v9 local scores, and **no new CSV was generated**. [English comparison, conditional intervals, coverage and duration diagnostics](results/lower_threshold_20261030_v10/comparison_report.md). All **64 tests pass**. Previous CSVs/checksums and native session records are unchanged. No Kaggle action was taken; student verification remains pending.
+**Current status: v9 remains the confirmed submitted incumbent; exploratory S40+E2 candidate is ready for manual review.** Stage 1 selected S40 under the frozen max-min rule; only S40+E2 was tested in Stage 2. Its MAP@5 is **0.335705405405 / 0.332503389748**, gains of **+0.000052972973 / +0.000325173725** versus v9. Both intervals against v9 include zero, and the grouping was motivated by reused v10 validation slices. [English two-stage report and artifact details](results/adaptive_threshold_20261030_v11/comparison_report.md). The validated candidate changes **17** lists / **44** rank slots versus v9; only **27** final-template users are in the adaptive group. All **68 tests pass**. Previous files/checksums and native session records are preserved. No Kaggle action was taken; student verification is pending.
 
 ## Start here
 
