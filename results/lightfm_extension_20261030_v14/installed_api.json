@@ -1,0 +1,26 @@
+{
+  "lightfm_version": "1.17",
+  "signatures": {
+    "__init__": "(self, no_components=10, k=5, n=10, learning_schedule='adagrad', loss='logistic', learning_rate=0.05, rho=0.95, epsilon=1e-06, item_alpha=0.0, user_alpha=0.0, max_sampled=10, random_state=None)",
+    "fit": "(self, interactions, user_features=None, item_features=None, sample_weight=None, epochs=1, num_threads=1, verbose=False)",
+    "predict": "(self, user_ids, item_ids, item_features=None, user_features=None, num_threads=1)",
+    "get_params": "(self, deep=True)",
+    "get_user_representations": "(self, features=None)",
+    "get_item_representations": "(self, features=None)"
+  },
+  "compiled_backend": "lightfm._lightfm_fast_no_openmp",
+  "backend_file": "/private/tmp/sweettv-model-venv/lib/python3.10/site-packages/lightfm/_lightfm_fast.py",
+  "backend_sha256": "2ec483cd781d7ea03544ad2d6dffd75489a39639c3223b4e29e3d035f009896f",
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "lightfm": "1.17",
+    "lightgbm": "4.6.0",
+    "scikit-learn": "1.7.2",
+    "requests": "2.34.2",
+    "certifi": "2026.10.23",
+    "charset-normalizer": "3.5.2",
+    "idna": "3.20",
+    "urllib3": "2.8.0"
+  }
+}

@@ -9,8 +9,9 @@
 | `candidate_personal_fifth_e2_20261030_v9.csv` | **0.40261 / 0.41871** | `f1378b0d6fed62793e14ebb4c1b64cf8b2163485485c15c861aae7e67e556375` |
 | `candidate_adaptive_s40_e2_20261030_v11.csv` | 0.40257 / 0.41846 | `ccac509f8efeeddb9187f1ff2e5300db08f82ae0f9acd1f4ba7d8220f9dd26fb` |
 | `candidate_lightgbm_historical_fixed_20261030_v12.csv` | **0.42660 / 0.43394** | `e18c49cb106df5b5e50f3b7123a080443a2ab48c709e68e721ee9965d96b1457` |
+| `candidate_lightgbm_schedule_exposure_20261030_v13.csv` | **0.43400 / 0.43774** | `1fd147770b6be8ebcd64c89244af60cb8510440607358ec84c9adc6ffe7ec359` |
 
-The user confirms these scores from Kaggle screenshots. They are not independently fetched in this experiment, and no unknown submission identifiers/timestamps are invented. The filenames retain their original candidate names after the user’s manual submissions. Every file remains byte-for-byte unchanged; v12 is now the best confirmed submitted model; older scores remain historical evidence.
+The user confirms these scores from Kaggle screenshots. They are not independently fetched in this experiment, and no unknown submission identifiers/timestamps are invented. The filenames retain their original candidate names after the user’s manual submissions. Every file remains byte-for-byte unchanged; v13 is now the best confirmed submitted model; older scores remain historical evidence.
 
 ## Latest C/D round: no new candidate
 
@@ -52,4 +53,8 @@ Exactly 0.30 and 0.40 were evaluated against 0.50 with E2 disabled throughout. N
 
 ## Schedule-exposure extension: manual-review candidate
 
-`candidate_lightgbm_schedule_exposure_20261030_v13.csv` has SHA-256 `1fd147770b6be8ebcd64c89244af60cb8510440607358ec84c9adc6ffe7ec359`. One fixed extension adds exactly seven schedule-only exposure features while preserving all original rows/labels/27 features/settings. It improves both local splits, and both validators pass for all 1,260 users. Versus submitted v12: 1,017 changed lists and 2,542 changed rank slots. **Not uploaded; no Kaggle result.** [English report, exact path and limitations](../results/schedule_reranker_20261030_v13/comparison_report.md); [accurate English submission description](../results/schedule_reranker_20261030_v13/submission_description.txt). V12 remains the confirmed incumbent.
+`candidate_lightgbm_schedule_exposure_20261030_v13.csv` has SHA-256 `1fd147770b6be8ebcd64c89244af60cb8510440607358ec84c9adc6ffe7ec359`. One fixed extension adds exactly seven schedule-only exposure features while preserving all original rows/labels/27 features/settings. It improves both local splits, and both validators pass for all 1,260 users. Versus submitted v12: 1,017 changed lists and 2,542 changed rank slots. Initially prepared for manual review; the user now reports screenshot scores **Private 0.43400 / Public 0.43774**. Submission ID/time remain unknown. [English report, exact path and limitations](../results/schedule_reranker_20261030_v13/comparison_report.md); [accurate English submission description](../results/schedule_reranker_20261030_v13/submission_description.txt). V13 is now the confirmed incumbent.
+
+## Identity LightFM WARP extension: manual-review candidate
+
+`candidate_lightgbm_lightfm_warp_20261030_v14.csv` has SHA-256 `108b159c4e2c687b45f4c4d3e6e9519bace4abc73d5ba888f927a0efbb30ce90`. Six support-aware scalar features extend unchanged v13 inputs and candidates. Both point estimates exceed v13, so the fixed rule qualifies it, but the auxiliary interval includes zero. Both validators pass for all 1,260 users; 811 lists and 1,818 rank slots differ from submitted v13. **Not uploaded; no Kaggle result.** [English report, exact path and limitations](../results/lightfm_extension_20261030_v14/comparison_report.md); [accurate English submission description](../results/lightfm_extension_20261030_v14/submission_description.txt). V13 remains the confirmed submitted incumbent.

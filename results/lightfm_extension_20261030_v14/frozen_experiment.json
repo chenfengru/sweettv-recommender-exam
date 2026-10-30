@@ -1,0 +1,49 @@
+{
+  "frozen_at_utc": "2026-10-30T16:25:03.564245+00:00",
+  "definition_sha256": "a9b7305c9268a15053a2d4fecf2221127bf14c75cd2cdf4d45b36b4bda714d96",
+  "lightfm_parameters": {
+    "loss": "warp",
+    "no_components": 10,
+    "learning_rate": 0.05,
+    "item_alpha": 0.0,
+    "user_alpha": 0.0,
+    "max_sampled": 10,
+    "random_state": 42
+  },
+  "epochs": 15,
+  "num_threads": 1,
+  "classifier_fits_allowed": 1,
+  "deterministic_replay_origin": "origin_20200406",
+  "lightgbm_parameters": {
+    "objective": "binary",
+    "learning_rate": 0.05,
+    "num_leaves": 15,
+    "max_depth": -1,
+    "min_child_samples": 100,
+    "reg_lambda": 1.0,
+    "n_estimators": 300,
+    "random_state": 42,
+    "n_jobs": 4,
+    "deterministic": true,
+    "force_col_wise": true,
+    "verbosity": -1
+  },
+  "source_artifact_sha256": {
+    "artifacts/schedule_reranker_20261030_v13/origin_20200406/augmented_features.npy": "df33c7a88f531d5d3af164870ebf86aaacb507c5c2745dd8339967328fc616e6",
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200406/row_index.json": "1b688d474ba3842961c26b5521cd54a0d174146edbb442404ec0aa5b591c18b1",
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200406/labels.npy": "b8aa87da7c7dd898c16d41a26d8d2db2f9dc35cb86cbc378acb8e22f500b4a26",
+    "artifacts/schedule_reranker_20261030_v13/origin_20200420/augmented_features.npy": "a49c9f04e8b3159b70769aee3d772cc8710473aeb2f58d497ff23d43109a65e6",
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200420/row_index.json": "8cfd91c441ed4287e7a37836080ecfc5a0c57b00eafa7052b0ff80468ca13cc4",
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200420/labels.npy": "2747e5780119a77aa8947871f155d4876f0420ebfa28317e434f8f1cefa49840",
+    "artifacts/schedule_reranker_20261030_v13/main/augmented_features.npy": "02f3dbef1a37601f5cfde23f3519022974be345ccc9d021c29113ffeac382064",
+    "artifacts/lightgbm_reranker_20261030_v12/main/row_index.json": "3970749dd964154ec269fb8cb6c6bdf202eb87fea42a4a892a55da7e0abb00a8",
+    "artifacts/schedule_reranker_20261030_v13/main/predictions.json": "9935bf541743a03b7eabef2f43afeae585014d837078b48356ee6fdbfa96a954",
+    "artifacts/schedule_reranker_20261030_v13/auxiliary/augmented_features.npy": "766536aed2f112554a6170dbf0e3ac52749a51610adf0319284b33585c74130c",
+    "artifacts/lightgbm_reranker_20261030_v12/auxiliary/row_index.json": "5c069ab78a324f835d903caad4ee386e7f73d519e78b02f9bbdf6d2dfeb00e2c",
+    "artifacts/schedule_reranker_20261030_v13/auxiliary/predictions.json": "d3bf0023a5efa69f23d26b34a90d26f957d4792bc249a43a0114af599eda92a5",
+    "artifacts/schedule_reranker_20261030_v13/final/augmented_features.npy": "a10fe119e4d499ca90370b1465a1eb5c82a8f5a91e9ab311a380c34c11da4bb6",
+    "artifacts/lightgbm_reranker_20261030_v12/final/row_index.json": "495e698bd6cd282789fa12242a3e109d69aa42853cd04c486067f59428259313",
+    "artifacts/schedule_reranker_20261030_v13/final/predictions.json": "62808bb45efb3314263abdca9408d8eff8a2fa5e214d0bee377d590dfb42f206",
+    "artifacts/schedule_reranker_20261030_v13/frozen_model.txt": "51078bfa7e49b7137308fc96aa0f0f2942b2575edeb1f714b2499aec16c316a6"
+  }
+}
