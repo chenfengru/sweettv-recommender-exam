@@ -1,0 +1,33 @@
+{
+  "previous_csv_git_bytes_preserved": {
+    "submissions/candidate_personal_fifth_e2_20261030_v9.csv": "f1378b0d6fed62793e14ebb4c1b64cf8b2163485485c15c861aae7e67e556375",
+    "submissions/candidate_personal_threshold_050_20261030_v5.csv": "593b1134b6625771abfe107e17d074499cedf6efb4ef9306e06289e9566876e5",
+    "submissions/candidate_personal_tie_popularity_20261030_v3.csv": "39aac2794395209b2299ccee2e2bb1b4b9afde22f3e06ccb5b04f3d706c9522f",
+    "submissions/candidate_rrf_als_lb80_w0p1_20261029_v2.csv": "905971a8a9c47bcf4a88e14cd10d2514feaaea43900d6f513b2eecc4986f19f5",
+    "submissions/first_personal_original_20261029_v1.csv": "53cb8ae4b59b26ab6ee00b5e99ad91044876180e662732a755d3e99a297e64bc"
+  },
+  "cached_inputs_unchanged": true,
+  "exactly_one_new_csv": true,
+  "stage1_outside_group_exact_v5": {
+    "main": true,
+    "auxiliary": true
+  },
+  "stage2_invariants": {
+    "main": {
+      "first_four_identical_to_adaptive_parent": true,
+      "original_n50_eligibility": true,
+      "original_n50_unseen_order_and_entire_parent_top5_exclusion": true,
+      "outside_adaptive_group_exact_v9": true
+    },
+    "auxiliary": {
+      "first_four_identical_to_adaptive_parent": true,
+      "original_n50_eligibility": true,
+      "original_n50_unseen_order_and_entire_parent_top5_exclusion": true,
+      "outside_adaptive_group_exact_v9": true
+    }
+  },
+  "final_template_adaptation_group_users": 27,
+  "final_csv_changed_users_vs_v9": 17,
+  "final_csv_outside_adaptation_group_exact_v9": true,
+  "final_e2_first_four_preserved_relative_to_adaptive_parent": "Verified at generation; 50 fifth-only changes relative to parent."
+}

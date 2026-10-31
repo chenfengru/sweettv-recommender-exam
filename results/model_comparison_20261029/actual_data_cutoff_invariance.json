@@ -1,0 +1,62 @@
+{
+  "data_scope": "actual full local viewing file; no audit repeated",
+  "mutation": {
+    "strictly_future_rows_removed": 1876814,
+    "crossing_tails_extended": 1007,
+    "pre_cutoff_rows_retained": 3945173
+  },
+  "schedule": "identical permitted schedule files; no schedule modification",
+  "training_interactions_exactly_equal": true,
+  "training_interaction_pairs": 856858,
+  "perturbed_cache_output_sha256": "f41e7e28c112e679832a0fafd6de19973580ccc4ae1cc4e79ab9cc5270cbcfff",
+  "methods": {
+    "popularity": {
+      "fitted_features_and_parameters_unchanged": true,
+      "fitted_fingerprint": "9995e063a91e32cfda1609307696db30e6619490a780aa95197fb375f75c7fbb",
+      "predictions_unchanged": true,
+      "prediction_users": 4649
+    },
+    "personal": {
+      "fitted_features_and_parameters_unchanged": true,
+      "fitted_fingerprint": "13395b09086ed6f8da7d56162140a832c46fc881045b464d3937df964c0595df",
+      "predictions_unchanged": true,
+      "prediction_users": 4649
+    },
+    "cbf": {
+      "fitted_features_and_parameters_unchanged": true,
+      "fitted_fingerprint": "c6d105982c526044a4e0e306e1e47a876f05b6b9de690ebd13a1fde810feae9c",
+      "predictions_unchanged": true,
+      "prediction_users": 4649
+    },
+    "als_f32_r0.1": {
+      "fitted_features_and_parameters_unchanged": true,
+      "fitted_fingerprint": "61f9c9a05498ccfc7eea0011b2ee1d8e37138c7fa67e26063fbbd7d5fa7d6351",
+      "predictions_unchanged": true,
+      "prediction_users": 4649
+    }
+  },
+  "elapsed_seconds": 52.47219512501033,
+  "environment": {
+    "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "code_base_commit": "b7f254a8878ed8f7b5ab01ac67e1197c0b099854",
+    "working_tree_dirty": true,
+    "source_sha256": {
+      "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+      "src/audit_anomalies.py": "e82a2ac4765b038a3c90a8253bdff47c93a583adb4c936de82140edd8fd4baad",
+      "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+      "src/check_cutoff_invariance.py": "d893cafac6130b399e88a56c099a3057f2d15950a9c79e4332ba80efc0a935ef",
+      "src/compare_models.py": "102a17614a26e0e92cea3d8fd9cd9864d4e302b8a22c2948e31afa0ca99c145b",
+      "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+      "src/diagnose_models.py": "1c5d854b379c4deb4a995b4536683cac2db6b2d140f224c6ec8a43d6ba32430a",
+      "src/interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+      "src/intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+      "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+      "src/models.py": "2129e6e226a4f006417f9897b3b1c38c11d0656baf92c7cb9ed65ff59990e04b",
+      "src/real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d",
+      "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6"
+    },
+    "peak_process_rss_bytes": 1163476992,
+    "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+  }
+}

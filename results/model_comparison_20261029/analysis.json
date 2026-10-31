@@ -1,0 +1,86 @@
+{
+  "fallback_breakdown": {
+    "popularity": {
+      "complete_model_cold_start_users": 0,
+      "complete_no_available_supported_items_users": 0,
+      "partial_list_completion_users": 0
+    },
+    "personal": {
+      "complete_model_cold_start_users": 108,
+      "complete_no_available_supported_items_users": 4,
+      "partial_list_completion_users": 376
+    },
+    "cbf": {
+      "complete_model_cold_start_users": 44,
+      "complete_no_available_supported_items_users": 0,
+      "partial_list_completion_users": 0
+    },
+    "als_f32_r0.1": {
+      "complete_model_cold_start_users": 44,
+      "complete_no_available_supported_items_users": 0,
+      "partial_list_completion_users": 0
+    }
+  },
+  "validation_template_checks": {
+    "popularity": {
+      "status": "valid",
+      "users": 1260,
+      "k": 5,
+      "candidate_ids": 6384,
+      "distinct_recommended_ids": 5,
+      "template_sha256": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02",
+      "prediction_sha256": "cf2711a51da0b86741bf6a578825b2ae9fc0ea6f1939f26b81f4cd817ebf9a01"
+    },
+    "personal": {
+      "status": "valid",
+      "users": 1260,
+      "k": 5,
+      "candidate_ids": 6384,
+      "distinct_recommended_ids": 315,
+      "template_sha256": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02",
+      "prediction_sha256": "cdc57744391aff30c38b322e0184228dc32e4c736b851d211c02b54dcdadb158"
+    },
+    "cbf": {
+      "status": "valid",
+      "users": 1260,
+      "k": 5,
+      "candidate_ids": 6384,
+      "distinct_recommended_ids": 303,
+      "template_sha256": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02",
+      "prediction_sha256": "05404f15f629590df2590830c541a63e0a361da492d95eb290abd546d2a16ea8"
+    },
+    "als_f32_r0.1": {
+      "status": "valid",
+      "users": 1260,
+      "k": 5,
+      "candidate_ids": 6384,
+      "distinct_recommended_ids": 679,
+      "template_sha256": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02",
+      "prediction_sha256": "675acd0c12f999a8570539cb0007950d08196cddbc485bf04e3d025378072fd8"
+    }
+  },
+  "personal_minus_popularity": {
+    "difference": 0.08308252252252252,
+    "paired_user_bootstrap_95pct_percentile_interval": [
+      0.07607910810810811,
+      0.08990245795795795
+    ],
+    "bootstrap_resamples": 1000,
+    "seed": 42,
+    "sampling": "uniform with replacement across the fixed 4625-user local cohort; conditional descriptive uncertainty, not Kaggle generalization"
+  },
+  "example_ap_at_5": {
+    "history_poor": {
+      "popularity": null,
+      "personal": null,
+      "cbf": null,
+      "als_f32_r0.1": null
+    },
+    "history_rich": {
+      "popularity": 0.1,
+      "personal": 0.1,
+      "cbf": 0.0,
+      "als_f32_r0.1": 0.0
+    }
+  }
+}

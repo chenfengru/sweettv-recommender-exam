@@ -1,0 +1,605 @@
+{
+  "results": {
+    "personal_original": {
+      "name": "personal_original",
+      "map_at_5": 0.3174897297297298,
+      "evaluation_users": 4625,
+      "candidate_count": 6384,
+      "history_slices": {
+        "0": {
+          "users": 108,
+          "map_at_5": 0.16305041152263375
+        },
+        "1\u20135": {
+          "users": 462,
+          "map_at_5": 0.17112914862914863
+        },
+        "21+": {
+          "users": 1968,
+          "map_at_5": 0.39380956413730805
+        },
+        "6\u201320": {
+          "users": 2087,
+          "map_at_5": 0.28591359207794287
+        }
+      },
+      "fallback": {
+        "complete_users": 112,
+        "partial_completion_users": 376,
+        "completion_slots": 1446
+      },
+      "direct_ranking_limit": 50,
+      "all_lists_valid": true,
+      "evaluation_and_completion_seconds": 0.009650500025600195,
+      "result_kind": "existing submitted-baseline configuration replay",
+      "external_private_score": 0.38937,
+      "external_public_score": 0.39131,
+      "external_scores_provenance": "user-confirmed screenshot values",
+      "prediction_sha256": "20f4b9f6f696a4f8300d2299771725eea5abd69a576dae9adbba6888e7a9947e"
+    },
+    "als_original": {
+      "name": "als_original",
+      "map_at_5": 0.08723681681681682,
+      "evaluation_users": 4625,
+      "candidate_count": 6384,
+      "history_slices": {
+        "0": {
+          "users": 108,
+          "map_at_5": 0.10904578189300411
+        },
+        "1\u20135": {
+          "users": 462,
+          "map_at_5": 0.1569751082251082
+        },
+        "21+": {
+          "users": 1968,
+          "map_at_5": 0.02786670054200542
+        },
+        "6\u201320": {
+          "users": 2087,
+          "map_at_5": 0.12665508704679762
+        }
+      },
+      "fallback": {
+        "complete_users": 44,
+        "partial_completion_users": 0,
+        "completion_slots": 220
+      },
+      "direct_ranking_limit": 50,
+      "all_lists_valid": true,
+      "evaluation_and_completion_seconds": 0.008375790959689766,
+      "config": {
+        "method": "als",
+        "longest_block_training_threshold": null,
+        "als_factors": 32,
+        "regularization": 0.1,
+        "iterations": 20,
+        "confidence": "1 + 40*log1p(s_ui); library alpha=1",
+        "cbf_tie_break": "raw ID",
+        "seed": 42
+      },
+      "supported_candidate_items": 2206,
+      "supported_candidate_fraction": 0.3455513784461153,
+      "fitting_users": 4841,
+      "fitting_items": 2973,
+      "fitting_user_item_pairs": 856858,
+      "fit_or_existing_model_load_seconds": 0.11863683303818107,
+      "direct_inference_seconds": 2.027456416049972,
+      "peak_worker_rss_bytes": 455426048,
+      "dependencies": {
+        "numpy": "2.2.6",
+        "scipy": "1.15.3",
+        "implicit": "0.7.3",
+        "threadpoolctl": "3.7.0",
+        "tqdm": "4.70.1"
+      },
+      "environment": {
+        "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "code_base_commit": "491ca05d2a7a257e7cf29b92314930bc2068dc89",
+        "working_tree_dirty": true,
+        "source_sha256": {
+          "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+          "src/audit_anomalies.py": "e82a2ac4765b038a3c90a8253bdff47c93a583adb4c936de82140edd8fd4baad",
+          "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+          "src/check_cutoff_invariance.py": "d893cafac6130b399e88a56c099a3057f2d15950a9c79e4332ba80efc0a935ef",
+          "src/compare_models.py": "71a6770afa248e1cd4b312d65f4a252612cec38894ff11af78ed449b435b6aba",
+          "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+          "src/diagnose_models.py": "1c5d854b379c4deb4a995b4536683cac2db6b2d140f224c6ec8a43d6ba32430a",
+          "src/first_submission.py": "6423b59f8653784b785e19d06893f4aab5a37d4b9fe6d24cbc7751049d2ecff6",
+          "src/improve_recommender.py": "ef8739df14717c10833b29ed3d51021fcaf6a0c1a8c0b185d2e3e01172c484a9",
+          "src/improvement_helpers.py": "029bfa5719707abc54f2af250f926109cd5e1f232ca902c0a723ecd79a229bbf",
+          "src/interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+          "src/intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+          "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+          "src/models.py": "2129e6e226a4f006417f9897b3b1c38c11d0656baf92c7cb9ed65ff59990e04b",
+          "src/real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d",
+          "src/report_comparison.py": "924240c485107343486ad15a98888bd24501a2849e905856ec7de5e7f38efbc1",
+          "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6"
+        },
+        "peak_process_rss_bytes": 455852032,
+        "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+      },
+      "training_fingerprint": "c708b388c7695bc56860e3c103b07942566c36ab9287fd1dc0f47dd76b93fc78",
+      "original_training_reused": true,
+      "prediction_sha256": "670489acf7846d57706b4071db769cbf824abac7dba00e1dcd54daa2540fb663"
+    },
+    "cbf_original": {
+      "name": "cbf_original",
+      "map_at_5": 0.02485105105105105,
+      "evaluation_users": 4625,
+      "candidate_count": 6384,
+      "history_slices": {
+        "0": {
+          "users": 108,
+          "map_at_5": 0.08737654320987655
+        },
+        "1\u20135": {
+          "users": 462,
+          "map_at_5": 0.051038961038961043
+        },
+        "21+": {
+          "users": 1968,
+          "map_at_5": 0.005292174796747968
+        },
+        "6\u201320": {
+          "users": 2087,
+          "map_at_5": 0.034261832508119046
+        }
+      },
+      "fallback": {
+        "complete_users": 44,
+        "partial_completion_users": 0,
+        "completion_slots": 220
+      },
+      "direct_ranking_limit": 50,
+      "all_lists_valid": true,
+      "evaluation_and_completion_seconds": 0.00723679200746119,
+      "result_kind": "existing baseline replay; same fitted features/profiles, only ID tie-break",
+      "prediction_sha256": "f042231034935d340b0d37ff71bfec5e608c19ceb8e36d13b1a16c9a5d8a78ab"
+    },
+    "als_lb50": {
+      "name": "als_lb50",
+      "map_at_5": 0.13397345345345346,
+      "evaluation_users": 4625,
+      "candidate_count": 6384,
+      "history_slices": {
+        "0": {
+          "users": 108,
+          "map_at_5": 0.15084362139917695
+        },
+        "1\u20135": {
+          "users": 462,
+          "map_at_5": 0.17185305435305434
+        },
+        "21+": {
+          "users": 1968,
+          "map_at_5": 0.05390046296296297
+        },
+        "6\u201320": {
+          "users": 2087,
+          "map_at_5": 0.2002222754618538
+        }
+      },
+      "fallback": {
+        "complete_users": 74,
+        "partial_completion_users": 0,
+        "completion_slots": 370
+      },
+      "direct_ranking_limit": 50,
+      "all_lists_valid": true,
+      "evaluation_and_completion_seconds": 0.00850987498415634,
+      "config": {
+        "method": "als",
+        "longest_block_training_threshold": 0.5,
+        "als_factors": 32,
+        "regularization": 0.1,
+        "iterations": 20,
+        "confidence": "1 + 40*log1p(s_ui); library alpha=1",
+        "cbf_tie_break": "raw ID",
+        "seed": 42
+      },
+      "supported_candidate_items": 2004,
+      "supported_candidate_fraction": 0.31390977443609025,
+      "fitting_users": 4784,
+      "fitting_items": 2682,
+      "fitting_user_item_pairs": 179742,
+      "fit_or_existing_model_load_seconds": 0.5080845000338741,
+      "direct_inference_seconds": 1.7961145829758607,
+      "peak_worker_rss_bytes": 171048960,
+      "dependencies": {
+        "numpy": "2.2.6",
+        "scipy": "1.15.3",
+        "implicit": "0.7.3",
+        "threadpoolctl": "3.7.0",
+        "tqdm": "4.70.1"
+      },
+      "environment": {
+        "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "code_base_commit": "491ca05d2a7a257e7cf29b92314930bc2068dc89",
+        "working_tree_dirty": true,
+        "source_sha256": {
+          "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+          "src/audit_anomalies.py": "e82a2ac4765b038a3c90a8253bdff47c93a583adb4c936de82140edd8fd4baad",
+          "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+          "src/check_cutoff_invariance.py": "d893cafac6130b399e88a56c099a3057f2d15950a9c79e4332ba80efc0a935ef",
+          "src/compare_models.py": "71a6770afa248e1cd4b312d65f4a252612cec38894ff11af78ed449b435b6aba",
+          "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+          "src/diagnose_models.py": "1c5d854b379c4deb4a995b4536683cac2db6b2d140f224c6ec8a43d6ba32430a",
+          "src/first_submission.py": "6423b59f8653784b785e19d06893f4aab5a37d4b9fe6d24cbc7751049d2ecff6",
+          "src/improve_recommender.py": "ef8739df14717c10833b29ed3d51021fcaf6a0c1a8c0b185d2e3e01172c484a9",
+          "src/improvement_helpers.py": "029bfa5719707abc54f2af250f926109cd5e1f232ca902c0a723ecd79a229bbf",
+          "src/interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+          "src/intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+          "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+          "src/models.py": "2129e6e226a4f006417f9897b3b1c38c11d0656baf92c7cb9ed65ff59990e04b",
+          "src/real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d",
+          "src/report_comparison.py": "924240c485107343486ad15a98888bd24501a2849e905856ec7de5e7f38efbc1",
+          "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6"
+        },
+        "peak_process_rss_bytes": 171048960,
+        "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+      },
+      "training_fingerprint": "15bb34764fe80b425434cc357572cb3316d9a86c39561482d3783141aecd19a9",
+      "original_training_reused": false,
+      "prediction_sha256": "886335211d940faef6a600f62f94d9a667fbb269a967cbf1e27d2a676cc4b22b"
+    },
+    "als_lb80": {
+      "name": "als_lb80",
+      "map_at_5": 0.15208444444444444,
+      "evaluation_users": 4625,
+      "candidate_count": 6384,
+      "history_slices": {
+        "0": {
+          "users": 108,
+          "map_at_5": 0.16305041152263375
+        },
+        "1\u20135": {
+          "users": 462,
+          "map_at_5": 0.17076418951418953
+        },
+        "21+": {
+          "users": 1968,
+          "map_at_5": 0.07427139792231256
+        },
+        "6\u201320": {
+          "users": 2087,
+          "map_at_5": 0.22075799925464515
+        }
+      },
+      "fallback": {
+        "complete_users": 108,
+        "partial_completion_users": 0,
+        "completion_slots": 540
+      },
+      "direct_ranking_limit": 50,
+      "all_lists_valid": true,
+      "evaluation_and_completion_seconds": 0.008579667017329484,
+      "config": {
+        "method": "als",
+        "longest_block_training_threshold": 0.8,
+        "als_factors": 32,
+        "regularization": 0.1,
+        "iterations": 20,
+        "confidence": "1 + 40*log1p(s_ui); library alpha=1",
+        "cbf_tie_break": "raw ID",
+        "seed": 42
+      },
+      "supported_candidate_items": 1831,
+      "supported_candidate_fraction": 0.2868107769423559,
+      "fitting_users": 4726,
+      "fitting_items": 2432,
+      "fitting_user_item_pairs": 102689,
+      "fit_or_existing_model_load_seconds": 0.32004570902790874,
+      "direct_inference_seconds": 1.6318376249982975,
+      "peak_worker_rss_bytes": 133038080,
+      "dependencies": {
+        "numpy": "2.2.6",
+        "scipy": "1.15.3",
+        "implicit": "0.7.3",
+        "threadpoolctl": "3.7.0",
+        "tqdm": "4.70.1"
+      },
+      "environment": {
+        "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "code_base_commit": "491ca05d2a7a257e7cf29b92314930bc2068dc89",
+        "working_tree_dirty": true,
+        "source_sha256": {
+          "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+          "src/audit_anomalies.py": "e82a2ac4765b038a3c90a8253bdff47c93a583adb4c936de82140edd8fd4baad",
+          "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+          "src/check_cutoff_invariance.py": "d893cafac6130b399e88a56c099a3057f2d15950a9c79e4332ba80efc0a935ef",
+          "src/compare_models.py": "71a6770afa248e1cd4b312d65f4a252612cec38894ff11af78ed449b435b6aba",
+          "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+          "src/diagnose_models.py": "1c5d854b379c4deb4a995b4536683cac2db6b2d140f224c6ec8a43d6ba32430a",
+          "src/first_submission.py": "6423b59f8653784b785e19d06893f4aab5a37d4b9fe6d24cbc7751049d2ecff6",
+          "src/improve_recommender.py": "ef8739df14717c10833b29ed3d51021fcaf6a0c1a8c0b185d2e3e01172c484a9",
+          "src/improvement_helpers.py": "029bfa5719707abc54f2af250f926109cd5e1f232ca902c0a723ecd79a229bbf",
+          "src/interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+          "src/intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+          "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+          "src/models.py": "2129e6e226a4f006417f9897b3b1c38c11d0656baf92c7cb9ed65ff59990e04b",
+          "src/real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d",
+          "src/report_comparison.py": "924240c485107343486ad15a98888bd24501a2849e905856ec7de5e7f38efbc1",
+          "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6"
+        },
+        "peak_process_rss_bytes": 133496832,
+        "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+      },
+      "training_fingerprint": "e343bff079e1622e93234c0055c9c3e2fac9cfbb014eddd211db41366d058bbf",
+      "original_training_reused": false,
+      "prediction_sha256": "b86b853e214578c52369502e2215a911b259a465b89cc095b49aa29b25b6a00e"
+    },
+    "cbf_pop_tie": {
+      "name": "cbf_pop_tie",
+      "map_at_5": 0.02868744744744745,
+      "evaluation_users": 4625,
+      "candidate_count": 6384,
+      "history_slices": {
+        "0": {
+          "users": 108,
+          "map_at_5": 0.08984567901234568
+        },
+        "1\u20135": {
+          "users": 462,
+          "map_at_5": 0.05734728234728235
+        },
+        "21+": {
+          "users": 1968,
+          "map_at_5": 0.008429031165311653
+        },
+        "6\u201320": {
+          "users": 2087,
+          "map_at_5": 0.03828142469254112
+        }
+      },
+      "fallback": {
+        "complete_users": 44,
+        "partial_completion_users": 0,
+        "completion_slots": 220
+      },
+      "direct_ranking_limit": 50,
+      "all_lists_valid": true,
+      "evaluation_and_completion_seconds": 0.007660208037123084,
+      "config": {
+        "method": "cbf",
+        "longest_block_training_threshold": null,
+        "als_factors": null,
+        "regularization": null,
+        "iterations": null,
+        "confidence": "1 + 40*log1p(s_ui); library alpha=1",
+        "cbf_tie_break": "exact cosine; qualified-viewer count descending; raw ID",
+        "seed": 42
+      },
+      "supported_candidate_items": 3993,
+      "supported_candidate_fraction": 0.6254699248120301,
+      "fitting_users": 4841,
+      "fitting_items": 2973,
+      "fitting_user_item_pairs": 856858,
+      "fit_or_existing_model_load_seconds": 0.5331760830013081,
+      "direct_inference_seconds": 13.384992708975915,
+      "peak_worker_rss_bytes": 528220160,
+      "dependencies": {
+        "numpy": "2.2.6",
+        "scipy": "1.15.3",
+        "implicit": "0.7.3",
+        "threadpoolctl": "3.7.0",
+        "tqdm": "4.70.1"
+      },
+      "environment": {
+        "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "code_base_commit": "491ca05d2a7a257e7cf29b92314930bc2068dc89",
+        "working_tree_dirty": true,
+        "source_sha256": {
+          "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+          "src/audit_anomalies.py": "e82a2ac4765b038a3c90a8253bdff47c93a583adb4c936de82140edd8fd4baad",
+          "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+          "src/check_cutoff_invariance.py": "d893cafac6130b399e88a56c099a3057f2d15950a9c79e4332ba80efc0a935ef",
+          "src/compare_models.py": "71a6770afa248e1cd4b312d65f4a252612cec38894ff11af78ed449b435b6aba",
+          "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+          "src/diagnose_models.py": "1c5d854b379c4deb4a995b4536683cac2db6b2d140f224c6ec8a43d6ba32430a",
+          "src/first_submission.py": "6423b59f8653784b785e19d06893f4aab5a37d4b9fe6d24cbc7751049d2ecff6",
+          "src/improve_recommender.py": "ef8739df14717c10833b29ed3d51021fcaf6a0c1a8c0b185d2e3e01172c484a9",
+          "src/improvement_helpers.py": "029bfa5719707abc54f2af250f926109cd5e1f232ca902c0a723ecd79a229bbf",
+          "src/interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+          "src/intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+          "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+          "src/models.py": "2129e6e226a4f006417f9897b3b1c38c11d0656baf92c7cb9ed65ff59990e04b",
+          "src/real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d",
+          "src/report_comparison.py": "924240c485107343486ad15a98888bd24501a2849e905856ec7de5e7f38efbc1",
+          "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6"
+        },
+        "peak_process_rss_bytes": 528220160,
+        "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+      },
+      "training_fingerprint": "c6d105982c526044a4e0e306e1e47a876f05b6b9de690ebd13a1fde810feae9c",
+      "original_training_reused": false,
+      "prediction_sha256": "5a18003c515aee2b24a87f5504ecbd65e88c1f949d46b5f3eaca4f50f6cd8c04"
+    },
+    "rrf_als_lb80_w0p05": {
+      "name": "rrf_als_lb80_w0p05",
+      "map_at_5": 0.3172575975975976,
+      "evaluation_users": 4625,
+      "candidate_count": 6384,
+      "history_slices": {
+        "0": {
+          "users": 108,
+          "map_at_5": 0.16305041152263375
+        },
+        "1\u20135": {
+          "users": 462,
+          "map_at_5": 0.16536014911014912
+        },
+        "21+": {
+          "users": 1968,
+          "map_at_5": 0.39431938798554655
+        },
+        "6\u201320": {
+          "users": 2087,
+          "map_at_5": 0.28619549592716814
+        }
+      },
+      "fallback": {
+        "complete_users": 108,
+        "partial_completion_users": 0,
+        "completion_slots": 540
+      },
+      "direct_ranking_limit": 50,
+      "all_lists_valid": true,
+      "evaluation_and_completion_seconds": 0.00904058403102681,
+      "config": {
+        "personal_weight": 1.0,
+        "alternative": "als_lb80",
+        "alternative_weight": 0.05,
+        "rank_constant": 60,
+        "direct_top_n": 50,
+        "fallback_in_component_ranks": false,
+        "seed": 42
+      },
+      "prediction_sha256": "496d55235f3afe0cb49c7a479d605741cc63f2857e6601b5574ec685e0a6ae62"
+    },
+    "rrf_als_lb80_w0p1": {
+      "name": "rrf_als_lb80_w0p1",
+      "map_at_5": 0.3176866066066066,
+      "evaluation_users": 4625,
+      "candidate_count": 6384,
+      "history_slices": {
+        "0": {
+          "users": 108,
+          "map_at_5": 0.16305041152263375
+        },
+        "1\u20135": {
+          "users": 462,
+          "map_at_5": 0.16558561808561809
+        },
+        "21+": {
+          "users": 1968,
+          "map_at_5": 0.39336367999096655
+        },
+        "6\u201320": {
+          "users": 2087,
+          "map_at_5": 0.28799752435713144
+        }
+      },
+      "fallback": {
+        "complete_users": 108,
+        "partial_completion_users": 0,
+        "completion_slots": 540
+      },
+      "direct_ranking_limit": 50,
+      "all_lists_valid": true,
+      "evaluation_and_completion_seconds": 0.008749082975555211,
+      "config": {
+        "personal_weight": 1.0,
+        "alternative": "als_lb80",
+        "alternative_weight": 0.1,
+        "rank_constant": 60,
+        "direct_top_n": 50,
+        "fallback_in_component_ranks": false,
+        "seed": 42
+      },
+      "prediction_sha256": "f747830f41bf770fc357b13c7a3211d59db46c1e5b2740d51b529202d6367622"
+    },
+    "rrf_als_lb80_w0p2": {
+      "name": "rrf_als_lb80_w0p2",
+      "map_at_5": 0.31678774774774776,
+      "evaluation_users": 4625,
+      "candidate_count": 6384,
+      "history_slices": {
+        "0": {
+          "users": 108,
+          "map_at_5": 0.16305041152263375
+        },
+        "1\u20135": {
+          "users": 462,
+          "map_at_5": 0.16801226551226553
+        },
+        "21+": {
+          "users": 1968,
+          "map_at_5": 0.38759626242095757
+        },
+        "6\u201320": {
+          "users": 2087,
+          "map_at_5": 0.29090693712399507
+        }
+      },
+      "fallback": {
+        "complete_users": 108,
+        "partial_completion_users": 0,
+        "completion_slots": 540
+      },
+      "direct_ranking_limit": 50,
+      "all_lists_valid": true,
+      "evaluation_and_completion_seconds": 0.008994582982268184,
+      "config": {
+        "personal_weight": 1.0,
+        "alternative": "als_lb80",
+        "alternative_weight": 0.2,
+        "rank_constant": 60,
+        "direct_top_n": 50,
+        "fallback_in_component_ranks": false,
+        "seed": 42
+      },
+      "prediction_sha256": "5d9f011f395a8b29b46f9ffec4bf8710de656962fc1f9ae75af2f255c451149a"
+    }
+  },
+  "assessment": {
+    "selected": "rrf_als_lb80_w0p1",
+    "strongest_alternative": "als_lb80",
+    "map_difference": 0.00019687687687687698,
+    "users_improved": 297,
+    "users_worsened": 242,
+    "users_unchanged": 4086,
+    "paired_user_bootstrap_95pct_percentile_interval": [
+      -0.0009282177177177177,
+      0.0014053513513513504
+    ],
+    "bootstrap_resamples": 2000,
+    "seed": 42,
+    "bootstrap_scope": "conditional on this fixed validation set; does not cover configuration selection or Kaggle generalization",
+    "prediction_overlap": {
+      "users": 4625,
+      "users_changed": 1637,
+      "users_identical": 2988,
+      "recommendation_slots": 23125,
+      "rank_position_slots_changed": 3371,
+      "top5_items_in_common": 21906,
+      "top5_set_overlap_fraction": 0.9472864864864865
+    }
+  },
+  "cohort": 4625,
+  "candidates": 6384,
+  "elapsed_seconds_local_experiments": 40.86377599998377,
+  "configuration_budget": "two ALS filters; one exact CBF tie-break; three fixed RRF weights; no other tuning",
+  "submission_workflow": "manual review only; no Kaggle access or upload permitted",
+  "environment": {
+    "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "code_base_commit": "491ca05d2a7a257e7cf29b92314930bc2068dc89",
+    "working_tree_dirty": true,
+    "source_sha256": {
+      "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+      "src/audit_anomalies.py": "e82a2ac4765b038a3c90a8253bdff47c93a583adb4c936de82140edd8fd4baad",
+      "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+      "src/check_cutoff_invariance.py": "d893cafac6130b399e88a56c099a3057f2d15950a9c79e4332ba80efc0a935ef",
+      "src/compare_models.py": "71a6770afa248e1cd4b312d65f4a252612cec38894ff11af78ed449b435b6aba",
+      "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+      "src/diagnose_models.py": "1c5d854b379c4deb4a995b4536683cac2db6b2d140f224c6ec8a43d6ba32430a",
+      "src/first_submission.py": "6423b59f8653784b785e19d06893f4aab5a37d4b9fe6d24cbc7751049d2ecff6",
+      "src/improve_recommender.py": "ef8739df14717c10833b29ed3d51021fcaf6a0c1a8c0b185d2e3e01172c484a9",
+      "src/improvement_helpers.py": "029bfa5719707abc54f2af250f926109cd5e1f232ca902c0a723ecd79a229bbf",
+      "src/interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+      "src/intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+      "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+      "src/models.py": "2129e6e226a4f006417f9897b3b1c38c11d0656baf92c7cb9ed65ff59990e04b",
+      "src/real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d",
+      "src/report_comparison.py": "924240c485107343486ad15a98888bd24501a2849e905856ec7de5e7f38efbc1",
+      "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6"
+    },
+    "peak_process_rss_bytes": 639795200,
+    "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+  }
+}

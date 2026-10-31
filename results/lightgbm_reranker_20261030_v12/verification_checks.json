@@ -1,0 +1,54 @@
+{
+  "classifier_fit_calls": 1,
+  "trained_iterations": 300,
+  "model_sha256": "f9e3774164b611ee806c9c170047f955a0d4e505ddadccffd7e4f85cf6abc30b",
+  "historical_labels_end_before_evaluation": true,
+  "feature_checks": {
+    "origin_20200406": {
+      "rows": 291619,
+      "columns": 27,
+      "finite": true,
+      "monotonic_counts_and_rolling_windows": true,
+      "missing_rank_encoding_consistent": true
+    },
+    "origin_20200420": {
+      "rows": 313316,
+      "columns": 27,
+      "finite": true,
+      "monotonic_counts_and_rolling_windows": true,
+      "missing_rank_encoding_consistent": true
+    },
+    "main": {
+      "rows": 380403,
+      "columns": 27,
+      "finite": true,
+      "monotonic_counts_and_rolling_windows": true,
+      "missing_rank_encoding_consistent": true
+    },
+    "auxiliary": {
+      "rows": 397757,
+      "columns": 27,
+      "finite": true,
+      "monotonic_counts_and_rolling_windows": true,
+      "missing_rank_encoding_consistent": true
+    },
+    "final": {
+      "rows": 152442,
+      "columns": 27,
+      "finite": true,
+      "monotonic_counts_and_rolling_windows": true,
+      "missing_rank_encoding_consistent": true
+    }
+  },
+  "previous_csv_git_bytes_preserved": {
+    "submissions/candidate_adaptive_s40_e2_20261030_v11.csv": "ccac509f8efeeddb9187f1ff2e5300db08f82ae0f9acd1f4ba7d8220f9dd26fb",
+    "submissions/candidate_personal_fifth_e2_20261030_v9.csv": "f1378b0d6fed62793e14ebb4c1b64cf8b2163485485c15c861aae7e67e556375",
+    "submissions/candidate_personal_threshold_050_20261030_v5.csv": "593b1134b6625771abfe107e17d074499cedf6efb4ef9306e06289e9566876e5",
+    "submissions/candidate_personal_tie_popularity_20261030_v3.csv": "39aac2794395209b2299ccee2e2bb1b4b9afde22f3e06ccb5b04f3d706c9522f",
+    "submissions/candidate_rrf_als_lb80_w0p1_20261029_v2.csv": "905971a8a9c47bcf4a88e14cd10d2514feaaea43900d6f513b2eecc4986f19f5",
+    "submissions/first_personal_original_20261029_v1.csv": "53cb8ae4b59b26ab6ee00b5e99ad91044876180e662732a755d3e99a297e64bc"
+  },
+  "private_files_ignored": true,
+  "exactly_one_new_candidate": true,
+  "same_frozen_classifier_final": true
+}

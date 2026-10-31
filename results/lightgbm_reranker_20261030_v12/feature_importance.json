@@ -1,0 +1,137 @@
+[
+  {
+    "feature": "n30",
+    "gain": 337329.7773396969,
+    "split_count": 293
+  },
+  {
+    "feature": "n50_last28days",
+    "gain": 195641.153100729,
+    "split_count": 145
+  },
+  {
+    "feature": "n50",
+    "gain": 89819.99307847023,
+    "split_count": 61
+  },
+  {
+    "feature": "global_airings80",
+    "gain": 64583.47343492508,
+    "split_count": 811
+  },
+  {
+    "feature": "global_viewers80",
+    "gain": 52498.76502072811,
+    "split_count": 806
+  },
+  {
+    "feature": "n80",
+    "gain": 34396.30724596977,
+    "split_count": 128
+  },
+  {
+    "feature": "personal_n50_rank",
+    "gain": 22062.870917081833,
+    "split_count": 144
+  },
+  {
+    "feature": "item_item_rank",
+    "gain": 19243.684324264526,
+    "split_count": 386
+  },
+  {
+    "feature": "item_item_score",
+    "gain": 9949.97917342186,
+    "split_count": 301
+  },
+  {
+    "feature": "days_since_last_n50_view",
+    "gain": 9224.621245384216,
+    "split_count": 245
+  },
+  {
+    "feature": "n50_last7days",
+    "gain": 7839.083518505096,
+    "split_count": 65
+  },
+  {
+    "feature": "user_airings30",
+    "gain": 4147.604449033737,
+    "split_count": 158
+  },
+  {
+    "feature": "user_airings80",
+    "gain": 3637.2439289093018,
+    "split_count": 168
+  },
+  {
+    "feature": "user_airings50",
+    "gain": 2942.7599987983704,
+    "split_count": 123
+  },
+  {
+    "feature": "user_history30",
+    "gain": 2496.795830965042,
+    "split_count": 169
+  },
+  {
+    "feature": "user_history50",
+    "gain": 2231.8230698108673,
+    "split_count": 91
+  },
+  {
+    "feature": "user_history80",
+    "gain": 2181.614360809326,
+    "split_count": 99
+  },
+  {
+    "feature": "source_global5",
+    "gain": 323.50820779800415,
+    "split_count": 7
+  },
+  {
+    "feature": "item_item_rank_missing",
+    "gain": 0.0,
+    "split_count": 0
+  },
+  {
+    "feature": "item_item_score_missing",
+    "gain": 0.0,
+    "split_count": 0
+  },
+  {
+    "feature": "last_n50_view_missing",
+    "gain": 0.0,
+    "split_count": 0
+  },
+  {
+    "feature": "log1p_n30",
+    "gain": 0.0,
+    "split_count": 0
+  },
+  {
+    "feature": "log1p_n50",
+    "gain": 0.0,
+    "split_count": 0
+  },
+  {
+    "feature": "log1p_n80",
+    "gain": 0.0,
+    "split_count": 0
+  },
+  {
+    "feature": "personal_rank_missing",
+    "gain": 0.0,
+    "split_count": 0
+  },
+  {
+    "feature": "source_personal200",
+    "gain": 0.0,
+    "split_count": 0
+  },
+  {
+    "feature": "source_unseen50",
+    "gain": 0.0,
+    "split_count": 0
+  }
+]

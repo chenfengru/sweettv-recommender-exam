@@ -1,0 +1,63 @@
+{
+  "origin": "origin_20200420",
+  "candidate_equality_v14": true,
+  "feature_equality_v14": true,
+  "mechanism": "Read original v14 feature array and original row index directly; no feature/candidate transformation.",
+  "feature_sha256": "e41cdc363713da42f2f5d1c87f8b02b9c5e5bf059f090947c2287bd447bfaebd",
+  "row_index_sha256": "8cfd91c441ed4287e7a37836080ecfc5a0c57b00eafa7052b0ff80468ca13cc4",
+  "users": 4859,
+  "rows": 313316,
+  "pool": 2515,
+  "coverage": {
+    "past": {
+      "window": [
+        1584921600.0,
+        1587340800.0
+      ],
+      "full_window_days": 28.0,
+      "canonical_airings": 45971,
+      "programmes": 3166,
+      "channels": 170,
+      "global_covered_seconds": 2419200.0,
+      "required_seconds": 2419200.0,
+      "global_coverage_fraction": 1.0,
+      "global_gaps": [],
+      "channel_coverage_fraction": {
+        "min": 0.000496031746031746,
+        "median": 0.30267857142857146,
+        "max": 0.9985119047619048
+      },
+      "coverage_gate_passed": true
+    },
+    "future": {
+      "window": [
+        1587340800.0,
+        1588550400.0
+      ],
+      "full_window_days": 14.0,
+      "canonical_airings": 23350,
+      "programmes": 2515,
+      "channels": 167,
+      "global_covered_seconds": 1209600.0,
+      "required_seconds": 1209600.0,
+      "global_coverage_fraction": 1.0,
+      "global_gaps": [],
+      "channel_coverage_fraction": {
+        "min": 0.001984126984126984,
+        "median": 0.36334325396825395,
+        "max": 1.0
+      },
+      "coverage_gate_passed": true
+    },
+    "new_features": [
+      "past_airings_per_day",
+      "future_airings_per_day",
+      "past_broadcast_seconds_per_day",
+      "future_broadcast_seconds_per_day",
+      "log_airings_rate_change",
+      "log_broadcast_rate_change",
+      "past_airings_zero"
+    ],
+    "missing_schedule_coverage_imputed": false
+  }
+}

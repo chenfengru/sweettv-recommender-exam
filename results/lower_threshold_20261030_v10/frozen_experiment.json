@@ -1,0 +1,13 @@
+{
+  "frozen_at_utc": "2026-10-30T11:22:29.325012+00:00",
+  "definition_sha256": "24cef66b1573e81cddd1b98c83fdb70f75eb298f99b45e8105eecaa1edcf1155",
+  "thresholds": [
+    0.3,
+    0.4
+  ],
+  "reference": 0.5,
+  "e2_enabled": false,
+  "bootstrap_resamples": 2000,
+  "seed": 42,
+  "selection": "strict positive both vs0.50; max minimum absolute gain; exact tie0.40"
+}

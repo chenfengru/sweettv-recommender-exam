@@ -1,0 +1,13 @@
+{
+  "recorded_at_utc": "2026-10-29T20:32:14.864976+00:00",
+  "baseline_file": "submissions/first_personal_original_20261029_v1.csv",
+  "csv_sha256": "53cb8ae4b59b26ab6ee00b5e99ad91044876180e662732a755d3e99a297e64bc",
+  "local_map_at_5": 0.3174897297297298,
+  "private_score": 0.38937,
+  "public_score": 0.39131,
+  "submission_status": "manually submitted, confirmed by user",
+  "score_provenance": "User-confirmed values from a Kaggle screenshot, stated in the attached experiment request. Screenshot binary and submission reference are not present in this run; no independent Kaggle lookup performed.",
+  "historical_failed_cli_record": "results/first_submission_20261029/validator_cli.json (preserved unchanged)",
+  "successful_cli_record": "results/improvement_20261029_v2/baseline_validator_cli_success.json",
+  "workflow": "manual upload only; no automatic Kaggle upload, Submit action, or submission API is authorized"
+}

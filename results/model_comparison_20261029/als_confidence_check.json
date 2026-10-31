@@ -1,0 +1,13 @@
+{
+  "checked_at_utc": "2026-10-29T19:29:11.905960+00:00",
+  "installed_implicit": "0.7.3",
+  "official_documentation": "https://benfred.github.io/implicit/api/models/cpu/als.html",
+  "documentation_version": "0.7.2; installed 0.7.3 implementation independently inspected",
+  "official_documented_semantics": "Sparse user-by-item values are observed confidences; absent entries imply preference zero and confidence one.",
+  "installed_fit_source_sha256": "dca0238fc28cd0b90a918c6f3aa7e88ce49a9b982a958f9d02df1b539ee2c09c",
+  "installed_fit_has_alpha_multiplication": true,
+  "chosen_observed_matrix": "C_ui = 1 + 40 * log1p(sum_airing_union_fractions)",
+  "chosen_library_alpha": 1.0,
+  "confidence_algebra_verified_in_test": "test_end_to_end_post_cutoff_invariance_including_cleaning asserts input data == 1 + 40*weights and library alpha == 1",
+  "executable": "/private/tmp/sweettv-model-venv/bin/python"
+}

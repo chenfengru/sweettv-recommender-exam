@@ -1,0 +1,17 @@
+Working directory: /Users/chenfengru/sweettv-recommender-exam
+Base commit: 37f9a15ec59877abb94e6d881c30ea1af283f20e
+Python executable: /private/tmp/sweettv-model-venv/bin/python
+All numerical commands used OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1.
+
+python -m unittest discover -s tests -v
+python -m src.experiment_personal_ties --data-dir /Users/chenfengru/LLM4Rec-Course-codex/data/sweettv/raw --output-dir results/personal_ties_20261030_v3 --private-dir artifacts/personal_ties_20261030_v3
+python -m src.report_personal_ties --output-dir results/personal_ties_20261030_v3
+python -m compileall -q src tests
+git diff --check
+
+Exactly two new configurations were evaluated: latest observed qualified viewing and global qualified popularity as secondary keys only. Original predictions were reconciled exactly with the saved personal-frequency predictions. No audit, recency-decay experiment, ALS/CBF training or fusion search was repeated. Bootstrap uses 2000 paired cohort resamples, seed 42, shared indices for the two variants.
+The latest feature is read from observed clipped segment ends in canonical per-airing groups. Qualification is recomputed using longest block/full original duration, and all counts reconcile with the existing pre-cutoff interaction cache. Candidate preparation reuses the established combined-window cache and recomputes its qualification, reconciling 573003 user-airings; split-window counts are never added.
+The runner executes the existing validator internally and through the CLI with --delimiter , against the original template and exact final-window candidate export. Full command arguments and output are in candidate_validator_cli.json and candidate_artifact.json.
+For a fresh reproducibility artifact, use fresh result/private directories and --candidate-path submissions/candidate_personal_tie_replay_v4.csv. Existing versioned artifacts are never overwritten. On a new machine first reproduce the documented earlier interaction-cache stages.
+Both submitted prediction CSVs retain their original SHA-256. Their public/private scores are user-confirmed screenshot values, not independently retrieved; submission IDs and submission timestamps remain null. No screenshot was fabricated. The native transcript is unmodified and student verification remains pending.
+No Kaggle page, upload workflow, Submit click or submission API was opened or called. The candidate is for user review and any upload is manual-only.

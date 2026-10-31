@@ -1,0 +1,31 @@
+{
+  "method": "Recompute normalized profiles, elementwise multiply then np.sum over bins; no matmul or BLAS. Compare all float32 feature values against actual fit/evaluation saved arrays.",
+  "origins": {
+    "origin_20200406": {
+      "rows": 291619,
+      "independent_elementwise_sum_all_six_columns_bitwise_equal": true,
+      "max_abs_difference": 0.0,
+      "saved_feature_sha256": "713c52b9af8dc490267dace230d830b728f35e0713a08c07dead6b8abedf823f"
+    },
+    "origin_20200420": {
+      "rows": 313316,
+      "independent_elementwise_sum_all_six_columns_bitwise_equal": true,
+      "max_abs_difference": 0.0,
+      "saved_feature_sha256": "67f7dea327f192ec7f7d10b2411f8609ed5350223f2c67f33958da7039b2ead1"
+    },
+    "main": {
+      "rows": 380403,
+      "independent_elementwise_sum_all_six_columns_bitwise_equal": true,
+      "max_abs_difference": 0.0,
+      "saved_feature_sha256": "9982cf5545096d3e0504292547ec971aec51c53364474f977ade2e0f4becb09e"
+    },
+    "auxiliary": {
+      "rows": 397757,
+      "independent_elementwise_sum_all_six_columns_bitwise_equal": true,
+      "max_abs_difference": 0.0,
+      "saved_feature_sha256": "ffd9ce03344d95e696971b27c6afdd9bf4ac65ae5437905860d7f9dc3399a4b3"
+    }
+  },
+  "elapsed_seconds": 24.960149833990727,
+  "model_fits_during_verification": 0
+}

@@ -1,0 +1,27 @@
+{
+  "captured_at_utc": "2026-10-29T19:05:36.999305+00:00",
+  "python_executable": "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3",
+  "python_version": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "commands": {
+    "sysctl hw.memsize": {
+      "returncode": 0,
+      "stdout": "hw.memsize: 25769803776\n",
+      "stderr": ""
+    },
+    "vm_stat": {
+      "returncode": 0,
+      "stdout": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     4465.\nPages active:                                 279756.\nPages inactive:                               272935.\nPages speculative:                              5581.\nPages throttled:                                   0.\nPages wired down:                             194576.\nPages purgeable:                                8734.\n\"Translation faults\":                     4562618977.\nPages copy-on-write:                        60147895.\nPages zero filled:                        4306405204.\nPages reactivated:                         124324920.\nPages purged:                               24358351.\nFile-backed pages:                            190705.\nAnonymous pages:                              367567.\nPages stored in compressor:                  3599797.\nPages occupied by compressor:                 772915.\nDecompressions:                            116730763.\nCompressions:                              136547080.\nPageins:                                    26215121.\nPageouts:                                     321405.\nSwapins:                                     1253144.\nSwapouts:                                    3919785.\n",
+      "stderr": ""
+    },
+    "sw_vers": {
+      "returncode": 0,
+      "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t26.6.2\nBuildVersion:\t\t25G83\n",
+      "stderr": ""
+    },
+    "df -h /private/tmp": {
+      "returncode": 0,
+      "stdout": "Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s5   460Gi   374Gi    32Gi    93%    2.6M  338M    1%   /System/Volumes/Data\n",
+      "stderr": ""
+    }
+  }
+}

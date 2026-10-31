@@ -1,0 +1,17 @@
+# V19 frozen viewing-time affinity extension
+
+Question: does historical viewing-time distribution overlap improve submitted v18 ranking? Use original v18 two-week historical origins, exact rows/labels and ordered52 features, fixed binary classifier settings. No failed v15/v16/v17 changes.
+
+Use established source-naive wall-clock seconds from naive1970epoch; no UTC/Moscow/timezone assumption or conversion. Histories [Mar9,cutoff) and trailing [cutoff-28days,cutoff). Only verified cleaned pre-cutoff SQLite views, including unattributed viewing. Union ACROSS channels within user, then clip and split half-open intervals exactly at hourly/day/midnight/week boundaries. Accumulate observed seconds into24hour-of-day bins and168hour-of-week bins (Monday00first); normalize each by total cross-channel-unioned observed duration. Zero duration gives all-zero histograms and indicator1. Profiles describe observed device/session times, not verified attention.
+
+Canonical nonzero programme airings: dedup and retain positive overlap with exact origin forecast window including carryovers. Clip each airing and split into the same bins, sum across airings/channels then normalize by total broadcast seconds. Availability/coverage checks unchanged; every available programme must have positive mass, fail otherwise. Future schedule information permitted; no future behaviour.
+
+Append exactly6features in order: time_full_hour_day_affinity,time_full_hour_week_affinity,time_trailing28_hour_day_affinity,time_trailing28_hour_week_affinity,time_full_no_viewing,time_trailing28_no_viewing. Affinity = dot product of corresponding normalized user/programme profiles; no second exposure division. Preserve52original columns even if redundant indicators. No channel-time interactions, smoothing, alternativebins/similarities/rawtimeIDs or extra features.
+
+Original origins Apr6->[Apr6,Apr20),Apr20->[Apr20,May4),mainMay18->Jul27,auxJun1->Jul27; finalJul27->Oct19 onlyifqualified. Independent causal feature construction at each origin. Exactly1fixed v18 binaryLightGBM fit seed42/300trees; no eval_set/earlystop/tuning/sampling/weights/expansion/blend/E2/longhorizons/LambdaRank/coldoverrides. Retainall original labels andnegativequeries; no eval labels fitted. Same frozenclassifier bothsplits/final.
+
+Compare savedv18 predictions; MAP@5 selectiononly; pairedbootstrap2000seed42 percentile95% conditional reused overlapping cohorts/excludesaccumulatedselectionuncertainty. Report slices/cold/seen-unseenAP/hits/membership/positions, exactcandidate/label/52equality and unchangedrecall/oracle, histogrammass/normalization/zeros/distributions/finite58schema, featureimportance/runtime/RSS. Affinity is temporaldistributionoverlap, not calibratedwatchprobability or actualavailability. Retain horizon/historylength and originLightFMscale limitations.
+
+Qualifyonly strictMAPgain versusv18onBOTHsplits. Otherwise retainv18/noCSV/noextra configs. Ifqualified compute final6features appendunchanged52v18rows andapplysameclassifier; exactly1versionedCSV/bothvalidators1260templateusers/originalheader/order/5distinctnonzeroavailableIDs/carryovers, path/SHA/v18diff/Englishdescription.
+
+V18Private.43798/Public.44758 user-screenshot-reported; no submissionID/time invented. PreservepriorCSV/checksums/models/native records,studentverificationpending. Englishcode/report/results toexistingdraftPR1. NoKaggleworkflow/commands/API/upload; stopformanualreview.

@@ -1,0 +1,39 @@
+{
+  "data_scope": "actual full local viewing file; no audit repeated",
+  "mutation": {
+    "strictly_future_rows_removed": 1876814,
+    "crossing_tails_extended": 1007,
+    "pre_cutoff_rows_retained": 3945173
+  },
+  "schedule": "identical permitted schedule files; no schedule modification",
+  "training_interactions_exactly_equal": true,
+  "training_interaction_pairs": 856858,
+  "perturbed_cache_output_sha256": "f41e7e28c112e679832a0fafd6de19973580ccc4ae1cc4e79ab9cc5270cbcfff",
+  "methods": {
+    "popularity": {
+      "fitted_features_and_parameters_unchanged": true,
+      "fitted_fingerprint": "9995e063a91e32cfda1609307696db30e6619490a780aa95197fb375f75c7fbb",
+      "predictions_unchanged": true,
+      "prediction_users": 4649
+    },
+    "personal": {
+      "fitted_features_and_parameters_unchanged": true,
+      "fitted_fingerprint": "13395b09086ed6f8da7d56162140a832c46fc881045b464d3937df964c0595df",
+      "predictions_unchanged": true,
+      "prediction_users": 4649
+    },
+    "cbf": {
+      "fitted_features_and_parameters_unchanged": true,
+      "fitted_fingerprint": "c6d105982c526044a4e0e306e1e47a876f05b6b9de690ebd13a1fde810feae9c",
+      "predictions_unchanged": true,
+      "prediction_users": 4649
+    },
+    "als_f32_r0.1": {
+      "fitted_features_and_parameters_unchanged": true,
+      "fitted_fingerprint": "61f9c9a05498ccfc7eea0011b2ee1d8e37138c7fa67e26063fbbd7d5fa7d6351",
+      "predictions_unchanged": true,
+      "prediction_users": 4649
+    }
+  },
+  "elapsed_seconds": 52.47219512501033
+}

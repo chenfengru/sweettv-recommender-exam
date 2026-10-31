@@ -1,0 +1,28 @@
+{
+  "filename": "candidate_lightgbm_channel_affinity_20261030_v18.csv",
+  "absolute_path": "/Users/chenfengru/sweettv-recommender-exam/submissions/candidate_lightgbm_channel_affinity_20261030_v18.csv",
+  "sha256": "a62d1afb1a0c015cb70fd60c1e89bb670b731f872b3433dc438526a5ae703c45",
+  "validation": {
+    "status": "valid",
+    "users": 1260,
+    "k": 5,
+    "candidate_ids": 6649,
+    "distinct_recommended_ids": 128,
+    "template_sha256": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02",
+    "prediction_sha256": "a62d1afb1a0c015cb70fd60c1e89bb670b731f872b3433dc438526a5ae703c45"
+  },
+  "differences_from_submitted_v14": {
+    "users": 1260,
+    "users_changed": 1053,
+    "users_identical": 207,
+    "recommendation_slots": 6300,
+    "rank_position_slots_changed": 2707,
+    "top5_items_in_common": 5524,
+    "top5_set_overlap_fraction": 0.8768253968253968,
+    "users_with_membership_change": 667,
+    "users_with_order_change_only": 386,
+    "new_item_slots_ignoring_order": 776
+  },
+  "classifier_sha256": "a1e667ad3a87ba6372ff147ef7b1b54d553955c81c6dc7f5d73fba0dd8309226",
+  "submission_description": "Fixed binary LightGBM reranker with twelve exact user-channel affinity features appended to the original v14 candidate rows and 40 features. Full-history and trailing28-day cleaned per-channel viewing unions include unattributed viewing in exposure denominators; separate N50 counts use canonical airings, clipped-window longest blocks and full-airing denominators. Programme channel weights use clipped forecast schedule seconds, with no mapping invention or missing-weight renormalization. Original two-week historical labels/settings/300trees/seed42, one fit, all negatives retained. Same frozen classifier applied at final cutoff; no candidate expansion, longer targets, LambdaRank, tuning, blend, E2 or cold override. Validated candidate for manual review; no Kaggle result."
+}

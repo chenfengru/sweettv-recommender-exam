@@ -1,0 +1,11 @@
+{
+  "recommended_configuration": "popularity",
+  "worth_one_manual_submission": true,
+  "reason": "Meaningful positive local difference with a positive conditional bootstrap interval; counts remain primary. Kaggle improvement is not guaranteed after repeated hold-out use.",
+  "best_submitted_baseline_remains": "original personal frequency; private 0.38937 / public 0.39131, user-confirmed screenshots",
+  "candidate_generated": true,
+  "new_candidate_private_score": null,
+  "new_candidate_public_score": null,
+  "workflow": "Stop for user review. No Kaggle access, upload workflow, Submit click or submission API is authorized. Only the user may upload.",
+  "student_verification": "pending"
+}

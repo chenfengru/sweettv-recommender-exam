@@ -1,3 +1,7 @@
-# Phase 1 uses only the Python 3.11+ standard library.
-# An IANA timezone database is needed only for --naive-timezone.
-# Model dependencies will be pinned after the data/protocol review.
+# Measured model-comparison environment: Python 3.10.11, macOS arm64.
+# Audit CLI utilities remain standard-library-only; the full test suite needs these.
+numpy==2.2.6
+scipy==1.15.3
+implicit==0.7.3
+threadpoolctl==3.7.0
+tqdm==4.70.1

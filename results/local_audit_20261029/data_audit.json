@@ -1,0 +1,666 @@
+{
+  "audit_version": "0.1",
+  "generated_at_utc": "2026-10-29T19:03:21.873999+00:00",
+  "status": "profiled_review_required",
+  "data_source": "original competition files only; no synthetic replacement",
+  "configuration": {
+    "data_dir": "/Users/chenfengru/LLM4Rec-Course-codex/data/sweettv/raw",
+    "output_dir": "results/local_audit_20261029",
+    "scratch_dir": null,
+    "encoding": null,
+    "delimiter": null,
+    "template_user_column": "user_id",
+    "view_time_format": "wall-iso",
+    "schedule_time_format": "wall-dmy",
+    "view_duration_unit": "seconds",
+    "schedule_duration_unit": "seconds",
+    "naive_timezone": null,
+    "sample_size": 10000,
+    "seed": 42
+  },
+  "instructor_reported_row_counts_not_measurements": {
+    "dataset11-30.csv": 5821987,
+    "export_arh_11-20-final.csv": 1074235,
+    "export_arh_21-30-final.csv": 1074394,
+    "export_arh_31-42-final.csv": 1295378,
+    "submission.csv": 1260
+  },
+  "missing_inputs": [],
+  "files": [
+    {
+      "filename": "dataset11-30.csv",
+      "role": "views",
+      "status": "profiled",
+      "sha256": "8c9e5f058157041e5c33f13e64dc1625a5177cc6d5e434ba18cd8a69afafb53b",
+      "bytes": 396216555,
+      "csv_format": {
+        "encoding": "utf-8-sig",
+        "encoding_method": "BOM or strict UTF-8; legacy encodings require --encoding",
+        "delimiter": ",",
+        "delimiter_method": "csv.Sniffer on first 65,536 characters"
+      },
+      "header": [
+        "user_id",
+        "vsetv_id",
+        "start_time",
+        "stop_time",
+        "duraton"
+      ],
+      "counts": {
+        "data_records": 5821987,
+        "duplicate_records_beyond_first": 17,
+        "schema_valid_records": 5821987
+      },
+      "missing_fields": {
+        "user_id": 0,
+        "vsetv_id": 0,
+        "start_time": 0,
+        "stop_time": 0,
+        "duraton": 0
+      },
+      "missingness_denominator": 5821987,
+      "surrounding_whitespace_counts": {
+        "user_id": 0,
+        "vsetv_id": 0,
+        "start_time": 0,
+        "stop_time": 0,
+        "duraton": 0
+      },
+      "identifier_representation_counts": {
+        "user_id": {
+          "integer_text": 5821987
+        },
+        "vsetv_id": {
+          "integer_text": 5821987
+        }
+      },
+      "distinct_nonempty_raw_ids": {
+        "user_id": 4914,
+        "vsetv_id": 202
+      },
+      "cardinality_and_duplicate_method": "exact SQLite keys; parsed field strings preserved; per file",
+      "timestamps": {
+        "start_time": {
+          "representations": {
+            "iso_naive_timezone_unresolved": 5821987
+          },
+          "ranges_by_representation": {
+            "iso_naive_timezone_unresolved": {
+              "minimum": "2020-03-09T00:00:02",
+              "maximum": "2020-07-26T23:58:42"
+            }
+          }
+        },
+        "stop_time": {
+          "representations": {
+            "iso_naive_timezone_unresolved": 5821987
+          },
+          "ranges_by_representation": {
+            "iso_naive_timezone_unresolved": {
+              "minimum": "2020-03-09T00:01:26",
+              "maximum": "2020-07-26T23:59:58"
+            }
+          }
+        }
+      },
+      "timestamp_conversion": "wall-iso",
+      "duration_unit_override": "seconds",
+      "normalized_timestamp_ranges_seconds": {
+        "start_time": [
+          1583712002.0,
+          1595807922.0
+        ],
+        "stop_time": [
+          1583712086.0,
+          1595807998.0
+        ]
+      },
+      "issues": {
+        "duration_above_24h_review_required": 52,
+        "duration_disagrees_with_interval_over_1s": 117
+      },
+      "duration_field": "duraton",
+      "duration_raw_units": {
+        "numeric_count": 5821987,
+        "missing_count": 0,
+        "invalid_count": 0,
+        "zero_count": 0,
+        "negative_count": 0,
+        "minimum": 61.0,
+        "maximum": 342145.0,
+        "mean": 1480.4593730627319,
+        "quantiles": {
+          "0.5": 397.0,
+          "0.9": 3921.0000000000036,
+          "0.99": 13171.660000000014
+        },
+        "quantile_sample_size": 10000,
+        "quantile_method": "uniform reservoir, linear interpolation; approximate if sampled",
+        "quantiles_sampled": true
+      },
+      "duration_minus_interval_seconds": {
+        "numeric_count": 5821987,
+        "missing_count": 0,
+        "invalid_count": 0,
+        "zero_count": 5821870,
+        "negative_count": 117,
+        "minimum": -3600.0,
+        "maximum": 0.0,
+        "mean": -0.07234643430154532,
+        "quantiles": {
+          "0.5": 0.0,
+          "0.9": 0.0,
+          "0.99": 0.0
+        },
+        "quantile_sample_size": 10000,
+        "quantile_method": "uniform reservoir, linear interpolation; approximate if sampled",
+        "quantiles_sampled": true
+      },
+      "elapsed_seconds_including_hashing": 101.19144845800474
+    },
+    {
+      "filename": "export_arh_11-20-final.csv",
+      "role": "schedule",
+      "status": "profiled",
+      "sha256": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c",
+      "bytes": 153322643,
+      "csv_format": {
+        "encoding": "utf-8-sig",
+        "encoding_method": "BOM or strict UTF-8; legacy encodings require --encoding",
+        "delimiter": ",",
+        "delimiter_method": "csv.Sniffer on first 65,536 characters"
+      },
+      "header": [
+        "channel_id",
+        "channel_title",
+        "start_time",
+        "duration",
+        "tv_show_title",
+        "tv_show_id",
+        "tv_show_category",
+        "tv_show_genre_1",
+        "tv_show_genre_2",
+        "tv_show_genre_3",
+        "year_of_production",
+        "director",
+        "actors"
+      ],
+      "counts": {
+        "data_records": 1074235,
+        "duplicate_records_beyond_first": 0,
+        "schema_valid_records": 1074235,
+        "zero_programme_id_records": 958622,
+        "nonzero_programme_id_records": 115613
+      },
+      "missing_fields": {
+        "channel_id": 0,
+        "channel_title": 0,
+        "start_time": 0,
+        "duration": 0,
+        "tv_show_title": 0,
+        "tv_show_id": 0,
+        "tv_show_category": 0,
+        "tv_show_genre_1": 620089,
+        "tv_show_genre_2": 928009,
+        "tv_show_genre_3": 1054059,
+        "year_of_production": 959500,
+        "director": 974050,
+        "actors": 973861
+      },
+      "missingness_denominator": 1074235,
+      "surrounding_whitespace_counts": {
+        "channel_id": 0,
+        "channel_title": 0,
+        "start_time": 0,
+        "duration": 0,
+        "tv_show_title": 0,
+        "tv_show_id": 0,
+        "tv_show_category": 0,
+        "tv_show_genre_1": 0,
+        "tv_show_genre_2": 0,
+        "tv_show_genre_3": 0,
+        "year_of_production": 0,
+        "director": 0,
+        "actors": 0
+      },
+      "identifier_representation_counts": {
+        "channel_id": {
+          "integer_text": 1074235
+        },
+        "tv_show_id": {
+          "integer_text": 1074235
+        }
+      },
+      "distinct_nonempty_raw_ids": {
+        "channel_id": 400,
+        "tv_show_id": 5848
+      },
+      "cardinality_and_duplicate_method": "exact SQLite keys; parsed field strings preserved; per file",
+      "timestamps": {
+        "start_time": {
+          "representations": {
+            "dmy_naive_timezone_unresolved": 1074235
+          },
+          "ranges_by_representation": {
+            "dmy_naive_timezone_unresolved": {
+              "minimum": "2020-03-08T23:00:00",
+              "maximum": "2020-05-18T11:45:00"
+            }
+          }
+        }
+      },
+      "timestamp_conversion": "wall-dmy",
+      "duration_unit_override": "seconds",
+      "normalized_timestamp_ranges_seconds": {
+        "start_time": [
+          1583708400.0,
+          1589802300.0
+        ]
+      },
+      "issues": {
+        "duration_above_24h_review_required": 0,
+        "nonpositive_duration": 1
+      },
+      "duration_field": "duration",
+      "duration_raw_units": {
+        "numeric_count": 1074235,
+        "missing_count": 0,
+        "invalid_count": 0,
+        "zero_count": 1,
+        "negative_count": 0,
+        "minimum": 0.0,
+        "maximum": 86400.0,
+        "mean": 2229.9894901953453,
+        "quantiles": {
+          "0.5": 1500.0,
+          "0.9": 5100.0,
+          "0.99": 12000.0
+        },
+        "quantile_sample_size": 10000,
+        "quantile_method": "uniform reservoir, linear interpolation; approximate if sampled",
+        "quantiles_sampled": true
+      },
+      "nonzero_schedule_row_fraction": {
+        "numerator": 115613,
+        "denominator": 1074235,
+        "fraction": 0.10762356467625799
+      },
+      "schedule_airtime": {
+        "all": {
+          "union_seconds_summed_over_channels": 2395528560.0,
+          "interval_rows": 1074234,
+          "rows_overlapping_any_earlier_interval": 2
+        },
+        "labelled": {
+          "union_seconds_summed_over_channels": 382478940.0,
+          "interval_rows": 115613,
+          "rows_overlapping_any_earlier_interval": 0
+        },
+        "unit_status": "based on explicit overrides, not independently verified"
+      },
+      "elapsed_seconds_including_hashing": 21.771835041989107
+    },
+    {
+      "filename": "export_arh_21-30-final.csv",
+      "role": "schedule",
+      "status": "profiled",
+      "sha256": "bdc9fa9850239aaed608bece9cdb200011e690300470fe85b980457d8c0cb2d4",
+      "bytes": 154366907,
+      "csv_format": {
+        "encoding": "utf-8-sig",
+        "encoding_method": "BOM or strict UTF-8; legacy encodings require --encoding",
+        "delimiter": ",",
+        "delimiter_method": "csv.Sniffer on first 65,536 characters"
+      },
+      "header": [
+        "channel_id",
+        "channel_title",
+        "start_time",
+        "duration",
+        "tv_show_title",
+        "tv_show_id",
+        "tv_show_category",
+        "tv_show_genre_1",
+        "tv_show_genre_2",
+        "tv_show_genre_3",
+        "year_of_production",
+        "director",
+        "actors"
+      ],
+      "counts": {
+        "data_records": 1074394,
+        "duplicate_records_beyond_first": 0,
+        "schema_valid_records": 1074394,
+        "nonzero_programme_id_records": 121505,
+        "zero_programme_id_records": 952889
+      },
+      "missing_fields": {
+        "channel_id": 0,
+        "channel_title": 0,
+        "start_time": 0,
+        "duration": 0,
+        "tv_show_title": 0,
+        "tv_show_id": 0,
+        "tv_show_category": 0,
+        "tv_show_genre_1": 616370,
+        "tv_show_genre_2": 924020,
+        "tv_show_genre_3": 1050668,
+        "year_of_production": 954382,
+        "director": 969487,
+        "actors": 968834
+      },
+      "missingness_denominator": 1074394,
+      "surrounding_whitespace_counts": {
+        "channel_id": 0,
+        "channel_title": 0,
+        "start_time": 0,
+        "duration": 0,
+        "tv_show_title": 0,
+        "tv_show_id": 0,
+        "tv_show_category": 0,
+        "tv_show_genre_1": 0,
+        "tv_show_genre_2": 0,
+        "tv_show_genre_3": 0,
+        "year_of_production": 0,
+        "director": 0,
+        "actors": 0
+      },
+      "identifier_representation_counts": {
+        "channel_id": {
+          "integer_text": 1074394
+        },
+        "tv_show_id": {
+          "integer_text": 1074394
+        }
+      },
+      "distinct_nonempty_raw_ids": {
+        "channel_id": 403,
+        "tv_show_id": 6364
+      },
+      "cardinality_and_duplicate_method": "exact SQLite keys; parsed field strings preserved; per file",
+      "timestamps": {
+        "start_time": {
+          "representations": {
+            "dmy_naive_timezone_unresolved": 1074394
+          },
+          "ranges_by_representation": {
+            "dmy_naive_timezone_unresolved": {
+              "minimum": "2020-05-18T00:00:00",
+              "maximum": "2020-07-27T11:55:00"
+            }
+          }
+        }
+      },
+      "timestamp_conversion": "wall-dmy",
+      "duration_unit_override": "seconds",
+      "normalized_timestamp_ranges_seconds": {
+        "start_time": [
+          1589760000.0,
+          1595850900.0
+        ]
+      },
+      "issues": {
+        "duration_above_24h_review_required": 0
+      },
+      "duration_field": "duration",
+      "duration_raw_units": {
+        "numeric_count": 1074394,
+        "missing_count": 0,
+        "invalid_count": 0,
+        "zero_count": 0,
+        "negative_count": 0,
+        "minimum": 60.0,
+        "maximum": 86400.0,
+        "mean": 2261.3061874880395,
+        "quantiles": {
+          "0.5": 1500.0,
+          "0.9": 5400.0,
+          "0.99": 12606.000000000131
+        },
+        "quantile_sample_size": 10000,
+        "quantile_method": "uniform reservoir, linear interpolation; approximate if sampled",
+        "quantiles_sampled": true
+      },
+      "nonzero_schedule_row_fraction": {
+        "numerator": 121505,
+        "denominator": 1074394,
+        "fraction": 0.11309165911202036
+      },
+      "schedule_airtime": {
+        "all": {
+          "union_seconds_summed_over_channels": 2429497800.0,
+          "interval_rows": 1074394,
+          "rows_overlapping_any_earlier_interval": 2
+        },
+        "labelled": {
+          "union_seconds_summed_over_channels": 410590740.0,
+          "interval_rows": 121505,
+          "rows_overlapping_any_earlier_interval": 0
+        },
+        "unit_status": "based on explicit overrides, not independently verified"
+      },
+      "elapsed_seconds_including_hashing": 21.557725084014237
+    },
+    {
+      "filename": "export_arh_31-42-final.csv",
+      "role": "schedule",
+      "status": "profiled",
+      "sha256": "5cc01f4619bd94886d83744f00bbc15cc5fa23384d297244a7dc2207450c4088",
+      "bytes": 185952991,
+      "csv_format": {
+        "encoding": "utf-8-sig",
+        "encoding_method": "BOM or strict UTF-8; legacy encodings require --encoding",
+        "delimiter": ",",
+        "delimiter_method": "csv.Sniffer on first 65,536 characters"
+      },
+      "header": [
+        "channel_id",
+        "channel_title",
+        "start_time",
+        "duration",
+        "tv_show_title",
+        "tv_show_id",
+        "tv_show_category",
+        "tv_show_genre_1",
+        "tv_show_genre_2",
+        "tv_show_genre_3",
+        "year_of_production",
+        "director",
+        "actors"
+      ],
+      "counts": {
+        "data_records": 1295378,
+        "duplicate_records_beyond_first": 0,
+        "schema_valid_records": 1295378,
+        "nonzero_programme_id_records": 144774,
+        "zero_programme_id_records": 1150604
+      },
+      "missing_fields": {
+        "channel_id": 0,
+        "channel_title": 0,
+        "start_time": 0,
+        "duration": 0,
+        "tv_show_title": 0,
+        "tv_show_id": 0,
+        "tv_show_category": 0,
+        "tv_show_genre_1": 737871,
+        "tv_show_genre_2": 1113598,
+        "tv_show_genre_3": 1266621,
+        "year_of_production": 1151706,
+        "director": 1170189,
+        "actors": 1169519
+      },
+      "missingness_denominator": 1295378,
+      "surrounding_whitespace_counts": {
+        "channel_id": 0,
+        "channel_title": 0,
+        "start_time": 0,
+        "duration": 0,
+        "tv_show_title": 0,
+        "tv_show_id": 0,
+        "tv_show_category": 0,
+        "tv_show_genre_1": 0,
+        "tv_show_genre_2": 0,
+        "tv_show_genre_3": 0,
+        "year_of_production": 0,
+        "director": 0,
+        "actors": 0
+      },
+      "identifier_representation_counts": {
+        "channel_id": {
+          "integer_text": 1295378
+        },
+        "tv_show_id": {
+          "integer_text": 1295378
+        }
+      },
+      "distinct_nonempty_raw_ids": {
+        "channel_id": 404,
+        "tv_show_id": 6637
+      },
+      "cardinality_and_duplicate_method": "exact SQLite keys; parsed field strings preserved; per file",
+      "timestamps": {
+        "start_time": {
+          "representations": {
+            "dmy_naive_timezone_unresolved": 1295378
+          },
+          "ranges_by_representation": {
+            "dmy_naive_timezone_unresolved": {
+              "minimum": "2020-07-27T00:00:00",
+              "maximum": "2020-10-19T11:55:00"
+            }
+          }
+        }
+      },
+      "timestamp_conversion": "wall-dmy",
+      "duration_unit_override": "seconds",
+      "normalized_timestamp_ranges_seconds": {
+        "start_time": [
+          1595808000.0,
+          1603108500.0
+        ]
+      },
+      "issues": {
+        "duration_above_24h_review_required": 0
+      },
+      "duration_field": "duration",
+      "duration_raw_units": {
+        "numeric_count": 1295378,
+        "missing_count": 0,
+        "invalid_count": 0,
+        "zero_count": 0,
+        "negative_count": 0,
+        "minimum": 60.0,
+        "maximum": 43200.0,
+        "mean": 2263.139546911947,
+        "quantiles": {
+          "0.5": 1500.0,
+          "0.9": 5400.0,
+          "0.99": 14100.0
+        },
+        "quantile_sample_size": 10000,
+        "quantile_method": "uniform reservoir, linear interpolation; approximate if sampled",
+        "quantiles_sampled": true
+      },
+      "nonzero_schedule_row_fraction": {
+        "numerator": 144774,
+        "denominator": 1295378,
+        "fraction": 0.11176197218109309
+      },
+      "schedule_airtime": {
+        "all": {
+          "union_seconds_summed_over_channels": 2931605160.0,
+          "interval_rows": 1295378,
+          "rows_overlapping_any_earlier_interval": 8
+        },
+        "labelled": {
+          "union_seconds_summed_over_channels": 488753580.0,
+          "interval_rows": 144774,
+          "rows_overlapping_any_earlier_interval": 4
+        },
+        "unit_status": "based on explicit overrides, not independently verified"
+      },
+      "elapsed_seconds_including_hashing": 25.77359845797764
+    },
+    {
+      "filename": "submission.csv",
+      "role": "template",
+      "status": "profiled",
+      "sha256": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02",
+      "bytes": 38348,
+      "csv_format": {
+        "encoding": "utf-8-sig",
+        "encoding_method": "BOM or strict UTF-8; legacy encodings require --encoding",
+        "delimiter": ",",
+        "delimiter_method": "csv.Sniffer on first 65,536 characters"
+      },
+      "header": [
+        "user_id",
+        "tv_show_id"
+      ],
+      "counts": {
+        "data_records": 1260,
+        "duplicate_records_beyond_first": 0,
+        "schema_valid_records": 1260
+      },
+      "missing_fields": {
+        "user_id": 0,
+        "tv_show_id": 0
+      },
+      "missingness_denominator": 1260,
+      "surrounding_whitespace_counts": {
+        "user_id": 0,
+        "tv_show_id": 0
+      },
+      "identifier_representation_counts": {
+        "user_id": {
+          "integer_text": 1260
+        }
+      },
+      "distinct_nonempty_raw_ids": {
+        "user_id": 1260
+      },
+      "cardinality_and_duplicate_method": "exact SQLite keys; parsed field strings preserved; per file",
+      "timestamps": {},
+      "timestamp_conversion": "wall-dmy",
+      "duration_unit_override": "seconds",
+      "normalized_timestamp_ranges_seconds": {},
+      "issues": {
+        "duplicate_or_empty_template_users": 0
+      },
+      "template_user_column": "user_id",
+      "template_schema_status": "explicit_user_column",
+      "elapsed_seconds_including_hashing": 0.00791908398969099
+    }
+  ],
+  "unresolved": [
+    "Match real view and schedule timestamps/channels; prove units from source and diagnostics.",
+    "Confirm template column roles and exact calendar cutoffs.",
+    "Confirm continuous watching and most-frequent-five target semantics; historical code is not the evaluator.",
+    "Measure matched view rows, union viewing seconds, usable template-user history and candidate cold start.",
+    "Choose positive thresholds and interaction weights only after real duration/coverage diagnostics."
+  ],
+  "channel_id_diagnostic": {
+    "view_channel_ids": 202,
+    "view_channel_ids_found_in_training_schedules": 197,
+    "interpretation": "raw string equality only; not proof of channel mapping or time-matched coverage"
+  },
+  "elapsed_seconds": 170.3267167090089,
+  "environment": {
+    "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "code_base_commit": "e0c6bf1cdab49f06c7d6defdace29d3a4ede2f86",
+    "working_tree_dirty": true,
+    "source_sha256": {
+      "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+      "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+      "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+      "src/intervals.py": "7a93326aea17ec938352c6c16e87d573ea51bedc43ec6532fb7adace3ffe000f",
+      "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+      "src/real_matching_audit.py": "80efd10740b40c4672c9dfec01d6402ad2d8572d1b07c8da5b92096d48fb2ee5",
+      "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6"
+    },
+    "peak_process_rss_bytes": 74858496,
+    "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+  }
+}

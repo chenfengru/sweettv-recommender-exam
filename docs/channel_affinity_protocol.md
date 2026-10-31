@@ -1,0 +1,17 @@
+# V18 frozen user-channel affinity extension
+
+Question: does exact historical user-channel affinity improve v14 ranking, including unseen programmes? Restore original v14 two-week origins, rows, labels and all40 ordered features; original candidate/retrieval rules and fixed binary LightGBM. No v15 expansion, v16 horizons or v17 ranking formulation.
+
+For each origin use only the verified pre-cutoff cleaned SQLite views (including unmatched programme rows) and canonical matched segments. Full history [Mar9,cutoff) and trailing [cutoff-28days,cutoff); clip again to windows. Union per user/channel observed viewing intervals; sum channels for total exposure (simultaneous channels count separately, not unique attention). Count distinct canonical user-airings whose longest merged observed block >=.50 of full airing duration, independently qualified in each clipped window. Exact raw vsetv_id=channel_id mapping as existing pipeline; no cast/invented mapping.
+
+For each window/channel: observed union seconds, seconds/user total channel seconds, N50 airing count, count/user total N50 airings. All denominator-zero shares0. For each programme use canonical schedule airings with strictly positive forecast-window overlap including carryovers; sum clipped broadcast seconds bychannel then divide by programme total. Weighted means of four channel stats, log1p after weighting seconds/counts; shares direct. Missing exact behavioural channel contributes zero numerators without renormalizing schedule weights or user denominators.
+
+Append exactly12 features in order: full_log1p_weighted_view_seconds, full_weighted_view_share, full_log1p_weighted_n50_airings, full_weighted_n50_share; same four with trailing28 prefix; full_no_viewing,full_no_n50,trailing28_no_viewing,trailing28_no_n50. Original40 values/schema unchanged; no rawchannel/content/source flags/other aggregations. Compute origin features separately for original Apr6->Apr20, Apr20->May4, mainMay18->Jul27,auxJun1->Jul27; finalJul27->Oct19 onlyifqualified. HistoriesstartMar9.
+
+Exactly one fixed v14 binary LGBMClassifier fit, seed42/300trees. All original queries/negatives/labels/rows retained; no weights/sampling/tuning/earlystop/expansion/blend/E2/cold override. No main/aux labels fitted. Same frozen classifier both evaluations/final.
+
+Paired comparisons to savedv14, MAP@5 selection only, bootstrap2000 seed42 percentile95% conditional reused overlapping cohorts, excluding accumulated selection uncertainty. Report slices/cold/seen-unseenAP/hits/membership/positions, unchanged candidate recall/oracle; originalfeature/label equality, exactmapping/unmatched schedule-weight coverage, zero rates, finite52schema/distributions, runtime/RSS and descriptiveimportance. Distinguish raw viewing exposure from programme-qualified counts. Remaining horizon/historylength and LightFMorigin-scale limitations retained.
+
+Qualify only strict MAPgains onBOTHsplits. Otherwise retainv14/noCSV/noextra variants. Ifqualified compute final12features, append unchanged40v14rows, applysame frozenclassifier; exactly1versionedCSV/bothvalidators1260users/header/order/5distinctnonzeroavailableIDs/carryovers, path/SHA/v14diff/Englishdescription.
+
+V14Private.43416/Public.44157 user-screenshot-reported; unknownsubmissionID/time. PreservealloldCSV/checksums/models/native sessionrecords, studentverificationpending. Englishreport/code/results toexistingdraftPR1. NoKaggleworkflow/commands/API/upload; stopformanualreview.

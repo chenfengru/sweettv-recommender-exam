@@ -1,0 +1,262 @@
+[
+  {
+    "feature": "n30",
+    "gain": 337266.4013361931,
+    "splits": 167
+  },
+  {
+    "feature": "n50_last28days",
+    "gain": 183976.38570952415,
+    "splits": 104
+  },
+  {
+    "feature": "n50",
+    "gain": 90255.20040178299,
+    "splits": 24
+  },
+  {
+    "feature": "lightfm_rank",
+    "gain": 56395.650349617004,
+    "splits": 150
+  },
+  {
+    "feature": "future_airings_per_day",
+    "gain": 40444.538170576096,
+    "splits": 367
+  },
+  {
+    "feature": "n80",
+    "gain": 26017.764605998993,
+    "splits": 64
+  },
+  {
+    "feature": "global_airings80",
+    "gain": 24368.352134227753,
+    "splits": 191
+  },
+  {
+    "feature": "personal_n50_rank",
+    "gain": 19834.313766002655,
+    "splits": 87
+  },
+  {
+    "feature": "trailing28_log1p_weighted_view_seconds",
+    "gain": 19761.501490831375,
+    "splits": 215
+  },
+  {
+    "feature": "n50_last7days",
+    "gain": 8447.918091773987,
+    "splits": 57
+  },
+  {
+    "feature": "trailing28_weighted_n50_share",
+    "gain": 7410.477856636047,
+    "splits": 116
+  },
+  {
+    "feature": "past_broadcast_seconds_per_day",
+    "gain": 6992.094985961914,
+    "splits": 125
+  },
+  {
+    "feature": "full_log1p_weighted_view_seconds",
+    "gain": 6912.000861167908,
+    "splits": 157
+  },
+  {
+    "feature": "log_airings_rate_change",
+    "gain": 6737.41770529747,
+    "splits": 201
+  },
+  {
+    "feature": "days_since_last_n50_view",
+    "gain": 6144.429268360138,
+    "splits": 116
+  },
+  {
+    "feature": "log_broadcast_rate_change",
+    "gain": 5075.902181386948,
+    "splits": 187
+  },
+  {
+    "feature": "full_weighted_view_share",
+    "gain": 5058.064486980438,
+    "splits": 91
+  },
+  {
+    "feature": "global_viewers80",
+    "gain": 4667.226801633835,
+    "splits": 89
+  },
+  {
+    "feature": "full_weighted_n50_share",
+    "gain": 4315.212490081787,
+    "splits": 84
+  },
+  {
+    "feature": "past_airings_per_day",
+    "gain": 4025.4829919338226,
+    "splits": 148
+  },
+  {
+    "feature": "user_airings30",
+    "gain": 4015.292402267456,
+    "splits": 131
+  },
+  {
+    "feature": "full_log1p_weighted_n50_airings",
+    "gain": 3985.066869497299,
+    "splits": 85
+  },
+  {
+    "feature": "item_item_rank",
+    "gain": 3737.093326330185,
+    "splits": 129
+  },
+  {
+    "feature": "user_airings80",
+    "gain": 3621.731071949005,
+    "splits": 140
+  },
+  {
+    "feature": "trailing28_weighted_view_share",
+    "gain": 3440.957211494446,
+    "splits": 79
+  },
+  {
+    "feature": "lightfm_item_bias",
+    "gain": 3248.6569497585297,
+    "splits": 125
+  },
+  {
+    "feature": "user_airings50",
+    "gain": 2582.2417435646057,
+    "splits": 98
+  },
+  {
+    "feature": "trailing28_log1p_weighted_n50_airings",
+    "gain": 2548.8986835479736,
+    "splits": 58
+  },
+  {
+    "feature": "lightfm_user_bias",
+    "gain": 2076.982943534851,
+    "splits": 142
+  },
+  {
+    "feature": "future_broadcast_seconds_per_day",
+    "gain": 1896.216279745102,
+    "splits": 97
+  },
+  {
+    "feature": "item_item_score",
+    "gain": 1841.4455318450928,
+    "splits": 97
+  },
+  {
+    "feature": "lightfm_score",
+    "gain": 1418.4107739925385,
+    "splits": 94
+  },
+  {
+    "feature": "user_history80",
+    "gain": 1323.7295308113098,
+    "splits": 61
+  },
+  {
+    "feature": "user_history30",
+    "gain": 932.298835515976,
+    "splits": 68
+  },
+  {
+    "feature": "user_history50",
+    "gain": 687.6136951446533,
+    "splits": 38
+  },
+  {
+    "feature": "trailing28_no_n50",
+    "gain": 176.92832970619202,
+    "splits": 18
+  },
+  {
+    "feature": "log1p_n30",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "log1p_n50",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "log1p_n80",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "personal_rank_missing",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "item_item_score_missing",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "item_item_rank_missing",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "last_n50_view_missing",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "source_personal200",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "source_unseen50",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "source_global5",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "past_airings_zero",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "lightfm_unsupported_user",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "lightfm_unsupported_item",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "full_no_viewing",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "full_no_n50",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "trailing28_no_viewing",
+    "gain": 0.0,
+    "splits": 0
+  }
+]

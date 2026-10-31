@@ -1,0 +1,36 @@
+{
+  "origin": "origin_20200406",
+  "old_rows": 291619,
+  "expanded_rows": 350617,
+  "old_positive_rows": 13020,
+  "expanded_positive_rows": 13315,
+  "positive_rate": 0.03797591103682936,
+  "original_labels_exactly_equal": true,
+  "candidate_coverage_before": {
+    "users_in_feature_universe": 4836,
+    "users_with_targets": 4106,
+    "users_without_targets": 730,
+    "all_label_users": 4115,
+    "label_users_outside_feature_universe": 9,
+    "covered_relevant_pairs": 13020,
+    "all_relevant_pairs_in_universe": 15941,
+    "micro_recall": 0.8167618091713192,
+    "macro_recall_target_users": 0.7885168046760838,
+    "oracle_map_at_5_target_users": 0.7885168046760838
+  },
+  "candidate_coverage_after": {
+    "users_in_feature_universe": 4836,
+    "users_with_targets": 4106,
+    "users_without_targets": 730,
+    "all_label_users": 4115,
+    "label_users_outside_feature_universe": 9,
+    "covered_relevant_pairs": 13315,
+    "all_relevant_pairs_in_universe": 15941,
+    "micro_recall": 0.8352675490872593,
+    "macro_recall_target_users": 0.808613411268063,
+    "oracle_map_at_5_target_users": 0.808613411268063
+  },
+  "all_negative_candidate_queries_before": 979,
+  "all_negative_candidate_queries_after": 950,
+  "no_label_based_user_or_candidate_selection": true
+}

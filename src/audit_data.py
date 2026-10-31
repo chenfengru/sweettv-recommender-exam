@@ -49,6 +49,12 @@ def parse_timestamp(value, representation, naive_timezone=None):
         return number(value)
     if representation == "unix-ms":
         return number(value) / 1000
+    if representation in {"wall-iso", "wall-dmy"}:
+        instant = (datetime.fromisoformat(value) if representation == "wall-iso" else
+                   datetime.strptime(value, "%d.%m.%Y %H:%M:%S"))
+        if instant.tzinfo is not None:
+            raise ValueError("wall-clock mode requires timestamps without offsets")
+        return (instant - datetime(1970, 1, 1)).total_seconds()
     if representation != "iso":
         raise ValueError("timestamp representation must be explicitly selected")
     instant = datetime.fromisoformat(value)
@@ -135,8 +141,12 @@ class TimeSummary:
                 else:
                     kind, parsed = "iso_offset", parsed_date.astimezone(timezone.utc).isoformat()
             except ValueError:
-                self.kinds["invalid_or_unsupported"] += 1
-                return
+                try:
+                    parsed = datetime.strptime(value, "%d.%m.%Y %H:%M:%S").isoformat()
+                    kind = "dmy_naive_timezone_unresolved"
+                except ValueError:
+                    self.kinds["invalid_or_unsupported"] += 1
+                    return
         self.kinds[kind] += 1
         if kind not in self.ranges:
             self.ranges[kind] = {"minimum": parsed, "maximum": parsed}
@@ -432,8 +442,8 @@ def make_parser():
     parser.add_argument("--encoding", help="Explicit legacy encoding if strict UTF-8/BOM detection fails")
     parser.add_argument("--delimiter", help="One-character override after inspecting the source")
     parser.add_argument("--template-user-column", help="Actual header name; never guessed")
-    parser.add_argument("--view-time-format", choices=("unix-s", "unix-ms", "iso"))
-    parser.add_argument("--schedule-time-format", choices=("unix-s", "unix-ms", "iso"))
+    parser.add_argument("--view-time-format", choices=("unix-s", "unix-ms", "iso", "wall-iso", "wall-dmy"))
+    parser.add_argument("--schedule-time-format", choices=("unix-s", "unix-ms", "iso", "wall-iso", "wall-dmy"))
     parser.add_argument("--view-duration-unit", choices=tuple(UNIT_SECONDS))
     parser.add_argument("--schedule-duration-unit", choices=tuple(UNIT_SECONDS))
     parser.add_argument("--naive-timezone", help="Verified source timezone for naive ISO timestamps, not your computer timezone")

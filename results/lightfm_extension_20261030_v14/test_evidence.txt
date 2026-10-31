@@ -1,0 +1,7 @@
+/private/tmp/sweettv-model-venv/lib/python3.10/site-packages/lightfm/_lightfm_fast.py:9: UserWarning: LightFM was compiled without OpenMP support. Only a single thread will be used.
+  warnings.warn(
+...................................................................................
+----------------------------------------------------------------------
+Ran 83 tests in 0.425s
+
+OK

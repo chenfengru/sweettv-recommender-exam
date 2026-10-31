@@ -1,0 +1,11 @@
+{
+  "origin": "main",
+  "candidate_equality_v18": true,
+  "feature52_equality_v18": true,
+  "mechanism": "Direct original v18 array and original unchanged row index, no reconstruction.",
+  "feature_sha256": "9cf57b48be9cea6b0f2f7d7efc3b5d9bc58b719c52196a8e7818b964c10e5a57",
+  "row_index_sha256": "3970749dd964154ec269fb8cb6c6bdf202eb87fea42a4a892a55da7e0abb00a8",
+  "rows": 380403,
+  "users": 4625,
+  "pool": 6384
+}

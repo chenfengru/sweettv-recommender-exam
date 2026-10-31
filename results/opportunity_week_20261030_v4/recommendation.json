@@ -1,0 +1,11 @@
+{
+  "recommended_configuration": "submitted v3",
+  "worth_new_manual_submission": false,
+  "reason": "C reverses from a small positive main delta to a negative auxiliary delta. D is negative on both. Neither passes the frozen two-split criterion.",
+  "new_submission_csv_generated": false,
+  "best_submitted_private_score": 0.39697,
+  "best_submitted_public_score": 0.40288,
+  "score_source": "user-confirmed Kaggle screenshot",
+  "workflow": "Stop for user review. All uploads manual-only; no Kaggle browser, workflow, upload, Submit click or submission API used.",
+  "student_verification": "pending"
+}

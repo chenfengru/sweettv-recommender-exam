@@ -1,0 +1,59 @@
+{
+  "seed": 42,
+  "cbf": {
+    "sampled_users_independent_profile_check": 30,
+    "candidate_cosines_checked_per_sampled_user": 10,
+    "max_profile_coordinate_error": 1.7626989223806788e-07,
+    "max_cosine_error": 1.305461166389854e-07,
+    "candidate_items": 6384,
+    "distinct_candidate_content_vectors": 444,
+    "largest_identical_vector_group": 2391,
+    "cohort_users_with_positive_content_score": 4581,
+    "users_with_more_than_five_exactly_tied_top_scores": 2936,
+    "median_exact_top_score_tie_count": 22.0,
+    "max_exact_top_score_tie_count": 323
+  },
+  "als": {
+    "als_f32_r0.01_model": {
+      "sampled_users": 64,
+      "sampling": "uniform without replacement; NumPy Generator seed 42 stream after CBF diagnostic sampling",
+      "all_factors_finite": true,
+      "sampled_native_scores_nonfinite": 0,
+      "native_warning_count": 192,
+      "max_native_float32_vs_direct_float64_score_error": 1.950458652366649e-07,
+      "max_direct_float64_vs_scalar_fsum_error": 1.1102230246251565e-16,
+      "sampled_top1_argmax_agreements": 64
+    },
+    "als_f32_r0.1_model": {
+      "sampled_users": 64,
+      "sampling": "uniform without replacement; NumPy Generator seed 42 stream after CBF diagnostic sampling",
+      "all_factors_finite": true,
+      "sampled_native_scores_nonfinite": 0,
+      "native_warning_count": 192,
+      "max_native_float32_vs_direct_float64_score_error": 2.0194492877934067e-07,
+      "max_direct_float64_vs_scalar_fsum_error": 1.1102230246251565e-16,
+      "sampled_top1_argmax_agreements": 64
+    },
+    "als_f64_r0.01_model": {
+      "sampled_users": 64,
+      "sampling": "uniform without replacement; NumPy Generator seed 42 stream after CBF diagnostic sampling",
+      "all_factors_finite": true,
+      "sampled_native_scores_nonfinite": 0,
+      "native_warning_count": 192,
+      "max_native_float32_vs_direct_float64_score_error": 1.9437801990207504e-07,
+      "max_direct_float64_vs_scalar_fsum_error": 1.1102230246251565e-16,
+      "sampled_top1_argmax_agreements": 64
+    },
+    "als_f64_r0.1_model": {
+      "sampled_users": 64,
+      "sampling": "uniform without replacement; NumPy Generator seed 42 stream after CBF diagnostic sampling",
+      "all_factors_finite": true,
+      "sampled_native_scores_nonfinite": 0,
+      "native_warning_count": 192,
+      "max_native_float32_vs_direct_float64_score_error": 2.2831051271765546e-07,
+      "max_direct_float64_vs_scalar_fsum_error": 1.1102230246251565e-16,
+      "sampled_top1_argmax_agreements": 64
+    }
+  },
+  "interpretation": "Native matmul emitted warnings despite finite factors and closely agreeing finite scores in this environment. Root cause is not established. Final scoring uses finite-checked float64 direct contraction, not native matmul; no warnings are suppressed in final fitting or inference."
+}

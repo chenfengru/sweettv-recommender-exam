@@ -1,0 +1,25 @@
+{
+  "csv_inventory_unchanged": true,
+  "previous_git_bytes_preserved": {
+    "submissions/candidate_personal_threshold_050_20261030_v5.csv": "593b1134b6625771abfe107e17d074499cedf6efb4ef9306e06289e9566876e5",
+    "submissions/candidate_personal_tie_popularity_20261030_v3.csv": "39aac2794395209b2299ccee2e2bb1b4b9afde22f3e06ccb5b04f3d706c9522f",
+    "submissions/candidate_rrf_als_lb80_w0p1_20261029_v2.csv": "905971a8a9c47bcf4a88e14cd10d2514feaaea43900d6f513b2eecc4986f19f5",
+    "submissions/first_personal_original_20261029_v1.csv": "53cb8ae4b59b26ab6ee00b5e99ad91044876180e662732a755d3e99a297e64bc"
+  },
+  "frozen_anchor_and_slices_match": {
+    "main": "dd07a77f8885d50484250dee8172c10afcb4dbc52245ef44df943c81d0e05379",
+    "auxiliary": "f33cf5f34f7a8882a131ad72bfa7009d0c438dd520761d0c32d817f960f363dc"
+  },
+  "private_model_sha256": {
+    "artifacts/item_item_20261030_v7/main/neighbours.json": "dfc6ccebe39e9d293772bfbf3c7c252c596f5c1dbb7f272d9839a07cd33709ee",
+    "artifacts/item_item_20261030_v7/main/n50.json": "2657a67d2e1e5f98d6af40355f99b191332ce871a156219570b33d88aaddb683",
+    "artifacts/item_item_20261030_v7/main/direct_rankings.json": "0bc6c3c2bf7afb2b6dc2b69f754bbb764a9995af9c32b9892c7696a25bbfa948",
+    "artifacts/item_item_20261030_v7/main/unseen_rankings.json": "db1fee16ecd04a9173112dfe73cbe18a8eab1e7e5479b3e50b73ddcf65188a93",
+    "artifacts/item_item_20261030_v7/main/standalone_top5.json": "216487b5df7cfb8688665a3699cbd1399bbf61ad07512d4eedd04f4e6a101a2c",
+    "artifacts/item_item_20261030_v7/auxiliary/neighbours.json": "06497c40cb41e445b0164a119b6d2257db630e1e1f9b32460194753195a9dec1",
+    "artifacts/item_item_20261030_v7/auxiliary/n50.json": "d850e157d3f4ca9fb01326e249f15ac3988ac4dc53f43e21b3d12988ba424fc3",
+    "artifacts/item_item_20261030_v7/auxiliary/direct_rankings.json": "212291ea194e35aadadf7cdc501c1865e7ab54065d04d56fa0556709f0a83b3b",
+    "artifacts/item_item_20261030_v7/auxiliary/unseen_rankings.json": "dbfe6ddaf9563ec1b284023bed8aa41a62c354d54c6c302d1f4af19203bef57e",
+    "artifacts/item_item_20261030_v7/auxiliary/standalone_top5.json": "29f9113d3b45d77da04c5a24ee1539b600c363c6639eefe8699a88063e225c52"
+  }
+}

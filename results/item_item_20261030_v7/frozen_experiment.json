@@ -1,0 +1,10 @@
+{
+  "frozen_at_utc": "2026-10-30T08:46:42.364206+00:00",
+  "definition_file": "docs/item_item_protocol.md",
+  "definition_sha256": "c6c434db4b58e9d119071bd3ccf56b5691e5a36b775970a182a10675897370f6",
+  "neighbours": 50,
+  "shrinkage": 20,
+  "minimum_coview": 3,
+  "sparse_block_items": 128,
+  "submission_artifact": "none; retrieval experiment only"
+}

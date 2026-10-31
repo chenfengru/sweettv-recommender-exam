@@ -1,0 +1,18 @@
+{
+  "recorded_at_utc": "2026-10-30T08:38:44.763146+00:00",
+  "file": "submissions/candidate_personal_threshold_050_20261030_v5.csv",
+  "csv_sha256": "593b1134b6625771abfe107e17d074499cedf6efb4ef9306e06289e9566876e5",
+  "local_map_at_5": 0.33471117117117116,
+  "private_score": 0.4021,
+  "public_score": 0.41789,
+  "source": "User-confirmed screenshot values in the request; no independent Kaggle lookup. Screenshot binary not supplied to this tool run.",
+  "submission_id": null,
+  "submission_timestamp": null,
+  "best_submitted_baseline": "v5 T50 personal count then original >=80% global qualified popularity",
+  "previous_artifacts_sha256": {
+    "submissions/candidate_personal_threshold_050_20261030_v5.csv": "593b1134b6625771abfe107e17d074499cedf6efb4ef9306e06289e9566876e5",
+    "submissions/candidate_personal_tie_popularity_20261030_v3.csv": "39aac2794395209b2299ccee2e2bb1b4b9afde22f3e06ccb5b04f3d706c9522f",
+    "submissions/candidate_rrf_als_lb80_w0p1_20261029_v2.csv": "905971a8a9c47bcf4a88e14cd10d2514feaaea43900d6f513b2eecc4986f19f5",
+    "submissions/first_personal_original_20261029_v1.csv": "53cb8ae4b59b26ab6ee00b5e99ad91044876180e662732a755d3e99a297e64bc"
+  }
+}

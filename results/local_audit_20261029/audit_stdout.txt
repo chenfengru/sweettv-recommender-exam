@@ -1,0 +1,6 @@
+{
+  "status": "profiled_review_required",
+  "files_profiled": 5,
+  "missing_inputs": [],
+  "report": "results/local_audit_20261029/data_audit.json"
+}

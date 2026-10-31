@@ -1,0 +1,8 @@
+{"prepared": true, "cohort": 4625, "candidates": 6384, "training_pairs_changed_causal": 0}
+{"method": "popularity", "MAP@5": 0.23440720720720787, "fit_seconds": 0.10699791595106944, "inference_seconds": 0.0024972499813884497}
+{"method": "personal", "MAP@5": 0.31748972972972866, "fit_seconds": 0.10464112501358613, "inference_seconds": 0.01817070902325213}
+{"method": "cbf", "MAP@5": 0.024851051051051083, "fit_seconds": 0.5185696250409819, "inference_seconds": 0.9840524999890476}
+{"method": "als_f32_r0.01", "MAP@5": 0.08550216216216239, "fit_seconds": 1.9385826250072569, "inference_seconds": 0.5263353749760427}
+{"method": "als_f32_r0.1", "MAP@5": 0.08723681681681694, "fit_seconds": 1.961073916987516, "inference_seconds": 0.5367417500237934}
+{"method": "als_f64_r0.01", "MAP@5": 0.06829477477477489, "fit_seconds": 3.3123962079989724, "inference_seconds": 0.6401161249959841}
+{"method": "als_f64_r0.1", "MAP@5": 0.06969933933933932, "fit_seconds": 3.324838250002358, "inference_seconds": 0.6450709159835242}

@@ -1,0 +1,16 @@
+{
+  "tests": 100,
+  "all_passed": true,
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python -m unittest discover -s tests -v",
+  "all_frozen_source_hashes_preserved": true,
+  "recent_model_preservation_sha256": {
+    "artifacts/lightfm_expansion_20261030_v15/frozen_model.txt": "dc8c69ed77767ce04032c20bc6abb3d9422e367a79cdbde16db056848cc5ccfb",
+    "artifacts/long_horizon_20261030_v16/frozen_model.txt": "943ea8db791b0499d2a8873f5876812d73b50b9d6bc6bee2cd67da4ae283469e",
+    "artifacts/lambdarank_20261030_v17/frozen_model.txt": "94a3c9c35fcca7a2e6230e9687c01ee96c3f6c4ea31ab9217ff946ada6cb9762"
+  },
+  "student_verification": "pending",
+  "native_records": "unmodified",
+  "kaggle_actions": "none",
+  "new_csv_count": 1,
+  "both_submission_validators": "valid"
+}

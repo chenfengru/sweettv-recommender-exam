@@ -1,0 +1,37 @@
+{
+  "name": "personal_original",
+  "map_at_5": 0.3174897297297298,
+  "evaluation_users": 4625,
+  "candidate_count": 6384,
+  "history_slices": {
+    "0": {
+      "users": 108,
+      "map_at_5": 0.16305041152263375
+    },
+    "1\u20135": {
+      "users": 462,
+      "map_at_5": 0.17112914862914863
+    },
+    "21+": {
+      "users": 1968,
+      "map_at_5": 0.39380956413730805
+    },
+    "6\u201320": {
+      "users": 2087,
+      "map_at_5": 0.28591359207794287
+    }
+  },
+  "fallback": {
+    "complete_users": 112,
+    "partial_completion_users": 376,
+    "completion_slots": 1446
+  },
+  "direct_ranking_limit": 50,
+  "all_lists_valid": true,
+  "evaluation_and_completion_seconds": 0.009650500025600195,
+  "result_kind": "existing submitted-baseline configuration replay",
+  "external_private_score": 0.38937,
+  "external_public_score": 0.39131,
+  "external_scores_provenance": "user-confirmed screenshot values",
+  "prediction_sha256": "20f4b9f6f696a4f8300d2299771725eea5abd69a576dae9adbba6888e7a9947e"
+}

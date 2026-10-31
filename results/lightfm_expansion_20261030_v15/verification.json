@@ -1,0 +1,16 @@
+{
+  "tests": 87,
+  "passed": true,
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python -m unittest discover -s tests -v",
+  "versions": {
+    "lightfm": "1.17",
+    "lightgbm": "4.6.0",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2"
+  },
+  "student_verification": "pending",
+  "native_session_records": "unmodified",
+  "kaggle_action": "none",
+  "new_csv_generated": false
+}

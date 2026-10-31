@@ -1,0 +1,172 @@
+[
+  {
+    "feature": "n30",
+    "gain": 338895.7788310051,
+    "splits": 304
+  },
+  {
+    "feature": "n50_last28days",
+    "gain": 194896.2471408844,
+    "splits": 131
+  },
+  {
+    "feature": "n50",
+    "gain": 90396.37584614754,
+    "splits": 48
+  },
+  {
+    "feature": "global_viewers80",
+    "gain": 35490.27459907532,
+    "splits": 266
+  },
+  {
+    "feature": "n80",
+    "gain": 32639.027657985687,
+    "splits": 118
+  },
+  {
+    "feature": "future_airings_per_day",
+    "gain": 32161.186190605164,
+    "splits": 317
+  },
+  {
+    "feature": "personal_n50_rank",
+    "gain": 25473.11955356598,
+    "splits": 117
+  },
+  {
+    "feature": "global_airings80",
+    "gain": 24347.83851337433,
+    "splits": 190
+  },
+  {
+    "feature": "item_item_rank",
+    "gain": 20924.594487428665,
+    "splits": 359
+  },
+  {
+    "feature": "log_airings_rate_change",
+    "gain": 14904.499819517136,
+    "splits": 334
+  },
+  {
+    "feature": "item_item_score",
+    "gain": 11072.61147069931,
+    "splits": 307
+  },
+  {
+    "feature": "log_broadcast_rate_change",
+    "gain": 9967.961557865143,
+    "splits": 286
+  },
+  {
+    "feature": "days_since_last_n50_view",
+    "gain": 8391.158300638199,
+    "splits": 170
+  },
+  {
+    "feature": "n50_last7days",
+    "gain": 5948.50147151947,
+    "splits": 59
+  },
+  {
+    "feature": "past_broadcast_seconds_per_day",
+    "gain": 4683.686284780502,
+    "splits": 143
+  },
+  {
+    "feature": "user_airings80",
+    "gain": 4274.548887252808,
+    "splits": 184
+  },
+  {
+    "feature": "user_airings30",
+    "gain": 3299.1098217964172,
+    "splits": 134
+  },
+  {
+    "feature": "future_broadcast_seconds_per_day",
+    "gain": 3155.8632221221924,
+    "splits": 148
+  },
+  {
+    "feature": "user_history30",
+    "gain": 2767.4362285137177,
+    "splits": 173
+  },
+  {
+    "feature": "past_airings_per_day",
+    "gain": 2707.722625732422,
+    "splits": 148
+  },
+  {
+    "feature": "user_airings50",
+    "gain": 2663.278598546982,
+    "splits": 95
+  },
+  {
+    "feature": "user_history80",
+    "gain": 1887.7987077236176,
+    "splits": 96
+  },
+  {
+    "feature": "user_history50",
+    "gain": 1655.8387432098389,
+    "splits": 72
+  },
+  {
+    "feature": "source_global5",
+    "gain": 193.718994140625,
+    "splits": 1
+  },
+  {
+    "feature": "item_item_rank_missing",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "item_item_score_missing",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "last_n50_view_missing",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "log1p_n30",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "log1p_n50",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "log1p_n80",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "past_airings_zero",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "personal_rank_missing",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "source_personal200",
+    "gain": 0.0,
+    "splits": 0
+  },
+  {
+    "feature": "source_unseen50",
+    "gain": 0.0,
+    "splits": 0
+  }
+]

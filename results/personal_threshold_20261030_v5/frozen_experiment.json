@@ -1,0 +1,13 @@
+{
+  "frozen_at_utc": "2026-10-30T07:16:47.268768+00:00",
+  "definition_file": "docs/personal_threshold_protocol.md",
+  "definition_sha256": "b104ef9b0d493a44b613de2081f7d09ea4af5e9e6e847c85be51bdc0cdf3f3b7",
+  "new_personal_thresholds": [
+    0.5,
+    0.65
+  ],
+  "reference_personal_threshold": 0.8,
+  "global_truth_slice_threshold": 0.8,
+  "selection": "strictly positive MAP delta on both existing splits; choose higher main MAP, exact qualifying-new tie chooses 0.65",
+  "workflow": "manual review only; no Kaggle workflow or upload"
+}

@@ -1,0 +1,9 @@
+{
+  "user_time_union_seconds_across_all_channels": 7872586950.0,
+  "rows_overlapping_earlier_same_user_interval_any_channel": 694730,
+  "elapsed_seconds": 2.8828865829855204,
+  "source": "unfiltered positive-length original view intervals, stored in ignored artifacts/local_audit_20261029/matching.sqlite",
+  "query": "SELECT u,s,e FROM views ORDER BY u,s,e",
+  "method": "Stream sorted rows; per user merge intervals with next_start <= running_end, summing disjoint block lengths. Count next_start < running_end as a row overlapping an earlier interval. Channel is deliberately ignored for this user-time denominator.",
+  "result_type": "exact full-data aggregate; no sampling"
+}

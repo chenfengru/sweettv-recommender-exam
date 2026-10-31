@@ -1,0 +1,14 @@
+{
+  "frozen_at_utc": "2026-10-30T09:16:54.361986+00:00",
+  "definition_sha256": "f1b3682ea9a23e0666c1e98cd0a077718719076aa90dac9499196836d4451dd2",
+  "weights": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "rank_constant": 60,
+  "source_limit": 50,
+  "bootstrap_resamples": 2000,
+  "seed": 42,
+  "selection": "max minimum absolute MAP improvement over both splits; positive both; tie smaller weight"
+}

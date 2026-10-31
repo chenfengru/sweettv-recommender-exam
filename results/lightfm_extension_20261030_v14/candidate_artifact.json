@@ -1,0 +1,29 @@
+{
+  "filename": "candidate_lightgbm_lightfm_warp_20261030_v14.csv",
+  "absolute_path": "/Users/chenfengru/sweettv-recommender-exam/submissions/candidate_lightgbm_lightfm_warp_20261030_v14.csv",
+  "sha256": "108b159c4e2c687b45f4c4d3e6e9519bace4abc73d5ba888f927a0efbb30ce90",
+  "validation": {
+    "status": "valid",
+    "users": 1260,
+    "k": 5,
+    "candidate_ids": 6649,
+    "distinct_recommended_ids": 117,
+    "template_sha256": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02",
+    "prediction_sha256": "108b159c4e2c687b45f4c4d3e6e9519bace4abc73d5ba888f927a0efbb30ce90"
+  },
+  "differences_from_submitted_v13": {
+    "users": 1260,
+    "users_changed": 811,
+    "users_identical": 449,
+    "recommendation_slots": 6300,
+    "rank_position_slots_changed": 1818,
+    "top5_items_in_common": 5811,
+    "top5_set_overlap_fraction": 0.9223809523809524,
+    "users_with_membership_change": 453,
+    "users_with_order_change_only": 358,
+    "new_item_slots_ignoring_order": 489
+  },
+  "classifier_sha256": "e4612c15829ffc34eb30d5423b438deb3d9a20ae66c79fd738bb0486ff01f094",
+  "inference_seconds": 0.4875283330329694,
+  "submission_description": "Historical LightGBM reranker with all34 v13 features/candidate rows unchanged, plus identity-only LightFM WARP score, full-available supported-item rank, user/item biases and unsupported-user/item indicators. Separate pre-cutoff binary N50 LightFM models:10 components, seed42,15 epochs,1 thread, fixedWARP settings. No latent coordinates, new candidates, blend, E2 or cold override. Same frozen extended classifier at validation and final weeks11\u201330 cutoff for weeks31\u201342 predictions. Validated for manual review; no Kaggle result."
+}

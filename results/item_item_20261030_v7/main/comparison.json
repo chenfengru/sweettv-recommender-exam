@@ -1,0 +1,761 @@
+{
+  "users": 4625,
+  "v5_map_at_5": 0.33471117117117116,
+  "item_item_map_at_5": 0.15545309309309308,
+  "delta_from_v5": -0.1792580780780781,
+  "users_improved": 752,
+  "users_worsened": 3107,
+  "users_unchanged": 766,
+  "retrieval": {
+    "20": {
+      "all_ranking_all_targets": {
+        "users": 4625,
+        "users_with_targets": 4625,
+        "users_without_targets": 0,
+        "hits": 10794,
+        "target_items": 21466,
+        "macro_conditional": 0.4908036036036036,
+        "macro_cohort_zero_for_no_targets": 0.4908036036036036,
+        "micro": 0.5028417031584832
+      },
+      "all_ranking_absent_targets": {
+        "users": 4625,
+        "users_with_targets": 3714,
+        "users_without_targets": 911,
+        "hits": 1651,
+        "target_items": 8968,
+        "macro_conditional": 0.19408095494525218,
+        "macro_cohort_zero_for_no_targets": 0.15585225225225224,
+        "micro": 0.18409901873327386
+      },
+      "unseen_ranking_absent_targets": {
+        "users": 4625,
+        "users_with_targets": 3714,
+        "users_without_targets": 911,
+        "hits": 2067,
+        "target_items": 8968,
+        "macro_conditional": 0.2550439777418776,
+        "macro_cohort_zero_for_no_targets": 0.20480720720720721,
+        "micro": 0.23048617305976807
+      },
+      "union_with_personal_history": {
+        "base_hits": 12498,
+        "union_hits": 14565,
+        "additional_relevant_items": 2067,
+        "target_items": 21466,
+        "base_macro_coverage": 0.5659783783783784,
+        "union_macro_coverage": 0.6627927927927928,
+        "macro_coverage_gain": 0.09681441441441441,
+        "base_micro_coverage": 0.5822230504052921,
+        "union_micro_coverage": 0.6785148607099599,
+        "micro_coverage_gain": 0.09629181030466785,
+        "union_personal_only_oracle_map_at_5": 0.6627927927927928,
+        "users_with_extra_relevant_items": 1592
+      }
+    },
+    "50": {
+      "all_ranking_all_targets": {
+        "users": 4625,
+        "users_with_targets": 4625,
+        "users_without_targets": 0,
+        "hits": 13865,
+        "target_items": 21466,
+        "macro_conditional": 0.6315531531531532,
+        "macro_cohort_zero_for_no_targets": 0.6315531531531532,
+        "micro": 0.6459051523339234
+      },
+      "all_ranking_absent_targets": {
+        "users": 4625,
+        "users_with_targets": 3714,
+        "users_without_targets": 911,
+        "hits": 2827,
+        "target_items": 8968,
+        "macro_conditional": 0.33641626278944536,
+        "macro_cohort_zero_for_no_targets": 0.2701513513513514,
+        "micro": 0.31523193577163244
+      },
+      "unseen_ranking_absent_targets": {
+        "users": 4625,
+        "users_with_targets": 3714,
+        "users_without_targets": 911,
+        "hits": 3435,
+        "target_items": 8968,
+        "macro_conditional": 0.41497038233710287,
+        "macro_cohort_zero_for_no_targets": 0.33323243243243245,
+        "micro": 0.383028545941124
+      },
+      "union_with_personal_history": {
+        "base_hits": 12498,
+        "union_hits": 15933,
+        "additional_relevant_items": 3435,
+        "target_items": 21466,
+        "base_macro_coverage": 0.5659783783783784,
+        "union_macro_coverage": 0.7247891891891892,
+        "macro_coverage_gain": 0.15881081081081083,
+        "base_micro_coverage": 0.5822230504052921,
+        "union_micro_coverage": 0.7422435479362713,
+        "micro_coverage_gain": 0.16002049753097922,
+        "union_personal_only_oracle_map_at_5": 0.7247891891891892,
+        "users_with_extra_relevant_items": 2277
+      }
+    }
+  },
+  "direct_supported_candidates": {
+    "min": 0,
+    "median": 177.0,
+    "p95": 347.8000000000002,
+    "max": 824,
+    "sum": 874312,
+    "mean": 189.04043243243243
+  },
+  "unseen_supported_candidates": {
+    "min": 0,
+    "median": 154.0,
+    "p95": 291.0,
+    "max": 461,
+    "sum": 750052,
+    "mean": 162.17340540540542
+  },
+  "fallback": {
+    "complete_users": 74,
+    "partial_users": 1,
+    "completion_slots": 373
+  },
+  "history_slices": {
+    "0": {
+      "users": 108,
+      "v5_map_at_5": 0.16289609053497942,
+      "item_item_map_at_5": 0.14733024691358024,
+      "delta_from_v5": -0.015565843621399178,
+      "users_improved": 9,
+      "users_worsened": 8,
+      "users_unchanged": 91,
+      "retrieval": {
+        "20": {
+          "all_ranking_all_targets": {
+            "users": 108,
+            "users_with_targets": 108,
+            "users_without_targets": 0,
+            "hits": 34,
+            "target_items": 382,
+            "macro_conditional": 0.08441358024691359,
+            "macro_cohort_zero_for_no_targets": 0.08441358024691359,
+            "micro": 0.08900523560209424
+          },
+          "all_ranking_absent_targets": {
+            "users": 108,
+            "users_with_targets": 107,
+            "users_without_targets": 1,
+            "hits": 32,
+            "target_items": 373,
+            "macro_conditional": 0.09299065420560747,
+            "macro_cohort_zero_for_no_targets": 0.09212962962962962,
+            "micro": 0.08579088471849866
+          },
+          "unseen_ranking_absent_targets": {
+            "users": 108,
+            "users_with_targets": 107,
+            "users_without_targets": 1,
+            "hits": 32,
+            "target_items": 373,
+            "macro_conditional": 0.09299065420560747,
+            "macro_cohort_zero_for_no_targets": 0.09212962962962962,
+            "micro": 0.08579088471849866
+          },
+          "union_with_personal_history": {
+            "base_hits": 9,
+            "union_hits": 41,
+            "additional_relevant_items": 32,
+            "target_items": 382,
+            "base_macro_coverage": 0.03287037037037037,
+            "union_macro_coverage": 0.11358024691358025,
+            "macro_coverage_gain": 0.08070987654320988,
+            "base_micro_coverage": 0.02356020942408377,
+            "union_micro_coverage": 0.10732984293193717,
+            "micro_coverage_gain": 0.08376963350785341,
+            "union_personal_only_oracle_map_at_5": 0.11358024691358025,
+            "users_with_extra_relevant_items": 17
+          }
+        },
+        "50": {
+          "all_ranking_all_targets": {
+            "users": 108,
+            "users_with_targets": 108,
+            "users_without_targets": 0,
+            "hits": 51,
+            "target_items": 382,
+            "macro_conditional": 0.13256172839506172,
+            "macro_cohort_zero_for_no_targets": 0.13256172839506172,
+            "micro": 0.13350785340314136
+          },
+          "all_ranking_absent_targets": {
+            "users": 108,
+            "users_with_targets": 107,
+            "users_without_targets": 1,
+            "hits": 45,
+            "target_items": 373,
+            "macro_conditional": 0.12866043613707165,
+            "macro_cohort_zero_for_no_targets": 0.12746913580246913,
+            "micro": 0.12064343163538874
+          },
+          "unseen_ranking_absent_targets": {
+            "users": 108,
+            "users_with_targets": 107,
+            "users_without_targets": 1,
+            "hits": 45,
+            "target_items": 373,
+            "macro_conditional": 0.12866043613707165,
+            "macro_cohort_zero_for_no_targets": 0.12746913580246913,
+            "micro": 0.12064343163538874
+          },
+          "union_with_personal_history": {
+            "base_hits": 9,
+            "union_hits": 54,
+            "additional_relevant_items": 45,
+            "target_items": 382,
+            "base_macro_coverage": 0.03287037037037037,
+            "union_macro_coverage": 0.1455246913580247,
+            "macro_coverage_gain": 0.11265432098765434,
+            "base_micro_coverage": 0.02356020942408377,
+            "union_micro_coverage": 0.14136125654450263,
+            "micro_coverage_gain": 0.11780104712041885,
+            "union_personal_only_oracle_map_at_5": 0.1455246913580247,
+            "users_with_extra_relevant_items": 19
+          }
+        }
+      },
+      "direct_supported_candidates": {
+        "min": 0,
+        "median": 0.0,
+        "p95": 73.54999999999994,
+        "max": 92,
+        "sum": 1953,
+        "mean": 18.083333333333332
+      },
+      "unseen_supported_candidates": {
+        "min": 0,
+        "median": 0.0,
+        "p95": 70.89999999999995,
+        "max": 89,
+        "sum": 1921,
+        "mean": 17.787037037037038
+      },
+      "fallback": {
+        "complete_users": 74,
+        "partial_users": 1,
+        "completion_slots": 373
+      }
+    },
+    "1\u20135": {
+      "users": 462,
+      "v5_map_at_5": 0.19396464646464645,
+      "item_item_map_at_5": 0.06702801827801827,
+      "delta_from_v5": -0.12693662818662818,
+      "users_improved": 69,
+      "users_worsened": 222,
+      "users_unchanged": 171,
+      "retrieval": {
+        "20": {
+          "all_ranking_all_targets": {
+            "users": 462,
+            "users_with_targets": 462,
+            "users_without_targets": 0,
+            "hits": 554,
+            "target_items": 1749,
+            "macro_conditional": 0.30782828282828284,
+            "macro_cohort_zero_for_no_targets": 0.30782828282828284,
+            "micro": 0.31675242995997716
+          },
+          "all_ranking_absent_targets": {
+            "users": 462,
+            "users_with_targets": 434,
+            "users_without_targets": 28,
+            "hits": 314,
+            "target_items": 1347,
+            "macro_conditional": 0.23886328725038403,
+            "macro_cohort_zero_for_no_targets": 0.22438672438672438,
+            "micro": 0.23311061618411286
+          },
+          "unseen_ranking_absent_targets": {
+            "users": 462,
+            "users_with_targets": 434,
+            "users_without_targets": 28,
+            "hits": 326,
+            "target_items": 1347,
+            "macro_conditional": 0.24900153609831027,
+            "macro_cohort_zero_for_no_targets": 0.2339105339105339,
+            "micro": 0.24201930215293244
+          },
+          "union_with_personal_history": {
+            "base_hits": 402,
+            "union_hits": 728,
+            "additional_relevant_items": 326,
+            "target_items": 1749,
+            "base_macro_coverage": 0.24112554112554113,
+            "union_macro_coverage": 0.41713564213564214,
+            "macro_coverage_gain": 0.176010101010101,
+            "base_micro_coverage": 0.22984562607204118,
+            "union_micro_coverage": 0.41623785020011433,
+            "micro_coverage_gain": 0.1863922241280732,
+            "union_personal_only_oracle_map_at_5": 0.41713564213564214,
+            "users_with_extra_relevant_items": 218
+          }
+        },
+        "50": {
+          "all_ranking_all_targets": {
+            "users": 462,
+            "users_with_targets": 462,
+            "users_without_targets": 0,
+            "hits": 825,
+            "target_items": 1749,
+            "macro_conditional": 0.4615800865800866,
+            "macro_cohort_zero_for_no_targets": 0.4615800865800866,
+            "micro": 0.4716981132075472
+          },
+          "all_ranking_absent_targets": {
+            "users": 462,
+            "users_with_targets": 434,
+            "users_without_targets": 28,
+            "hits": 473,
+            "target_items": 1347,
+            "macro_conditional": 0.3479646697388633,
+            "macro_cohort_zero_for_no_targets": 0.32687590187590193,
+            "micro": 0.35115070527097253
+          },
+          "unseen_ranking_absent_targets": {
+            "users": 462,
+            "users_with_targets": 434,
+            "users_without_targets": 28,
+            "hits": 491,
+            "target_items": 1347,
+            "macro_conditional": 0.35956221198156685,
+            "macro_cohort_zero_for_no_targets": 0.3377705627705628,
+            "micro": 0.3645137342242019
+          },
+          "union_with_personal_history": {
+            "base_hits": 402,
+            "union_hits": 893,
+            "additional_relevant_items": 491,
+            "target_items": 1749,
+            "base_macro_coverage": 0.24112554112554113,
+            "union_macro_coverage": 0.4998917748917749,
+            "macro_coverage_gain": 0.25876623376623376,
+            "base_micro_coverage": 0.22984562607204118,
+            "union_micro_coverage": 0.5105774728416238,
+            "micro_coverage_gain": 0.2807318467695826,
+            "union_personal_only_oracle_map_at_5": 0.4998917748917749,
+            "users_with_extra_relevant_items": 271
+          }
+        }
+      },
+      "direct_supported_candidates": {
+        "min": 45,
+        "median": 90.0,
+        "p95": 170.95,
+        "max": 239,
+        "sum": 46076,
+        "mean": 99.73160173160173
+      },
+      "unseen_supported_candidates": {
+        "min": 45,
+        "median": 86.5,
+        "p95": 162.89999999999998,
+        "max": 227,
+        "sum": 43789,
+        "mean": 94.78138528138528
+      },
+      "fallback": {
+        "complete_users": 0,
+        "partial_users": 0,
+        "completion_slots": 0
+      }
+    },
+    "6\u201320": {
+      "users": 2087,
+      "v5_map_at_5": 0.3078921098865996,
+      "item_item_map_at_5": 0.1219962199861577,
+      "delta_from_v5": -0.1858958899004419,
+      "users_improved": 355,
+      "users_worsened": 1404,
+      "users_unchanged": 328,
+      "retrieval": {
+        "20": {
+          "all_ranking_all_targets": {
+            "users": 2087,
+            "users_with_targets": 2087,
+            "users_without_targets": 0,
+            "hits": 4668,
+            "target_items": 9586,
+            "macro_conditional": 0.48050630889634244,
+            "macro_cohort_zero_for_no_targets": 0.48050630889634244,
+            "micro": 0.48696015021906947
+          },
+          "all_ranking_absent_targets": {
+            "users": 2087,
+            "users_with_targets": 1826,
+            "users_without_targets": 261,
+            "hits": 906,
+            "target_items": 4603,
+            "macro_conditional": 0.20997626871120847,
+            "macro_cohort_zero_for_no_targets": 0.18371665868072193,
+            "micro": 0.19682815555072777
+          },
+          "unseen_ranking_absent_targets": {
+            "users": 2087,
+            "users_with_targets": 1826,
+            "users_without_targets": 261,
+            "hits": 1090,
+            "target_items": 4603,
+            "macro_conditional": 0.2570281124497992,
+            "macro_cohort_zero_for_no_targets": 0.2248842038013097,
+            "micro": 0.23680208559635021
+          },
+          "union_with_personal_history": {
+            "base_hits": 4983,
+            "union_hits": 6073,
+            "additional_relevant_items": 1090,
+            "target_items": 9586,
+            "base_macro_coverage": 0.5132726401533302,
+            "union_macro_coverage": 0.6248043443539371,
+            "macro_coverage_gain": 0.11153170420060687,
+            "base_micro_coverage": 0.5198205716670143,
+            "union_micro_coverage": 0.6335280617567286,
+            "micro_coverage_gain": 0.11370749008971416,
+            "union_personal_only_oracle_map_at_5": 0.6248043443539371,
+            "users_with_extra_relevant_items": 842
+          }
+        },
+        "50": {
+          "all_ranking_all_targets": {
+            "users": 2087,
+            "users_with_targets": 2087,
+            "users_without_targets": 0,
+            "hits": 5947,
+            "target_items": 9586,
+            "macro_conditional": 0.6104136719373903,
+            "macro_cohort_zero_for_no_targets": 0.6104136719373903,
+            "micro": 0.6203838931775506
+          },
+          "all_ranking_absent_targets": {
+            "users": 2087,
+            "users_with_targets": 1826,
+            "users_without_targets": 261,
+            "hits": 1522,
+            "target_items": 4603,
+            "macro_conditional": 0.35009127418765973,
+            "macro_cohort_zero_for_no_targets": 0.3063088963424373,
+            "micro": 0.33065392135563765
+          },
+          "unseen_ranking_absent_targets": {
+            "users": 2087,
+            "users_with_targets": 1826,
+            "users_without_targets": 261,
+            "hits": 1801,
+            "target_items": 4603,
+            "macro_conditional": 0.4145947426067908,
+            "macro_cohort_zero_for_no_targets": 0.3627455678006708,
+            "micro": 0.3912665652835108
+          },
+          "union_with_personal_history": {
+            "base_hits": 4983,
+            "union_hits": 6784,
+            "additional_relevant_items": 1801,
+            "target_items": 9586,
+            "base_macro_coverage": 0.5132726401533302,
+            "union_macro_coverage": 0.6959990416866315,
+            "macro_coverage_gain": 0.18272640153330133,
+            "base_micro_coverage": 0.5198205716670143,
+            "union_micro_coverage": 0.7076987273106614,
+            "micro_coverage_gain": 0.187878155643647,
+            "union_personal_only_oracle_map_at_5": 0.6959990416866315,
+            "users_with_extra_relevant_items": 1163
+          }
+        }
+      },
+      "direct_supported_candidates": {
+        "min": 59,
+        "median": 151.0,
+        "p95": 250.0,
+        "max": 381,
+        "sum": 326509,
+        "mean": 156.44896981312888
+      },
+      "unseen_supported_candidates": {
+        "min": 48,
+        "median": 135.0,
+        "p95": 227.0,
+        "max": 362,
+        "sum": 291017,
+        "mean": 139.44274077623382
+      },
+      "fallback": {
+        "complete_users": 0,
+        "partial_users": 0,
+        "completion_slots": 0
+      }
+    },
+    "21+": {
+      "users": 1968,
+      "v5_map_at_5": 0.4056218947606143,
+      "item_item_map_at_5": 0.21213711043360434,
+      "delta_from_v5": -0.19348478432700994,
+      "users_improved": 319,
+      "users_worsened": 1473,
+      "users_unchanged": 176,
+      "retrieval": {
+        "20": {
+          "all_ranking_all_targets": {
+            "users": 1968,
+            "users_with_targets": 1968,
+            "users_without_targets": 0,
+            "hits": 5538,
+            "target_items": 9749,
+            "macro_conditional": 0.5669800135501355,
+            "macro_cohort_zero_for_no_targets": 0.5669800135501355,
+            "micro": 0.5680582623858857
+          },
+          "all_ranking_absent_targets": {
+            "users": 1968,
+            "users_with_targets": 1347,
+            "users_without_targets": 621,
+            "hits": 399,
+            "target_items": 2645,
+            "macro_conditional": 0.16613462014352884,
+            "macro_cohort_zero_for_no_targets": 0.1137110433604336,
+            "micro": 0.1508506616257089
+          },
+          "unseen_ranking_absent_targets": {
+            "users": 1968,
+            "users_with_targets": 1347,
+            "users_without_targets": 621,
+            "hits": 619,
+            "target_items": 2645,
+            "macro_conditional": 0.2671739668398911,
+            "macro_cohort_zero_for_no_targets": 0.18286754742547426,
+            "micro": 0.2340264650283554
+          },
+          "union_with_personal_history": {
+            "base_hits": 7104,
+            "union_hits": 7723,
+            "additional_relevant_items": 619,
+            "target_items": 9749,
+            "base_macro_coverage": 0.7273882113821138,
+            "union_macro_coverage": 0.7908875338753387,
+            "macro_coverage_gain": 0.06349932249322487,
+            "base_micro_coverage": 0.7286901220638015,
+            "union_micro_coverage": 0.7921838137244845,
+            "micro_coverage_gain": 0.06349369166068315,
+            "union_personal_only_oracle_map_at_5": 0.7908875338753387,
+            "users_with_extra_relevant_items": 515
+          }
+        },
+        "50": {
+          "all_ranking_all_targets": {
+            "users": 1968,
+            "users_with_targets": 1968,
+            "users_without_targets": 0,
+            "hits": 7042,
+            "target_items": 9749,
+            "macro_conditional": 0.7212567750677507,
+            "macro_cohort_zero_for_no_targets": 0.7212567750677507,
+            "micro": 0.7223304954354293
+          },
+          "all_ranking_absent_targets": {
+            "users": 1968,
+            "users_with_targets": 1347,
+            "users_without_targets": 621,
+            "hits": 787,
+            "target_items": 2645,
+            "macro_conditional": 0.33066072754268744,
+            "macro_cohort_zero_for_no_targets": 0.2263211382113821,
+            "micro": 0.2975425330812854
+          },
+          "unseen_ranking_absent_targets": {
+            "users": 1968,
+            "users_with_targets": 1347,
+            "users_without_targets": 621,
+            "hits": 1098,
+            "target_items": 2645,
+            "macro_conditional": 0.45607522890373675,
+            "macro_cohort_zero_for_no_targets": 0.31216124661246614,
+            "micro": 0.41512287334593573
+          },
+          "union_with_personal_history": {
+            "base_hits": 7104,
+            "union_hits": 8202,
+            "additional_relevant_items": 1098,
+            "target_items": 9749,
+            "base_macro_coverage": 0.7273882113821138,
+            "union_macro_coverage": 0.8399051490514905,
+            "macro_coverage_gain": 0.11251693766937665,
+            "base_micro_coverage": 0.7286901220638015,
+            "union_micro_coverage": 0.8413170581598113,
+            "micro_coverage_gain": 0.11262693609600985,
+            "union_personal_only_oracle_map_at_5": 0.8399051490514905,
+            "users_with_extra_relevant_items": 824
+          }
+        }
+      },
+      "direct_supported_candidates": {
+        "min": 81,
+        "median": 248.0,
+        "p95": 393.0,
+        "max": 824,
+        "sum": 499774,
+        "mean": 253.9502032520325
+      },
+      "unseen_supported_candidates": {
+        "min": 56,
+        "median": 208.0,
+        "p95": 322.0,
+        "max": 461,
+        "sum": 413325,
+        "mean": 210.02286585365854
+      },
+      "fallback": {
+        "complete_users": 0,
+        "partial_users": 0,
+        "completion_slots": 0
+      }
+    }
+  },
+  "split": "main",
+  "candidates": 6384,
+  "fit_window": [
+    1583712000.0,
+    1589760000.0
+  ],
+  "validation_window": [
+    1589760000.0,
+    1595808000.0
+  ],
+  "model": {
+    "training_users": 4784,
+    "training_items": 2682,
+    "binary_pairs": 179742,
+    "binary_dtype": "int64",
+    "binary_sparse_bytes": 2176044,
+    "transpose_sparse_bytes": 2167636,
+    "max_coview_block_sparse_bytes": 1996992,
+    "max_coview_block_nnz": 166373,
+    "eligible_directed_pairs_before_pruning": 739520,
+    "retained_directed_neighbours": 102575,
+    "items_without_neighbours": 292,
+    "top_k": 50,
+    "shrinkage": 20,
+    "minimum_coview": 3,
+    "block_items": 128
+  },
+  "items_in_pool_with_n50_support": 2004,
+  "items_in_pool_scored_for_any_cohort_user": 1363,
+  "items_in_pool_unseen_scored_for_any_cohort_user": 1363,
+  "count_extraction_seconds": 3.6438683749875054,
+  "fit_seconds": 0.5273913749842905,
+  "inference_seconds": 0.8320182909956202,
+  "evaluation_seconds_including_io": 5.945740875031333,
+  "peak_process_rss_after_fit_bytes": 534183936,
+  "frozen_anchor_sha256": "dd07a77f8885d50484250dee8172c10afcb4dbc52245ef44df943c81d0e05379",
+  "truth_file_sha256": "831ad286f8e910342549453567cd240bc2375f3bac49c39d31487d5b77a3d2a6",
+  "cache_manifest": {
+    "config": {
+      "version": "causal-interactions-v1",
+      "start": 1583712000.0,
+      "end": 1589760000.0,
+      "clock": "source-naive-wall-seconds",
+      "qualified_fraction": 0.8,
+      "max_session_seconds": 86400,
+      "inputs": {
+        "dataset11-30.csv": "8c9e5f058157041e5c33f13e64dc1625a5177cc6d5e434ba18cd8a69afafb53b",
+        "export_arh_11-20-final.csv": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c",
+        "export_arh_21-30-final.csv": "bdc9fa9850239aaed608bece9cdb200011e690300470fe85b980457d8c0cb2d4",
+        "export_arh_31-42-final.csv": "5cc01f4619bd94886d83744f00bbc15cc5fa23384d297244a7dc2207450c4088",
+        "submission.csv": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02"
+      },
+      "sources": {
+        "interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+        "intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+        "real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d"
+      }
+    },
+    "config_digest": "2a7aa317ec4c5156fe3282d1a5ea309961fd0b8275ee64dd110ab5d648a2bca9",
+    "output_sha256": "f41e7e28c112e679832a0fafd6de19973580ccc4ae1cc4e79ab9cc5270cbcfff",
+    "retained_clipped_source_rows": 3945050,
+    "ongoing_sessions_at_cutoff": 1007,
+    "user_airings": 1823678,
+    "user_item_pairs": 856858,
+    "qualified_user_airings": 289762,
+    "qualified_users": 4726,
+    "conflicted_airings_excluded": 0,
+    "elapsed_seconds": 33.35586554202018,
+    "environment": {
+      "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "code_base_commit": "b7f254a8878ed8f7b5ab01ac67e1197c0b099854",
+      "working_tree_dirty": true,
+      "source_sha256": {
+        "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+        "src/audit_anomalies.py": "e82a2ac4765b038a3c90a8253bdff47c93a583adb4c936de82140edd8fd4baad",
+        "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+        "src/compare_models.py": "102a17614a26e0e92cea3d8fd9cd9864d4e302b8a22c2948e31afa0ca99c145b",
+        "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+        "src/interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+        "src/intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+        "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+        "src/models.py": "583fee7c7f197646d229fb56214b2676beca78be298ab8a065d3ee868031c0e1",
+        "src/real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d",
+        "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6"
+      },
+      "peak_process_rss_bytes": 831471616,
+      "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+    }
+  },
+  "environment": {
+    "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "code_base_commit": "95131787128208d90f3ddde32e729edba36da50c",
+    "working_tree_dirty": true,
+    "source_sha256": {
+      "src/__init__.py": "5aa38d24e18a3cd9ea3e009b044364fb35816356c8fd61c13430907e2ec13e9a",
+      "src/audit_anomalies.py": "e82a2ac4765b038a3c90a8253bdff47c93a583adb4c936de82140edd8fd4baad",
+      "src/audit_data.py": "7a8944da1b0c393659fb26f3ec4e76b371d40625b20f96bfb746637e890c308e",
+      "src/check_cutoff_invariance.py": "d893cafac6130b399e88a56c099a3057f2d15950a9c79e4332ba80efc0a935ef",
+      "src/compare_models.py": "71a6770afa248e1cd4b312d65f4a252612cec38894ff11af78ed449b435b6aba",
+      "src/csv_io.py": "90f5c82f885ced48491391f673ca05d863b6455f3dbed8925fa193728f7b42a2",
+      "src/diagnose_models.py": "1c5d854b379c4deb4a995b4536683cac2db6b2d140f224c6ec8a43d6ba32430a",
+      "src/experiment_item_item.py": "b5fb6b3ab7eee17aa2f653930c185da7fcf21e0979856b11e8db12ffc8dc2f79",
+      "src/experiment_opportunity_week.py": "4703fd7657dc729e95851d60e8853e02a329608de027c784724f4a1c560148bd",
+      "src/experiment_personal_threshold.py": "8e922d7cf932304c4a8c4942e00c209e5e5012d2cf01e254486fe44b08e0a6d6",
+      "src/experiment_personal_ties.py": "a4c8a8e3c15c203a4eafa6f7a6ccb1e11c46cfdbb08e664ca93981e82594a331",
+      "src/experiment_viewing_strength.py": "99a9bab63a4ae005a440e7b21d20fb51b9121625c251640c41cca7d7b77e291f",
+      "src/first_submission.py": "2e389ad63a3b1a0c10c7449acce105656ee0d93deb98da521068c4d63d5978ed",
+      "src/improve_recommender.py": "59d03e6bd9e40a70a416ead5a5c80e351c5d20d47ab4fe6930c639850ee728e8",
+      "src/improvement_helpers.py": "029bfa5719707abc54f2af250f926109cd5e1f232ca902c0a723ecd79a229bbf",
+      "src/interactions.py": "36743faa010709c7575050c4381280cf407fcdbc10dac4cfaf2a234c3b1da76d",
+      "src/intervals.py": "94f8c7113e38af975bf43a0eaa881f6a2b017a1aa957eedc2668f67c514c563f",
+      "src/item_item.py": "8c53802851647e9f98e2b992055ee6d5a0d89f330fe9cc0770132250a31fa3e1",
+      "src/metrics.py": "9db1a384a256d52afe96dd6b273700af92deb344ba2b05820000a6568ea2a268",
+      "src/models.py": "2129e6e226a4f006417f9897b3b1c38c11d0656baf92c7cb9ed65ff59990e04b",
+      "src/opportunity_week.py": "6604fa2c88c6c447e93905c42341fc880f8e07a73148391420494d1459a60b9f",
+      "src/personal_threshold.py": "de77269ab02e7c69e91e6c0eccbc39524d6805b882c020353af0c210a9bfea8b",
+      "src/personal_ties.py": "3c199fda25804d8780e637b14675fa72756fbf6bbd1185604f7491a7b161ab2b",
+      "src/real_matching_audit.py": "38b6f7455d6e49d1536027a14eb61cd56e0c15483944bd614371f4d4146ea87d",
+      "src/report_comparison.py": "924240c485107343486ad15a98888bd24501a2849e905856ec7de5e7f38efbc1",
+      "src/report_improvement.py": "a0bfe5816ed0fa091bfb2c44e0b64a573027bbc400d92ba0bdf81c43259d1c17",
+      "src/report_opportunity_week.py": "482fad8db9a369c72f68ac5d64e962e1ca7ab633b0a8ad8195e89cdbb65eb6b5",
+      "src/report_personal_ties.py": "e49b3ba0bebd1f709ecfecd857636a0e4b6412515f1e1fb17716df02fe1fe963",
+      "src/report_viewing_strength.py": "3c2f8fbaddbaa3c1f172b34b2683ede2c16f56da7fb1d9060c080fb780d21664",
+      "src/validate_submission.py": "826e0149a2075fe488146d162c7a3223e3fdb13ec7212875271124ad919eb2d6",
+      "src/viewing_strength.py": "21adab3a432bcbe353c1ee5d3d77602d603d73e58b62e4d6babc781a454bbcc4"
+    },
+    "peak_process_rss_bytes": 588759040,
+    "memory_method": "resource.ru_maxrss process-lifetime high-water mark; unavailable on unsupported platforms"
+  },
+  "dependencies": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "implicit": "0.7.3",
+    "threadpoolctl": "3.7.0",
+    "tqdm": "4.70.1"
+  },
+  "uncertainty": "Descriptive results conditional on reused overlapping cohorts; not an independent test. No tuning or fusion performed."
+}

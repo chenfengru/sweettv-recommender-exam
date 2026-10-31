@@ -1,0 +1,17 @@
+{
+  "previous_csvs_unchanged": {
+    "submissions/candidate_personal_threshold_050_20261030_v5.csv": "593b1134b6625771abfe107e17d074499cedf6efb4ef9306e06289e9566876e5",
+    "submissions/candidate_personal_tie_popularity_20261030_v3.csv": "39aac2794395209b2299ccee2e2bb1b4b9afde22f3e06ccb5b04f3d706c9522f",
+    "submissions/candidate_rrf_als_lb80_w0p1_20261029_v2.csv": "905971a8a9c47bcf4a88e14cd10d2514feaaea43900d6f513b2eecc4986f19f5",
+    "submissions/first_personal_original_20261029_v1.csv": "53cb8ae4b59b26ab6ee00b5e99ad91044876180e662732a755d3e99a297e64bc"
+  },
+  "frozen_anchors_match_v5": {
+    "main": "dd07a77f8885d50484250dee8172c10afcb4dbc52245ef44df943c81d0e05379",
+    "auxiliary": "f33cf5f34f7a8882a131ad72bfa7009d0c438dd520761d0c32d817f960f363dc"
+  },
+  "fixed_cohorts_and_slices": {
+    "main": true,
+    "auxiliary": true
+  },
+  "no_new_prediction_csv": true
+}

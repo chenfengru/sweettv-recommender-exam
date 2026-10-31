@@ -1,11 +1,82 @@
-# Prediction artifacts
+# Preserved prediction artifacts
 
-No prediction CSV has been generated or submitted yet.
+| File | User-confirmed Private / Public Score | SHA-256 |
+| --- | --- | --- |
+| `first_personal_original_20261029_v1.csv` | 0.38937 / 0.39131 | `53cb8ae4b59b26ab6ee00b5e99ad91044876180e662732a755d3e99a297e64bc` |
+| `candidate_rrf_als_lb80_w0p1_20261029_v2.csv` | 0.38663 / 0.38852 | `905971a8a9c47bcf4a88e14cd10d2514feaaea43900d6f513b2eecc4986f19f5` |
+| `candidate_personal_tie_popularity_20261030_v3.csv` | **0.39697 / 0.40288** | `39aac2794395209b2299ccee2e2bb1b4b9afde22f3e06ccb5b04f3d706c9522f` |
+| `candidate_personal_threshold_050_20261030_v5.csv` | **0.40210 / 0.41789** | `593b1134b6625771abfe107e17d074499cedf6efb4ef9306e06289e9566876e5` |
+| `candidate_personal_fifth_e2_20261030_v9.csv` | **0.40261 / 0.41871** | `f1378b0d6fed62793e14ebb4c1b64cf8b2163485485c15c861aae7e67e556375` |
+| `candidate_adaptive_s40_e2_20261030_v11.csv` | 0.40257 / 0.41846 | `ccac509f8efeeddb9187f1ff2e5300db08f82ae0f9acd1f4ba7d8220f9dd26fb` |
+| `candidate_lightgbm_historical_fixed_20261030_v12.csv` | **0.42660 / 0.43394** | `e18c49cb106df5b5e50f3b7123a080443a2ab48c709e68e721ee9965d96b1457` |
+| `candidate_lightgbm_schedule_exposure_20261030_v13.csv` | **0.43400 / 0.43774** | `1fd147770b6be8ebcd64c89244af60cb8510440607358ec84c9adc6ffe7ec359` |
+| `candidate_lightgbm_lightfm_warp_20261030_v14.csv` | **0.43416 / 0.44157** | `108b159c4e2c687b45f4c4d3e6e9519bace4abc73d5ba888f927a0efbb30ce90` |
+| `candidate_lightgbm_channel_affinity_20261030_v18.csv` | **0.43798 / 0.44758** | `a62d1afb1a0c015cb70fd60c1e89bb670b731f872b3433dc438526a5ae703c45` |
 
-When a final model is selected, retain the exact CSV used for its reported Kaggle score here. Use a stable filename and record its SHA-256 hash, generating code commit, configuration, and returned submission reference.
+The user confirms these scores from Kaggle screenshots. They are not independently fetched in this experiment, and no unknown submission identifiers/timestamps are invented. The filenames retain their original candidate names after the user’s manual submissions. Every file remains byte-for-byte unchanged; v18 is now the best confirmed submitted model; older scores remain historical evidence.
 
-Use the original template's header and user order. Every user must receive five distinct valid nonzero programme IDs, serialized exactly as the template requires.
+## Latest C/D round: no new candidate
 
-Retain the returned private-score screenshot for the report. Do not substitute a written score for the required screenshot.
+[The frozen scheduled-opportunity / qualified-week experiment](../results/opportunity_week_20261030_v4/comparison_report.md) tested exactly C and D against v3 on the main and one overlapping auxiliary split. C has mixed signs; D is negative on both. Neither improves both windows, so v3 is retained and **no additional prediction CSV or final refit was generated**. The main split uses 4,625 users/6,384 candidates; the auxiliary has 4,589 users/5,742 candidates. Their raw MAP values describe different tasks and must not be treated as interchangeable.
 
-The course channel receives the report PDF and original AI-session export; the final CSV is delivered through this repository.
+V3 already preserves the original template header/order, five distinct nonzero available IDs for all 1,260 users, and the exact 6,649-ID final-window pool. Its recorded validation remains associated with the unchanged checksum. Caches, credentials, raw histories and original native session exports remain outside Git. Uploads are manual-only by the user; approval of results never authorizes an automated upload or submission workflow.
+
+## Personal-threshold round: manual-review candidate
+
+Selected T50 improves both frozen splits. `candidate_personal_threshold_050_20261030_v5.csv` has SHA-256 `593b1134b6625771abfe107e17d074499cedf6efb4ef9306e06289e9566876e5`; both validators pass for all 1,260 template users. It was initially prepared for manual review; the user now confirms manual-submission screenshot scores Private **0.40210**, Public **0.41789**. Submission ID and timestamp remain unknown. [Results, limitations and exact path](../results/personal_threshold_20261030_v5/comparison_report.md). The earlier C/D result above remains historical evidence and was not rerun.
+
+## Viewing-strength round: retain v5
+
+Exactly lambda 0.5 and 1.0 bonuses were tested against v5, with >=0.80 global anchors and validation truth unchanged. Both reduce MAP on both reused splits. No new CSV or combined-window refit was generated. [English diagnostics and experiment report](../results/viewing_strength_20261030_v6/comparison_report.md). Other-user retrieval is supported as a later investigation by the coverage diagnostics; no collaborative retrieval was implemented. Uploads remain manual-only.
+
+## Fixed item-item retrieval round: no submission artifact
+
+One fixed model per existing temporal split recovers useful unseen targets, but standalone MAP@5 is worse than submitted v5 on both splits. Retain v5; no fusion, combined refit or prediction CSV was generated. [English retrieval and standalone comparison](../results/item_item_20261030_v7/comparison_report.md). All previous CSVs/checksums remain unchanged.
+
+## Controlled v5/v7 RRF round: retain submitted v5
+
+All three predeclared weights (0.05, 0.10, 0.20) reduce MAP@5 on both frozen splits. No configuration satisfies the two-split eligibility rule; no final refit or prediction CSV was generated. [Full English report and paired uncertainty](../results/item_fusion_20261030_v8/comparison_report.md). Every previous artifact remains byte-identical; no Kaggle action was taken.
+
+## Fifth-position round: E2 manual-review candidate
+
+`candidate_personal_fifth_e2_20261030_v9.csv` has SHA-256 `f1378b0d6fed62793e14ebb4c1b64cf8b2163485485c15c861aae7e67e556375`. E2 improves both reused splits and wins the predeclared max-min rule. Both validators pass for all1,260 template users. Exactly58 fifth-position replacements; all first four positions remain identical to submitted v5. Initially prepared for manual review; the user now reports screenshot scores **Private 0.40261 / Public 0.41871**. Submission ID/time remain unknown. [English evidence and exact path](../results/fifth_replacement_20261030_v9/comparison_report.md); [manual submission description](../results/fifth_replacement_20261030_v9/submission_description.txt). V9 is now the best confirmed submitted artifact, and all prior CSVs/checksums are preserved.
+
+## Lower-threshold round: no new artifact
+
+Exactly 0.30 and 0.40 were evaluated against 0.50 with E2 disabled throughout. Neither improves both splits. Retain submitted v9 and preserve its exact checksum; no combined final fit or prediction CSV was generated. [English report, paired intervals and newly included viewing-duration summaries](../results/lower_threshold_20261030_v10/comparison_report.md). No E2 combination or Kaggle action was performed.
+
+## Exploratory adaptive round: S40+E2 candidate
+
+`candidate_adaptive_s40_e2_20261030_v11.csv` has SHA-256 `ccac509f8efeeddb9187f1ff2e5300db08f82ae0f9acd1f4ba7d8220f9dd26fb`. It qualifies under the frozen two-stage point-estimate rules, but gains against v9 are small and both conditional intervals include zero. The grouping was derived from v10 validation slices, so evidence is exploratory. Both validators pass for all 1,260 users; 27 users adapt, and 17 lists / 44 rank slots change versus submitted v9. Initially prepared for manual review; the user now reports screenshot scores **Private 0.40257 / Public 0.41846**. V9 remains stronger; submission ID/time are unknown. [English report and path](../results/adaptive_threshold_20261030_v11/comparison_report.md); [English submission description](../results/adaptive_threshold_20261030_v11/submission_description.txt). V9 remains the best confirmed submitted model.
+
+## Fixed supervised reranker: manual-review candidate
+
+`candidate_lightgbm_historical_fixed_20261030_v12.csv` has SHA-256 `e18c49cb106df5b5e50f3b7123a080443a2ab48c709e68e721ee9965d96b1457`. One fixed LightGBM classifier was trained on the two earlier historical origins only. It exceeds v9 on both local splits and is applied unchanged to final features/retrieval. Both validators pass for all 1,260 users. Compared with submitted v9: 1,184 changed lists, 3,685 changed rank slots. Initially prepared for manual review; the user now reports screenshot scores **Private 0.42660 / Public 0.43394**. Submission ID/time remain unknown. [English report, absolute path, conditional intervals and limitations](../results/lightgbm_reranker_20261030_v12/comparison_report.md); [accurate English submission description](../results/lightgbm_reranker_20261030_v12/submission_description.txt). V12 is now the best confirmed submitted model.
+
+## Schedule-exposure extension: manual-review candidate
+
+`candidate_lightgbm_schedule_exposure_20261030_v13.csv` has SHA-256 `1fd147770b6be8ebcd64c89244af60cb8510440607358ec84c9adc6ffe7ec359`. One fixed extension adds exactly seven schedule-only exposure features while preserving all original rows/labels/27 features/settings. It improves both local splits, and both validators pass for all 1,260 users. Versus submitted v12: 1,017 changed lists and 2,542 changed rank slots. Initially prepared for manual review; the user now reports screenshot scores **Private 0.43400 / Public 0.43774**. Submission ID/time remain unknown. [English report, exact path and limitations](../results/schedule_reranker_20261030_v13/comparison_report.md); [accurate English submission description](../results/schedule_reranker_20261030_v13/submission_description.txt). V13 is now the confirmed incumbent.
+
+## Identity LightFM WARP extension: manual-review candidate
+
+`candidate_lightgbm_lightfm_warp_20261030_v14.csv` has SHA-256 `108b159c4e2c687b45f4c4d3e6e9519bace4abc73d5ba888f927a0efbb30ce90`. Six support-aware scalar features extend unchanged v13 inputs and candidates. Both point estimates exceed v13, so the fixed rule qualifies it, but the auxiliary interval includes zero. Both validators pass for all 1,260 users; 811 lists and 1,818 rank slots differ from submitted v13. The user now reports screenshot scores **Private 0.43416 / Public 0.44157**; submission ID and timestamp are unknown. [English report, exact path and limitations](../results/lightfm_extension_20261030_v14/comparison_report.md); [accurate English submission description](../results/lightfm_extension_20261030_v14/submission_description.txt). V14 is the confirmed submitted incumbent.
+
+## Fixed LightFM unseen candidate expansion: retain v14
+
+V15 expands each supported user’s unchanged v14 candidate union with the first 50 available N50-unseen LightFM programmes, deduplicating only after truncation. One new fixed classifier fails the both-split rule: main −0.001858138138, auxiliary +0.000130384252. No new CSV, final refit or submission description was generated. The frozen-classifier diagnostic is separate and ineligible. [English report](../results/lightfm_expansion_20261030_v15/comparison_report.md). All previous CSVs/checksums remain unchanged. Uploads remain manual-only; student verification is pending.
+
+## Longer-horizon historical training: retain v14
+
+V16 trains one fixed 300-tree classifier on [Apr6,May18) and [Apr20,May18) targets, with origin-specific availability/schedule reconstruction and the original v14 candidate rule. Main/auxiliary/final tables remain exactly v14. MAP differences are −0.000036096096 / −0.003204462362; the both-split requirement fails. No new CSV or final prediction run was generated. [English report](../results/long_horizon_20261030_v16/comparison_report.md). All previous CSVs/checksums are unchanged; uploads remain manual-only and student verification is pending.
+
+## Fixed LambdaRank round: retain v14
+
+V17 fits exactly one LambdaRank model on the unchanged original v14 two-week historical tables, all40 features and original binary labels, with separate origin/user queries and all negatives/uniform queries retained. Main/auxiliary MAP changes are −0.002436336336 / −0.000192610348; both-split selection fails. No new final CSV exists. [English report](../results/lambdarank_20261030_v17/comparison_report.md). Old artifacts/checksums remain unchanged; all uploads are manual-only and student verification is pending.
+
+## User-channel affinity extension: manual-review candidate
+
+`candidate_lightgbm_channel_affinity_20261030_v18.csv` has SHA-256 `a62d1afb1a0c015cb70fd60c1e89bb670b731f872b3433dc438526a5ae703c45`. Twelve fixed affinity features preserve all original v14 rows/labels/40 features and improve MAP@5 on both reused splits. Both validators pass for all 1,260 template users with the original header/order and five distinct nonzero available IDs. Versus submitted v14: 1,053 changed lists, 2,707 changed rank-position slots, 667 membership changes. [English report, exact path and limitations](../results/channel_affinity_20261030_v18/comparison_report.md); [English submission description](../results/channel_affinity_20261030_v18/submission_description.txt). The user now reports screenshot scores **Private 0.43798 / Public 0.44758**. Submission ID/time remain unknown; v18 is now the confirmed incumbent. All previous files/checksums and native records remain unchanged; student verification is pending. Upload is solely the user’s manual action.
+
+## Viewing-time affinity extension: retain submitted v18
+
+V19 appends exactly six hour-of-day/hour-of-week profile features to unchanged v18 inputs, using cleaned cross-channel-unioned user intervals and normalized clipped forecast schedules. Main MAP changes by −0.000989309309; auxiliary by +0.002195043704. It fails the both-split rule, so no new final CSV exists. [English report](../results/time_affinity_20261030_v19/comparison_report.md). Independent non-BLAS calculations reproduce all fitted/evaluated feature values bit-for-bit after platform numerical warnings. All 105 tests pass; prior artifacts/checksums/native records remain unchanged. Uploads remain manual-only and student verification is pending.

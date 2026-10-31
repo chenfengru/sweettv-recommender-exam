@@ -1,0 +1,13 @@
+{
+  "frozen_at_utc": "2026-10-29T21:27:55.282116+00:00",
+  "definition_file": "docs/opportunity_week_protocol.md",
+  "definition_sha256": "c338240bc49ee287bc2e96138ab954d246eda5e14b5fc3ec7dd57467493d77fc",
+  "variants": [
+    "v3",
+    "C_airing_count",
+    "D_distinct_weeks"
+  ],
+  "search_budget": "two new variants on exactly the main and predeclared auxiliary split; no combination or tuning",
+  "selection": "strict positive within-split MAP delta on both splits; choose highest main MAP, exact score tie retains v3",
+  "kaggle_workflow": "manual only; no browser/upload/submission API permitted"
+}

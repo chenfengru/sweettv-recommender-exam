@@ -1,0 +1,73 @@
+{
+  "original_v12_artifacts_unchanged": {
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200406/features.npy": "5d6e32b9c4311abbe36485629843b093a22e601f687cdc5e09b55ed2531dee02",
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200406/row_index.json": "1b688d474ba3842961c26b5521cd54a0d174146edbb442404ec0aa5b591c18b1",
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200406/labels.npy": "b8aa87da7c7dd898c16d41a26d8d2db2f9dc35cb86cbc378acb8e22f500b4a26",
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200420/features.npy": "1bc28ea671d23a6f0d5fd0d67a129ed03354ee9b784e0892fa1daa9ec42fe9a1",
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200420/row_index.json": "8cfd91c441ed4287e7a37836080ecfc5a0c57b00eafa7052b0ff80468ca13cc4",
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200420/labels.npy": "2747e5780119a77aa8947871f155d4876f0420ebfa28317e434f8f1cefa49840",
+    "artifacts/lightgbm_reranker_20261030_v12/main/features.npy": "707574795ad6dfa62a6fda89b49ef736b5e06eb1db820a4211a9786a439e7448",
+    "artifacts/lightgbm_reranker_20261030_v12/main/row_index.json": "3970749dd964154ec269fb8cb6c6bdf202eb87fea42a4a892a55da7e0abb00a8",
+    "artifacts/lightgbm_reranker_20261030_v12/main/predictions.json": "90782f5f0806ffd1a775f577f98bd4a5be80869367d6984dd22ba3089fd7c747",
+    "artifacts/lightgbm_reranker_20261030_v12/auxiliary/features.npy": "e2c5b68d1a9eb67fa4df9cdd6a243f7e90c0223a02397dbea86af2c4b52da675",
+    "artifacts/lightgbm_reranker_20261030_v12/auxiliary/row_index.json": "5c069ab78a324f835d903caad4ee386e7f73d519e78b02f9bbdf6d2dfeb00e2c",
+    "artifacts/lightgbm_reranker_20261030_v12/auxiliary/predictions.json": "9e340dcd9f2b123fcb741ebeaf28c8ecefc067468654a4aca56040a79055bad4",
+    "artifacts/lightgbm_reranker_20261030_v12/final/features.npy": "b558bdde741ce292160a0607e53578adeafc3cb201937fd971fc79d7815a92d1",
+    "artifacts/lightgbm_reranker_20261030_v12/final/row_index.json": "495e698bd6cd282789fa12242a3e109d69aa42853cd04c486067f59428259313",
+    "artifacts/lightgbm_reranker_20261030_v12/final/predictions.json": "bf2a84a748caa1115ce24bf17aa18ba02972b3f05d836b201512d41c5594e386",
+    "artifacts/lightgbm_reranker_20261030_v12/frozen_model.txt": "f9e3774164b611ee806c9c170047f955a0d4e505ddadccffd7e4f85cf6abc30b"
+  },
+  "original_27_values_and_candidates_equal": {
+    "origin_20200406": {
+      "rows": 291619,
+      "columns": 34,
+      "finite": true,
+      "original27_exactly_equal": true,
+      "candidate_rows_unchanged": true
+    },
+    "origin_20200420": {
+      "rows": 313316,
+      "columns": 34,
+      "finite": true,
+      "original27_exactly_equal": true,
+      "candidate_rows_unchanged": true
+    },
+    "main": {
+      "rows": 380403,
+      "columns": 34,
+      "finite": true,
+      "original27_exactly_equal": true,
+      "candidate_rows_unchanged": true,
+      "all_predictions_within_original_candidates": true
+    },
+    "auxiliary": {
+      "rows": 397757,
+      "columns": 34,
+      "finite": true,
+      "original27_exactly_equal": true,
+      "candidate_rows_unchanged": true,
+      "all_predictions_within_original_candidates": true
+    },
+    "final": {
+      "rows": 152442,
+      "columns": 34,
+      "finite": true,
+      "original27_exactly_equal": true,
+      "candidate_rows_unchanged": true,
+      "all_predictions_within_original_candidates": true
+    }
+  },
+  "previous_csv_git_bytes_preserved": {
+    "submissions/candidate_adaptive_s40_e2_20261030_v11.csv": "ccac509f8efeeddb9187f1ff2e5300db08f82ae0f9acd1f4ba7d8220f9dd26fb",
+    "submissions/candidate_lightgbm_historical_fixed_20261030_v12.csv": "e18c49cb106df5b5e50f3b7123a080443a2ab48c709e68e721ee9965d96b1457",
+    "submissions/candidate_personal_fifth_e2_20261030_v9.csv": "f1378b0d6fed62793e14ebb4c1b64cf8b2163485485c15c861aae7e67e556375",
+    "submissions/candidate_personal_threshold_050_20261030_v5.csv": "593b1134b6625771abfe107e17d074499cedf6efb4ef9306e06289e9566876e5",
+    "submissions/candidate_personal_tie_popularity_20261030_v3.csv": "39aac2794395209b2299ccee2e2bb1b4b9afde22f3e06ccb5b04f3d706c9522f",
+    "submissions/candidate_rrf_als_lb80_w0p1_20261029_v2.csv": "905971a8a9c47bcf4a88e14cd10d2514feaaea43900d6f513b2eecc4986f19f5",
+    "submissions/first_personal_original_20261029_v1.csv": "53cb8ae4b59b26ab6ee00b5e99ad91044876180e662732a755d3e99a297e64bc"
+  },
+  "all_required_schedule_windows_covered": true,
+  "new_classifier_fit_calls": 1,
+  "same_frozen_classifier_at_final": true,
+  "exactly_one_new_csv": true
+}

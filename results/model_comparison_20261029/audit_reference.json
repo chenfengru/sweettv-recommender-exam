@@ -1,0 +1,8 @@
+{
+  "training_qualified_counts_sha256": "1052537890fbe05efba257ec65a668c54ad255c11e042c184773a3c231265f3d",
+  "validation_qualified_counts_sha256": "1703d6bb18ff340f97b116c91021b037b698ac826821b1b50c188680401aee16",
+  "source": "Authoritative cleaned audit private qualified counts; only aggregate hashes are public",
+  "cohort": 4625,
+  "candidates": 6384,
+  "canonicalization": "sort [raw_user_id,raw_programme_id,integer_count] by both IDs; compact JSON UTF-8; SHA-256"
+}

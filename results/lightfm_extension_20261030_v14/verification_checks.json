@@ -1,0 +1,81 @@
+{
+  "original_v13_artifacts_unchanged": {
+    "artifacts/schedule_reranker_20261030_v13/origin_20200406/augmented_features.npy": "df33c7a88f531d5d3af164870ebf86aaacb507c5c2745dd8339967328fc616e6",
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200406/row_index.json": "1b688d474ba3842961c26b5521cd54a0d174146edbb442404ec0aa5b591c18b1",
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200406/labels.npy": "b8aa87da7c7dd898c16d41a26d8d2db2f9dc35cb86cbc378acb8e22f500b4a26",
+    "artifacts/schedule_reranker_20261030_v13/origin_20200420/augmented_features.npy": "a49c9f04e8b3159b70769aee3d772cc8710473aeb2f58d497ff23d43109a65e6",
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200420/row_index.json": "8cfd91c441ed4287e7a37836080ecfc5a0c57b00eafa7052b0ff80468ca13cc4",
+    "artifacts/lightgbm_reranker_20261030_v12/origin_20200420/labels.npy": "2747e5780119a77aa8947871f155d4876f0420ebfa28317e434f8f1cefa49840",
+    "artifacts/schedule_reranker_20261030_v13/main/augmented_features.npy": "02f3dbef1a37601f5cfde23f3519022974be345ccc9d021c29113ffeac382064",
+    "artifacts/lightgbm_reranker_20261030_v12/main/row_index.json": "3970749dd964154ec269fb8cb6c6bdf202eb87fea42a4a892a55da7e0abb00a8",
+    "artifacts/schedule_reranker_20261030_v13/main/predictions.json": "9935bf541743a03b7eabef2f43afeae585014d837078b48356ee6fdbfa96a954",
+    "artifacts/schedule_reranker_20261030_v13/auxiliary/augmented_features.npy": "766536aed2f112554a6170dbf0e3ac52749a51610adf0319284b33585c74130c",
+    "artifacts/lightgbm_reranker_20261030_v12/auxiliary/row_index.json": "5c069ab78a324f835d903caad4ee386e7f73d519e78b02f9bbdf6d2dfeb00e2c",
+    "artifacts/schedule_reranker_20261030_v13/auxiliary/predictions.json": "d3bf0023a5efa69f23d26b34a90d26f957d4792bc249a43a0114af599eda92a5",
+    "artifacts/schedule_reranker_20261030_v13/final/augmented_features.npy": "a10fe119e4d499ca90370b1465a1eb5c82a8f5a91e9ab311a380c34c11da4bb6",
+    "artifacts/lightgbm_reranker_20261030_v12/final/row_index.json": "495e698bd6cd282789fa12242a3e109d69aa42853cd04c486067f59428259313",
+    "artifacts/schedule_reranker_20261030_v13/final/predictions.json": "62808bb45efb3314263abdca9408d8eff8a2fa5e214d0bee377d590dfb42f206",
+    "artifacts/schedule_reranker_20261030_v13/frozen_model.txt": "51078bfa7e49b7137308fc96aa0f0f2942b2575edeb1f714b2499aec16c316a6"
+  },
+  "original34_feature_and_support_checks": {
+    "origin_20200406": {
+      "rows": 291619,
+      "columns": 40,
+      "finite": true,
+      "original34_equal": true,
+      "support_aware_missing_values": true,
+      "saved_mapping_verified": true,
+      "saved_predictive_state_verified": true
+    },
+    "origin_20200420": {
+      "rows": 313316,
+      "columns": 40,
+      "finite": true,
+      "original34_equal": true,
+      "support_aware_missing_values": true,
+      "saved_mapping_verified": true,
+      "saved_predictive_state_verified": true
+    },
+    "main": {
+      "rows": 380403,
+      "columns": 40,
+      "finite": true,
+      "original34_equal": true,
+      "support_aware_missing_values": true,
+      "saved_mapping_verified": true,
+      "saved_predictive_state_verified": true
+    },
+    "auxiliary": {
+      "rows": 397757,
+      "columns": 40,
+      "finite": true,
+      "original34_equal": true,
+      "support_aware_missing_values": true,
+      "saved_mapping_verified": true,
+      "saved_predictive_state_verified": true
+    },
+    "final": {
+      "rows": 152442,
+      "columns": 40,
+      "finite": true,
+      "original34_equal": true,
+      "support_aware_missing_values": true,
+      "saved_mapping_verified": true,
+      "saved_predictive_state_verified": true
+    }
+  },
+  "previous_csv_git_bytes_preserved": {
+    "submissions/candidate_adaptive_s40_e2_20261030_v11.csv": "ccac509f8efeeddb9187f1ff2e5300db08f82ae0f9acd1f4ba7d8220f9dd26fb",
+    "submissions/candidate_lightgbm_historical_fixed_20261030_v12.csv": "e18c49cb106df5b5e50f3b7123a080443a2ab48c709e68e721ee9965d96b1457",
+    "submissions/candidate_lightgbm_schedule_exposure_20261030_v13.csv": "1fd147770b6be8ebcd64c89244af60cb8510440607358ec84c9adc6ffe7ec359",
+    "submissions/candidate_personal_fifth_e2_20261030_v9.csv": "f1378b0d6fed62793e14ebb4c1b64cf8b2163485485c15c861aae7e67e556375",
+    "submissions/candidate_personal_threshold_050_20261030_v5.csv": "593b1134b6625771abfe107e17d074499cedf6efb4ef9306e06289e9566876e5",
+    "submissions/candidate_personal_tie_popularity_20261030_v3.csv": "39aac2794395209b2299ccee2e2bb1b4b9afde22f3e06ccb5b04f3d706c9522f",
+    "submissions/candidate_rrf_als_lb80_w0p1_20261029_v2.csv": "905971a8a9c47bcf4a88e14cd10d2514feaaea43900d6f513b2eecc4986f19f5",
+    "submissions/first_personal_original_20261029_v1.csv": "53cb8ae4b59b26ab6ee00b5e99ad91044876180e662732a755d3e99a297e64bc"
+  },
+  "extended_classifier_fit_calls": 1,
+  "same_classifier_at_final": true,
+  "deterministic_replay": true,
+  "exactly_one_new_candidate": true
+}

@@ -1,68 +1,30 @@
-# SWEET.TV Recommender Exam
+# LLM4Rec Midterm Exam
 
-Individual TV-programme recommendation project for LLM4Rec (FKN).
+SWEET.TV programme recommendation: five ranked programmes per user, evaluated with MAP@5. The selected **v18** model is historical LightGBM reranking with personal-frequency and item-item retrieval features, schedule exposure, support-aware LightFM features, and user-channel affinity (52 features). One binary classifier is trained on two earlier historical origins and applied unchanged at evaluation and final inference.
 
-**Current status: Phase 1 foundations implemented and checked on synthetic fixtures.** The original five CSV files are still missing. No real-data statistics or model scores have been measured, no models have been trained, and no Kaggle prediction has been submitted. See [the data audit status](results/data_audit.md) and [executed checks](results/phase1_checks.json).
+| Evidence | Result | Provenance |
+| --- | ---: | --- |
+| Main validation MAP@5 | **0.369249610** | Measured locally; 4,625 users |
+| Auxiliary validation MAP@5 | **0.357738856** | Measured locally; 4,589 users |
+| Kaggle Private | **0.43798** | User-screenshot-reported |
+| Kaggle Public | **0.44758** | User-screenshot-reported |
 
-本仓库先固定任务与评估口径，再按阶段完成数据审查、推荐模型、比较实验和报告。
+Kaggle scores were supplied by the user; submission ID/time are unknown. No Kaggle access or upload is performed by repository tools.
 
-## Start here
+## Review the evidence
 
-1. [Exam requirements](docs/exam_requirements.md): mandatory deliverables and scoring.
-2. [Experiment protocol](docs/experiment_protocol.md): proposed design, assumptions, and unresolved decisions.
-3. [First Codex task](docs/phase_1_codex_task.md): data audit and small-scale verification.
-4. [Data location](data/README.md): obtain and store the five original files locally.
-5. [Run Phase 1](docs/running_phase_1.md): audit, tests, limitations, and the next command.
-6. [Student verification](docs/student_verification.md): small examples to check personally; not yet completed by the student.
+- [Required individual-method comparison](results/model_comparison_20261029/comparison_report.md): popularity, personal frequency, CBF and implicit ALS, under the shared temporal protocol.
+- [Selected v18 experiment](results/channel_affinity_20261030_v18/comparison_report.md): configuration, paired comparisons, channel coverage, slices and limitations. This historical report predates the user's submission; [later score provenance](results/time_affinity_20261030_v19/submitted_score_evidence.json) records the confirmed scores above.
+- [Completed examples for the same light and heavy users](results/final_report_examples/v18_two_user_examples.md): main-window recommendations, original titles/categories and hits. The light user has no qualified targets, so AP@5 is **not evaluable**; the missing cached list was recovered with saved-model inference. User identities remain private.
+- [Reproduction order and limitations](docs/reproducing_selected_model.md): original five inputs, environment, cache producers, historical command order and fresh-clone restrictions.
+- [Exact final CSV](submissions/candidate_lightgbm_channel_affinity_20261030_v18.csv) and [validator evidence](results/channel_affinity_20261030_v18/candidate_validator_cli.json).
 
-## Run the implemented tools
+Final CSV SHA-256:
 
-Use Python 3.11 or newer. Phase 1 has no third-party Python dependencies.
-
-```bash
-SWEETTV_DATA_DIR="$HOME/LLM4Rec-Course-codex/data/sweettv/raw"
-python -m unittest discover -s tests -v
-python -m src.audit_data --data-dir "$SWEETTV_DATA_DIR" --output-dir results
+```text
+a62d1afb1a0c015cb70fd60c1e89bb670b731f872b3433dc438526a5ae703c45
 ```
 
-The user-selected data location is inside the existing `LLM4Rec-Course-codex` course folder. Run these commands from the exam repository root. If inputs are missing, the audit writes a missing-input report and exits with code 2; otherwise it profiles their schemas and raw values. The committed audit records an earlier check in the assistant workspace, not an inspection of the user's Mac. Timestamp units, duration units, timezone, and template column roles are deliberately not guessed. Follow [the run guide](docs/running_phase_1.md) before converting intervals or training a model.
+Automated checks validate all 1,260 template users, original header/order, and five distinct nonzero available IDs per row. The regression suite has 105 passing tests; [example-recovery checks](results/final_report_examples/v18_light_user_recovery_checks.json) verify all 52 reconstructed features against a saved heavy-user control. These are automated checks, **not independent student verification**. The student personally identified the example's matching programme and rank change, and reviewed AP@5 in an AI-guided walkthrough. This is guided case review, not independent verification of the full pipeline. Original native session records remain private and are not uploaded to GitHub.
 
-## Task and deadline
-
-- Recommend exactly five distinct, nonzero programme IDs per test user, in preference order.
-- Metric: MAP@5.
-- Deadline: **1 November 2026, 19:00 Europe/Moscow (UTC+3)**.
-- Individual submission. The cohort's top 20% by returned Kaggle private score receives 50 ranking points; coursework evaluation contributes the other 50 points.
-- The old Kaggle leaderboard is frozen. It does not show the current exam cohort's ranking.
-- The user reports a limit of five submissions per day.
-- [Kaggle competition](https://www.kaggle.com/competitions/sweettv-tv-program-recommender)
-
-## Planned methods
-
-| Method | Role |
-| --- | --- |
-| Global popularity | Required reference baseline |
-| Personal repeat-frequency | Extra diagnostic baseline; not counted as one of the two required methods |
-| Content-based filtering | Required method 1 |
-| Implicit-feedback matrix factorization | Required method 2 |
-| Rank fusion or temporal reranking | Optional, after separate method evaluation |
-
-Model choice and performance are not established by this plan.
-
-## Repository conventions
-
-- Implemented audit/evaluation code lives in `src/`, synthetic checks in `tests/`, and status/check records in `results/`. Model configurations will be added when the protocol is ready.
-- Raw data, caches, credentials, and original AI-session exports remain outside version control.
-- The exact final prediction CSV belongs in `submissions/`; this directory is deliberately not ignored.
-- Retain the tool-native, unmodified AI-session export for course submission. Git history does not replace it.
-- Cite any external implementations actually used. Separate proposed experiments from executed experiments, and AI checks from student checks.
-
-## Sources
-
-The requirements summary is based on the instructor's user-provided `exam_quiz_FKN.md` and homework guidelines. It is a summary, not a replacement for those originals.
-
-- [Instructor's exam slides](https://docs.google.com/presentation/d/1xf9tJ0nU0L9GeSGxLQVT_-GzZ160rDSXKRVH5TD6MSE)
-- [Historical second-place implementation](https://github.com/ndmel/2nd_place_recsys_cinema_challenge_2020)
-- [Author's historical solution account](https://medium.com/data-science/two-layered-recommender-system-methodology-a-prize-winning-solution-c4bdb815b156)
-
-Historical results are external references, not results reproduced in this repository.
+The evaluation cohorts overlap, repeated model selection introduces uncertainty, and historical training horizons differ from evaluation/final horizons. Channel mapping coverage and cross-origin LightFM score shifts are additional limitations. Raw data, user mappings, caches, weights and native session exports are excluded from Git. Historical experiment reports remain execution records rather than current status announcements.
