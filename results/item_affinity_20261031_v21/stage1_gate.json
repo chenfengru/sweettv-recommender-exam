@@ -1,0 +1,8 @@
+{
+  "passes": true,
+  "deltas_vs_original_seed42": {
+    "main": 0.0020074474474474475,
+    "auxiliary": 0.001422302123435268
+  },
+  "stage1_fit_count": 1
+}

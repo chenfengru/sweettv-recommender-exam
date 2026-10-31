@@ -1,0 +1,890 @@
+{
+  "42": [
+    {
+      "feature": "n30",
+      "gain": 335926.53962111473
+    },
+    {
+      "feature": "n50",
+      "gain": 90207.76984381676
+    },
+    {
+      "feature": "n80",
+      "gain": 23413.56896018982
+    },
+    {
+      "feature": "log1p_n30",
+      "gain": 0.0
+    },
+    {
+      "feature": "log1p_n50",
+      "gain": 0.0
+    },
+    {
+      "feature": "log1p_n80",
+      "gain": 0.0
+    },
+    {
+      "feature": "personal_n50_rank",
+      "gain": 21151.55246114731
+    },
+    {
+      "feature": "personal_rank_missing",
+      "gain": 0.0
+    },
+    {
+      "feature": "item_item_score",
+      "gain": 1207.5063252449036
+    },
+    {
+      "feature": "item_item_score_missing",
+      "gain": 0.0
+    },
+    {
+      "feature": "item_item_rank",
+      "gain": 3084.731603384018
+    },
+    {
+      "feature": "item_item_rank_missing",
+      "gain": 0.0
+    },
+    {
+      "feature": "global_viewers80",
+      "gain": 4901.732182979584
+    },
+    {
+      "feature": "global_airings80",
+      "gain": 20291.70129799843
+    },
+    {
+      "feature": "user_history30",
+      "gain": 1029.1750631332397
+    },
+    {
+      "feature": "user_history50",
+      "gain": 338.4324507713318
+    },
+    {
+      "feature": "user_history80",
+      "gain": 796.4545383453369
+    },
+    {
+      "feature": "user_airings30",
+      "gain": 3780.9800918102264
+    },
+    {
+      "feature": "user_airings50",
+      "gain": 2416.3987102508545
+    },
+    {
+      "feature": "user_airings80",
+      "gain": 3378.1351647377014
+    },
+    {
+      "feature": "days_since_last_n50_view",
+      "gain": 6389.024839401245
+    },
+    {
+      "feature": "last_n50_view_missing",
+      "gain": 0.0
+    },
+    {
+      "feature": "n50_last7days",
+      "gain": 8066.105718135834
+    },
+    {
+      "feature": "n50_last28days",
+      "gain": 185935.03766393661
+    },
+    {
+      "feature": "source_personal200",
+      "gain": 0.0
+    },
+    {
+      "feature": "source_unseen50",
+      "gain": 40.47639846801758
+    },
+    {
+      "feature": "source_global5",
+      "gain": 0.0
+    },
+    {
+      "feature": "past_airings_per_day",
+      "gain": 3486.586121082306
+    },
+    {
+      "feature": "future_airings_per_day",
+      "gain": 40811.986036777496
+    },
+    {
+      "feature": "past_broadcast_seconds_per_day",
+      "gain": 8182.892831325531
+    },
+    {
+      "feature": "future_broadcast_seconds_per_day",
+      "gain": 2192.2595071792603
+    },
+    {
+      "feature": "log_airings_rate_change",
+      "gain": 8183.096788883209
+    },
+    {
+      "feature": "log_broadcast_rate_change",
+      "gain": 4291.024352788925
+    },
+    {
+      "feature": "past_airings_zero",
+      "gain": 0.0
+    },
+    {
+      "feature": "lightfm_score",
+      "gain": 1062.7083203792572
+    },
+    {
+      "feature": "lightfm_rank",
+      "gain": 42220.49914479256
+    },
+    {
+      "feature": "lightfm_user_bias",
+      "gain": 1848.2507946491241
+    },
+    {
+      "feature": "lightfm_item_bias",
+      "gain": 2518.217628479004
+    },
+    {
+      "feature": "lightfm_unsupported_user",
+      "gain": 0.0
+    },
+    {
+      "feature": "lightfm_unsupported_item",
+      "gain": 0.0
+    },
+    {
+      "feature": "full_log1p_weighted_view_seconds",
+      "gain": 7568.339137792587
+    },
+    {
+      "feature": "full_weighted_view_share",
+      "gain": 3724.71173620224
+    },
+    {
+      "feature": "full_log1p_weighted_n50_airings",
+      "gain": 3527.7067563533783
+    },
+    {
+      "feature": "full_weighted_n50_share",
+      "gain": 4578.49938583374
+    },
+    {
+      "feature": "trailing28_log1p_weighted_view_seconds",
+      "gain": 19431.647073745728
+    },
+    {
+      "feature": "trailing28_weighted_view_share",
+      "gain": 3322.6331691741943
+    },
+    {
+      "feature": "trailing28_log1p_weighted_n50_airings",
+      "gain": 2042.2376899719238
+    },
+    {
+      "feature": "trailing28_weighted_n50_share",
+      "gain": 7083.206872463226
+    },
+    {
+      "feature": "full_no_viewing",
+      "gain": 0.0
+    },
+    {
+      "feature": "full_no_n50",
+      "gain": 0.0
+    },
+    {
+      "feature": "trailing28_no_viewing",
+      "gain": 0.0
+    },
+    {
+      "feature": "trailing28_no_n50",
+      "gain": 135.76898002624512
+    },
+    {
+      "feature": "ii_other_max_similarity",
+      "gain": 22321.272280216217
+    },
+    {
+      "feature": "ii_other_top5_similarity_sum",
+      "gain": 1293.1506731510162
+    },
+    {
+      "feature": "ii_other_log1p_positive_history_count",
+      "gain": 979.8933343887329
+    }
+  ],
+  "43": [
+    {
+      "feature": "n30",
+      "gain": 334350.9124650955
+    },
+    {
+      "feature": "n50",
+      "gain": 90535.32546830177
+    },
+    {
+      "feature": "n80",
+      "gain": 22523.27260160446
+    },
+    {
+      "feature": "log1p_n30",
+      "gain": 0.0
+    },
+    {
+      "feature": "log1p_n50",
+      "gain": 0.0
+    },
+    {
+      "feature": "log1p_n80",
+      "gain": 0.0
+    },
+    {
+      "feature": "personal_n50_rank",
+      "gain": 21263.57569885254
+    },
+    {
+      "feature": "personal_rank_missing",
+      "gain": 0.0
+    },
+    {
+      "feature": "item_item_score",
+      "gain": 1341.1836791038513
+    },
+    {
+      "feature": "item_item_score_missing",
+      "gain": 0.0
+    },
+    {
+      "feature": "item_item_rank",
+      "gain": 3093.650176048279
+    },
+    {
+      "feature": "item_item_rank_missing",
+      "gain": 0.0
+    },
+    {
+      "feature": "global_viewers80",
+      "gain": 4840.845065116882
+    },
+    {
+      "feature": "global_airings80",
+      "gain": 20283.162292718887
+    },
+    {
+      "feature": "user_history30",
+      "gain": 996.6138722896576
+    },
+    {
+      "feature": "user_history50",
+      "gain": 382.493634223938
+    },
+    {
+      "feature": "user_history80",
+      "gain": 929.3518786430359
+    },
+    {
+      "feature": "user_airings30",
+      "gain": 3792.4356956481934
+    },
+    {
+      "feature": "user_airings50",
+      "gain": 2214.5919423103333
+    },
+    {
+      "feature": "user_airings80",
+      "gain": 3358.018187046051
+    },
+    {
+      "feature": "days_since_last_n50_view",
+      "gain": 6663.437297821045
+    },
+    {
+      "feature": "last_n50_view_missing",
+      "gain": 0.0
+    },
+    {
+      "feature": "n50_last7days",
+      "gain": 8619.85496711731
+    },
+    {
+      "feature": "n50_last28days",
+      "gain": 187263.6099407673
+    },
+    {
+      "feature": "source_personal200",
+      "gain": 0.0
+    },
+    {
+      "feature": "source_unseen50",
+      "gain": 0.0
+    },
+    {
+      "feature": "source_global5",
+      "gain": 11.381999969482422
+    },
+    {
+      "feature": "past_airings_per_day",
+      "gain": 3773.5678067207336
+    },
+    {
+      "feature": "future_airings_per_day",
+      "gain": 39429.49000310898
+    },
+    {
+      "feature": "past_broadcast_seconds_per_day",
+      "gain": 8094.56969833374
+    },
+    {
+      "feature": "future_broadcast_seconds_per_day",
+      "gain": 1748.1282181739807
+    },
+    {
+      "feature": "log_airings_rate_change",
+      "gain": 7839.5379140377045
+    },
+    {
+      "feature": "log_broadcast_rate_change",
+      "gain": 4749.229244470596
+    },
+    {
+      "feature": "past_airings_zero",
+      "gain": 0.0
+    },
+    {
+      "feature": "lightfm_score",
+      "gain": 1219.5112957954407
+    },
+    {
+      "feature": "lightfm_rank",
+      "gain": 41501.861407995224
+    },
+    {
+      "feature": "lightfm_user_bias",
+      "gain": 1844.076729297638
+    },
+    {
+      "feature": "lightfm_item_bias",
+      "gain": 2519.703107357025
+    },
+    {
+      "feature": "lightfm_unsupported_user",
+      "gain": 0.0
+    },
+    {
+      "feature": "lightfm_unsupported_item",
+      "gain": 0.0
+    },
+    {
+      "feature": "full_log1p_weighted_view_seconds",
+      "gain": 7157.9388518333435
+    },
+    {
+      "feature": "full_weighted_view_share",
+      "gain": 4704.215469360352
+    },
+    {
+      "feature": "full_log1p_weighted_n50_airings",
+      "gain": 3456.184195280075
+    },
+    {
+      "feature": "full_weighted_n50_share",
+      "gain": 5038.655734062195
+    },
+    {
+      "feature": "trailing28_log1p_weighted_view_seconds",
+      "gain": 19085.177746772766
+    },
+    {
+      "feature": "trailing28_weighted_view_share",
+      "gain": 4261.768887519836
+    },
+    {
+      "feature": "trailing28_log1p_weighted_n50_airings",
+      "gain": 2688.1736493110657
+    },
+    {
+      "feature": "trailing28_weighted_n50_share",
+      "gain": 5869.010688304901
+    },
+    {
+      "feature": "full_no_viewing",
+      "gain": 0.0
+    },
+    {
+      "feature": "full_no_n50",
+      "gain": 0.0
+    },
+    {
+      "feature": "trailing28_no_viewing",
+      "gain": 0.0
+    },
+    {
+      "feature": "trailing28_no_n50",
+      "gain": 127.92326879501343
+    },
+    {
+      "feature": "ii_other_max_similarity",
+      "gain": 23680.782126426697
+    },
+    {
+      "feature": "ii_other_top5_similarity_sum",
+      "gain": 1168.2982320785522
+    },
+    {
+      "feature": "ii_other_log1p_positive_history_count",
+      "gain": 886.7363505363464
+    }
+  ],
+  "44": [
+    {
+      "feature": "n30",
+      "gain": 332298.3759300709
+    },
+    {
+      "feature": "n50",
+      "gain": 90311.27425289154
+    },
+    {
+      "feature": "n80",
+      "gain": 23971.225072860718
+    },
+    {
+      "feature": "log1p_n30",
+      "gain": 0.0
+    },
+    {
+      "feature": "log1p_n50",
+      "gain": 0.0
+    },
+    {
+      "feature": "log1p_n80",
+      "gain": 0.0
+    },
+    {
+      "feature": "personal_n50_rank",
+      "gain": 21698.149707078934
+    },
+    {
+      "feature": "personal_rank_missing",
+      "gain": 0.0
+    },
+    {
+      "feature": "item_item_score",
+      "gain": 927.8518342971802
+    },
+    {
+      "feature": "item_item_score_missing",
+      "gain": 0.0
+    },
+    {
+      "feature": "item_item_rank",
+      "gain": 3172.9766113758087
+    },
+    {
+      "feature": "item_item_rank_missing",
+      "gain": 0.0
+    },
+    {
+      "feature": "global_viewers80",
+      "gain": 4618.405960083008
+    },
+    {
+      "feature": "global_airings80",
+      "gain": 20604.721215248108
+    },
+    {
+      "feature": "user_history30",
+      "gain": 843.925749540329
+    },
+    {
+      "feature": "user_history50",
+      "gain": 438.28130769729614
+    },
+    {
+      "feature": "user_history80",
+      "gain": 938.0715012550354
+    },
+    {
+      "feature": "user_airings30",
+      "gain": 3836.0002982616425
+    },
+    {
+      "feature": "user_airings50",
+      "gain": 2603.0983352661133
+    },
+    {
+      "feature": "user_airings80",
+      "gain": 3438.4832718372345
+    },
+    {
+      "feature": "days_since_last_n50_view",
+      "gain": 7105.515652418137
+    },
+    {
+      "feature": "last_n50_view_missing",
+      "gain": 0.0
+    },
+    {
+      "feature": "n50_last7days",
+      "gain": 8846.063887119293
+    },
+    {
+      "feature": "n50_last28days",
+      "gain": 186207.49529623985
+    },
+    {
+      "feature": "source_personal200",
+      "gain": 0.0
+    },
+    {
+      "feature": "source_unseen50",
+      "gain": 0.0
+    },
+    {
+      "feature": "source_global5",
+      "gain": 13.307000160217285
+    },
+    {
+      "feature": "past_airings_per_day",
+      "gain": 3869.742343902588
+    },
+    {
+      "feature": "future_airings_per_day",
+      "gain": 39997.847136735916
+    },
+    {
+      "feature": "past_broadcast_seconds_per_day",
+      "gain": 8473.477797031403
+    },
+    {
+      "feature": "future_broadcast_seconds_per_day",
+      "gain": 1694.9987416267395
+    },
+    {
+      "feature": "log_airings_rate_change",
+      "gain": 8459.680657625198
+    },
+    {
+      "feature": "log_broadcast_rate_change",
+      "gain": 4279.993467569351
+    },
+    {
+      "feature": "past_airings_zero",
+      "gain": 0.0
+    },
+    {
+      "feature": "lightfm_score",
+      "gain": 1164.5796852111816
+    },
+    {
+      "feature": "lightfm_rank",
+      "gain": 41124.17600917816
+    },
+    {
+      "feature": "lightfm_user_bias",
+      "gain": 2151.482169151306
+    },
+    {
+      "feature": "lightfm_item_bias",
+      "gain": 2437.2740302085876
+    },
+    {
+      "feature": "lightfm_unsupported_user",
+      "gain": 0.0
+    },
+    {
+      "feature": "lightfm_unsupported_item",
+      "gain": 0.0
+    },
+    {
+      "feature": "full_log1p_weighted_view_seconds",
+      "gain": 6513.2567048072815
+    },
+    {
+      "feature": "full_weighted_view_share",
+      "gain": 4287.951779127121
+    },
+    {
+      "feature": "full_log1p_weighted_n50_airings",
+      "gain": 3424.450178861618
+    },
+    {
+      "feature": "full_weighted_n50_share",
+      "gain": 5193.121573925018
+    },
+    {
+      "feature": "trailing28_log1p_weighted_view_seconds",
+      "gain": 20147.251213788986
+    },
+    {
+      "feature": "trailing28_weighted_view_share",
+      "gain": 3474.5186841487885
+    },
+    {
+      "feature": "trailing28_log1p_weighted_n50_airings",
+      "gain": 2778.649416446686
+    },
+    {
+      "feature": "trailing28_weighted_n50_share",
+      "gain": 6923.878888130188
+    },
+    {
+      "feature": "full_no_viewing",
+      "gain": 0.0
+    },
+    {
+      "feature": "full_no_n50",
+      "gain": 0.0
+    },
+    {
+      "feature": "trailing28_no_viewing",
+      "gain": 0.0
+    },
+    {
+      "feature": "trailing28_no_n50",
+      "gain": 119.83669900894165
+    },
+    {
+      "feature": "ii_other_max_similarity",
+      "gain": 23333.40680885315
+    },
+    {
+      "feature": "ii_other_top5_similarity_sum",
+      "gain": 1088.4872317314148
+    },
+    {
+      "feature": "ii_other_log1p_positive_history_count",
+      "gain": 863.1507592201233
+    }
+  ],
+  "45": [
+    {
+      "feature": "n30",
+      "gain": 338621.9218966961
+    },
+    {
+      "feature": "n50",
+      "gain": 90247.44185853004
+    },
+    {
+      "feature": "n80",
+      "gain": 22087.389427661896
+    },
+    {
+      "feature": "log1p_n30",
+      "gain": 0.0
+    },
+    {
+      "feature": "log1p_n50",
+      "gain": 0.0
+    },
+    {
+      "feature": "log1p_n80",
+      "gain": 0.0
+    },
+    {
+      "feature": "personal_n50_rank",
+      "gain": 20779.586673498154
+    },
+    {
+      "feature": "personal_rank_missing",
+      "gain": 0.0
+    },
+    {
+      "feature": "item_item_score",
+      "gain": 1261.8468651771545
+    },
+    {
+      "feature": "item_item_score_missing",
+      "gain": 0.0
+    },
+    {
+      "feature": "item_item_rank",
+      "gain": 3105.6640162467957
+    },
+    {
+      "feature": "item_item_rank_missing",
+      "gain": 0.0
+    },
+    {
+      "feature": "global_viewers80",
+      "gain": 4431.123279809952
+    },
+    {
+      "feature": "global_airings80",
+      "gain": 19458.401542186737
+    },
+    {
+      "feature": "user_history30",
+      "gain": 1019.1977276802063
+    },
+    {
+      "feature": "user_history50",
+      "gain": 317.2912516593933
+    },
+    {
+      "feature": "user_history80",
+      "gain": 984.0622339248657
+    },
+    {
+      "feature": "user_airings30",
+      "gain": 3415.0751719474792
+    },
+    {
+      "feature": "user_airings50",
+      "gain": 3006.9256167411804
+    },
+    {
+      "feature": "user_airings80",
+      "gain": 3198.406039237976
+    },
+    {
+      "feature": "days_since_last_n50_view",
+      "gain": 6577.863027095795
+    },
+    {
+      "feature": "last_n50_view_missing",
+      "gain": 0.0
+    },
+    {
+      "feature": "n50_last7days",
+      "gain": 8472.08231830597
+    },
+    {
+      "feature": "n50_last28days",
+      "gain": 184171.34952306747
+    },
+    {
+      "feature": "source_personal200",
+      "gain": 0.0
+    },
+    {
+      "feature": "source_unseen50",
+      "gain": 0.0
+    },
+    {
+      "feature": "source_global5",
+      "gain": 0.0
+    },
+    {
+      "feature": "past_airings_per_day",
+      "gain": 4582.779913902283
+    },
+    {
+      "feature": "future_airings_per_day",
+      "gain": 40254.05185484886
+    },
+    {
+      "feature": "past_broadcast_seconds_per_day",
+      "gain": 7994.676788806915
+    },
+    {
+      "feature": "future_broadcast_seconds_per_day",
+      "gain": 1488.0994188785553
+    },
+    {
+      "feature": "log_airings_rate_change",
+      "gain": 7847.566916465759
+    },
+    {
+      "feature": "log_broadcast_rate_change",
+      "gain": 4322.2243621349335
+    },
+    {
+      "feature": "past_airings_zero",
+      "gain": 0.0
+    },
+    {
+      "feature": "lightfm_score",
+      "gain": 1227.282341003418
+    },
+    {
+      "feature": "lightfm_rank",
+      "gain": 43358.63075733185
+    },
+    {
+      "feature": "lightfm_user_bias",
+      "gain": 2056.295687675476
+    },
+    {
+      "feature": "lightfm_item_bias",
+      "gain": 2432.3324732780457
+    },
+    {
+      "feature": "lightfm_unsupported_user",
+      "gain": 0.0
+    },
+    {
+      "feature": "lightfm_unsupported_item",
+      "gain": 0.0
+    },
+    {
+      "feature": "full_log1p_weighted_view_seconds",
+      "gain": 6617.963680505753
+    },
+    {
+      "feature": "full_weighted_view_share",
+      "gain": 4174.312114953995
+    },
+    {
+      "feature": "full_log1p_weighted_n50_airings",
+      "gain": 3594.006573200226
+    },
+    {
+      "feature": "full_weighted_n50_share",
+      "gain": 5737.706439495087
+    },
+    {
+      "feature": "trailing28_log1p_weighted_view_seconds",
+      "gain": 19280.543292999268
+    },
+    {
+      "feature": "trailing28_weighted_view_share",
+      "gain": 4097.22916841507
+    },
+    {
+      "feature": "trailing28_log1p_weighted_n50_airings",
+      "gain": 2188.628815174103
+    },
+    {
+      "feature": "trailing28_weighted_n50_share",
+      "gain": 6470.528888702393
+    },
+    {
+      "feature": "full_no_viewing",
+      "gain": 0.0
+    },
+    {
+      "feature": "full_no_n50",
+      "gain": 0.0
+    },
+    {
+      "feature": "trailing28_no_viewing",
+      "gain": 0.0
+    },
+    {
+      "feature": "trailing28_no_n50",
+      "gain": 142.92733907699585
+    },
+    {
+      "feature": "ii_other_max_similarity",
+      "gain": 22104.872965335846
+    },
+    {
+      "feature": "ii_other_top5_similarity_sum",
+      "gain": 1149.0742588043213
+    },
+    {
+      "feature": "ii_other_log1p_positive_history_count",
+      "gain": 964.6716506481171
+    }
+  ]
+}

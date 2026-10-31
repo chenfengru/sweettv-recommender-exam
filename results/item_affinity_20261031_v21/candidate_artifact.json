@@ -1,0 +1,27 @@
+{
+  "filename": "candidate_item_other_history_affinity_20261031_v21.csv",
+  "absolute_path": "/Users/chenfengru/sweettv-recommender-exam/submissions/candidate_item_other_history_affinity_20261031_v21.csv",
+  "sha256": "256924b2fc729fea5bfa6859da87281d9c003c0863146caf9fddb716d02d2665",
+  "validation": {
+    "status": "valid",
+    "users": 1260,
+    "k": 5,
+    "candidate_ids": 6649,
+    "distinct_recommended_ids": 127,
+    "template_sha256": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02",
+    "prediction_sha256": "256924b2fc729fea5bfa6859da87281d9c003c0863146caf9fddb716d02d2665"
+  },
+  "differences_vs_incumbent": {
+    "users": 1260,
+    "users_changed": 551,
+    "users_identical": 709,
+    "recommendation_slots": 6300,
+    "rank_position_slots_changed": 1060,
+    "top5_items_in_common": 6060,
+    "top5_set_overlap_fraction": 0.9619047619047619,
+    "users_with_membership_change": 237,
+    "users_with_order_change_only": 314,
+    "new_item_slots_ignoring_order": 240
+  },
+  "submission_description": "Equal-weight ensemble of four historical 55-feature channel-affinity LightGBM classifiers, seeds 42\u201345. Three added features summarize unweighted positive item-item similarities from other distinct N50-history programmes: maximum, top-five sum and log1p contributor count. Original directed top-50 graphs, self-exclusion, candidates, 52 existing features and training settings are preserved. No evaluation-label refit, tuning or incumbent blending. Validated candidate for manual submission; no Kaggle result."
+}
