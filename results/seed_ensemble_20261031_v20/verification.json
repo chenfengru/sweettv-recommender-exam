@@ -1,0 +1,13 @@
+{
+  "tests_passed": 108,
+  "new_historical_fits": 3,
+  "seed42_refits": 0,
+  "native_nonseed_parameters_unchanged": true,
+  "original_inputs_reports_models_csv_hashes_preserved": true,
+  "native_records": "unmodified",
+  "coursework_report_changed": false,
+  "private_user_ids_in_new_public_evidence": false,
+  "new_csv_count": 1,
+  "validator_status": "valid (both existing validators)",
+  "candidate_sha256": "5c052205c156f48a7f72b38efc680323a34152496bc2e2df7a1964f93961a861"
+}

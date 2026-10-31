@@ -1,0 +1,61 @@
+{
+  "models": [
+    {
+      "seed": 42,
+      "sha256": "a1e667ad3a87ba6372ff147ef7b1b54d553955c81c6dc7f5d73fba0dd8309226"
+    },
+    {
+      "seed": 43,
+      "sha256": "c5249b2f742589414c3e5a85ec9ec31773fa8fe616fc161bb282206a11ffe8e7"
+    },
+    {
+      "seed": 44,
+      "sha256": "6f2b315c783855c31334cd384fcdfdb2a23cad947619613780cf6f3aa03eebeb"
+    },
+    {
+      "seed": 45,
+      "sha256": "358daf38027e0f5a6cf7c67f5969b53b8cf18e84810628ba2afea90840a95461"
+    }
+  ],
+  "history_window": [
+    1583712000.0,
+    1589760000.0
+  ],
+  "forecast_window": [
+    1589760000.0,
+    1595808000.0
+  ],
+  "features": 52,
+  "model_fits": 0,
+  "four_saved_models_same_schema_300_trees": true,
+  "original_user_mapping_unchanged": true,
+  "heavy_features_bitwise_equal_original_main": true,
+  "seed42_scores_bitwise_equal_private_recovery": true,
+  "heavy_mean_ranking_matches_saved_v20_main": true,
+  "source_user_ids_published": false,
+  "light_ap_at_5": "not evaluable",
+  "main_candidate_ids": 6384,
+  "five_distinct_nonzero_available_ids": true,
+  "prior_artifact_hashes_unchanged": true,
+  "elapsed_seconds": 4.50708474998828,
+  "score_provenance": [
+    {
+      "model": "v20",
+      "private": 0.44124,
+      "public": 0.44911,
+      "selection": "selected submission",
+      "source": "User-screenshot-reported in the current request; no independent lookup.",
+      "submission_id": null,
+      "submission_timestamp": null
+    },
+    {
+      "model": "v21",
+      "private": 0.4397,
+      "public": 0.44687,
+      "selection": "not selected",
+      "source": "User-screenshot-reported in the current request; no independent lookup.",
+      "submission_id": null,
+      "submission_timestamp": null
+    }
+  ]
+}

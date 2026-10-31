@@ -1,0 +1,27 @@
+{
+  "absolute_path": "/Users/chenfengru/sweettv-recommender-exam/submissions/candidate_channel_affinity_seed_mean_20261031_v20.csv",
+  "filename": "candidate_channel_affinity_seed_mean_20261031_v20.csv",
+  "sha256": "5c052205c156f48a7f72b38efc680323a34152496bc2e2df7a1964f93961a861",
+  "validation": {
+    "status": "valid",
+    "users": 1260,
+    "k": 5,
+    "candidate_ids": 6649,
+    "distinct_recommended_ids": 124,
+    "template_sha256": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02",
+    "prediction_sha256": "5c052205c156f48a7f72b38efc680323a34152496bc2e2df7a1964f93961a861"
+  },
+  "differences_vs_incumbent": {
+    "users": 1260,
+    "users_changed": 455,
+    "users_identical": 805,
+    "recommendation_slots": 6300,
+    "rank_position_slots_changed": 890,
+    "top5_items_in_common": 6121,
+    "top5_set_overlap_fraction": 0.9715873015873016,
+    "users_with_membership_change": 179,
+    "users_with_order_change_only": 276,
+    "new_item_slots_ignoring_order": 179
+  },
+  "submission_description": "Equal-weight mean of v18 channel-affinity LightGBM ranking scores from seeds 42, 43, 44 and 45. All four 300-tree historical classifiers use the same 52 features, original training rows/labels and fixed settings; saved seed 42 is reused. Final predictions use unchanged candidate features and ranking rules, with no evaluation-label refit, weight tuning or sampling changes. Validated for manual submission; no Kaggle result."
+}
