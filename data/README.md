@@ -21,7 +21,7 @@ Expected files, according to the instructor's exam document:
 - export_arh_31-42-final.csv
 - submission.csv
 
-These inputs are not bundled with this repository. No input has yet been audited here. Record checksums and verify actual names and headers rather than silently renaming a different dataset.
+These inputs are not bundled with this repository. The supplied files were audited in the recorded experiment; their checksums are preserved in results/local_audit_20261029/data_audit.json. Verify any newly supplied copy against those identities rather than silently renaming a different dataset. See docs/reproducing_selected_model.md for the selected pipeline and generated-cache dependencies.
 
 Before adding files in the existing course checkout, exclude `/data/sweettv/` in that checkout's `.gitignore` or local Git exclude file. The exam repository's `.gitignore` cannot protect data inside a different Git checkout. Do not commit raw competition data or Kaggle credentials to either repository.
 
