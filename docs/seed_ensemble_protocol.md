@@ -1,0 +1,15 @@
+# V20 frozen seed-only ensemble protocol
+
+Base: merged main 0cae3390185f6f4e8feda29ac2aed4e686945df5, branch codex/v18-seed-ensemble. Incumbent v18 52-feature binary classifier, main MAP.369249609610/aux.357738856202; user-reported Private.43798/Public.44758. Preserve all coursework reports, CSVs, weights, caches and native records. No Kaggle.
+
+Use exact original historical rows/labels/features from v18 Apr6->[Apr6,Apr20), Apr20->[Apr20,May4), same main/aux/final metadata and 52 columns. Only requested random_state changes. Saved seed42 reused; never refit it. All rows/negatives/queries retained, no weights/sampling changes. Main/aux labels evaluation only. Effective sklearn/native parameters must match incumbent except global/automatically derived seed metadata.
+
+Inspect installed LightGBM4.6.0 and saved native parameters before fitting. Bagging off (fraction1,freq0), feature fractions1, extra_trees0, gbdt/cpu, deterministic1,force_col_wise1. Existing bin_construct_sample_cnt200000 <604935 training rows means bin-construction sampling is enabled; global seed derives data_random_seed. Do not change it independently or enable any additional randomness.
+
+Stage1: exactly one new300-tree classifier seed43 using same constructor settings/defaults. Compare predictive tree structures ignoring seed metadata/nonpredictive gain/counts, raw margins, original binary ranking-score vectors, full candidate order/top5, MAP on both splits. Prediction diversity means any ranking score differs on either split. If both split score vectors are bitwise identical, STOP: no seeds44/45, no CSV. Tree/metadata differences alone do not authorize Stage2.
+
+Stage2 only if score diversity observed: fit seeds44 and45 once each, same settings. Individual diagnostics not used for best-seed selection. Only ensemble is equal arithmetic mean of original v18 inference score outputs from42/43/44/45 (Booster.predict raw_score=False); this fixes the score convention before evaluation. Also compare raw_score=True margins as diagnostics, but do NOT average margins or tune alternatives. Binary output scores are used for ranking, not claimed calibrated probabilities. Rank with exact v18 count/global/raw-string tie keys and fallback.
+
+Report both splits individual/ensemble MAP differences, score/raw-margin/tree/full-order/top5/membership diversity, paired-user bootstrap2000resamples seed42 percentile95% conditional reused overlapping cohorts/excludesaccumulatedselectionuncertainty, effective params/runtime/RSS. No new evalcohort/labels/features/availability or hyperparameters.
+
+Only sole four-seed mean qualifies on strictly positive MAPgain versus saved42 on BOTHsplits. If not retainv18/noCSV. Ifqualified apply samefourhistoricalclassifiers to existingfinal52rows without refit; one versionedCSV, existingvalidators1260templateusers/header/order/5distinctnonzeroavailableIDs/carryovers, SHA/v18differences/Englishdescription. No modeloutputs overwritten. Never alter coursework report without a manual submission result. New English experiment evidence only; commit/push branch and open draftPR, no merge.

@@ -1,0 +1,78 @@
+{
+  "predictive_tree_hashes": {
+    "42": "5511ac71d27e975aa784a4bcb45eb5624797d2719eaf99b7a65be9e1ecdf459c",
+    "43": "e6b2e268553ad68259c0caae934b49b080975f943948f342334ed1032a4481e3",
+    "44": "de573d1a177b1b0bc0b3c21623ebd13ab5de6432d8b017b8ccfffb1ddc29071a",
+    "45": "5dec6c4625ec66bab0402b57c87ed78bb9afba63dd6c8125ee2ca2d1a821b53f"
+  },
+  "raw_margins_vs42": {
+    "main": {
+      "42": {
+        "candidate_rows": 380403,
+        "bitwise_identical": true,
+        "different_scores": 0,
+        "max_abs_difference": 0.0,
+        "mean_abs_difference": 0.0,
+        "correlation": 0.9999999999999999
+      },
+      "43": {
+        "candidate_rows": 380403,
+        "bitwise_identical": false,
+        "different_scores": 380403,
+        "max_abs_difference": 1.1367784933187002,
+        "mean_abs_difference": 0.1172322864554924,
+        "correlation": 0.9965306649797048
+      },
+      "44": {
+        "candidate_rows": 380403,
+        "bitwise_identical": false,
+        "different_scores": 380403,
+        "max_abs_difference": 0.9826178680622109,
+        "mean_abs_difference": 0.11537932913984131,
+        "correlation": 0.9968493164939776
+      },
+      "45": {
+        "candidate_rows": 380403,
+        "bitwise_identical": false,
+        "different_scores": 380403,
+        "max_abs_difference": 0.9104475409298018,
+        "mean_abs_difference": 0.11447131110036989,
+        "correlation": 0.9970816598601231
+      }
+    },
+    "auxiliary": {
+      "42": {
+        "candidate_rows": 397757,
+        "bitwise_identical": true,
+        "different_scores": 0,
+        "max_abs_difference": 0.0,
+        "mean_abs_difference": 0.0,
+        "correlation": 1.0
+      },
+      "43": {
+        "candidate_rows": 397757,
+        "bitwise_identical": false,
+        "different_scores": 397757,
+        "max_abs_difference": 1.1288896243026607,
+        "mean_abs_difference": 0.1204418967151718,
+        "correlation": 0.9963801504014655
+      },
+      "44": {
+        "candidate_rows": 397757,
+        "bitwise_identical": false,
+        "different_scores": 397757,
+        "max_abs_difference": 1.0485676576495897,
+        "mean_abs_difference": 0.11660324792914849,
+        "correlation": 0.9968639695152498
+      },
+      "45": {
+        "candidate_rows": 397757,
+        "bitwise_identical": false,
+        "different_scores": 397757,
+        "max_abs_difference": 0.9655445587510352,
+        "mean_abs_difference": 0.11678434338098673,
+        "correlation": 0.9969520474124783
+      }
+    }
+  }
+}
