@@ -1,0 +1,21 @@
+{
+  "tests_passed": 112,
+  "new_classifier_fits": 4,
+  "old_classifier_refits": 0,
+  "first52_and_original_rows_labels_candidates_preserved": true,
+  "original_weighted_scores_ranks_exact_all_rows": true,
+  "sampled_scalar_max_abs_error_per_origin": {
+    "origin_20200406": 0.0,
+    "origin_20200420": 0.0,
+    "main": 0.0,
+    "auxiliary": 0.0,
+    "final": 0.0
+  },
+  "prior_reports_models_csvs_preserved": true,
+  "coursework_report_changed": false,
+  "native_records": "unmodified",
+  "known_private_user_ids_in_new_public_evidence": false,
+  "new_csv_count": 1,
+  "both_validators": "valid",
+  "candidate_sha256": "256924b2fc729fea5bfa6859da87281d9c003c0863146caf9fddb716d02d2665"
+}
